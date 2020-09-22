@@ -1,6 +1,6 @@
 {
   "name": "common-ui-palette",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common UI Palette",
   "main": "index.js",
   "scripts": {
