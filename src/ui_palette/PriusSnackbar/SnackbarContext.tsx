@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-import { AlertType } from "../../../typings";
+import { AlertType } from "../../typings";
 
 export type SnackbarContextType = {
   show: (

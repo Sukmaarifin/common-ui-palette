@@ -32,8 +32,8 @@ import { Link as RouterLink } from "react-router-dom";
 // import PriusIconImageGenerator from "../PriusIconImageGenerator/PriusIconImageGenerator";
 import { TenantContext } from "../../ui_palette/PriusSSSO";
 
-import { route, RouteType } from "../../../root/route";
-import { camelize } from "../../../helpers";
+import { route, RouteType } from "../../route";
+import { camelize } from "../../helpers";
 
 import "./NavigationBar.css";
 

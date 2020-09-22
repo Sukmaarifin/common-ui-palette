@@ -4,8 +4,8 @@ import { Grid, Theme, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import { FieldProps } from "../types";
-import { MoneyType } from "../../../../typings/common";
-import { convertToPrice } from "../../../../helpers/convertToPrice";
+import { MoneyType } from "../../../typings";
+import { convertToPrice } from "../../../helpers/convertToPrice";
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {

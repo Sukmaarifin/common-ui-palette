@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 400;
+  src: url("./Metropolis/eot/Metropolis-Regular.eot");
+  src: url("./Metropolis/woff2/Metropolis-Regular.woff2") format("woff2"),
+    url("./Metropolis/ttf/Metropolis-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 500;
+  src: url("./Metropolis/eot/Metropolis-Medium.eot");
+  src: url("./Metropolis/woff2/Metropolis-Medium.woff2") format("woff2"),
+    url("./Metropolis/ttf/Metropolis-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 700;
+  src: url("./Metropolis/eot/Metropolis-Bold.eot");
+  src: url("./Metropolis/woff2/Metropolis-Bold.woff2") format("woff2"),
+    url("./Metropolis/ttf/Metropolis-Bold.ttf") format("truetype");
+}

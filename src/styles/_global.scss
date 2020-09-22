@@ -1,0 +1,57 @@
+// Colors
+$primaryColor: #00c48c;
+$successColor: #00c48c;
+$warningColor: #ffcf5c;
+$errorColor: #ff647c;
+
+// Typography
+body {
+  font-family: Metropolis, sans-serif;
+  font-size: 13px;
+  line-height: "1.125rem";
+  color: #444444;
+  background: #fafafa;
+}
+
+// Should we remove the following rules? Because its polluting the global styles
+// h1 {
+//   font-size: 34px;
+//   font-weight: 600;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: 41px;
+//   letter-spacing: normal;
+//   color: #1a051d;
+// }
+
+// h2 {
+//   font-size: 22px;
+//   font-weight: 600;
+//   line-height: 28px;
+//   color: #1a051d;
+// }
+
+// h3 {
+//   font-size: 17px;
+//   font-weight: 600;
+//   line-height: 22px;
+//   color: #1a051d;
+// }
+
+// h4 {
+//   font-size: 15px;
+//   font-weight: 500;
+//   line-height: 20px;
+//   color: #1a051d;
+// }
+
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  height: -webkit-fill-available;
+  background: #fafafa;
+}

@@ -5,7 +5,7 @@ import { AddCircleOutlinedIcon } from "../../icons";
 import DatePicker from "../PriusDatePicker";
 import PriusBackdrop from "../PriusBackdrop";
 
-import { DateRangeType } from "../../../typings";
+import { DateRangeType } from "../../typings";
 import { FilterItemType, FilterProps } from "./types";
 
 import { FilterCss } from "./FilterCss";

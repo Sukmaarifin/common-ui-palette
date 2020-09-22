@@ -25,7 +25,7 @@ import { menuConnexi } from "./menuConnexi";
 import { menuStore } from "./menuStore";
 import SubMenu, { fieldSubMenu } from "./SubMenu";
 import { checkSVGProp } from "./assets/typeSVG";
-import { camelize } from "../../../helpers";
+import { camelize } from "../../helpers";
 
 import {
   DEFAULT_PLAN,
@@ -34,12 +34,12 @@ import {
   FeatureTypeStrings,
 } from "../PriusRouter/types";
 import { TenantContext } from "../PriusSSSO";
-import { ENV } from "../../../configs";
+import { ENV } from "../../configs";
 import {
   GET_ALLOWED_ACTIONS,
   GetAllowedActionsResponseType,
   GetAllowedActionsParamType,
-} from "../../../graphql";
+} from "../../graphql";
 
 import MainMenuCss from "./MainMenuCss";
 

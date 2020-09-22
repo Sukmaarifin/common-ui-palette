@@ -2,7 +2,7 @@ import React, { forwardRef, Ref } from "react";
 import DayPickerInput from "react-day-picker/DayPickerInput";
 import { DateUtils } from "react-day-picker";
 
-import { REGEX_DATE } from "../../../constants";
+import { REGEX_DATE } from "../../constants";
 
 import "./PriusDatePickerInput.css";
 import "react-day-picker/lib/style.css";

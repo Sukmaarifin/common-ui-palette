@@ -6,7 +6,7 @@ import { makeStyles, createStyles } from "@material-ui/core/styles";
 
 import SnackbarContext from "./SnackbarContext";
 
-import { AlertType } from "../../../typings";
+import { AlertType } from "../../typings";
 
 import { CloseIcon } from "../../icons";
 import { SuccessSVG, ErrorSVG, WarningSVG, InfoSVG } from "./assets";

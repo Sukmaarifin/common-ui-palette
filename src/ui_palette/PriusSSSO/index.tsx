@@ -5,19 +5,19 @@ import { ApolloError } from "apollo-boost";
 import CryptoJS from "crypto-js";
 
 import PriusCircularProgress from "../PriusCircularProgress";
-import usePersistedState from "../../../helpers/usePersistedState";
+import usePersistedState from "../../helpers/usePersistedState";
 import {
   PRIUS_NAME,
   PRIUS_URL,
   RADEN_URL,
   MODE,
   SECRET_KEY,
-} from "../../../configs";
+} from "../../configs";
 import {
   GET_TOKEN,
   GetTokenParamType,
   GetTokenResponseType,
-} from "../../../graphql";
+} from "../../graphql";
 
 const useStyles = makeStyles(() => ({
   container: {

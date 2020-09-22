@@ -8,13 +8,13 @@ import { Route, RouteProps, RouteComponentProps } from "react-router-dom";
 import { useLazyQuery } from "@apollo/react-hooks";
 import { ApolloError } from "apollo-boost";
 
-import ErrorPage from "../../error/ErrorPage";
+import ErrorPage from "./ErrorPage";
 
 import { handlerPathname } from "../PriusNavigationBar";
 import { TenantContext } from "../PriusSSSO";
-import { GET_ACCESS_TO, GetAccessParamType } from "../../../graphql";
+import { GET_ACCESS_TO, GetAccessParamType } from "../../graphql";
 import { ROUTE_BY_PLAN } from "./types";
-import { ENV } from "../../../configs";
+import { ENV } from "../../configs";
 
 export type PriusRouterProps = RouteProps & {
   modes: Array<string>;

@@ -3,7 +3,7 @@ import ButtonBase, { ButtonBaseProps } from "@material-ui/core/ButtonBase";
 import { makeStyles, Theme } from "@material-ui/core/styles";
 import clsx from "clsx";
 
-import { camelize } from "../../../helpers";
+import { camelize } from "../../helpers";
 
 export type PriusButtonTextProps = ButtonBaseProps & {
   bold?: boolean;

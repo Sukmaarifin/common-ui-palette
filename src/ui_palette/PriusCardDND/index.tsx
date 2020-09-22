@@ -7,7 +7,7 @@ import { useDrag, useDrop, DropTargetMonitor } from "react-dnd";
 import PriusThumbnail from "../PriusThumbnail";
 import PriusOption from "../PriusOption";
 import PriusPaper from "../PriusPaper";
-import { camelize } from "../../../helpers";
+import { camelize } from "../../helpers";
 
 import { useStyles } from "./PriusCardDNDCss";
 

@@ -6,7 +6,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import gql from "graphql-tag";
 import { useQuery } from "@apollo/react-hooks";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { 
+  makeStyles, 
+  Theme,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 import { Grid, MenuItem } from "@material-ui/core";
 
 import { TenantContext } from "../PriusSSSO";
@@ -14,6 +18,7 @@ import PriusMultipleSelect, { OptionType } from "../PriusMultipleSelect";
 import PriusSelect from "../PriusSelect";
 
 import { GetBrandsResponseType, GetBrandsParamType, BrandType } from "./types";
+import theme from "../../styles/material-ui-theme";
 
 export const GET_BRANDS = gql`
   query Brands($ID: ID!) {
@@ -165,16 +170,18 @@ function PriusBrandDropdown({
   }
 
   return (
-    <PriusMultipleSelect
-      id={`${id}-select-brand`}
-      isClearable={isClearable}
-      isMulti={isMulti}
-      name="brand"
-      options={brands}
-      placeholder={placeholder || ""}
-      selectedData={selectedBrands}
-      onChange={(value: Array<OptionType>) => handleChange(value)}
-    />
+    <ThemeProvider theme={theme}>
+      <PriusMultipleSelect
+        id={`${id}-select-brand`}
+        isClearable={isClearable}
+        isMulti={isMulti}
+        name="brand"
+        options={brands}
+        placeholder={placeholder || ""}
+        selectedData={selectedBrands}
+        onChange={(value: Array<OptionType>) => handleChange(value)}
+      />
+    </ThemeProvider>
   );
 }
 

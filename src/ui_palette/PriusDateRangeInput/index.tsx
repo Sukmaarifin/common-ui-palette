@@ -3,8 +3,8 @@ import React, { useState, useCallback } from "react";
 import PriusInput from "../PriusInputNew";
 import PriusDatePicker from "../PriusDatePicker";
 
-import { convertDateUTC } from "../../../helpers";
-import { DateRangeType } from "../../../typings/common";
+import { convertDateUTC } from "../../helpers";
+import { DateRangeType } from "../../typings";
 
 type DataDateType = {
   from: string;

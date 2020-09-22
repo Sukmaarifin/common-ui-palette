@@ -9,7 +9,7 @@ import PriusTooltip from "../../PriusTooltip/PriusTooltip";
 import PriusBackdrop from "../../PriusBackdrop";
 import PriusLabel from "../../PriusLabel";
 import { FieldProps } from "../types";
-import { getByMaxIndex } from "../../../../helpers/getByMaxHelpers";
+import { getByMaxIndex } from "../../../helpers/getByMaxHelpers";
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {

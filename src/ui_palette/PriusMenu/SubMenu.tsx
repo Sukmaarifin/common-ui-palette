@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { RouteComponentProps } from "react-router";
 import { withRouter, Link } from "react-router-dom";
 
-import { camelize } from "../../../helpers";
+import { camelize } from "../../helpers";
 
 import MainMenuCss from "./MainMenuCss";
 

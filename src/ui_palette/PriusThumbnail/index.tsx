@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { camelize } from "../../../helpers";
+import { camelize } from "../../helpers";
 
 import FallbackImage from "./FallbackImage.svg";
 

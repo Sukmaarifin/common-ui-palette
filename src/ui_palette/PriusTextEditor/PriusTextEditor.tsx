@@ -14,7 +14,7 @@ import {
   DEFAULT_HEIGHT,
   DEFAULT_TOOLBAR,
 } from "./constants";
-import { UPLOAD_IMAGE } from "../../../graphql";
+import { UPLOAD_IMAGE } from "../../graphql";
 
 const useStyle = makeStyles((theme: Theme) =>
   createStyles({
