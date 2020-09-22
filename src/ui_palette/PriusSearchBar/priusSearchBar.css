@@ -1,0 +1,38 @@
+.prius-searchbar__input-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+
+.prius-searchbar__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04);
+  font-family: Metropolis, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 5px 15px;
+  outline: none; }
+  .prius-searchbar__input.with-left-icon {
+    padding-left: 36px; }
+  .prius-searchbar__input.with-right-icon {
+    padding-right: 36px;
+    margin-right: -16px; }
+
+.prius-searchbar__icon-left {
+  position: relative;
+  top: 13px;
+  left: 26px; }
+
+.prius-searchbar__icon-right {
+  position: relative;
+  top: 13px;
+  left: -10px; }
+
+.prius-searchbar__result-line1 {
+  font-size: 13px !important; }
+
+.prius-searchbar__result-line2 {
+  font-size: 10px !important; }

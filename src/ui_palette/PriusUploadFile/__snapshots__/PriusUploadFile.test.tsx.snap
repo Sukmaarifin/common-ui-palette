@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriusUploadFile Testing render successfully 1`] = `
+<PriusUploadFile
+  onUploadFile={[MockFunction]}
+  reUpload={[MockFunction]}
+  statusUpload=""
+>
+  <div
+    className="prius-upload-file__box"
+    draggable={true}
+    id="divFile"
+    onDragEnd={[Function]}
+    onDragOver={[Function]}
+    onDragStart={[Function]}
+    onDrop={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "border": "1px solid #ececec",
+      }
+    }
+  >
+    <div
+      className="prius-upload-file__input"
+    >
+      <IconGenerator
+        className="prius-upload-file__img"
+        text="upload"
+        type="image"
+      >
+        <img
+          alt="upload"
+          className="prius-upload-file__img"
+          src={
+            Object {
+              "ReactComponent": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+              "__esModule": true,
+              "default": "upload.svg",
+            }
+          }
+        />
+      </IconGenerator>
+      <div>
+        <label>
+          Tarik dan letakkan file disini atau 
+        </label>
+        <label
+          className="prius-upload-file__link prius-upload-file__success"
+          htmlFor="files"
+        >
+          klik disini
+        </label>
+        <input
+          id="files"
+          onChange={[Function]}
+          type="file"
+        />
+        <label>
+           untuk memilih file
+        </label>
+      </div>
+    </div>
+  </div>
+</PriusUploadFile>
+`;

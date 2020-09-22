@@ -1,0 +1,77 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import LinkTo from "@storybook/addon-links/react";
+
+import PriusTextbox from "./PriusTextbox";
+import PriusFieldset from "../PriusFieldset";
+
+<Meta
+  component={PriusTextbox}
+  id="Components|PriusTextbox"
+  title="Components|PriusTextbox"
+/>
+
+# PriusTextbox
+
+`PriusTextbox` is a component provides a simple wrapper of
+[TextField](https://material-ui.com/components/text-fields/)
+for editing, displaying, or entering plain text including a title, input and help text with custom styles.
+
+## Usage
+
+Should be wrapped inside `PriusFieldset` or any other native component like `<label/>`.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <>
+      <label for="prius-textbox">Input Paragraph</label>
+      <PriusTextbox
+        id="prius-textbox"
+        placeholder="Your text here"
+        multiline
+        name="prius-textbox"
+        rows={4}
+        rowsMax={4}
+        onChange={() => void 0}
+      />
+    </>
+  </Story>
+</Preview>
+
+### Custom Validation
+
+You can change `isError` props to provide a semantic state to the `PriusTextbox`.
+You can combine with `PriusFieldset` as a wrapper to provide feedback to the user about the error.
+
+<Preview>
+  <Story name="Custom Validation">
+    <PriusFieldset
+      fullWidth
+      label="Label"
+      helperText="Lorem ipsum color dolot sit amet"
+      inputId="input-textbox"
+      tooltipText="Lorem ipsum color dolor sit amet"
+      status="error"
+    >
+      <PriusTextbox
+        id="prius-textbox-2"
+        placeholder="Your text here"
+        multiline
+        name="prius-textbox-2"
+        rows={4}
+        rowsMax={4}
+        isError={true}
+        onChange={() => void 0}
+      />
+    </PriusFieldset>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusTextbox} />
+
+## Related
+
+- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>

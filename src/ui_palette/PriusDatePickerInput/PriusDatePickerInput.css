@@ -1,0 +1,49 @@
+.DayPicker-Caption {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.DayPicker-NavButton--prev {
+  left: 0; }
+
+.DayPicker-Weekdays {
+  border-bottom: solid 1px #f3f3f3;
+  border-top: solid 1px #f3f3f3; }
+
+.DayPicker-Day {
+  border-radius: 0 !important; }
+
+.DayPicker-Day--today {
+  font-weight: normal;
+  color: #000; }
+
+.DayPicker-Day--selected {
+  font-weight: 700;
+  color: black !important;
+  background: #f4f4f4 !important;
+  border-radius: 0 !important; }
+
+.DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #3f4fa2; }
+
+.DayPickerInput-Overlay {
+  position: unset;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  border-top: 1px solid #ecebed;
+  padding-top: 12px; }
+
+.DayPickerInput {
+  width: 100%;
+  border: 1px solid #ecebed;
+  border-radius: 0.1875rem; }
+  .DayPickerInput input {
+    width: 95%;
+    color: #444444;
+    padding: 0.75rem 0.9375rem;
+    font-size: 0.8125rem;
+    border: 0;
+    outline: none;
+    height: 1.1875em; }

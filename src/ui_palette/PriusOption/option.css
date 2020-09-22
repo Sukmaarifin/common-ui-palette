@@ -1,0 +1,31 @@
+.prius-option__button {
+  float: right;
+}
+
+.prius-option {
+  width: 154px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.2);
+  float: right;
+  margin-top: 25px;
+}
+
+.prius-option__container {
+  align-content: center;
+  padding: 3px 0 !important;
+}
+
+.prius-option__item.icon {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+.prius-option__item.title {
+  font-family: Metropolis;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #3f3356;
+}

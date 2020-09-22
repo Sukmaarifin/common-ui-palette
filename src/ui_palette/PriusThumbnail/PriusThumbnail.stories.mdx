@@ -1,0 +1,35 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import Grid from "@material-ui/core/Grid";
+
+import PriusThumbnail from "../PriusThumbnail";
+
+<Meta
+  component={PriusThumbnail}
+  id="Components|PriusThumbnail"
+  title="Components|PriusThumbnail"
+/>
+
+# PriusThumbnail
+
+`PriusThumbnail` is a simple preview image and used as a placeholder if source
+of the image is not found. It provide with diferent size options.
+
+<Preview>
+  <Story name="Basic">
+    <Grid container spacing={0}>
+      <Grid item xs={2}>
+        <PriusThumbnail altText="alt-text" size="big" />
+      </Grid>
+      <Grid item xs={2}>
+        <PriusThumbnail altText="alt-text" size="medium" />
+      </Grid>
+      <Grid item xs={2}>
+        <PriusThumbnail altText="alt-text" size="small" />
+      </Grid>
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusThumbnail} />

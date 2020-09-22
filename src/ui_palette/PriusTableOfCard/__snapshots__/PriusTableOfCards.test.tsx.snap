@@ -1,0 +1,1821 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Of Cards Testing render successfully 1`] = `
+<WithStyles(PriusTableOfCards)
+  data={
+    Array [
+      Object {
+        "active": true,
+        "data": Array [
+          Object {
+            "type": "checkbox",
+          },
+          Object {
+            "content": "sync",
+            "style": Object {
+              "float": "left",
+            },
+            "type": "generateIcon",
+          },
+          Object {
+            "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/uwjw39b1xdsbtmfnxjqm/tanjun-mens-shoe-w8ToA8jr.jpg",
+            "type": "image",
+          },
+          Object {
+            "content": "Naiki Cortez black size 42-44",
+          },
+          Object {
+            "content": "NAIKI OFFICIAL STORE",
+          },
+          Object {
+            "content": "53",
+          },
+          Object {
+            "content": "-",
+          },
+          Object {
+            "content": "BliBli, Bukalapak +2more",
+          },
+        ],
+        "dropDownData": Array [
+          Object {
+            "data": Array [
+              Object {
+                "content": "sync",
+                "style": Object {
+                  "float": "right",
+                  "marginRight": "10px",
+                },
+                "type": "generateIcon",
+              },
+              Object {
+                "content": "Blibli",
+              },
+              Object {
+                "content": "Naiki leleCortez black-Maroon",
+              },
+              Object {
+                "content": "NAIKI OFFICIAL STORE",
+              },
+              Object {
+                "content": "41",
+              },
+              Object {
+                "content": "-",
+              },
+              Object {
+                "content": "Rp 1.790.000",
+              },
+            ],
+            "id": 3,
+          },
+          Object {
+            "data": Array [
+              Object {
+                "content": "sync",
+                "style": Object {
+                  "float": "right",
+                  "marginRight": "10px",
+                },
+                "type": "generateIcon",
+              },
+              Object {
+                "content": "Blibli",
+              },
+              Object {
+                "content": "Naiki leleCortez black-Maroon",
+              },
+              Object {
+                "content": "NAIKI OFFICIAL STORE",
+              },
+              Object {
+                "content": "43",
+              },
+              Object {
+                "content": "-",
+              },
+              Object {
+                "content": "Rp 1.790.000",
+              },
+              Object {
+                "content": "error",
+                "isAction": true,
+                "type": "generateIcon",
+              },
+            ],
+            "id": 5,
+          },
+          Object {
+            "data": Array [
+              Object {
+                "content": "success",
+                "style": Object {
+                  "float": "right",
+                  "marginRight": "10px",
+                },
+                "type": "generateIcon",
+              },
+              Object {
+                "content": Array [
+                  "Blibli",
+                ],
+              },
+              Object {
+                "content": Array [
+                  "Naiki leleCortez black-Maroon",
+                ],
+              },
+              Object {
+                "content": Array [
+                  "NAIKI OFFICIAL STORE",
+                ],
+              },
+              Object {
+                "content": Array [
+                  "42",
+                ],
+              },
+              Object {
+                "content": Array [
+                  "-",
+                ],
+              },
+              Object {
+                "content": Array [
+                  "Rp 1.790.000",
+                ],
+              },
+              Object {
+                "content": "refresh",
+                "isAction": true,
+                "type": "generateIcon",
+              },
+            ],
+            "id": 4,
+          },
+        ],
+        "id": 1,
+      },
+    ]
+  }
+  header={
+    Array [
+      Object {
+        "type": "checkbox",
+      },
+      Object {
+        "text": "Status",
+      },
+      Object {
+        "text": "",
+      },
+      Object {
+        "orderValue": "NAME",
+        "text": "Nama",
+      },
+      Object {
+        "orderValue": "STORE",
+        "text": "Toko",
+      },
+      Object {
+        "orderValue": "STOCK",
+        "text": "Stok",
+      },
+      Object {
+        "text": "Promotion",
+      },
+      Object {
+        "text": "Sales Channel",
+      },
+    ]
+  }
+  onAction={[MockFunction]}
+  onClickHeader={[MockFunction]}
+  onSort={[MockFunction]}
+  rowWidth={
+    Array [
+      "5%",
+      "5%",
+      "10%",
+      "20%",
+      "20%",
+      "5%",
+      "10%",
+      "20%",
+      "5%",
+    ]
+  }
+>
+  <PriusTableOfCards
+    classes={
+      Object {
+        "actionIcon": "PriusTableOfCards-actionIcon-3",
+        "drawerClose": "PriusTableOfCards-drawerClose-2",
+        "drawerOpen": "PriusTableOfCards-drawerOpen-1",
+      }
+    }
+    data={
+      Array [
+        Object {
+          "active": true,
+          "data": Array [
+            Object {
+              "type": "checkbox",
+            },
+            Object {
+              "content": "sync",
+              "style": Object {
+                "float": "left",
+              },
+              "type": "generateIcon",
+            },
+            Object {
+              "imgSrc": "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/uwjw39b1xdsbtmfnxjqm/tanjun-mens-shoe-w8ToA8jr.jpg",
+              "type": "image",
+            },
+            Object {
+              "content": "Naiki Cortez black size 42-44",
+            },
+            Object {
+              "content": "NAIKI OFFICIAL STORE",
+            },
+            Object {
+              "content": "53",
+            },
+            Object {
+              "content": "-",
+            },
+            Object {
+              "content": "BliBli, Bukalapak +2more",
+            },
+          ],
+          "dropDownData": Array [
+            Object {
+              "data": Array [
+                Object {
+                  "content": "sync",
+                  "style": Object {
+                    "float": "right",
+                    "marginRight": "10px",
+                  },
+                  "type": "generateIcon",
+                },
+                Object {
+                  "content": "Blibli",
+                },
+                Object {
+                  "content": "Naiki leleCortez black-Maroon",
+                },
+                Object {
+                  "content": "NAIKI OFFICIAL STORE",
+                },
+                Object {
+                  "content": "41",
+                },
+                Object {
+                  "content": "-",
+                },
+                Object {
+                  "content": "Rp 1.790.000",
+                },
+              ],
+              "id": 3,
+            },
+            Object {
+              "data": Array [
+                Object {
+                  "content": "sync",
+                  "style": Object {
+                    "float": "right",
+                    "marginRight": "10px",
+                  },
+                  "type": "generateIcon",
+                },
+                Object {
+                  "content": "Blibli",
+                },
+                Object {
+                  "content": "Naiki leleCortez black-Maroon",
+                },
+                Object {
+                  "content": "NAIKI OFFICIAL STORE",
+                },
+                Object {
+                  "content": "43",
+                },
+                Object {
+                  "content": "-",
+                },
+                Object {
+                  "content": "Rp 1.790.000",
+                },
+                Object {
+                  "content": "error",
+                  "isAction": true,
+                  "type": "generateIcon",
+                },
+              ],
+              "id": 5,
+            },
+            Object {
+              "data": Array [
+                Object {
+                  "content": "success",
+                  "style": Object {
+                    "float": "right",
+                    "marginRight": "10px",
+                  },
+                  "type": "generateIcon",
+                },
+                Object {
+                  "content": Array [
+                    "Blibli",
+                  ],
+                },
+                Object {
+                  "content": Array [
+                    "Naiki leleCortez black-Maroon",
+                  ],
+                },
+                Object {
+                  "content": Array [
+                    "NAIKI OFFICIAL STORE",
+                  ],
+                },
+                Object {
+                  "content": Array [
+                    "42",
+                  ],
+                },
+                Object {
+                  "content": Array [
+                    "-",
+                  ],
+                },
+                Object {
+                  "content": Array [
+                    "Rp 1.790.000",
+                  ],
+                },
+                Object {
+                  "content": "refresh",
+                  "isAction": true,
+                  "type": "generateIcon",
+                },
+              ],
+              "id": 4,
+            },
+          ],
+          "id": 1,
+        },
+      ]
+    }
+    header={
+      Array [
+        Object {
+          "type": "checkbox",
+        },
+        Object {
+          "text": "Status",
+        },
+        Object {
+          "text": "",
+        },
+        Object {
+          "orderValue": "NAME",
+          "text": "Nama",
+        },
+        Object {
+          "orderValue": "STORE",
+          "text": "Toko",
+        },
+        Object {
+          "orderValue": "STOCK",
+          "text": "Stok",
+        },
+        Object {
+          "text": "Promotion",
+        },
+        Object {
+          "text": "Sales Channel",
+        },
+      ]
+    }
+    onAction={[MockFunction]}
+    onClickHeader={[MockFunction]}
+    onSort={[MockFunction]}
+    rowWidth={
+      Array [
+        "5%",
+        "5%",
+        "10%",
+        "20%",
+        "20%",
+        "5%",
+        "10%",
+        "20%",
+        "5%",
+      ]
+    }
+  >
+    <div
+      className="prius-table-card"
+    >
+      <div
+        className="prius-table-card__header prius-table-card__flex"
+      >
+        <div
+          key="0"
+          style={
+            Object {
+              "width": "5%",
+            }
+          }
+        >
+          <PriusCheckbox
+            checked={false}
+            id="checkAll"
+            indeterminate={false}
+            onChange={[Function]}
+          >
+            <WithStyles(ForwardRef(Checkbox))
+              checked={false}
+              checkedIcon={
+                <UNDEFINED
+                  style={
+                    Object {
+                      "width": "18px",
+                    }
+                  }
+                />
+              }
+              classes={
+                Object {
+                  "checked": "makeStyles-checked-5",
+                  "disabled": "makeStyles-disabled-6",
+                  "root": "makeStyles-root-4",
+                }
+              }
+              icon={
+                <UNDEFINED
+                  style={
+                    Object {
+                      "width": "18px",
+                    }
+                  }
+                />
+              }
+              id="checkAll"
+              indeterminate={false}
+              indeterminateIcon={
+                <UNDEFINED
+                  style={
+                    Object {
+                      "width": "18px",
+                    }
+                  }
+                />
+              }
+              onChange={[Function]}
+            >
+              <ForwardRef(Checkbox)
+                checked={false}
+                checkedIcon={
+                  <UNDEFINED
+                    style={
+                      Object {
+                        "width": "18px",
+                      }
+                    }
+                  />
+                }
+                classes={
+                  Object {
+                    "checked": "Mui-checked makeStyles-checked-5",
+                    "colorPrimary": "MuiCheckbox-colorPrimary",
+                    "colorSecondary": "MuiCheckbox-colorSecondary",
+                    "disabled": "Mui-disabled makeStyles-disabled-6",
+                    "indeterminate": "MuiCheckbox-indeterminate",
+                    "root": "MuiCheckbox-root makeStyles-root-4",
+                  }
+                }
+                icon={
+                  <UNDEFINED
+                    style={
+                      Object {
+                        "width": "18px",
+                      }
+                    }
+                  />
+                }
+                id="checkAll"
+                indeterminate={false}
+                indeterminateIcon={
+                  <UNDEFINED
+                    style={
+                      Object {
+                        "width": "18px",
+                      }
+                    }
+                  />
+                }
+                onChange={[Function]}
+              >
+                <WithStyles(ForwardRef(SwitchBase))
+                  checked={false}
+                  checkedIcon={
+                    <UNDEFINED
+                      fontSize="default"
+                      style={
+                        Object {
+                          "width": "18px",
+                        }
+                      }
+                    />
+                  }
+                  classes={
+                    Object {
+                      "checked": "Mui-checked makeStyles-checked-5",
+                      "disabled": "Mui-disabled makeStyles-disabled-6",
+                      "root": "MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary",
+                    }
+                  }
+                  color="secondary"
+                  icon={
+                    <UNDEFINED
+                      fontSize="default"
+                      style={
+                        Object {
+                          "width": "18px",
+                        }
+                      }
+                    />
+                  }
+                  id="checkAll"
+                  inputProps={
+                    Object {
+                      "data-indeterminate": false,
+                    }
+                  }
+                  onChange={[Function]}
+                  type="checkbox"
+                >
+                  <ForwardRef(SwitchBase)
+                    checked={false}
+                    checkedIcon={
+                      <UNDEFINED
+                        fontSize="default"
+                        style={
+                          Object {
+                            "width": "18px",
+                          }
+                        }
+                      />
+                    }
+                    classes={
+                      Object {
+                        "checked": "PrivateSwitchBase-checked-8 Mui-checked makeStyles-checked-5",
+                        "disabled": "PrivateSwitchBase-disabled-9 Mui-disabled makeStyles-disabled-6",
+                        "input": "PrivateSwitchBase-input-10",
+                        "root": "PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary",
+                      }
+                    }
+                    color="secondary"
+                    icon={
+                      <UNDEFINED
+                        fontSize="default"
+                        style={
+                          Object {
+                            "width": "18px",
+                          }
+                        }
+                      />
+                    }
+                    id="checkAll"
+                    inputProps={
+                      Object {
+                        "data-indeterminate": false,
+                      }
+                    }
+                    onChange={[Function]}
+                    type="checkbox"
+                  >
+                    <WithStyles(ForwardRef(IconButton))
+                      className="PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary"
+                      color="secondary"
+                      component="span"
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                      tabIndex={null}
+                    >
+                      <ForwardRef(IconButton)
+                        className="PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary"
+                        classes={
+                          Object {
+                            "colorInherit": "MuiIconButton-colorInherit",
+                            "colorPrimary": "MuiIconButton-colorPrimary",
+                            "colorSecondary": "MuiIconButton-colorSecondary",
+                            "disabled": "Mui-disabled",
+                            "edgeEnd": "MuiIconButton-edgeEnd",
+                            "edgeStart": "MuiIconButton-edgeStart",
+                            "label": "MuiIconButton-label",
+                            "root": "MuiIconButton-root",
+                            "sizeSmall": "MuiIconButton-sizeSmall",
+                          }
+                        }
+                        color="secondary"
+                        component="span"
+                        onBlur={[Function]}
+                        onFocus={[Function]}
+                        tabIndex={null}
+                      >
+                        <WithStyles(ForwardRef(ButtonBase))
+                          centerRipple={true}
+                          className="MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                          component="span"
+                          disabled={false}
+                          focusRipple={true}
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          tabIndex={null}
+                        >
+                          <ForwardRef(ButtonBase)
+                            centerRipple={true}
+                            className="MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                            classes={
+                              Object {
+                                "disabled": "Mui-disabled",
+                                "focusVisible": "Mui-focusVisible",
+                                "root": "MuiButtonBase-root",
+                              }
+                            }
+                            component="span"
+                            disabled={false}
+                            focusRipple={true}
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            tabIndex={null}
+                          >
+                            <span
+                              aria-disabled={false}
+                              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                              onBlur={[Function]}
+                              onDragLeave={[Function]}
+                              onFocus={[Function]}
+                              onKeyDown={[Function]}
+                              onKeyUp={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseUp={[Function]}
+                              onTouchEnd={[Function]}
+                              onTouchMove={[Function]}
+                              onTouchStart={[Function]}
+                              tabIndex={null}
+                            >
+                              <span
+                                className="MuiIconButton-label"
+                              >
+                                <input
+                                  checked={false}
+                                  className="PrivateSwitchBase-input-10"
+                                  data-indeterminate={false}
+                                  id="checkAll"
+                                  onChange={[Function]}
+                                  type="checkbox"
+                                />
+                                <ForwardRef
+                                  fontSize="default"
+                                  style={
+                                    Object {
+                                      "width": "18px",
+                                    }
+                                  }
+                                >
+                                  <WithStyles(ForwardRef(SvgIcon))
+                                    fontSize="default"
+                                    style={
+                                      Object {
+                                        "width": "18px",
+                                      }
+                                    }
+                                  >
+                                    <ForwardRef(SvgIcon)
+                                      classes={
+                                        Object {
+                                          "colorAction": "MuiSvgIcon-colorAction",
+                                          "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                          "colorError": "MuiSvgIcon-colorError",
+                                          "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                          "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                          "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                          "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                          "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                          "root": "MuiSvgIcon-root",
+                                        }
+                                      }
+                                      fontSize="default"
+                                      style={
+                                        Object {
+                                          "width": "18px",
+                                        }
+                                      }
+                                    >
+                                      <svg
+                                        aria-hidden={true}
+                                        className="MuiSvgIcon-root"
+                                        focusable="false"
+                                        style={
+                                          Object {
+                                            "width": "18px",
+                                          }
+                                        }
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                        />
+                                      </svg>
+                                    </ForwardRef(SvgIcon)>
+                                  </WithStyles(ForwardRef(SvgIcon))>
+                                </ForwardRef>
+                              </span>
+                              <WithStyles(memo)
+                                center={true}
+                              >
+                                <ForwardRef(TouchRipple)
+                                  center={true}
+                                  classes={
+                                    Object {
+                                      "child": "MuiTouchRipple-child",
+                                      "childLeaving": "MuiTouchRipple-childLeaving",
+                                      "childPulsate": "MuiTouchRipple-childPulsate",
+                                      "ripple": "MuiTouchRipple-ripple",
+                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                      "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                      "root": "MuiTouchRipple-root",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="MuiTouchRipple-root"
+                                  >
+                                    <TransitionGroup
+                                      childFactory={[Function]}
+                                      component={null}
+                                      exit={true}
+                                    />
+                                  </span>
+                                </ForwardRef(TouchRipple)>
+                              </WithStyles(memo)>
+                            </span>
+                          </ForwardRef(ButtonBase)>
+                        </WithStyles(ForwardRef(ButtonBase))>
+                      </ForwardRef(IconButton)>
+                    </WithStyles(ForwardRef(IconButton))>
+                  </ForwardRef(SwitchBase)>
+                </WithStyles(ForwardRef(SwitchBase))>
+              </ForwardRef(Checkbox)>
+            </WithStyles(ForwardRef(Checkbox))>
+          </PriusCheckbox>
+        </div>
+        <div
+          key="1"
+          style={
+            Object {
+              "width": "5%",
+            }
+          }
+        >
+          <span
+            className=""
+            onClick={[Function]}
+          >
+            Status
+          </span>
+        </div>
+        <div
+          key="2"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        />
+        <div
+          key="3"
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          <span
+            className="prius-table-card__cursor isButton"
+            onClick={[Function]}
+          >
+            Nama
+            <WithStyles(ForwardRef(Icon))
+              className="prius-table-card__icon-sort"
+            >
+              <ForwardRef(Icon)
+                className="prius-table-card__icon-sort"
+                classes={
+                  Object {
+                    "colorAction": "MuiIcon-colorAction",
+                    "colorDisabled": "MuiIcon-colorDisabled",
+                    "colorError": "MuiIcon-colorError",
+                    "colorPrimary": "MuiIcon-colorPrimary",
+                    "colorSecondary": "MuiIcon-colorSecondary",
+                    "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                    "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                    "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                    "root": "MuiIcon-root",
+                  }
+                }
+              >
+                <span
+                  aria-hidden={true}
+                  className="material-icons MuiIcon-root prius-table-card__icon-sort"
+                />
+              </ForwardRef(Icon)>
+            </WithStyles(ForwardRef(Icon))>
+          </span>
+        </div>
+        <div
+          key="4"
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          <span
+            className="prius-table-card__cursor isButton"
+            onClick={[Function]}
+          >
+            Toko
+            <WithStyles(ForwardRef(Icon))
+              className="prius-table-card__icon-sort"
+            >
+              <ForwardRef(Icon)
+                className="prius-table-card__icon-sort"
+                classes={
+                  Object {
+                    "colorAction": "MuiIcon-colorAction",
+                    "colorDisabled": "MuiIcon-colorDisabled",
+                    "colorError": "MuiIcon-colorError",
+                    "colorPrimary": "MuiIcon-colorPrimary",
+                    "colorSecondary": "MuiIcon-colorSecondary",
+                    "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                    "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                    "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                    "root": "MuiIcon-root",
+                  }
+                }
+              >
+                <span
+                  aria-hidden={true}
+                  className="material-icons MuiIcon-root prius-table-card__icon-sort"
+                />
+              </ForwardRef(Icon)>
+            </WithStyles(ForwardRef(Icon))>
+          </span>
+        </div>
+        <div
+          key="5"
+          style={
+            Object {
+              "width": "5%",
+            }
+          }
+        >
+          <span
+            className="prius-table-card__cursor isButton"
+            onClick={[Function]}
+          >
+            Stok
+            <WithStyles(ForwardRef(Icon))
+              className="prius-table-card__icon-sort"
+            >
+              <ForwardRef(Icon)
+                className="prius-table-card__icon-sort"
+                classes={
+                  Object {
+                    "colorAction": "MuiIcon-colorAction",
+                    "colorDisabled": "MuiIcon-colorDisabled",
+                    "colorError": "MuiIcon-colorError",
+                    "colorPrimary": "MuiIcon-colorPrimary",
+                    "colorSecondary": "MuiIcon-colorSecondary",
+                    "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                    "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                    "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                    "root": "MuiIcon-root",
+                  }
+                }
+              >
+                <span
+                  aria-hidden={true}
+                  className="material-icons MuiIcon-root prius-table-card__icon-sort"
+                />
+              </ForwardRef(Icon)>
+            </WithStyles(ForwardRef(Icon))>
+          </span>
+        </div>
+        <div
+          key="6"
+          style={
+            Object {
+              "width": "10%",
+            }
+          }
+        >
+          <span
+            className=""
+            onClick={[Function]}
+          >
+            Promotion
+          </span>
+        </div>
+        <div
+          key="7"
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          <span
+            className=""
+            onClick={[Function]}
+          >
+            Sales Channel
+          </span>
+        </div>
+      </div>
+      <div
+        className="prius-table-card__header-border"
+      />
+      <div>
+        <div
+          className="prius-table-card__body"
+          key="0"
+        >
+          <div
+            className="prius-table-card__flex"
+          >
+            <div
+              key="0"
+              style={
+                Object {
+                  "width": "5%",
+                }
+              }
+            >
+              <PriusCheckbox
+                checked={false}
+                id="selectCard0"
+                onChange={[Function]}
+              >
+                <WithStyles(ForwardRef(Checkbox))
+                  checked={false}
+                  checkedIcon={
+                    <UNDEFINED
+                      style={
+                        Object {
+                          "width": "18px",
+                        }
+                      }
+                    />
+                  }
+                  classes={
+                    Object {
+                      "checked": "makeStyles-checked-5",
+                      "disabled": "makeStyles-disabled-6",
+                      "root": "makeStyles-root-4",
+                    }
+                  }
+                  icon={
+                    <UNDEFINED
+                      style={
+                        Object {
+                          "width": "18px",
+                        }
+                      }
+                    />
+                  }
+                  id="selectCard0"
+                  indeterminateIcon={
+                    <UNDEFINED
+                      style={
+                        Object {
+                          "width": "18px",
+                        }
+                      }
+                    />
+                  }
+                  onChange={[Function]}
+                >
+                  <ForwardRef(Checkbox)
+                    checked={false}
+                    checkedIcon={
+                      <UNDEFINED
+                        style={
+                          Object {
+                            "width": "18px",
+                          }
+                        }
+                      />
+                    }
+                    classes={
+                      Object {
+                        "checked": "Mui-checked makeStyles-checked-5",
+                        "colorPrimary": "MuiCheckbox-colorPrimary",
+                        "colorSecondary": "MuiCheckbox-colorSecondary",
+                        "disabled": "Mui-disabled makeStyles-disabled-6",
+                        "indeterminate": "MuiCheckbox-indeterminate",
+                        "root": "MuiCheckbox-root makeStyles-root-4",
+                      }
+                    }
+                    icon={
+                      <UNDEFINED
+                        style={
+                          Object {
+                            "width": "18px",
+                          }
+                        }
+                      />
+                    }
+                    id="selectCard0"
+                    indeterminateIcon={
+                      <UNDEFINED
+                        style={
+                          Object {
+                            "width": "18px",
+                          }
+                        }
+                      />
+                    }
+                    onChange={[Function]}
+                  >
+                    <WithStyles(ForwardRef(SwitchBase))
+                      checked={false}
+                      checkedIcon={
+                        <UNDEFINED
+                          fontSize="default"
+                          style={
+                            Object {
+                              "width": "18px",
+                            }
+                          }
+                        />
+                      }
+                      classes={
+                        Object {
+                          "checked": "Mui-checked makeStyles-checked-5",
+                          "disabled": "Mui-disabled makeStyles-disabled-6",
+                          "root": "MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary",
+                        }
+                      }
+                      color="secondary"
+                      icon={
+                        <UNDEFINED
+                          fontSize="default"
+                          style={
+                            Object {
+                              "width": "18px",
+                            }
+                          }
+                        />
+                      }
+                      id="selectCard0"
+                      inputProps={
+                        Object {
+                          "data-indeterminate": false,
+                        }
+                      }
+                      onChange={[Function]}
+                      type="checkbox"
+                    >
+                      <ForwardRef(SwitchBase)
+                        checked={false}
+                        checkedIcon={
+                          <UNDEFINED
+                            fontSize="default"
+                            style={
+                              Object {
+                                "width": "18px",
+                              }
+                            }
+                          />
+                        }
+                        classes={
+                          Object {
+                            "checked": "PrivateSwitchBase-checked-8 Mui-checked makeStyles-checked-5",
+                            "disabled": "PrivateSwitchBase-disabled-9 Mui-disabled makeStyles-disabled-6",
+                            "input": "PrivateSwitchBase-input-10",
+                            "root": "PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary",
+                          }
+                        }
+                        color="secondary"
+                        icon={
+                          <UNDEFINED
+                            fontSize="default"
+                            style={
+                              Object {
+                                "width": "18px",
+                              }
+                            }
+                          />
+                        }
+                        id="selectCard0"
+                        inputProps={
+                          Object {
+                            "data-indeterminate": false,
+                          }
+                        }
+                        onChange={[Function]}
+                        type="checkbox"
+                      >
+                        <WithStyles(ForwardRef(IconButton))
+                          className="PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary"
+                          color="secondary"
+                          component="span"
+                          onBlur={[Function]}
+                          onFocus={[Function]}
+                          tabIndex={null}
+                        >
+                          <ForwardRef(IconButton)
+                            className="PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary"
+                            classes={
+                              Object {
+                                "colorInherit": "MuiIconButton-colorInherit",
+                                "colorPrimary": "MuiIconButton-colorPrimary",
+                                "colorSecondary": "MuiIconButton-colorSecondary",
+                                "disabled": "Mui-disabled",
+                                "edgeEnd": "MuiIconButton-edgeEnd",
+                                "edgeStart": "MuiIconButton-edgeStart",
+                                "label": "MuiIconButton-label",
+                                "root": "MuiIconButton-root",
+                                "sizeSmall": "MuiIconButton-sizeSmall",
+                              }
+                            }
+                            color="secondary"
+                            component="span"
+                            onBlur={[Function]}
+                            onFocus={[Function]}
+                            tabIndex={null}
+                          >
+                            <WithStyles(ForwardRef(ButtonBase))
+                              centerRipple={true}
+                              className="MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                              component="span"
+                              disabled={false}
+                              focusRipple={true}
+                              onBlur={[Function]}
+                              onFocus={[Function]}
+                              tabIndex={null}
+                            >
+                              <ForwardRef(ButtonBase)
+                                centerRipple={true}
+                                className="MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                classes={
+                                  Object {
+                                    "disabled": "Mui-disabled",
+                                    "focusVisible": "Mui-focusVisible",
+                                    "root": "MuiButtonBase-root",
+                                  }
+                                }
+                                component="span"
+                                disabled={false}
+                                focusRipple={true}
+                                onBlur={[Function]}
+                                onFocus={[Function]}
+                                tabIndex={null}
+                              >
+                                <span
+                                  aria-disabled={false}
+                                  className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-7 MuiCheckbox-root makeStyles-root-4 MuiCheckbox-colorSecondary MuiIconButton-colorSecondary"
+                                  onBlur={[Function]}
+                                  onDragLeave={[Function]}
+                                  onFocus={[Function]}
+                                  onKeyDown={[Function]}
+                                  onKeyUp={[Function]}
+                                  onMouseDown={[Function]}
+                                  onMouseLeave={[Function]}
+                                  onMouseUp={[Function]}
+                                  onTouchEnd={[Function]}
+                                  onTouchMove={[Function]}
+                                  onTouchStart={[Function]}
+                                  tabIndex={null}
+                                >
+                                  <span
+                                    className="MuiIconButton-label"
+                                  >
+                                    <input
+                                      checked={false}
+                                      className="PrivateSwitchBase-input-10"
+                                      data-indeterminate={false}
+                                      id="selectCard0"
+                                      onChange={[Function]}
+                                      type="checkbox"
+                                    />
+                                    <ForwardRef
+                                      fontSize="default"
+                                      style={
+                                        Object {
+                                          "width": "18px",
+                                        }
+                                      }
+                                    >
+                                      <WithStyles(ForwardRef(SvgIcon))
+                                        fontSize="default"
+                                        style={
+                                          Object {
+                                            "width": "18px",
+                                          }
+                                        }
+                                      >
+                                        <ForwardRef(SvgIcon)
+                                          classes={
+                                            Object {
+                                              "colorAction": "MuiSvgIcon-colorAction",
+                                              "colorDisabled": "MuiSvgIcon-colorDisabled",
+                                              "colorError": "MuiSvgIcon-colorError",
+                                              "colorPrimary": "MuiSvgIcon-colorPrimary",
+                                              "colorSecondary": "MuiSvgIcon-colorSecondary",
+                                              "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                                              "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                                              "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                                              "root": "MuiSvgIcon-root",
+                                            }
+                                          }
+                                          fontSize="default"
+                                          style={
+                                            Object {
+                                              "width": "18px",
+                                            }
+                                          }
+                                        >
+                                          <svg
+                                            aria-hidden={true}
+                                            className="MuiSvgIcon-root"
+                                            focusable="false"
+                                            style={
+                                              Object {
+                                                "width": "18px",
+                                              }
+                                            }
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                                            />
+                                          </svg>
+                                        </ForwardRef(SvgIcon)>
+                                      </WithStyles(ForwardRef(SvgIcon))>
+                                    </ForwardRef>
+                                  </span>
+                                  <WithStyles(memo)
+                                    center={true}
+                                  >
+                                    <ForwardRef(TouchRipple)
+                                      center={true}
+                                      classes={
+                                        Object {
+                                          "child": "MuiTouchRipple-child",
+                                          "childLeaving": "MuiTouchRipple-childLeaving",
+                                          "childPulsate": "MuiTouchRipple-childPulsate",
+                                          "ripple": "MuiTouchRipple-ripple",
+                                          "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                          "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                          "root": "MuiTouchRipple-root",
+                                        }
+                                      }
+                                    >
+                                      <span
+                                        className="MuiTouchRipple-root"
+                                      >
+                                        <TransitionGroup
+                                          childFactory={[Function]}
+                                          component={null}
+                                          exit={true}
+                                        />
+                                      </span>
+                                    </ForwardRef(TouchRipple)>
+                                  </WithStyles(memo)>
+                                </span>
+                              </ForwardRef(ButtonBase)>
+                            </WithStyles(ForwardRef(ButtonBase))>
+                          </ForwardRef(IconButton)>
+                        </WithStyles(ForwardRef(IconButton))>
+                      </ForwardRef(SwitchBase)>
+                    </WithStyles(ForwardRef(SwitchBase))>
+                  </ForwardRef(Checkbox)>
+                </WithStyles(ForwardRef(Checkbox))>
+              </PriusCheckbox>
+              <div />
+            </div>
+            <div
+              key="1"
+              style={
+                Object {
+                  "width": "5%",
+                }
+              }
+            >
+              <div />
+              sync
+            </div>
+            <div
+              key="2"
+              style={
+                Object {
+                  "width": "10%",
+                }
+              }
+            >
+              <img
+                key="2"
+                src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/uwjw39b1xdsbtmfnxjqm/tanjun-mens-shoe-w8ToA8jr.jpg"
+              />
+            </div>
+            <div
+              key="3"
+              style={
+                Object {
+                  "width": "20%",
+                }
+              }
+            >
+              <div />
+              Naiki Cortez black size 42-44
+            </div>
+            <div
+              key="4"
+              style={
+                Object {
+                  "width": "20%",
+                }
+              }
+            >
+              <div />
+              NAIKI OFFICIAL STORE
+            </div>
+            <div
+              key="5"
+              style={
+                Object {
+                  "width": "5%",
+                }
+              }
+            >
+              <div />
+              53
+            </div>
+            <div
+              key="6"
+              style={
+                Object {
+                  "width": "10%",
+                }
+              }
+            >
+              <div />
+              -
+            </div>
+            <div
+              key="7"
+              style={
+                Object {
+                  "width": "20%",
+                }
+              }
+            >
+              <div />
+              BliBli, Bukalapak +2more
+            </div>
+            <div
+              style={
+                Object {
+                  "width": "5%",
+                }
+              }
+            >
+              <WithStyles(ForwardRef(Icon))
+                className="PriusTableOfCards-actionIcon-3"
+                onClick={[Function]}
+              >
+                <ForwardRef(Icon)
+                  className="PriusTableOfCards-actionIcon-3"
+                  classes={
+                    Object {
+                      "colorAction": "MuiIcon-colorAction",
+                      "colorDisabled": "MuiIcon-colorDisabled",
+                      "colorError": "MuiIcon-colorError",
+                      "colorPrimary": "MuiIcon-colorPrimary",
+                      "colorSecondary": "MuiIcon-colorSecondary",
+                      "fontSizeInherit": "MuiIcon-fontSizeInherit",
+                      "fontSizeLarge": "MuiIcon-fontSizeLarge",
+                      "fontSizeSmall": "MuiIcon-fontSizeSmall",
+                      "root": "MuiIcon-root",
+                    }
+                  }
+                  onClick={[Function]}
+                >
+                  <span
+                    aria-hidden={true}
+                    className="material-icons MuiIcon-root PriusTableOfCards-actionIcon-3"
+                    onClick={[Function]}
+                  >
+                    keyboard_arrow_down
+                  </span>
+                </ForwardRef(Icon)>
+              </WithStyles(ForwardRef(Icon))>
+            </div>
+          </div>
+          <WithStyles(ForwardRef(Collapse))
+            in={false}
+          >
+            <ForwardRef(Collapse)
+              classes={
+                Object {
+                  "container": "MuiCollapse-container",
+                  "entered": "MuiCollapse-entered",
+                  "hidden": "MuiCollapse-hidden",
+                  "wrapper": "MuiCollapse-wrapper",
+                  "wrapperInner": "MuiCollapse-wrapperInner",
+                }
+              }
+              in={false}
+            >
+              <Transition
+                addEndListener={[Function]}
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={300}
+                unmountOnExit={false}
+              >
+                <div
+                  className="MuiCollapse-container MuiCollapse-hidden"
+                  style={
+                    Object {
+                      "minHeight": "0px",
+                    }
+                  }
+                >
+                  <div
+                    className="MuiCollapse-wrapper"
+                  >
+                    <div
+                      className="MuiCollapse-wrapperInner"
+                    >
+                      <div
+                        className="prius-table-card__body-dropdown"
+                      >
+                        <hr
+                          className="prius-table-card__vertical-line-progress PriusTableOfCards-drawerClose-2"
+                          style={
+                            Object {
+                              "height": "calc(153px)",
+                              "width": "calc(5% - 4px)",
+                            }
+                          }
+                        />
+                        <div
+                          className="prius-table-card__dropdown-card prius-table-card__flex"
+                          key="0"
+                        >
+                          <div
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <hr
+                              className="prius-table-card__horizontal-line-progress PriusTableOfCards-drawerClose-2"
+                              style={
+                                Object {
+                                  "marginLeft": "calc(5% - 10px)",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            key="0"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            sync
+                          </div>
+                          <div
+                            key="1"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            Blibli
+                          </div>
+                          <div
+                            key="2"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Naiki leleCortez black-Maroon
+                          </div>
+                          <div
+                            key="3"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            NAIKI OFFICIAL STORE
+                          </div>
+                          <div
+                            key="4"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            41
+                          </div>
+                          <div
+                            key="5"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            -
+                          </div>
+                          <div
+                            key="6"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Rp 1.790.000
+                          </div>
+                        </div>
+                        <div
+                          className="prius-table-card__dropdown-card prius-table-card__flex"
+                          key="1"
+                        >
+                          <div
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <hr
+                              className="prius-table-card__horizontal-line-progress PriusTableOfCards-drawerClose-2"
+                              style={
+                                Object {
+                                  "marginLeft": "calc(5% - 10px)",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            key="0"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            sync
+                          </div>
+                          <div
+                            key="1"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            Blibli
+                          </div>
+                          <div
+                            key="2"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Naiki leleCortez black-Maroon
+                          </div>
+                          <div
+                            key="3"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            NAIKI OFFICIAL STORE
+                          </div>
+                          <div
+                            key="4"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            43
+                          </div>
+                          <div
+                            key="5"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            -
+                          </div>
+                          <div
+                            key="6"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Rp 1.790.000
+                          </div>
+                          <div
+                            key="7"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            error
+                          </div>
+                        </div>
+                        <div
+                          className="prius-table-card__dropdown-card prius-table-card__flex"
+                          key="2"
+                        >
+                          <div
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <hr
+                              className="prius-table-card__horizontal-line-progress PriusTableOfCards-drawerClose-2"
+                              style={
+                                Object {
+                                  "marginLeft": "calc(5% - 10px)",
+                                }
+                              }
+                            />
+                          </div>
+                          <div
+                            key="0"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            success
+                          </div>
+                          <div
+                            key="1"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            Blibli
+                          </div>
+                          <div
+                            key="2"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Naiki leleCortez black-Maroon
+                          </div>
+                          <div
+                            key="3"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            NAIKI OFFICIAL STORE
+                          </div>
+                          <div
+                            key="4"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            42
+                          </div>
+                          <div
+                            key="5"
+                            style={
+                              Object {
+                                "width": "10%",
+                              }
+                            }
+                          >
+                            <div />
+                            -
+                          </div>
+                          <div
+                            key="6"
+                            style={
+                              Object {
+                                "width": "20%",
+                              }
+                            }
+                          >
+                            <div />
+                            Rp 1.790.000
+                          </div>
+                          <div
+                            key="7"
+                            style={
+                              Object {
+                                "width": "5%",
+                              }
+                            }
+                          >
+                            <div />
+                            refresh
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Transition>
+            </ForwardRef(Collapse)>
+          </WithStyles(ForwardRef(Collapse))>
+        </div>
+      </div>
+    </div>
+  </PriusTableOfCards>
+</WithStyles(PriusTableOfCards)>
+`;

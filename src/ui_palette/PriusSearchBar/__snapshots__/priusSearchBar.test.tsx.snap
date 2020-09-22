@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prius searchbar test renders without crashing 1`] = `
+<PriusSearchBar
+  onChange={[MockFunction]}
+  suggestions={Array []}
+  value=""
+>
+  <ClickAwayListener
+    onClickAway={[Function]}
+  >
+    <div
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      style={
+        Object {
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className="prius-searchbar__input-container"
+      >
+        <input
+          className="
+                prius-searchbar__input
+                
+                
+              "
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </ClickAwayListener>
+</PriusSearchBar>
+`;
