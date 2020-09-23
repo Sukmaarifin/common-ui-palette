@@ -11,7 +11,6 @@ const PROD: string = "production";
 type FEATURE = typeof BASIC | typeof PRO | typeof ENTERPRISE;
 type NODE_ENV = typeof DEV | typeof STG | typeof PROD;
 
-export const GRAPHQL_PRIUS: string = process.env.REACT_APP_GRAPHQL || "";
 export const PRIUS_NAME: string = process.env.REACT_APP_NAME || "";
 export const RADEN_URL: string = process.env.REACT_APP_RADEN || "";
 export const PRIUS_URL: string = currentLocation;

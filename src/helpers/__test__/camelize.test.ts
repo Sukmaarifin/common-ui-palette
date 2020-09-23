@@ -1,4 +1,4 @@
-import { camelize } from "./camelize";
+import { camelize } from "../camelize";
 
 describe("Test helper: camelize", () => {
   test("return string in camelCase format", () => {

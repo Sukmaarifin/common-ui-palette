@@ -2,7 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 
-import PriusAddColumn, { priusAddColumnProps } from "./PriusAddColumn";
+import PriusAddColumn, { priusAddColumnProps } from "../PriusAddColumn";
 
 describe("Prius add column test", () => {
   const render = () => {

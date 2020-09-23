@@ -1,4 +1,4 @@
-import { convertDateUTC } from "./convertDateUTC";
+import { convertDateUTC } from "../convertDateUTC";
 
 describe("Test helper: convertDateUTC", () => {
   test("return 1591330764", () => {
