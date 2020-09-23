@@ -180,9 +180,6 @@ const LoadingMessage = () => <MenuItem disabled>Loading...</MenuItem>;
 
 const Control = ({
   children,
-  isFocused,
-  isLoading,
-  menuIsOpen,
   selectProps,
   ...props
 }: any) => (

@@ -12,6 +12,7 @@
     "@testing-library/react": "^11.0.4",
     "@types/crypto-js": "^3.1.47",
     "@types/enzyme": "^3.10.6",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^26.0.14",
     "@types/lodash.get": "^4.4.6",
     "@types/mocha": "^8.0.3",
@@ -27,9 +28,14 @@
     "clsx": "^1.1.1",
     "crypto-js": "^4.0.0",
     "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
+    "eslint-config-prettier": "^6.10.1",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-color": "^2.18.1",
@@ -46,18 +52,32 @@
     "@types/react-select": "3.0.8",
     "typescript": "3.8.3"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.@(ts|tsx)": [
+      "npm run format",
+      "npm run lint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test",
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage -u",
+    "test": "react-scripts test",
     "test-jest": "jest --watch --coverage",
     "eject": "react-scripts eject",
     "doc": "npx styleguidist server",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
     "build-doc": "npx styleguidist build",
     "build-tdk": "rm -rf build && tsc -p tsconfig.release.json"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

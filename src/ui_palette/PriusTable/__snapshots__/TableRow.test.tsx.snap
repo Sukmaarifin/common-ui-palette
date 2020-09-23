@@ -31,10 +31,15 @@ exports[`TableRow Testing render successfully 1`] = `
         "grey": "#EEEEEE",
         "grey2": "#F4F4F4",
         "grey3": "#ECEBED",
+        "grey4": "#E8E8E8",
         "info": "#898989",
         "placeholder": "#E0E0E0",
         "primary": "#1C9AEA",
+        "primary2": "#1478C9",
+        "secondary": "#DD3628",
+        "secondary2": "#BE1D1E",
         "success": "#00B969",
+        "success2": "#008566",
         "text": "#444444",
         "warning": "#FFCC00",
         "white": "#FFFFFF",
@@ -284,9 +289,9 @@ exports[`TableRow Testing render successfully 1`] = `
         "divider": "rgba(0, 0, 0, 0.12)",
         "error": Object {
           "contrastText": "#fff",
-          "dark": "#d32f2f",
-          "light": "#e57373",
-          "main": "#f44336",
+          "dark": "#DD3626",
+          "light": "#DD3626",
+          "main": "#DD3626",
         },
         "getContrastText": [Function],
         "grey": Object {
@@ -313,21 +318,21 @@ exports[`TableRow Testing render successfully 1`] = `
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "#1C9AEA",
+          "dark": "#1478C9",
           "light": "#1C9AEA",
           "main": "#1C9AEA",
         },
         "secondary": Object {
           "contrastText": "#fff",
-          "dark": "#c51162",
-          "light": "#ff4081",
-          "main": "#f50057",
+          "dark": "#BE1D1E",
+          "light": "#DD3628",
+          "main": "#DD3628",
         },
         "success": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "#388e3c",
-          "light": "#81c784",
-          "main": "#4caf50",
+          "dark": "#008566",
+          "light": "#00B969",
+          "main": "#00B969",
         },
         "text": Object {
           "disabled": "#BDBDBD",
@@ -625,6 +630,12 @@ exports[`TableRow Testing render successfully 1`] = `
           <WithStyles(ForwardRef(Grid))
             className="makeStyles-row-1"
             container={true}
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
             wrap="nowrap"
           >
             <ForwardRef(Grid)
@@ -737,17 +748,29 @@ exports[`TableRow Testing render successfully 1`] = `
                 }
               }
               container={true}
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
               wrap="nowrap"
             >
               <div
                 className="MuiGrid-root makeStyles-row-1 MuiGrid-container MuiGrid-wrap-xs-nowrap"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
               >
                 <WithStyles(ForwardRef(Grid))
-                  className="makeStyles-toolbar-9 left"
+                  className="makeStyles-toolbar-10 left"
                   item={true}
                 >
                   <ForwardRef(Grid)
-                    className="makeStyles-toolbar-9 left"
+                    className="makeStyles-toolbar-10 left"
                     classes={
                       Object {
                         "align-content-xs-center": "MuiGrid-align-content-xs-center",
@@ -858,265 +881,414 @@ exports[`TableRow Testing render successfully 1`] = `
                     item={true}
                   >
                     <div
-                      className="MuiGrid-root makeStyles-toolbar-9 left MuiGrid-item"
+                      className="MuiGrid-root makeStyles-toolbar-10 left MuiGrid-item"
                     >
-                      <WithStyles(ForwardRef(Checkbox))
+                      <PriusCheckbox
                         checked={false}
                         inputProps={
                           Object {
                             "aria-label": "select",
+                            "data-identity": undefined,
                           }
                         }
                         onChange={[MockFunction]}
+                        onClick={[Function]}
                         value="CHECK_ROW"
                       >
-                        <ForwardRef(Checkbox)
-                          checked={false}
-                          checkedIcon={<UNDEFINED />}
-                          classes={
-                            Object {
-                              "checked": "Mui-checked",
-                              "colorPrimary": "MuiCheckbox-colorPrimary",
-                              "colorSecondary": "MuiCheckbox-colorSecondary",
-                              "disabled": "Mui-disabled",
-                              "indeterminate": "MuiCheckbox-indeterminate",
-                              "root": "MuiCheckbox-root",
-                            }
-                          }
-                          color="default"
-                          icon={<UNDEFINED />}
-                          indeterminateIcon={<UNDEFINED />}
-                          inputProps={
-                            Object {
-                              "aria-label": "select",
-                            }
-                          }
-                          onChange={[MockFunction]}
-                          value="CHECK_ROW"
-                        >
-                          <WithStyles(ForwardRef(SwitchBase))
-                            checked={false}
-                            checkedIcon={
-                              <UNDEFINED
-                                fontSize="default"
-                              />
-                            }
-                            classes={
-                              Object {
-                                "checked": "Mui-checked",
-                                "disabled": "Mui-disabled",
-                                "root": "MuiCheckbox-root",
-                              }
-                            }
-                            color="default"
-                            icon={
-                              <UNDEFINED
-                                fontSize="default"
-                              />
-                            }
-                            inputProps={
-                              Object {
-                                "aria-label": "select",
-                                "data-indeterminate": false,
-                              }
-                            }
-                            onChange={[MockFunction]}
-                            type="checkbox"
-                            value="CHECK_ROW"
-                          >
-                            <ForwardRef(SwitchBase)
+                        <WithStyles(ForwardRef(FormControlLabel))
+                          control={
+                            <ForwardRef(WithStyles)
                               checked={false}
                               checkedIcon={
-                                <UNDEFINED
-                                  fontSize="default"
+                                <IconCheckSVG
+                                  className="makeStyles-checkBox-13"
+                                  color="#444444"
                                 />
                               }
+                              className="makeStyles-position-15"
                               classes={
                                 Object {
-                                  "checked": "PrivateSwitchBase-checked-11 Mui-checked",
-                                  "disabled": "PrivateSwitchBase-disabled-12 Mui-disabled",
-                                  "input": "PrivateSwitchBase-input-13",
-                                  "root": "PrivateSwitchBase-root-10 MuiCheckbox-root",
+                                  "root": "makeStyles-root-12",
                                 }
                               }
-                              color="default"
                               icon={
-                                <UNDEFINED
-                                  fontSize="default"
+                                <span
+                                  className="makeStyles-icon-14 makeStyles-checkBox-13"
                                 />
                               }
                               inputProps={
                                 Object {
                                   "aria-label": "select",
-                                  "data-indeterminate": false,
+                                  "data-identity": undefined,
                                 }
                               }
                               onChange={[MockFunction]}
-                              type="checkbox"
+                              onClick={[Function]}
                               value="CHECK_ROW"
+                            />
+                          }
+                        >
+                          <ForwardRef(FormControlLabel)
+                            classes={
+                              Object {
+                                "disabled": "Mui-disabled",
+                                "label": "MuiFormControlLabel-label",
+                                "labelPlacementBottom": "MuiFormControlLabel-labelPlacementBottom",
+                                "labelPlacementStart": "MuiFormControlLabel-labelPlacementStart",
+                                "labelPlacementTop": "MuiFormControlLabel-labelPlacementTop",
+                                "root": "MuiFormControlLabel-root",
+                              }
+                            }
+                            control={
+                              <ForwardRef(WithStyles)
+                                checked={false}
+                                checkedIcon={
+                                  <IconCheckSVG
+                                    className="makeStyles-checkBox-13"
+                                    color="#444444"
+                                  />
+                                }
+                                className="makeStyles-position-15"
+                                classes={
+                                  Object {
+                                    "root": "makeStyles-root-12",
+                                  }
+                                }
+                                icon={
+                                  <span
+                                    className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                  />
+                                }
+                                inputProps={
+                                  Object {
+                                    "aria-label": "select",
+                                    "data-identity": undefined,
+                                  }
+                                }
+                                onChange={[MockFunction]}
+                                onClick={[Function]}
+                                value="CHECK_ROW"
+                              />
+                            }
+                          >
+                            <label
+                              className="MuiFormControlLabel-root"
                             >
-                              <WithStyles(ForwardRef(IconButton))
-                                className="PrivateSwitchBase-root-10 MuiCheckbox-root"
-                                color="default"
-                                component="span"
-                                onBlur={[Function]}
-                                onFocus={[Function]}
-                                tabIndex={null}
+                              <WithStyles(ForwardRef(Checkbox))
+                                checked={false}
+                                checkedIcon={
+                                  <IconCheckSVG
+                                    className="makeStyles-checkBox-13"
+                                    color="#444444"
+                                  />
+                                }
+                                className="makeStyles-position-15"
+                                classes={
+                                  Object {
+                                    "root": "makeStyles-root-12",
+                                  }
+                                }
+                                icon={
+                                  <span
+                                    className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                  />
+                                }
+                                inputProps={
+                                  Object {
+                                    "aria-label": "select",
+                                    "data-identity": undefined,
+                                  }
+                                }
+                                onChange={[MockFunction]}
+                                onClick={[Function]}
+                                value="CHECK_ROW"
                               >
-                                <ForwardRef(IconButton)
-                                  className="PrivateSwitchBase-root-10 MuiCheckbox-root"
+                                <ForwardRef(Checkbox)
+                                  checked={false}
+                                  checkedIcon={
+                                    <IconCheckSVG
+                                      className="makeStyles-checkBox-13"
+                                      color="#444444"
+                                    />
+                                  }
+                                  className="makeStyles-position-15"
                                   classes={
                                     Object {
-                                      "colorInherit": "MuiIconButton-colorInherit",
-                                      "colorPrimary": "MuiIconButton-colorPrimary",
-                                      "colorSecondary": "MuiIconButton-colorSecondary",
+                                      "checked": "Mui-checked",
+                                      "colorPrimary": "MuiCheckbox-colorPrimary",
+                                      "colorSecondary": "MuiCheckbox-colorSecondary",
                                       "disabled": "Mui-disabled",
-                                      "edgeEnd": "MuiIconButton-edgeEnd",
-                                      "edgeStart": "MuiIconButton-edgeStart",
-                                      "label": "MuiIconButton-label",
-                                      "root": "MuiIconButton-root",
-                                      "sizeSmall": "MuiIconButton-sizeSmall",
+                                      "indeterminate": "MuiCheckbox-indeterminate",
+                                      "root": "MuiCheckbox-root makeStyles-root-12",
                                     }
                                   }
                                   color="default"
-                                  component="span"
-                                  onBlur={[Function]}
-                                  onFocus={[Function]}
-                                  tabIndex={null}
+                                  icon={
+                                    <span
+                                      className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                    />
+                                  }
+                                  indeterminateIcon={<UNDEFINED />}
+                                  inputProps={
+                                    Object {
+                                      "aria-label": "select",
+                                      "data-identity": undefined,
+                                    }
+                                  }
+                                  onChange={[MockFunction]}
+                                  onClick={[Function]}
+                                  value="CHECK_ROW"
                                 >
-                                  <WithStyles(ForwardRef(ButtonBase))
-                                    centerRipple={true}
-                                    className="MuiIconButton-root PrivateSwitchBase-root-10 MuiCheckbox-root"
-                                    component="span"
-                                    disabled={false}
-                                    focusRipple={true}
-                                    onBlur={[Function]}
-                                    onFocus={[Function]}
-                                    tabIndex={null}
+                                  <WithStyles(ForwardRef(SwitchBase))
+                                    checked={false}
+                                    checkedIcon={
+                                      <IconCheckSVG
+                                        className="makeStyles-checkBox-13"
+                                        color="#444444"
+                                      />
+                                    }
+                                    className="makeStyles-position-15"
+                                    classes={
+                                      Object {
+                                        "checked": "Mui-checked",
+                                        "disabled": "Mui-disabled",
+                                        "root": "MuiCheckbox-root makeStyles-root-12",
+                                      }
+                                    }
+                                    color="default"
+                                    icon={
+                                      <span
+                                        className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                      />
+                                    }
+                                    inputProps={
+                                      Object {
+                                        "aria-label": "select",
+                                        "data-identity": undefined,
+                                        "data-indeterminate": false,
+                                      }
+                                    }
+                                    onChange={[MockFunction]}
+                                    onClick={[Function]}
+                                    type="checkbox"
+                                    value="CHECK_ROW"
                                   >
-                                    <ForwardRef(ButtonBase)
-                                      centerRipple={true}
-                                      className="MuiIconButton-root PrivateSwitchBase-root-10 MuiCheckbox-root"
+                                    <ForwardRef(SwitchBase)
+                                      checked={false}
+                                      checkedIcon={
+                                        <IconCheckSVG
+                                          className="makeStyles-checkBox-13"
+                                          color="#444444"
+                                        />
+                                      }
+                                      className="makeStyles-position-15"
                                       classes={
                                         Object {
-                                          "disabled": "Mui-disabled",
-                                          "focusVisible": "Mui-focusVisible",
-                                          "root": "MuiButtonBase-root",
+                                          "checked": "PrivateSwitchBase-checked-17 Mui-checked",
+                                          "disabled": "PrivateSwitchBase-disabled-18 Mui-disabled",
+                                          "input": "PrivateSwitchBase-input-19",
+                                          "root": "PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12",
                                         }
                                       }
-                                      component="span"
-                                      disabled={false}
-                                      focusRipple={true}
-                                      onBlur={[Function]}
-                                      onFocus={[Function]}
-                                      tabIndex={null}
+                                      color="default"
+                                      icon={
+                                        <span
+                                          className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                        />
+                                      }
+                                      inputProps={
+                                        Object {
+                                          "aria-label": "select",
+                                          "data-identity": undefined,
+                                          "data-indeterminate": false,
+                                        }
+                                      }
+                                      onChange={[MockFunction]}
+                                      onClick={[Function]}
+                                      type="checkbox"
+                                      value="CHECK_ROW"
                                     >
-                                      <span
-                                        aria-disabled={false}
-                                        className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-10 MuiCheckbox-root"
+                                      <WithStyles(ForwardRef(IconButton))
+                                        className="PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12 makeStyles-position-15"
+                                        color="default"
+                                        component="span"
                                         onBlur={[Function]}
-                                        onDragLeave={[Function]}
+                                        onClick={[Function]}
                                         onFocus={[Function]}
-                                        onKeyDown={[Function]}
-                                        onKeyUp={[Function]}
-                                        onMouseDown={[Function]}
-                                        onMouseLeave={[Function]}
-                                        onMouseUp={[Function]}
-                                        onTouchEnd={[Function]}
-                                        onTouchMove={[Function]}
-                                        onTouchStart={[Function]}
                                         tabIndex={null}
                                       >
-                                        <span
-                                          className="MuiIconButton-label"
-                                        >
-                                          <input
-                                            aria-label="select"
-                                            checked={false}
-                                            className="PrivateSwitchBase-input-13"
-                                            data-indeterminate={false}
-                                            onChange={[Function]}
-                                            type="checkbox"
-                                            value="CHECK_ROW"
-                                          />
-                                          <ForwardRef
-                                            fontSize="default"
-                                          >
-                                            <WithStyles(ForwardRef(SvgIcon))
-                                              fontSize="default"
-                                            >
-                                              <ForwardRef(SvgIcon)
-                                                classes={
-                                                  Object {
-                                                    "colorAction": "MuiSvgIcon-colorAction",
-                                                    "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                                    "colorError": "MuiSvgIcon-colorError",
-                                                    "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                                    "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                                    "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                                    "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                                    "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                                    "root": "MuiSvgIcon-root",
-                                                  }
-                                                }
-                                                fontSize="default"
-                                                viewBox="0 0 21 21"
-                                              >
-                                                <svg
-                                                  aria-hidden={true}
-                                                  className="MuiSvgIcon-root"
-                                                  focusable="false"
-                                                  viewBox="0 0 21 21"
-                                                >
-                                                  <rect
-                                                    fill="inherit"
-                                                    fillRule="evenodd"
-                                                    height="100%"
-                                                    rx="2"
-                                                    width="100%"
-                                                  />
-                                                </svg>
-                                              </ForwardRef(SvgIcon)>
-                                            </WithStyles(ForwardRef(SvgIcon))>
-                                          </ForwardRef>
-                                        </span>
-                                        <WithStyles(memo)
-                                          center={true}
-                                        >
-                                          <ForwardRef(TouchRipple)
-                                            center={true}
-                                            classes={
-                                              Object {
-                                                "child": "MuiTouchRipple-child",
-                                                "childLeaving": "MuiTouchRipple-childLeaving",
-                                                "childPulsate": "MuiTouchRipple-childPulsate",
-                                                "ripple": "MuiTouchRipple-ripple",
-                                                "ripplePulsate": "MuiTouchRipple-ripplePulsate",
-                                                "rippleVisible": "MuiTouchRipple-rippleVisible",
-                                                "root": "MuiTouchRipple-root",
-                                              }
+                                        <ForwardRef(IconButton)
+                                          className="PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12 makeStyles-position-15"
+                                          classes={
+                                            Object {
+                                              "colorInherit": "MuiIconButton-colorInherit",
+                                              "colorPrimary": "MuiIconButton-colorPrimary",
+                                              "colorSecondary": "MuiIconButton-colorSecondary",
+                                              "disabled": "Mui-disabled",
+                                              "edgeEnd": "MuiIconButton-edgeEnd",
+                                              "edgeStart": "MuiIconButton-edgeStart",
+                                              "label": "MuiIconButton-label",
+                                              "root": "MuiIconButton-root",
+                                              "sizeSmall": "MuiIconButton-sizeSmall",
                                             }
+                                          }
+                                          color="default"
+                                          component="span"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          tabIndex={null}
+                                        >
+                                          <WithStyles(ForwardRef(ButtonBase))
+                                            centerRipple={true}
+                                            className="MuiIconButton-root PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12 makeStyles-position-15"
+                                            component="span"
+                                            disabled={false}
+                                            focusRipple={true}
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            tabIndex={null}
                                           >
-                                            <span
-                                              className="MuiTouchRipple-root"
+                                            <ForwardRef(ButtonBase)
+                                              centerRipple={true}
+                                              className="MuiIconButton-root PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12 makeStyles-position-15"
+                                              classes={
+                                                Object {
+                                                  "disabled": "Mui-disabled",
+                                                  "focusVisible": "Mui-focusVisible",
+                                                  "root": "MuiButtonBase-root",
+                                                }
+                                              }
+                                              component="span"
+                                              disabled={false}
+                                              focusRipple={true}
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              tabIndex={null}
                                             >
-                                              <TransitionGroup
-                                                childFactory={[Function]}
-                                                component={null}
-                                                exit={true}
-                                              />
-                                            </span>
-                                          </ForwardRef(TouchRipple)>
-                                        </WithStyles(memo)>
-                                      </span>
-                                    </ForwardRef(ButtonBase)>
-                                  </WithStyles(ForwardRef(ButtonBase))>
-                                </ForwardRef(IconButton)>
-                              </WithStyles(ForwardRef(IconButton))>
-                            </ForwardRef(SwitchBase)>
-                          </WithStyles(ForwardRef(SwitchBase))>
-                        </ForwardRef(Checkbox)>
-                      </WithStyles(ForwardRef(Checkbox))>
+                                              <span
+                                                aria-disabled={false}
+                                                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-16 MuiCheckbox-root makeStyles-root-12 makeStyles-position-15"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onDragLeave={[Function]}
+                                                onFocus={[Function]}
+                                                onKeyDown={[Function]}
+                                                onKeyUp={[Function]}
+                                                onMouseDown={[Function]}
+                                                onMouseLeave={[Function]}
+                                                onMouseUp={[Function]}
+                                                onTouchEnd={[Function]}
+                                                onTouchMove={[Function]}
+                                                onTouchStart={[Function]}
+                                                tabIndex={null}
+                                              >
+                                                <span
+                                                  className="MuiIconButton-label"
+                                                >
+                                                  <input
+                                                    aria-label="select"
+                                                    checked={false}
+                                                    className="PrivateSwitchBase-input-19"
+                                                    data-indeterminate={false}
+                                                    onChange={[Function]}
+                                                    type="checkbox"
+                                                    value="CHECK_ROW"
+                                                  />
+                                                  <span
+                                                    className="makeStyles-icon-14 makeStyles-checkBox-13"
+                                                  />
+                                                </span>
+                                                <WithStyles(memo)
+                                                  center={true}
+                                                >
+                                                  <ForwardRef(TouchRipple)
+                                                    center={true}
+                                                    classes={
+                                                      Object {
+                                                        "child": "MuiTouchRipple-child",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate",
+                                                        "ripple": "MuiTouchRipple-ripple",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible",
+                                                        "root": "MuiTouchRipple-root",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="MuiTouchRipple-root"
+                                                    >
+                                                      <TransitionGroup
+                                                        childFactory={[Function]}
+                                                        component={null}
+                                                        exit={true}
+                                                      />
+                                                    </span>
+                                                  </ForwardRef(TouchRipple)>
+                                                </WithStyles(memo)>
+                                              </span>
+                                            </ForwardRef(ButtonBase)>
+                                          </WithStyles(ForwardRef(ButtonBase))>
+                                        </ForwardRef(IconButton)>
+                                      </WithStyles(ForwardRef(IconButton))>
+                                    </ForwardRef(SwitchBase)>
+                                  </WithStyles(ForwardRef(SwitchBase))>
+                                </ForwardRef(Checkbox)>
+                              </WithStyles(ForwardRef(Checkbox))>
+                              <WithStyles(ForwardRef(Typography))
+                                className="MuiFormControlLabel-label"
+                                component="span"
+                              >
+                                <ForwardRef(Typography)
+                                  className="MuiFormControlLabel-label"
+                                  classes={
+                                    Object {
+                                      "alignCenter": "MuiTypography-alignCenter",
+                                      "alignJustify": "MuiTypography-alignJustify",
+                                      "alignLeft": "MuiTypography-alignLeft",
+                                      "alignRight": "MuiTypography-alignRight",
+                                      "body1": "MuiTypography-body1",
+                                      "body2": "MuiTypography-body2",
+                                      "button": "MuiTypography-button",
+                                      "caption": "MuiTypography-caption",
+                                      "colorError": "MuiTypography-colorError",
+                                      "colorInherit": "MuiTypography-colorInherit",
+                                      "colorPrimary": "MuiTypography-colorPrimary",
+                                      "colorSecondary": "MuiTypography-colorSecondary",
+                                      "colorTextPrimary": "MuiTypography-colorTextPrimary",
+                                      "colorTextSecondary": "MuiTypography-colorTextSecondary",
+                                      "displayBlock": "MuiTypography-displayBlock",
+                                      "displayInline": "MuiTypography-displayInline",
+                                      "gutterBottom": "MuiTypography-gutterBottom",
+                                      "h1": "MuiTypography-h1",
+                                      "h2": "MuiTypography-h2",
+                                      "h3": "MuiTypography-h3",
+                                      "h4": "MuiTypography-h4",
+                                      "h5": "MuiTypography-h5",
+                                      "h6": "MuiTypography-h6",
+                                      "noWrap": "MuiTypography-noWrap",
+                                      "overline": "MuiTypography-overline",
+                                      "paragraph": "MuiTypography-paragraph",
+                                      "root": "MuiTypography-root",
+                                      "srOnly": "MuiTypography-srOnly",
+                                      "subtitle1": "MuiTypography-subtitle1",
+                                      "subtitle2": "MuiTypography-subtitle2",
+                                    }
+                                  }
+                                  component="span"
+                                >
+                                  <span
+                                    className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                                  />
+                                </ForwardRef(Typography)>
+                              </WithStyles(ForwardRef(Typography))>
+                            </label>
+                          </ForwardRef(FormControlLabel)>
+                        </WithStyles(ForwardRef(FormControlLabel))>
+                      </PriusCheckbox>
                     </div>
                   </ForwardRef(Grid)>
                 </WithStyles(ForwardRef(Grid))>
@@ -1255,7 +1427,7 @@ exports[`TableRow Testing render successfully 1`] = `
                         width="20%"
                       >
                         <WithStyles(ForwardRef(Grid))
-                          className="makeStyles-container-14"
+                          className="makeStyles-container-20"
                           item={true}
                           style={
                             Object {
@@ -1269,7 +1441,7 @@ exports[`TableRow Testing render successfully 1`] = `
                           }
                         >
                           <ForwardRef(Grid)
-                            className="makeStyles-container-14"
+                            className="makeStyles-container-20"
                             classes={
                               Object {
                                 "align-content-xs-center": "MuiGrid-align-content-xs-center",
@@ -1390,7 +1562,7 @@ exports[`TableRow Testing render successfully 1`] = `
                             }
                           >
                             <div
-                              className="MuiGrid-root makeStyles-container-14 MuiGrid-item"
+                              className="MuiGrid-root makeStyles-container-20 MuiGrid-item"
                               style={
                                 Object {
                                   "flexBasis": "20%",
@@ -1405,6 +1577,8 @@ exports[`TableRow Testing render successfully 1`] = `
                               <span
                                 style={
                                   Object {
+                                    "overflow": "hidden",
+                                    "textOverflow": "ellipsis",
                                     "textTransform": "capitalize",
                                   }
                                 }
@@ -1430,7 +1604,7 @@ exports[`TableRow Testing render successfully 1`] = `
                         width="20%"
                       >
                         <WithStyles(ForwardRef(Grid))
-                          className="makeStyles-container-18"
+                          className="makeStyles-container-24"
                           item={true}
                           style={
                             Object {
@@ -1440,7 +1614,7 @@ exports[`TableRow Testing render successfully 1`] = `
                           }
                         >
                           <ForwardRef(Grid)
-                            className="makeStyles-container-18"
+                            className="makeStyles-container-24"
                             classes={
                               Object {
                                 "align-content-xs-center": "MuiGrid-align-content-xs-center",
@@ -1557,7 +1731,7 @@ exports[`TableRow Testing render successfully 1`] = `
                             }
                           >
                             <div
-                              className="MuiGrid-root makeStyles-container-18 MuiGrid-item"
+                              className="MuiGrid-root makeStyles-container-24 MuiGrid-item"
                               style={
                                 Object {
                                   "flexBasis": "20%",
@@ -1582,7 +1756,7 @@ exports[`TableRow Testing render successfully 1`] = `
                   </ForwardRef(Grid)>
                 </WithStyles(ForwardRef(Grid))>
                 <WithStyles(ForwardRef(Grid))
-                  className="makeStyles-toolbar-9 right"
+                  className="makeStyles-toolbar-10 right"
                   item={true}
                   style={
                     Object {
@@ -1593,7 +1767,7 @@ exports[`TableRow Testing render successfully 1`] = `
                   }
                 >
                   <ForwardRef(Grid)
-                    className="makeStyles-toolbar-9 right"
+                    className="makeStyles-toolbar-10 right"
                     classes={
                       Object {
                         "align-content-xs-center": "MuiGrid-align-content-xs-center",
@@ -1711,7 +1885,7 @@ exports[`TableRow Testing render successfully 1`] = `
                     }
                   >
                     <div
-                      className="MuiGrid-root makeStyles-toolbar-9 right MuiGrid-item"
+                      className="MuiGrid-root makeStyles-toolbar-10 right MuiGrid-item"
                       style={
                         Object {
                           "marginLeft": "auto",
@@ -1722,7 +1896,7 @@ exports[`TableRow Testing render successfully 1`] = `
                     >
                       <WithStyles(ForwardRef(IconButton))
                         aria-label="delete"
-                        onClick={[MockFunction]}
+                        onClick={[Function]}
                         size="medium"
                       >
                         <ForwardRef(IconButton)
@@ -1740,7 +1914,7 @@ exports[`TableRow Testing render successfully 1`] = `
                               "sizeSmall": "MuiIconButton-sizeSmall",
                             }
                           }
-                          onClick={[MockFunction]}
+                          onClick={[Function]}
                           size="medium"
                         >
                           <WithStyles(ForwardRef(ButtonBase))
@@ -1749,7 +1923,7 @@ exports[`TableRow Testing render successfully 1`] = `
                             className="MuiIconButton-root"
                             disabled={false}
                             focusRipple={true}
-                            onClick={[MockFunction]}
+                            onClick={[Function]}
                           >
                             <ForwardRef(ButtonBase)
                               aria-label="delete"
@@ -1764,14 +1938,14 @@ exports[`TableRow Testing render successfully 1`] = `
                               }
                               disabled={false}
                               focusRipple={true}
-                              onClick={[MockFunction]}
+                              onClick={[Function]}
                             >
                               <button
                                 aria-label="delete"
                                 className="MuiButtonBase-root MuiIconButton-root"
                                 disabled={false}
                                 onBlur={[Function]}
-                                onClick={[MockFunction]}
+                                onClick={[Function]}
                                 onDragLeave={[Function]}
                                 onFocus={[Function]}
                                 onKeyDown={[Function]}
