@@ -3,8 +3,8 @@ import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 import { ThemeProvider } from "@material-ui/core/styles";
 
-import theme from "../../../styles/material-ui-theme";
-import FieldStatus, { StatusFieldProps } from "./FieldStatus";
+import theme from "../../../../styles/material-ui-theme";
+import FieldStatus, { StatusFieldProps } from "../FieldStatus";
 
 describe("FieldStatus Testing", () => {
   const render = () => {

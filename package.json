@@ -48,18 +48,18 @@
     "@types/react-select": "3.0.8",
     "typescript": "3.8.3"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test -- -u",
+    "test": "react-scripts test",
     "test-jest": "jest --watch --coverage",
     "eject": "react-scripts eject",
     "doc": "npx styleguidist server",
     "build-doc": "npx styleguidist build",
     "build-tdk": "rm -rf build && tsc -p tsconfig.release.json"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

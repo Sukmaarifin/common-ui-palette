@@ -2,7 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 
-import FieldNumber, { FieldNumberProps } from "./FieldNumber";
+import FieldNumber, { FieldNumberProps } from "../FieldNumber";
 
 describe("FieldNumber test", () => {
   const THRESHOLDED_COLOR = "red";

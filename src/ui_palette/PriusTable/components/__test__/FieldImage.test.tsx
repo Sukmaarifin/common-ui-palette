@@ -2,8 +2,8 @@ import React from "react";
 import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 
-import FieldImage, { FieldImageProps } from "./FieldImage";
-import { PriusThumbnailProps } from "../../PriusThumbnail";
+import FieldImage, { FieldImageProps } from "../FieldImage";
+import { PriusThumbnailProps } from "../../../PriusThumbnail";
 
 describe("FieldImage test", () => {
   const props: FieldImageProps = {
