@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import { useLazyQuery } from "@apollo/react-hooks";
 import { ApolloError } from "apollo-boost";
 
-import { useSnackbar } from "../../ui_palette/PriusSnackbar";
+import { useSnackbar } from "../PriusSnackbar";
 import { menuConnexi } from "./menuConnexi";
 import { menuStore } from "./menuStore";
 import SubMenu, { fieldSubMenu } from "./SubMenu";
@@ -205,9 +205,9 @@ const MainMenu = () => {
   };
 
   return (
-    <nav className={classes.drawer} aria-label="Mailbox folders">
+    <nav className={classes.drawer} aria-label='Mailbox folders'>
       <Drawer
-        variant="permanent"
+        variant='permanent'
         className={clsx(classes.drawer, {
           [classes.drawerOpen]: !menuState.isOpenSubMenu,
           [classes.drawerClose]: menuState.isOpenSubMenu,
@@ -218,7 +218,7 @@ const MainMenu = () => {
             [classes.drawerClose]: menuState.isOpenSubMenu,
           }),
         }}
-        anchor="left"
+        anchor='left'
       >
         <div className={classes.toolbar} />
         {drawerListMenu(handlerMenu(menuConnexi))}

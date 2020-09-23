@@ -4,6 +4,7 @@ import { makeStyles, Theme, Grid } from "@material-ui/core";
 
 import { TrashBinOutlinedIcon } from "../../icons";
 import PriusDraggableImage from "../PriusDraggableImage";
+import { ThumbnailSize } from "../PriusThumbnail";
 
 const useStyles = makeStyles((theme: Theme) => ({
   image: {
@@ -58,8 +59,6 @@ const useStyles = makeStyles((theme: Theme) => ({
     textAlign: "center",
   },
 }));
-
-export type ThumbnailSize = "small" | "medium" | "big";
 
 export type GridSize =
   | boolean
@@ -129,7 +128,7 @@ const MultipleImage = ({
         <div className={classes.deleteContainer}>
           <TrashBinOutlinedIcon
             className={classes.deleteButton}
-            fontSize="small"
+            fontSize='small'
             onClick={() => {
               if (handleDelete) handleDelete(image);
             }}
