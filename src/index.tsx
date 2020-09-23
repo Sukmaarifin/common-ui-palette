@@ -1,35 +1,3 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import "./index.css";
-// import * as serviceWorker from "./serviceWorker";
-// import PriusCircularProgress from "./ui_palette/PriusCircularProgress";
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <PriusCircularProgress />
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
-
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: https://bit.ly/CRA-PWA
-// serviceWorker.unregister();
-
-import PriusBackdrop from "./ui_palette/PriusBackdrop";
-import PriusBrandDropdown from "./ui_palette/PriusBrandDropdown";
-import {
-  GetBrandsResponseType,
-  GetBrandsParamType,
-} from "./ui_palette/PriusBrandDropdown/types";
-import PriusButtonText from "./ui_palette/PriusButtonText";
-import PriusCard from "./ui_palette/PriusCard";
-import PriusCardDND from "./ui_palette/PriusCardDND";
-import PriusCardTemplate from "./ui_palette/PriusCardTemplate";
-import PriusCheckbox from "./ui_palette/PriusCheckbox";
-import PriusCircularProgress from "./ui_palette/PriusCircularProgress";
-import PriusColorPicker from "./ui_palette/PriusColorPicker";
-import PriusConfirmDialog from "./ui_palette/PriusConfirmDialog";
 import PriusDatePickerInput from "./ui_palette/PriusDatePickerInput";
 import PriusDateRangeInput from "./ui_palette/PriusDateRangeInput";
 import PriusFieldset from "./ui_palette/PriusFieldset";
@@ -45,7 +13,9 @@ import PriusInput from "./ui_palette/PriusInputNew";
 import PriusLabel from "./ui_palette/PriusLabel";
 import PriusMenu from "./ui_palette/PriusMenu/MainMenu";
 import PriusMultipleImage from "./ui_palette/PriusMultipleImage";
-import PriusMultipleSelect, { OptionType } from "./ui_palette/PriusMultipleSelect";
+import PriusMultipleSelect, {
+  OptionType,
+} from "./ui_palette/PriusMultipleSelect";
 import PriusNavigationBar from "./ui_palette/PriusNavigationBar/NavigationBar";
 import PriusOption from "./ui_palette/PriusOption";
 import PriusPaper from "./ui_palette/PriusPaper";
@@ -129,3 +99,39 @@ export {
   useSnackbar,
   withSnackbar,
 };
+
+export { default as Backdrop } from "./ui_palette/PriusBackdrop";
+export * from "./ui_palette/PriusBackdrop";
+
+export { default as BrandDropdown } from "./ui_palette/PriusBrandDropdown";
+export * from "./ui_palette/PriusBrandDropdown";
+
+export { default as ButtonText } from "./ui_palette/PriusButtonText";
+export * from "./ui_palette/PriusButtonText";
+
+export { default as Card } from "./ui_palette/PriusCard";
+export * from "./ui_palette/PriusCard";
+
+export { default as CardDND } from "./ui_palette/PriusCardDND";
+export * from "./ui_palette/PriusCardDND";
+
+export { default as CardTemplate } from "./ui_palette/PriusCardTemplate";
+export * from "./ui_palette/PriusCardTemplate";
+
+export { default as Checkbox } from "./ui_palette/PriusCheckbox";
+export * from "./ui_palette/PriusCheckbox";
+
+export { default as CircularProgress } from "./ui_palette/PriusCircularProgress";
+export * from "./ui_palette/PriusCircularProgress";
+
+export { default as ColorPicker } from "./ui_palette/PriusColorPicker";
+export * from "./ui_palette/PriusColorPicker";
+
+export { default as ConfirmDialog } from "./ui_palette/PriusConfirmDialog";
+export * from "./ui_palette/PriusConfirmDialog";
+
+export { default as DatePicker } from "./ui_palette/PriusDatePicker";
+export * from "./ui_palette/PriusDatePicker";
+
+export { default as Toggle } from "./ui_palette/PriusToggle";
+export * from "./ui_palette/PriusToggle";
