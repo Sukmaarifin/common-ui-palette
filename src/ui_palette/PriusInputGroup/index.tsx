@@ -93,7 +93,6 @@ function PriusInputGroup({
   name,
   disabled,
   dropdownName,
-  dropdownIcon,
   dropdownItem,
   dropdownItems,
   placeholder,

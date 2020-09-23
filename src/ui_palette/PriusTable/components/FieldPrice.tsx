@@ -1,13 +1,13 @@
 import React from "react";
 import get from "lodash/get";
-import { Grid, Theme, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
 import { FieldProps } from "../types";
 import { MoneyType } from "../../../typings";
 import { convertToPrice } from "../../../helpers/convertToPrice";
 
-const useStyles = makeStyles((theme: Theme) => ({
+const useStyles = makeStyles(() => ({
   container: {
     alignSelf: "center",
     padding: "0 0.8rem",
