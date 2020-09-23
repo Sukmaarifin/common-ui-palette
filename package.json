@@ -28,9 +28,10 @@
     "clsx": "^1.1.1",
     "crypto-js": "^4.0.0",
     "enzyme": "^3.11.0",
-    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.10.1",
     "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
+    "prettier": "^2.0.2",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
     "react": "^16.13.1",
@@ -60,8 +61,8 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "npm lint",
-      "npm format"
+      "npm run format",
+      "npm run lint"
     ]
   },
   "scripts": {
