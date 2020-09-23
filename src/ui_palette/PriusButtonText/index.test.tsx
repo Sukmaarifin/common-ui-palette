@@ -3,7 +3,8 @@ import { mount } from "enzyme";
 import toJSON from "enzyme-to-json";
 import { ThemeProvider } from "@material-ui/core/styles";
 
-import theme from "../../../root/styles/material-ui-theme";
+import theme from "../../styles/material-ui-theme";
+
 import PriusButtonText, { PriusButtonTextProps } from "./index";
 
 describe("PriusButton Testing", () => {

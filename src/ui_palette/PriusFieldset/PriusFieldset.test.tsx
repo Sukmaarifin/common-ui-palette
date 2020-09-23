@@ -4,7 +4,7 @@ import toJSON from "enzyme-to-json";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { InputLabel, FormControl, FormHelperText } from "@material-ui/core";
 
-import theme from "../../../root/styles/material-ui-theme";
+import theme from "../../styles/material-ui-theme";
 
 import PriusFieldset from "./PriusFieldset";
 import PriusTooltip from "../PriusTooltip";

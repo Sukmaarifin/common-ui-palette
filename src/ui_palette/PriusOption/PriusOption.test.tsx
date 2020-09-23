@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJSON from "enzyme-to-json";
 import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "../../../root/styles/material-ui-theme";
+import theme from "../../styles/material-ui-theme";
 
 import PriusOption, { PriusOptionProps } from "./PriusOption";
 import { DownloadIcon, TrashBinIcon } from "../../icons";

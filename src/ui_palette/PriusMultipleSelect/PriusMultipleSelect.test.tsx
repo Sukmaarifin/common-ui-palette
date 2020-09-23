@@ -5,7 +5,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import Select from "react-select";
 import CreatableSelect from "react-select/creatable";
 
-import theme from "../../../root/styles/material-ui-theme";
+import theme from "../../styles/material-ui-theme";
 
 import PriusMultipleSelect, {
   PriusMultipleSelectProps,
