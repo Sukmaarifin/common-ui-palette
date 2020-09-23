@@ -28,12 +28,14 @@
     "clsx": "^1.1.1",
     "crypto-js": "^4.0.0",
     "enzyme": "^3.11.0",
-    "eslint-config-prettier": "^6.10.1",
     "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
-    "prettier": "^2.0.2",
+    "eslint-config-prettier": "^6.10.1",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-color": "^2.18.1",
@@ -53,17 +55,17 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.@(ts|tsx)": [
       "npm run format",
       "npm run lint"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test",
+      "pre-commit": "npm run lint"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
