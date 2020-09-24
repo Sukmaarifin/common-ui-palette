@@ -75,6 +75,8 @@
     "eject": "react-scripts eject",
     "doc": "npx styleguidist server",
     "build-doc": "npx styleguidist build",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
     "build-npm": "rm -rf dist && tsc -p tsconfig.release.json",
     "prefile": "copyfiles -u 1 ./src/**/*.svg ./src/**/*.png ./src/**/*.jpg ./src/**/*.css ./src/**/*.eot ./src/**/*.ttf ./src/**/*.woff2 ./src/**/*.scss dist/",
     "prefile2": "copyfiles -u 1 ./src/**/**/*.svg ./src/**/**/*.png ./src/**/**/*.jpg ./src/**/**/*.css ./src/**/**/*.eot ./src/**/**/*.ttf ./src/**/**/*.woff2 ./src/**/**/*.scss dist/"
