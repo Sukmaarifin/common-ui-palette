@@ -20,8 +20,14 @@
     "isolatedModules": true,
     "declaration": true
   },
-  "include": [
-    "src"
+  "exclude": [
+    "node_modules",
+    "build",
+    "public",
+    "coverage"
   ],
-  "exclude": ["node_modules", "build"]
+  "include": [
+    "src",
+    "example"
+  ]
 }
