@@ -81,7 +81,7 @@
     "prefile2": "copyfiles -u 1 ./src/**/**/*.svg ./src/**/**/*.png ./src/**/**/*.jpg ./src/**/**/*.css ./src/**/**/*.eot ./src/**/**/*.ttf ./src/**/**/*.woff2 ./src/**/**/*.scss dist/",
     "start": "react-scripts start",
     "test": "react-scripts test --watchAll",
-    "test-jest": "jest --watch --coverage"
+    "test-jest": "jest -u --watch --coverage"
   },
   "browserslist": {
     "production": [
