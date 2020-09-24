@@ -1,0 +1,42 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+
+import PriusMultipleImage from './index';
+
+<Meta
+  component={PriusMultipleImage}
+  id="Components|PriusMultipleImage"
+  title="Components|PriusMultipleImage"
+/>
+
+# PriusMultipleImage
+
+`PriusMultipleImage` is a component that map multiple images into `PriusThumbnail` component with a [Grid](https://material-ui.com/components/grid/) wrapper.
+
+## Usage
+
+You can set the `isDeletable` and `handleDelete` props if you want the image to be deleted when you clicked the trashbin icon.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <PriusMultipleImage
+      images={[
+        'https://storage.googleapis.com/sirclo-1152-storefront/banners/ed8fd218-4bdf-438b-bbdd-c20ee05d545e-PRIUS.png',
+        'https://storage.googleapis.com/sirclo-1152-storefront/banners/eb470bd8-cd3e-4123-b417-10b06daeeb80-CORP_On Leave General.jpg',
+        '',
+        'https://storage.googleapis.com/sirclo-1152-storefront/banners/eb470bd8-cd3e-4123-b417-10b06daeeb80-CORP_On Leave General.jpg',
+      ]}
+      size="big"
+    />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusMultipleImage} />
+
+## Related
+
+- <LinkTo kind="Components|PriusThumbnail">PriusThumbnail</LinkTo>

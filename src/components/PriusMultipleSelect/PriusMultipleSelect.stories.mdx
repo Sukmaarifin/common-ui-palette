@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+import PriusMultipleSelect from './PriusMultipleSelect';
+import * as stories from './PriusMultipleSelect.stories.tsx';
+
+<Meta
+  component={PriusMultipleSelect}
+  id="Components|PriusMultipleSelect"
+  title="Components|PriusMultipleSelect"
+/>
+
+# PriusMultipleSelect
+
+`PriusMultipleSelect` component provides a wrapper for [React Select](https://react-select.com/) with custom styles. The component allows you to select multiple options or even create your own option. You can customize a lot of things using the props.
+
+## Usage
+
+You can provide its value through props called `options`.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <PriusMultipleSelect
+      options={[
+        { label: 'Option 1', value: '1', isDisabled: false },
+        { label: 'Option 2', value: '2', isDisabled: false },
+        { label: 'Option 3', value: '3', isDisabled: true },
+        { label: 'Option 4', value: '4', isDisabled: false },
+      ]}
+    />
+  </Story>
+</Preview>
+
+### Creatable
+
+You can set the `isCreatable` props to `true` for creating your own options. You just need to type the option and press `enter`. While using `isCreatable`, you can also provide default option using `selectedData` props.
+
+<Preview>
+  <Story name="Createable">
+    <PriusMultipleSelect
+      isCreatable={true}
+      selectedData={[{ label: 'Option 1', value: '1', isDisabled: false }]}
+    />
+  </Story>
+</Preview>
+
+### Controlled Component
+
+You can use a state to store selected options and display the data based on the state value. This way, the component can be called as controlled component.
+
+<Preview>
+  <Story name="Controlled Component">{stories.ControlledComponent()}</Story>
+</Preview>
+
+## Props
+
+<Props of={PriusMultipleSelect} />

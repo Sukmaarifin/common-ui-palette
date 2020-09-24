@@ -1,0 +1,6 @@
+coverage
+dist
+package-lock.json
+public
+src/icons
+src/styles

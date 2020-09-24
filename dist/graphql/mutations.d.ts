@@ -1,4 +1,4 @@
-import { FeatureTypeStrings } from "../ui_palette/PriusRouter/types";
+import { FeatureTypeStrings } from '../components/PriusRouter/types';
 export declare type ExchangeAuthorizationCodeInput = {
     authorizationCode: string;
     redirectURI: string;

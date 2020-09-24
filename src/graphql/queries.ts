@@ -1,6 +1,6 @@
-import gql from "graphql-tag";
+import gql from 'graphql-tag';
 
-import { FeatureTypeStrings } from "../ui_palette/PriusRouter/types";
+import { FeatureTypeStrings } from '../components/PriusRouter/types';
 
 export type AccessSpecType = {
   action: string;

@@ -1,0 +1,54 @@
+import { useState } from 'react';
+import {
+  Description,
+  Meta,
+  Preview,
+  Props,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import { Grid } from '@material-ui/core';
+import { CustomPicker, ColorResult } from 'react-color';
+
+import PriusColorPicker from './index';
+
+<Meta
+  component={PriusColorPicker}
+  id="Components|PriusColorPicker"
+  title="Components|PriusColorPicker"
+/>
+
+# PriusColorPicker
+
+`PriusColorPicker` is a custom color picker component that wrap [`react-color`](https://casesandberg.github.io/react-color/)'s [Helper Components](https://casesandberg.github.io/react-color/#create-helpers).
+It can be used to input and get color code by hex or rgb.
+
+## Usage
+
+Should provide `color` and `onChange` props.
+
+### Regular
+
+<Preview>
+  <Story name="regular">
+    {() => {
+      const [values, setValues] = useState('#FF00FF');
+      return (
+        <Grid container style={{ margin: 12 }}>
+          <PriusColorPicker
+            color={values}
+            onChange={(color) => setValues(color.hex)}
+          />
+        </Grid>
+      );
+    }}
+  </Story>
+</Preview>
+
+## Props
+
+| Name       | Description                                                                                                                                         | Default |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| `color`    | color value in hex                                                                                                                                  | -       |
+| `onChange` | Callback fired when the state is changed. <br/> `(color: ColorResult) => void` <br/> `color` : the color input value, to get in hex use `color.hex` | -       |
+
+## Related

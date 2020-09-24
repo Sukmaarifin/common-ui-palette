@@ -1,0 +1,45 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+import Grid from '@material-ui/core/Grid';
+
+import PriusButtonText from '../PriusButtonText';
+
+<Meta
+  component={PriusButtonText}
+  id="Components|PriusButtonText"
+  title="Components|PriusButtonText"
+/>
+
+# PriusButtonText
+
+`PriusButtonText` The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component,
+wraper of [ButtonBase](https://material-ui.com/api/button-base) with custom style.
+
+### Basic
+
+You can take advantage of this lower level component to build custom interactions.
+
+<Preview>
+  <Story name="Basic">
+    <Grid container spacing={5}>
+      <Grid item xs={3}>
+        <PriusButtonText color="inherit"> Button Inherit </PriusButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <PriusButtonText color="default"> Button Default </PriusButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <PriusButtonText color="primary"> Button Primary </PriusButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <PriusButtonText color="secondary"> Button Secondary </PriusButtonText>
+      </Grid>
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+All props are inherited from [ButtonBase](https://material-ui.com/api/button-base) with custom props.
+
+<Props of={PriusButtonText} />

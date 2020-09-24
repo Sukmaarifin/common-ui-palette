@@ -1,4 +1,5 @@
-import { useState } from "react";
+/* eslint-disable */
+import { useState } from 'react';
 
 // TO DO: Better state typing
 export default function usePersistedState<T = any>(

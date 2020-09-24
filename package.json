@@ -30,6 +30,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
+    "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.10.1",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
@@ -63,23 +64,23 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm test",
       "pre-commit": "lint-staged"
     }
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test-jest": "jest --watch --coverage",
-    "eject": "react-scripts eject",
-    "doc": "npx styleguidist server",
     "build-doc": "npx styleguidist build",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext ts --ext tsx --ext js",
     "build-npm": "rm -rf dist && tsc -p tsconfig.release.json",
-    "prefile": "copyfiles -u 1 ./src/**/*.svg ./src/**/*.png ./src/**/*.jpg ./src/**/*.css ./src/**/*.eot ./src/**/*.ttf ./src/**/*.woff2 ./src/**/*.scss dist/",
-    "prefile2": "copyfiles -u 1 ./src/**/**/*.svg ./src/**/**/*.png ./src/**/**/*.jpg ./src/**/**/*.css ./src/**/**/*.eot ./src/**/**/*.ttf ./src/**/**/*.woff2 ./src/**/**/*.scss dist/"
+    "doc": "npx styleguidist server",
+    "eject": "react-scripts eject",
+    "format": "prettier --write .",
+    "lint:fix": "eslint . --fix --ext ts --ext tsx --ext js",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "prefile1": "copyfiles -u 1 ./src/**/*.svg ./src/**/*.png ./src/**/*.jpg ./src/**/*.css ./src/**/*.eot ./src/**/*.ttf ./src/**/*.woff2 ./src/**/*.scss dist/",
+    "prefile2": "copyfiles -u 1 ./src/**/**/*.svg ./src/**/**/*.png ./src/**/**/*.jpg ./src/**/**/*.css ./src/**/**/*.eot ./src/**/**/*.ttf ./src/**/**/*.woff2 ./src/**/**/*.scss dist/",
+    "start": "react-scripts start",
+    "test": "react-scripts test --watchAll",
+    "test-jest": "jest -u --watch --coverage"
   },
   "browserslist": {
     "production": [

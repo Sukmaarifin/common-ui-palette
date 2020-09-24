@@ -1,0 +1,51 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { MenuItem } from '@material-ui/core';
+import LinkTo from '@storybook/addon-links/react';
+
+import PriusSelect from './PriusSelect';
+
+<Meta
+  component={PriusSelect}
+  id="Components|PriusSelect"
+  title="Components|PriusSelect"
+/>
+
+# PriusSelect
+
+`PriusSelect` component provides a simple wrapper of
+[Select](https://material-ui.com/components/selects/#selects) with custom
+styles. It uses `PriusInput` as the input element. All props are inherited
+from [Select](https://material-ui.com/components/selects/#selects). Children
+should only contains
+[MenuItem](https://material-ui.com/api/menu-item/#menuitem-api).
+
+## Usage
+
+Because of the same props, `PriusSelect` usage is the same as [Select](https://material-ui.com/components/selects/#selects) from [Material-UI](https://material-ui.com/).
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <PriusSelect
+      id="input-currency"
+      name="currency"
+      placeholder="Lorem ipsum color dolot"
+      value={'usd'}
+    >
+      <MenuItem value={'usd'}>United States Dollar</MenuItem>
+      <MenuItem value={'idr'}>Indonesian Rupiah</MenuItem>
+      <MenuItem value={'jpy'} disabled>
+        Japanese Yen
+      </MenuItem>
+    </PriusSelect>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusSelect} />
+
+## Related
+
+- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>
