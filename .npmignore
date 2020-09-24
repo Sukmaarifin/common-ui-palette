@@ -1,16 +1,19 @@
-# dependencies
 /node_modules
+/src
+/public
 /.pnp
+/build
+
 .pnp.js
+package-lock.json
+tsconfig.json
+tsconfig.release.json
+
 
 # testing
 /coverage
 
-#code
-/src
-
 # production
-/build
 
 # misc
 .DS_Store

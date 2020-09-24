@@ -1,0 +1,8 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = __importDefault(require("react"));
+var createSvgIcon_1 = __importDefault(require("@material-ui/icons/utils/createSvgIcon"));
+exports.default = createSvgIcon_1.default(react_1.default.createElement("path", { d: "M6.624 8.436c0-2.435 2.032-4.389 4.437-4.146 2.095.211 3.63 2.157 3.63 4.331v6.892a.486.486 0 0 1-.477.494H7.1a.486.486 0 0 1-.477-.494V8.436zm11.395 7.571h-.975V8.436c0-3.137-2.134-5.765-4.98-6.43a1.56 1.56 0 0 0 .076-.458C12.14.693 11.47 0 10.64 0c-.827 0-1.498.693-1.498 1.548 0 .164.031.32.077.467-2.83.676-4.948 3.296-4.948 6.42v7.572H3.263c-.642 0-1.163.538-1.163 1.202 0 .662.52 1.201 1.163 1.201H6.931C7.537 19.93 8.982 21 10.672 21s3.134-1.07 3.74-2.59H18.02c.642 0 1.163-.539 1.163-1.201 0-.664-.52-1.202-1.163-1.202z" }), "NotificationOutlined");

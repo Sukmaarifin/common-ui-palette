@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
-    "module": "esnext",
     "target": "es5",
-    "jsx": "react",
     "lib": [
       "dom",
       "dom.iterable",
@@ -15,20 +12,14 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "declaration": true,
-    "noEmit": true
+    "noEmit": true,
+    "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "public",
-    "coverage"
-  ],
   "include": [
-    "src",
-    "example"
+    "src"
   ]
 }
