@@ -1,0 +1,2 @@
+import { Theme } from "@material-ui/core/styles";
+export declare const PriusTableCss: (theme: Theme) => Record<"toolbar" | "header" | "divider" | "headerColumn" | "headerButton" | "actionHeader" | "selectedCount" | "flexRowCard" | "flexRowDense" | "emptyData", import("@material-ui/styles").CSSProperties | import("@material-ui/styles").CreateCSSProperties<{}> | ((props: {}) => import("@material-ui/styles").CreateCSSProperties<{}>)>;

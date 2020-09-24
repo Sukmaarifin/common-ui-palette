@@ -1,0 +1,1 @@
+export declare const priusMultipleSelectCss: (props?: any) => Record<"menu" | "placeholder" | "container" | "control" | "selectContainerFocused" | "selectContainer" | "valueContainer" | "chip" | "iconIndicator" | "dropdownIndicator" | "singleValue" | "indicatorsContainer" | "error", string>;
