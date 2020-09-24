@@ -14,7 +14,7 @@ export enum StatusUploadType {
   EMPTY = 'EMPTY',
 }
 
-type PriusIndicatorLabelProps = {
+export type PriusIndicatorLabelProps = {
   status: StatusUploadType;
   name: string;
   size?: number;

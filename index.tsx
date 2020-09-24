@@ -46,8 +46,8 @@ export * from './src/components/PriusFieldset';
 export { default as Filter } from './src/components/PriusFilter';
 export * from './src/components/PriusFilter';
 
-export { default as Footer } from './src/components/PriusFilter';
-export * from './src/components/PriusFilter';
+export { default as Footer } from './src/components/PriusFooter';
+export * from './src/components/PriusFooter';
 
 export { default as FileUploader } from './src/components/PriusUploadFile';
 export * from './src/components/PriusUploadFile';

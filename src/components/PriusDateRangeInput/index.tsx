@@ -6,12 +6,12 @@ import PriusDatePicker from '../PriusDatePicker';
 import { convertDateUTC } from '../../helpers';
 import { DateRangeType } from '../../typings';
 
-type DataDateType = {
+export type DataDateType = {
   from: string;
   to: string;
 };
 
-type DateType = {
+export type DateType = {
   from: Date;
   to: Date;
 };

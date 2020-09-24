@@ -29,7 +29,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-type TenantBrandInfoType = {
+export type TenantBrandInfoType = {
   ID: string;
   name: string;
 };

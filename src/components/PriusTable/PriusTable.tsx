@@ -12,7 +12,7 @@ import PriusButtonText from '../PriusButtonText';
 import { SortDataType } from './types';
 import PriusCheckbox from '../PriusCheckbox';
 
-type TableHeaderData = {
+export type TableHeaderData = {
   fixedWidth?: string;
   sortOption?: SortDataType;
   title?: string;
