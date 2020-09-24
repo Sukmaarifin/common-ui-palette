@@ -68,7 +68,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc",
     "test": "react-scripts test",
     "test-jest": "jest --watch --coverage",
     "eject": "react-scripts eject",
