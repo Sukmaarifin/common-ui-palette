@@ -1,11 +1,8 @@
 import React from 'react';
-import PriusCircularProgress from '../../src/ui_palette/PriusCircularProgress';
+import PriusCircularProgress from '../../src/components/PriusCircularProgress';
 
 const PriusCircularProgressExample = () => {
-
-    return (
-        <PriusCircularProgress/>
-    )
-}
+  return <PriusCircularProgress />;
+};
 
 export default PriusCircularProgressExample;
