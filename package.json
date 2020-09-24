@@ -1,6 +1,6 @@
 {
   "name": "common-ui-palette",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "devDependencies": {
@@ -68,7 +68,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc",
     "test": "react-scripts test",
     "test-jest": "jest --watch --coverage",
     "eject": "react-scripts eject",
