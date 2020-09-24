@@ -3,7 +3,6 @@
  */
 
 import * as React from 'react';
-// import clsx from "clsx";
 import {
   Button,
   Breadcrumbs,
@@ -14,22 +13,12 @@ import {
   Tooltip,
   ClickAwayListener,
   Typography,
-  // Card,
-  // CircularProgress,
-  // Typography,
-  // CardContent,
 } from '@material-ui/core';
 import { LinkProps } from '@material-ui/core/Link';
-import {
-  KeyboardArrowDown,
-  // NotificationsNone,
-  // Refresh,
-} from '@material-ui/icons';
+import { KeyboardArrowDown } from '@material-ui/icons';
 import { Route } from 'react-router';
 import { Link as RouterLink } from 'react-router-dom';
 
-// import NotificationList from "./NotificationList/NotificationList";
-// import PriusIconImageGenerator from "../PriusIconImageGenerator/PriusIconImageGenerator";
 import { TenantContext } from '../../components/PriusSSSO';
 
 import { camelize } from '../../helpers';
@@ -68,42 +57,7 @@ interface LinkRouterProps extends LinkProps {
 
 const NavigationBar = (props: NavigationBarProps) => {
   const { mode } = React.useContext(TenantContext);
-  const {
-    routes,
-    name,
-    userClick,
-    // notifClick,
-    // notifStatus,
-    // notif,
-    toggleDropdown,
-    toggleStatus,
-    // syncClick
-  } = props;
-
-  // let cards = notif.map((item, id) => {
-  //   let date = item.time.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
-  //   return(
-  //     <Card key={id} style={{ boxShadow: "none" }}>
-  //       <CardContent className="prius__card-container">
-  //         <div className="prius__card-item">
-  //           <PriusIconImageGenerator
-  //             className="prius__card-label"
-  //             text={item.flagStatus}
-  //             type="image"
-  //           />
-  //           <div className="prius__card-content">
-  //             <Typography className="title">
-  //               {item.messages}
-  //             </Typography>
-  //             <Typography className="time">
-  //               {date}
-  //             </Typography>
-  //           </div>
-  //         </div>
-  //       </CardContent>
-  //     </Card>
-  //   );
-  // });
+  const { routes, name, userClick, toggleDropdown, toggleStatus } = props;
 
   return (
     <div>
@@ -171,49 +125,6 @@ const NavigationBar = (props: NavigationBarProps) => {
           </Breadcrumbs>
         </div>
         <div className="prius__navbar__right-side">
-          {/* <div className="prius__navbar__sync">
-            <Tooltip
-              title="Sync"
-              placement="top-start"
-              enterDelay={1000}
-              leaveDelay={200}
-            >
-              <div className={clsx("prius__refresh", syncClick[0] ? "onloading" : "")}>
-                { syncClick[0] === true ? (
-                  <CircularProgress className="loading" size={16} thickness={5} onClick={syncClick[1]} />
-                ) : (
-                  <Refresh className="refresh" onClick={syncClick[1]} />
-                ) }
-                { syncClick[0] !== true ? (
-                  <p style={{ paddingTop: 4, fontWeight: "normal" }}>59 Menit Lalu</p>
-                ) : (
-                  <p style={{ paddingTop: 4, fontWeight: "normal" }}>1 dari 4 toko</p>
-                ) }
-              </div>
-            </Tooltip>
-          </div>
-          <div className="prius__navbar__notif">
-            <Tooltip
-              title="Notifikasi"
-              enterDelay={1000}
-              leaveDelay={200}
-            >
-              <div
-                className="prius__clickable-circle"
-                onClick={notifClick}
-              >
-                <NotificationsNone style={{ fontSize: 26 }} />
-                <div className="notifications">
-                  <div className={`${notifStatus ? "" : "alerted-row"}`} />
-                </div>
-                <Paper>
-                  <ClickAwayListener onClickAway={notifClick}>
-                    <NotificationList items={cards} notif={notifStatus}/>
-                  </ClickAwayListener>
-                </Paper>
-              </div>
-            </Tooltip>
-          </div> */}
           <div className="prius__navbar__user">
             <Tooltip title="Keluar" enterDelay={1000} leaveDelay={200}>
               <div className="dropdown-container" onClick={toggleDropdown}>
