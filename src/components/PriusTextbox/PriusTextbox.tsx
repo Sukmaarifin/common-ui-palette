@@ -1,25 +1,25 @@
-import React from "react";
-import TextField from "@material-ui/core/TextField";
-import { withStyles, Theme, createStyles } from "@material-ui/core/styles";
+import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import { withStyles, Theme, createStyles } from '@material-ui/core/styles';
 
 const CustomTextbox = withStyles((theme: Theme) =>
   createStyles({
     root: {
-      width: "100%",
-      fontSize: "13px",
+      width: '100%',
+      fontSize: '13px',
       lineHeight: 1.38,
-      color: "#d0c9d6",
+      color: '#d0c9d6',
       backgroundColor: theme.colors.white,
-      "& .MuiOutlinedInput-root": {
-        "& fieldset": {
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
           borderColor: theme.colors.grey3,
         },
-        "&:hover fieldset": {
+        '&:hover fieldset': {
           borderColor: theme.colors.grey3,
         },
-        "&.Mui-focused fieldset": {
+        '&.Mui-focused fieldset': {
           borderColor: theme.colors.grey3,
-          "&:hover fieldset": {
+          '&:hover fieldset': {
             borderColor: theme.colors.grey3,
           },
         },
@@ -53,7 +53,7 @@ export const PriusTextbox: React.FunctionComponent<PriusTextboxProps> = ({
 }) => {
   return (
     <CustomTextbox
-      inputProps={{ "data-identity": id && `${id}` }}
+      inputProps={{ 'data-identity': id && `${id}` }}
       value={value}
       id={id}
       placeholder={placeholder}

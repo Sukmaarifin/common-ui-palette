@@ -1,12 +1,12 @@
-import React from "react";
-import { Drawer, Icon, List, ListItem, ListItemText } from "@material-ui/core";
-import clsx from "clsx";
-import { RouteComponentProps } from "react-router";
-import { withRouter, Link } from "react-router-dom";
+import React from 'react';
+import { Drawer, Icon, List, ListItem, ListItemText } from '@material-ui/core';
+import clsx from 'clsx';
+import { RouteComponentProps } from 'react-router';
+import { withRouter, Link } from 'react-router-dom';
 
-import { camelize } from "../../helpers";
+import { camelize } from '../../helpers';
 
-import MainMenuCss from "./MainMenuCss";
+import MainMenuCss from './MainMenuCss';
 
 export type fieldSubMenu = {
   label: string;
@@ -36,7 +36,7 @@ const SubMenu = ({ getUrl, data, parentMenu, history }: SubMenuProps) => {
       >
         <div className={classes.toolbar} />
         <List>
-          <ListItem button key="0" onClick={() => getUrl("back")}>
+          <ListItem button key="0" onClick={() => getUrl('back')}>
             <Icon className={classes.activeIcon}>keyboard_backspace</Icon>
             <ListItemText
               className={classes.activeSubMenu}
@@ -54,14 +54,14 @@ const SubMenu = ({ getUrl, data, parentMenu, history }: SubMenuProps) => {
               <ListItem
                 button
                 key={index}
-                onClick={() => getUrl(text.url ? text.url : "")}
+                onClick={() => getUrl(text.url ? text.url : '')}
               >
                 <ListItemText
                   className={clsx(
                     classes.drawerListSubMenu,
                     text.url && pathname === text.url
                       ? classes.activeSubMenu
-                      : ""
+                      : ''
                   )}
                   primary={text.label}
                 />

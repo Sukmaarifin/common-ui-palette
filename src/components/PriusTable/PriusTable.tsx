@@ -1,16 +1,16 @@
-import React from "react";
-import clsx from "clsx";
-import { withStyles, Grid } from "@material-ui/core";
-import { WithStyles } from "@material-ui/styles";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import React from 'react';
+import clsx from 'clsx';
+import { withStyles, Grid } from '@material-ui/core';
+import { WithStyles } from '@material-ui/styles';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
-import TableRow, { RowData } from "./TableRow";
-import { PriusTableCss } from "./PriusTableCss";
-import TablePagination from "./TablePagination";
-import PriusButtonText from "../PriusButtonText";
-import { SortDataType } from "./types";
-import PriusCheckbox from "../PriusCheckbox";
+import TableRow, { RowData } from './TableRow';
+import { PriusTableCss } from './PriusTableCss';
+import TablePagination from './TablePagination';
+import PriusButtonText from '../PriusButtonText';
+import { SortDataType } from './types';
+import PriusCheckbox from '../PriusCheckbox';
 
 type TableHeaderData = {
   fixedWidth?: string;
@@ -37,7 +37,7 @@ export interface TableData extends RowData {
   collapseData?: Array<{ [key: string]: any }>;
 }
 
-export type TableType = "card" | "dense";
+export type TableType = 'card' | 'dense';
 
 export type PriusTableState = {
   // expanded rows index, -1 means no expanded rows
@@ -116,7 +116,7 @@ export class PriusTable extends React.Component<
 
     this.setState({ selectedRows });
 
-    if (typeof this.props.onSelect === "function")
+    if (typeof this.props.onSelect === 'function')
       this.props.onSelect(selectedRows);
   };
 
@@ -126,7 +126,7 @@ export class PriusTable extends React.Component<
       : [];
     this.setState({ selectedRows });
 
-    if (typeof this.props.onSelect === "function")
+    if (typeof this.props.onSelect === 'function')
       this.props.onSelect(selectedRows);
   };
 
@@ -172,7 +172,7 @@ export class PriusTable extends React.Component<
           container
           wrap="nowrap"
           className={clsx(
-            type === "card" ? classes.flexRowCard : classes.flexRowDense,
+            type === 'card' ? classes.flexRowCard : classes.flexRowDense,
             classes.header
           )}
         >
@@ -181,15 +181,15 @@ export class PriusTable extends React.Component<
              * render select all
              */
             isSelectable && (
-              <Grid item className={clsx(classes.toolbar, "left")}>
+              <Grid item className={clsx(classes.toolbar, 'left')}>
                 <PriusCheckbox
                   id={id && `${id}-checkbox-selectAll`}
                   checked={selectedRows.length === records.length}
                   value="SELECT_ALL"
                   inputProps={
                     {
-                      "aria-label": "select",
-                      "data-identity": id && `${id}-checkbox-selectAll`,
+                      'aria-label': 'select',
+                      'data-identity': id && `${id}-checkbox-selectAll`,
                     } as React.InputHTMLAttributes<HTMLInputElement>
                   }
                   onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
@@ -229,7 +229,7 @@ export class PriusTable extends React.Component<
                       className={clsx(
                         classes.headerButton,
                         header.sortOption.fieldName === sortedBy.fieldName &&
-                          "active"
+                          'active'
                       )}
                       endIcon={
                         header.sortOption.fieldName === sortedBy.fieldName &&
@@ -300,7 +300,7 @@ export class PriusTable extends React.Component<
             <Grid item className={classes.emptyData}>
               {placeholder
                 ? placeholder
-                : "Tidak ditemukan data untuk ditampilkan"}
+                : 'Tidak ditemukan data untuk ditampilkan'}
             </Grid>
           )
         }

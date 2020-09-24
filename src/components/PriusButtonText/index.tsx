@@ -1,14 +1,14 @@
-import React from "react";
-import ButtonBase, { ButtonBaseProps } from "@material-ui/core/ButtonBase";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import clsx from "clsx";
+import React from 'react';
+import ButtonBase, { ButtonBaseProps } from '@material-ui/core/ButtonBase';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+import clsx from 'clsx';
 
-import { camelize } from "../../helpers";
+import { camelize } from '../../helpers';
 
 export type PriusButtonTextProps = ButtonBaseProps & {
   bold?: boolean;
   children?: React.ReactNode;
-  color?: "default" | "inherit" | "primary" | "secondary";
+  color?: 'default' | 'inherit' | 'primary' | 'secondary';
   endIcon?: React.ReactNode;
   startIcon?: React.ReactNode;
   inputId?: string;
@@ -16,24 +16,24 @@ export type PriusButtonTextProps = ButtonBaseProps & {
 
 const useStyles = makeStyles((theme: Theme) => ({
   button: {
-    fontFamily: "inherit",
-    fontSize: "inherit",
-    fontWeight: "inherit",
-    "&> .MuiSvgIcon-root": {
-      fontSize: "1.5em",
-      "&:first-child": {
-        marginRight: "0.3125rem",
+    fontFamily: 'inherit',
+    fontSize: 'inherit',
+    fontWeight: 'inherit',
+    '&> .MuiSvgIcon-root': {
+      fontSize: '1.5em',
+      '&:first-child': {
+        marginRight: '0.3125rem',
       },
-      "&:last-child": {
-        marginLeft: "0.3125rem",
+      '&:last-child': {
+        marginLeft: '0.3125rem',
       },
     },
-    "&.Mui-disabled": {
+    '&.Mui-disabled': {
       color: theme.colors.disabled,
     },
   },
   colorInherit: {
-    color: "inherit",
+    color: 'inherit',
   },
   colorPrimary: {
     color: theme.colors.primary,
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.secondary,
   },
   fontWeightBold: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
 }));
 
@@ -50,9 +50,9 @@ const PriusButtonText = React.forwardRef(
   (
     {
       bold = false,
-      children = "",
+      children = '',
       className,
-      color = "inherit",
+      color = 'inherit',
       endIcon,
       startIcon,
       onClick,
@@ -68,9 +68,9 @@ const PriusButtonText = React.forwardRef(
         className={clsx(
           classes.button,
           className,
-          color === "inherit" && classes.colorInherit,
-          color === "primary" && classes.colorPrimary,
-          color === "secondary" && classes.colorSecondary,
+          color === 'inherit' && classes.colorInherit,
+          color === 'primary' && classes.colorPrimary,
+          color === 'secondary' && classes.colorSecondary,
           bold && classes.fontWeightBold
         )}
         onClick={onClick}

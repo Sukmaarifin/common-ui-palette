@@ -5,11 +5,11 @@
  * [x] handle controlled component
  */
 
-import React, { useState, useEffect } from "react";
-import { ActionMeta } from "react-select";
-import CreatableSelect from "react-select/creatable";
+import React, { useState, useEffect } from 'react';
+import { ActionMeta } from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 
-import { OptionType } from "./types";
+import { OptionType } from './types';
 
 export type PriusCreatableSelectProps = {
   backspaceRemoveValue?: boolean;
@@ -35,7 +35,7 @@ function PriusCreatableSelect({
   isClearable = true,
   isDeletable = false,
   isDisabled,
-  placeholder = "Type something and press enter...",
+  placeholder = 'Type something and press enter...',
   selectedData,
   onChange,
   onError,
@@ -76,12 +76,12 @@ function PriusCreatableSelect({
 
     const newValue: Array<OptionType> = [...value, createOption(inputValue)];
     setValue(newValue);
-    setInputValue("");
+    setInputValue('');
 
     // Since `onChange` callback will not be automatically invoked in this event,
     // we need to invoked it manually
     if (onChange && newValue.length > value.length) {
-      onChange(newValue, { action: "create-option" });
+      onChange(newValue, { action: 'create-option' });
     }
   };
 
@@ -89,8 +89,8 @@ function PriusCreatableSelect({
     if (!inputValue) return;
 
     switch (event.key) {
-      case "Enter":
-      case "Tab":
+      case 'Enter':
+      case 'Tab':
         // If `inputValue` is not in `value`,
         // create new option from `inputValue`
         if (

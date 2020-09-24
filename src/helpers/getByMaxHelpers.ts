@@ -13,17 +13,17 @@ export const getByMaxIndex = (
   texts: Array<string>,
   maxIndex?: number
 ): getByMaxLengthType => {
-  let shownText: string = "";
+  let shownText: string = '';
 
   // Distinct array texts
   const uniqueTexts = texts.filter((item: string, idx: number) => {
     return texts.indexOf(item) === idx;
   });
 
-  shownText = uniqueTexts.join(", ");
+  shownText = uniqueTexts.join(', ');
 
   if (maxIndex && uniqueTexts.length > maxIndex) {
-    shownText = `${uniqueTexts.slice(0, maxIndex).join(", ")}, +${
+    shownText = `${uniqueTexts.slice(0, maxIndex).join(', ')}, +${
       uniqueTexts.length - maxIndex
     } more`;
   }
@@ -32,7 +32,7 @@ export const getByMaxIndex = (
     text: shownText,
     tooltipText:
       maxIndex && uniqueTexts.length > maxIndex
-        ? uniqueTexts.join(", ")
+        ? uniqueTexts.join(', ')
         : undefined,
   };
 };
@@ -47,14 +47,14 @@ export const getByMaxCharacter = (
   texts: Array<string>,
   maxChar: number
 ): getByMaxLengthType => {
-  let shownText: string = "";
+  let shownText: string = '';
 
   // Distinct array texts
   const uniqueTexts = texts.filter((item: string, idx: number) => {
     return texts.indexOf(item) === idx;
   });
 
-  shownText = uniqueTexts.join(", ");
+  shownText = uniqueTexts.join(', ');
 
   if (shownText.length > maxChar) {
     shownText = `${shownText.substring(0, maxChar)}...`;
@@ -62,6 +62,6 @@ export const getByMaxCharacter = (
 
   return {
     text: shownText,
-    tooltipText: uniqueTexts.join(", "),
+    tooltipText: uniqueTexts.join(', '),
   };
 };

@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import {
   Theme,
   createStyles,
   Switch,
   FormControlLabel,
   makeStyles,
-} from "@material-ui/core";
-import clsx from "clsx";
+} from '@material-ui/core';
+import clsx from 'clsx';
 
-import { ToggleProps } from "./index";
+import { ToggleProps } from './index';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,30 +19,30 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: 0,
       margin: theme.spacing(1),
       borderRadius: 2,
-      overflow: "visible",
+      overflow: 'visible',
     },
     disabled: {},
     switchBase: {
       padding: 0,
-      "&$checked": {
-        transform: "translateX(18px)",
+      '&$checked': {
+        transform: 'translateX(18px)',
         color: theme.colors.white,
-        "& + $track": {
-          backgroundColor: "#1C9AEA",
+        '& + $track': {
+          backgroundColor: '#1C9AEA',
           opacity: 1,
           borderColor: theme.palette.primary.dark,
         },
       },
-      "&$disabled": {
+      '&$disabled': {
         color: theme.colors.disabled,
-        "&$checked": {
-          "& + $track": {
-            backgroundColor: "#DCDCDC",
+        '&$checked': {
+          '& + $track': {
+            backgroundColor: '#DCDCDC',
             borderColor: theme.colors.disabled,
           },
         },
       },
-      "&$focusVisible $thumb": {
+      '&$focusVisible $thumb': {
         color: theme.colors.white,
         border: `1px solid ${theme.colors.primary}`,
         height: 12,
@@ -56,17 +56,17 @@ const useStyles = makeStyles((theme: Theme) =>
     track: {
       borderRadius: 2,
       border: `1px solid #E8E8E8`,
-      backgroundColor: "#EEEEF3",
+      backgroundColor: '#EEEEF3',
       opacity: 1,
-      transition: theme.transitions.create(["background-color", "border"]),
-      "&$disabled": {},
+      transition: theme.transitions.create(['background-color', 'border']),
+      '&$disabled': {},
     },
     checked: {},
     focusVisible: {},
 
     // Custom classes
     rootHover: {
-      "&:hover $thumb": {
+      '&:hover $thumb': {
         color: theme.colors.white,
         border: `1px solid ${theme.colors.primary}`,
         height: 12,

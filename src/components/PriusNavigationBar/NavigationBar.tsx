@@ -2,7 +2,7 @@
  * @todo Request mode from gql when ready
  */
 
-import * as React from "react";
+import * as React from 'react';
 // import clsx from "clsx";
 import {
   Button,
@@ -18,26 +18,26 @@ import {
   // CircularProgress,
   // Typography,
   // CardContent,
-} from "@material-ui/core";
-import { LinkProps } from "@material-ui/core/Link";
+} from '@material-ui/core';
+import { LinkProps } from '@material-ui/core/Link';
 import {
   KeyboardArrowDown,
   // NotificationsNone,
   // Refresh,
-} from "@material-ui/icons";
-import { Route } from "react-router";
-import { Link as RouterLink } from "react-router-dom";
+} from '@material-ui/icons';
+import { Route } from 'react-router';
+import { Link as RouterLink } from 'react-router-dom';
 
 // import NotificationList from "./NotificationList/NotificationList";
 // import PriusIconImageGenerator from "../PriusIconImageGenerator/PriusIconImageGenerator";
-import { TenantContext } from "../../ui_palette/PriusSSSO";
+import { TenantContext } from '../../components/PriusSSSO';
 
-import { route, RouteType } from "../../route";
-import { camelize } from "../../helpers";
+import { camelize } from '../../helpers';
 
-import "./NavigationBar.css";
+import './NavigationBar.css';
+import { RouteType } from '../../typings';
 
-type FlagCardType = "success" | "alert";
+type FlagCardType = 'success' | 'alert';
 
 type NotifType = {
   messages: string;
@@ -46,6 +46,7 @@ type NotifType = {
 };
 
 export type NavigationBarProps = {
+  routes: Array<RouteType>;
   name: string;
   userClick: () => void;
   notifClick: () => void;
@@ -68,6 +69,7 @@ interface LinkRouterProps extends LinkProps {
 const NavigationBar = (props: NavigationBarProps) => {
   const { mode } = React.useContext(TenantContext);
   const {
+    routes,
     name,
     userClick,
     // notifClick,
@@ -110,11 +112,11 @@ const NavigationBar = (props: NavigationBarProps) => {
           <Breadcrumbs aria-label="Breadcrumb">
             <Route>
               {({ location }) => {
-                const pathnames = location.pathname.split("/").filter((x) => x);
-                const getValidPath = handlerPathname(pathnames);
+                const pathnames = location.pathname.split('/').filter((x) => x);
+                const getValidPath = handlerPathname(routes, pathnames);
 
                 // find URL and check is user has mode to access the URL
-                let isAuthenticated = route.find(
+                let isAuthenticated = routes.find(
                   (item: RouteType) =>
                     item.url === getValidPath && item.modes.includes(mode)
                 );
@@ -123,9 +125,9 @@ const NavigationBar = (props: NavigationBarProps) => {
                 if (!isAuthenticated) return null;
 
                 const currentPathnames =
-                  getValidPath.charAt(0) === "/"
-                    ? getValidPath.substring(1).split("/")
-                    : getValidPath.split("/");
+                  getValidPath.charAt(0) === '/'
+                    ? getValidPath.substring(1).split('/')
+                    : getValidPath.split('/');
 
                 return (
                   <Breadcrumbs aria-label="breadcrumb">
@@ -135,9 +137,9 @@ const NavigationBar = (props: NavigationBarProps) => {
                       // get URL
                       const to = `/${currentPathnames
                         .slice(0, index + 1)
-                        .join("/")}`;
+                        .join('/')}`;
                       // find route object from given URL
-                      const url = route.find(
+                      const url = routes.find(
                         (item: RouteType) => item.url === to
                       );
                       // if route object found, get breadcrumbs data
@@ -218,11 +220,11 @@ const NavigationBar = (props: NavigationBarProps) => {
                 <Button
                   data-identity="navigation-button-toggleDropdown"
                   style={{
-                    textTransform: "none",
-                    fontFamily: "Metropolis",
+                    textTransform: 'none',
+                    fontFamily: 'Metropolis',
                     fontSize: 13,
                     marginTop: 3,
-                    fontWeight: "normal",
+                    fontWeight: 'normal',
                   }}
                 >
                   {name}
@@ -232,7 +234,7 @@ const NavigationBar = (props: NavigationBarProps) => {
                   <Paper
                     style={{
                       zIndex: 9,
-                      position: "relative",
+                      position: 'relative',
                     }}
                   >
                     <ClickAwayListener onClickAway={toggleDropdown}>
@@ -243,7 +245,7 @@ const NavigationBar = (props: NavigationBarProps) => {
                         >
                           <span
                             style={{
-                              fontFamily: "Metropolis",
+                              fontFamily: 'Metropolis',
                               fontSize: 13,
                             }}
                           >
@@ -265,11 +267,14 @@ const NavigationBar = (props: NavigationBarProps) => {
 
 export default NavigationBar;
 
-export const handlerPathname = (pathnames: Array<string>) => {
+export const handlerPathname = (
+  routes: Array<RouteType>,
+  pathnames: Array<string>
+) => {
   const initialPaths: Array<string> = pathnames?.length
     ? pathnames
-    : ["product"];
-  const similarPath: Array<RouteType> = route.filter((tmpRoute: RouteType) =>
+    : ['product'];
+  const similarPath: Array<RouteType> = routes.filter((tmpRoute: RouteType) =>
     tmpRoute.url.includes(initialPaths[0])
   );
 
@@ -280,12 +285,12 @@ export const handlerPathname = (pathnames: Array<string>) => {
           const futurePath:
             | RouteType
             | undefined = similarPath.find((tmpPath: RouteType) =>
-            tmpPath.url.includes(`/${items.join("/")}/${path}`)
+            tmpPath.url.includes(`/${items.join('/')}/${path}`)
           );
           if (futurePath) {
             items.push(path);
           } else {
-            items[idx - 1] === ":id" ? items.push(":subid") : items.push(":id");
+            items[idx - 1] === ':id' ? items.push(':subid') : items.push(':id');
           }
         }
       } else {
@@ -296,5 +301,5 @@ export const handlerPathname = (pathnames: Array<string>) => {
     []
   );
 
-  return `/${tempPaths.join("/")}`;
+  return `/${tempPaths.join('/')}`;
 };

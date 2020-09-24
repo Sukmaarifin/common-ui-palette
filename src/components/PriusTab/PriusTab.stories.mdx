@@ -1,7 +1,7 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
-import PriusTab from "./PriusTab";
-import PriusTabPanel from "../PriusTabPanel";
+import PriusTab from './PriusTab';
+import PriusTabPanel from '../PriusTabPanel';
 
 <Meta
   component={PriusTab}
@@ -23,11 +23,11 @@ It uses `PriusTabPanel` as the [TabPanel](https://material-ui.com/api/tab-panel/
       <PriusTab
         activeTab={0}
         onChange={(event, index) => void 0}
-        style={{ marginBottom: "1.5rem" }}
+        style={{ marginBottom: '1.5rem' }}
         tabs={[
-          { text: "Tab 1", disabled: false },
-          { text: "Tab 2", disabled: false },
-          { text: "Tab 3", disabled: false },
+          { text: 'Tab 1', disabled: false },
+          { text: 'Tab 2', disabled: false },
+          { text: 'Tab 3', disabled: false },
         ]}
         centered
       />
@@ -55,9 +55,9 @@ A Tab can be disabled by setting `disabled` property values as `true`.
       onChange={(event, index) => void 0}
       centered
       tabs={[
-        { text: "Tab 1", disabled: false },
-        { text: "Tab 2", disabled: true },
-        { text: "Tab 3", disabled: true },
+        { text: 'Tab 1', disabled: false },
+        { text: 'Tab 2', disabled: true },
+        { text: 'Tab 3', disabled: true },
       ]}
     />
   </Story>
@@ -76,14 +76,14 @@ You can set scrollable tab, that will put a horizontal scrollbar on the containe
       variant="scrollable"
       aria-label="scrollable auto tabs example"
       tabs={[
-        { text: "Tab 1", disabled: false },
-        { text: "Tab 2", disabled: false },
-        { text: "Tab 3", disabled: false },
-        { text: "Tab 4", disabled: false },
-        { text: "Tab 5", disabled: false },
-        { text: "Tab 6", disabled: false },
-        { text: "Tab 7", disabled: false },
-        { text: "Tab 8", disabled: false },
+        { text: 'Tab 1', disabled: false },
+        { text: 'Tab 2', disabled: false },
+        { text: 'Tab 3', disabled: false },
+        { text: 'Tab 4', disabled: false },
+        { text: 'Tab 5', disabled: false },
+        { text: 'Tab 6', disabled: false },
+        { text: 'Tab 7', disabled: false },
+        { text: 'Tab 8', disabled: false },
       ]}
     />
   </Story>

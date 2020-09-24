@@ -8,9 +8,9 @@
  * This hacky implementation still has a limitation which can't shows the docgen description
  */
 
-import React from "react";
+import React from 'react';
 
-import PriusTable, { PriusTableProps } from "../PriusTable";
+import PriusTable, { PriusTableProps } from '../PriusTable';
 
 export type ShadowPriusTableProps = PriusTableProps;
 

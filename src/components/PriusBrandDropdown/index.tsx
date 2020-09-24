@@ -3,22 +3,18 @@
  * [ ] Unit test
  */
 
-import React, { useContext, useState, useEffect } from "react";
-import gql from "graphql-tag";
-import { useQuery } from "@apollo/react-hooks";
-import { 
-  makeStyles, 
-  Theme,
-  ThemeProvider,
-} from "@material-ui/core/styles";
-import { Grid, MenuItem } from "@material-ui/core";
+import React, { useContext, useState, useEffect } from 'react';
+import gql from 'graphql-tag';
+import { useQuery } from '@apollo/react-hooks';
+import { makeStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
+import { Grid, MenuItem } from '@material-ui/core';
 
-import { TenantContext } from "../PriusSSSO";
-import PriusMultipleSelect, { OptionType } from "../PriusMultipleSelect";
-import PriusSelect from "../PriusSelect";
+import { TenantContext } from '../PriusSSSO';
+import PriusMultipleSelect, { OptionType } from '../PriusMultipleSelect';
+import PriusSelect from '../PriusSelect';
 
-import { GetBrandsResponseType, GetBrandsParamType, BrandType } from "./types";
-import theme from "../../styles/material-ui-theme";
+import { GetBrandsResponseType, GetBrandsParamType, BrandType } from './types';
+import theme from '../../styles/material-ui-theme';
 
 export const GET_BRANDS = gql`
   query Brands($ID: ID!) {
@@ -37,9 +33,9 @@ export const GET_BRANDS = gql`
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    backgroundColor: "#1C1B1B",
+    backgroundColor: '#1C1B1B',
     color: theme.colors.white,
-    margin: "0 15px",
+    margin: '0 15px',
     border: `1px solid #1C1B1B`,
   },
   selectedMenuColor: {
@@ -135,7 +131,7 @@ function PriusBrandDropdown({
       <PriusSelect
         id={id && `${id}-select-menuBrand`}
         inputProps={{
-          "data-identity": id && `${id}-select-menuBrand`,
+          'data-identity': id && `${id}-select-menuBrand`,
         }}
         value={selectedBrands[0]}
         onChange={(event: React.ChangeEvent<{ value: unknown }>) => {
@@ -177,7 +173,7 @@ function PriusBrandDropdown({
         isMulti={isMulti}
         name="brand"
         options={brands}
-        placeholder={placeholder || ""}
+        placeholder={placeholder || ''}
         selectedData={selectedBrands}
         onChange={(value: Array<OptionType>) => handleChange(value)}
       />

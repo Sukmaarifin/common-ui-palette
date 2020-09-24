@@ -3,7 +3,7 @@
 ### In a functional component
 
 ```typescript
-import { useSnackbar } from 'ui_palette/PriusSnackbar';
+import { useSnackbar } from 'components/PriusSnackbar';
 
 export default = () => {
   const snackbar = useSnackbar();
@@ -20,7 +20,7 @@ export default = () => {
 ### In a Class component
 
 ```typescript
-import { withSnackbar, SnackbarContextType } from "ui_palette/PriusSnackbar";
+import { withSnackbar, SnackbarContextType } from 'components/PriusSnackbar';
 
 type ExampleComponentPropsType = {
   snackbar: SnackbarContextType;
@@ -28,7 +28,7 @@ type ExampleComponentPropsType = {
 
 class ExampleComponent<ExampleComponentPropsType> {
   handleSubmit() {
-    this.props.snackbar.show("Item submitted succesfully", "success");
+    this.props.snackbar.show('Item submitted succesfully', 'success');
   }
 }
 

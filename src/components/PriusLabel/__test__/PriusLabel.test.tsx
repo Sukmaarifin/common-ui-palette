@@ -1,18 +1,18 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
-import PriusLabel, { PriusLabelProps } from "../index";
+import theme from '../../../styles/material-ui-theme';
+import PriusLabel, { PriusLabelProps } from '../index';
 
-describe("PriusLabel Testing", () => {
+describe('PriusLabel Testing', () => {
   const render = () => {
     const props: PriusLabelProps = {
-      theme: "dark",
-      type: "primary",
-      size: "small",
-      text: "example",
+      theme: 'dark',
+      type: 'primary',
+      size: 'small',
+      text: 'example',
     };
 
     return mount(
@@ -22,7 +22,7 @@ describe("PriusLabel Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

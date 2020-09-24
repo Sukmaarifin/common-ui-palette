@@ -1,9 +1,9 @@
-import React from "react";
-import { mount } from "enzyme";
+import React from 'react';
+import { mount } from 'enzyme';
 
-import PriusDatePicker, { DatePickerProps } from "../PriusDatePicker";
+import PriusDatePicker, { DatePickerProps } from '../PriusDatePicker';
 
-describe("PriusDatePicker Testing", () => {
+describe('PriusDatePicker Testing', () => {
   const render = () => {
     const props: DatePickerProps = {
       selectedDays: { from: new Date(), to: new Date() },
@@ -13,14 +13,14 @@ describe("PriusDatePicker Testing", () => {
     return mount(<PriusDatePicker {...props} />);
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
-    expect(wrapper.exists("DayPicker")).toEqual(true);
+    expect(wrapper.exists('DayPicker')).toEqual(true);
   });
 
-  it("simulates click", () => {
+  it('simulates click', () => {
     const wrapper = render();
-    wrapper.find("Month").find("Day").first().simulate("click");
+    wrapper.find('Month').find('Day').first().simulate('click');
     expect(wrapper.props().onDayClick).toHaveBeenCalled();
   });
 });

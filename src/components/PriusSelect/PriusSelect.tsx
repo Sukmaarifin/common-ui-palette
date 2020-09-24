@@ -1,19 +1,19 @@
-import React from "react";
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import Select, { SelectProps } from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
+import React from 'react';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import Select, { SelectProps } from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 
-import PriusInput from "../PriusInputNew";
-import { DropdownIcon } from "../../icons";
-import clsx from "clsx";
+import PriusInput from '../PriusInputNew';
+import { DropdownIcon } from '../../icons';
+import clsx from 'clsx';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     select: {
-      "& .MuiSelect-icon": {
-        marginRight: "0.625rem",
-        top: "50%",
-        transform: "translateY(-50%)",
+      '& .MuiSelect-icon': {
+        marginRight: '0.625rem',
+        top: '50%',
+        transform: 'translateY(-50%)',
       },
     },
     menuPaper: {
@@ -21,9 +21,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     placeholder: {
       color: theme.colors.placeholder,
-      opacity: "1",
-      cursor: "default",
-      pointerEvents: "none",
+      opacity: '1',
+      cursor: 'default',
+      pointerEvents: 'none',
     },
     error: {
       borderColor: theme.colors.failed,
@@ -41,7 +41,7 @@ export const PriusSelect: React.FunctionComponent<PriusSelectProps> = React.forw
       <Select
         {...props}
         ref={ref}
-        className={clsx(classes.select, className ? className : "")}
+        className={clsx(classes.select, className ? className : '')}
         input={<PriusInput id={id} />}
         IconComponent={DropdownIcon}
         MenuProps={{

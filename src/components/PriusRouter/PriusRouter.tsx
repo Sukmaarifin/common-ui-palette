@@ -14,8 +14,10 @@ import { TenantContext } from '../PriusSSSO';
 import { GET_ACCESS_TO, GetAccessParamType } from '../../graphql';
 import { ROUTE_BY_PLAN } from './types';
 import { ENV } from '../../configs';
+import { RouteType } from '../../typings';
 
 export type PriusRouterProps = RouteProps & {
+  routes: Array<RouteType>;
   modes: Array<string>;
   component:
     | React.ComponentType<RouteComponentProps<any>>
@@ -23,6 +25,7 @@ export type PriusRouterProps = RouteProps & {
 };
 
 const PriusRouter = ({
+  routes,
   component: Component,
   modes,
   ...rest
@@ -67,7 +70,10 @@ const PriusRouter = ({
               action:
                 handlerObjectKey(
                   ROUTE_BY_PLAN,
-                  handlerPathname(currentPath.filter((x) => x))
+                  handlerPathname(
+                    routes,
+                    currentPath.filter((x) => x)
+                  )
                 ) || '/', // set default if current path doesn't match
               resource: tempResource || '', // optional
             },

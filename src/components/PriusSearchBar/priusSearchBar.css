@@ -1,7 +1,8 @@
 .prius-searchbar__input-container {
   display: flex;
   flex-direction: row;
-  width: 100%; }
+  width: 100%;
+}
 
 .prius-searchbar__input {
   width: 100%;
@@ -14,25 +15,32 @@
   font-size: 13px;
   line-height: 18px;
   padding: 5px 15px;
-  outline: none; }
-  .prius-searchbar__input.with-left-icon {
-    padding-left: 36px; }
-  .prius-searchbar__input.with-right-icon {
-    padding-right: 36px;
-    margin-right: -16px; }
+  outline: none;
+}
+.prius-searchbar__input.with-left-icon {
+  padding-left: 36px;
+}
+.prius-searchbar__input.with-right-icon {
+  padding-right: 36px;
+  margin-right: -16px;
+}
 
 .prius-searchbar__icon-left {
   position: relative;
   top: 13px;
-  left: 26px; }
+  left: 26px;
+}
 
 .prius-searchbar__icon-right {
   position: relative;
   top: 13px;
-  left: -10px; }
+  left: -10px;
+}
 
 .prius-searchbar__result-line1 {
-  font-size: 13px !important; }
+  font-size: 13px !important;
+}
 
 .prius-searchbar__result-line2 {
-  font-size: 10px !important; }
+  font-size: 10px !important;
+}

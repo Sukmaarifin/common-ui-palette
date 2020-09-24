@@ -1,5 +1,5 @@
-import React, { ComponentType, SFC } from "react";
-import SnackbarContext, { SnackbarContextType } from "./SnackbarContext";
+import React, { ComponentType, SFC } from 'react';
+import SnackbarContext, { SnackbarContextType } from './SnackbarContext';
 
 type PropsType = {
   snackbar: SnackbarContextType;

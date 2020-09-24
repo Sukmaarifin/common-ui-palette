@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   createStyles,
   Theme,
   Switch,
   makeStyles,
   FormControlLabel,
-} from "@material-ui/core";
-import clsx from "clsx";
+} from '@material-ui/core';
+import clsx from 'clsx';
 
-import PriusFieldset from "../PriusFieldset";
+import PriusFieldset from '../PriusFieldset';
 
-import { ToggleProps } from "./index";
+import { ToggleProps } from './index';
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -22,41 +22,41 @@ export const useStyles = makeStyles((theme: Theme) =>
       margin: theme.spacing(0.5),
       marginTop: 0,
       borderRadius: 2,
-      overflow: "visible",
+      overflow: 'visible',
     },
     disabled: {
-      "&$track": {
-        "&:before": {
+      '&$track': {
+        '&:before': {
           color: theme.colors.disabled,
         },
       },
     },
     switchBase: {
       padding: 0,
-      "&$checked": {
-        transform: "translateX(80px)",
+      '&$checked': {
+        transform: 'translateX(80px)',
         color: theme.colors.white,
-        "& + $track": {
+        '& + $track': {
           backgroundColor: theme.colors.primary,
           opacity: 1,
           borderColor: theme.palette.primary.dark,
         },
       },
-      "&$disabled": {
+      '&$disabled': {
         color: theme.colors.disabled,
-        "&$checked": {
-          "& + $track": {
-            backgroundColor: "#DCDCDC",
+        '&$checked': {
+          '& + $track': {
+            backgroundColor: '#DCDCDC',
             borderColor: theme.colors.disabled,
           },
         },
-        "& + $track": {
+        '& + $track': {
           opacity: 1,
-          backgroundColor: "#DCDCDC",
+          backgroundColor: '#DCDCDC',
           borderColor: theme.colors.disabled,
         },
       },
-      "&$focusVisible $thumb": {
+      '&$focusVisible $thumb': {
         color: theme.colors.white,
         border: `1px solid ${theme.colors.primary}`,
         height: 24,
@@ -65,8 +65,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     track: {
       borderRadius: 2,
       border: `1px solid #E8E8E8`,
-      transition: theme.transitions.create(["background-color", "border"]),
-      textAlign: "center",
+      transition: theme.transitions.create(['background-color', 'border']),
+      textAlign: 'center',
     },
     thumb: {
       width: 10,
@@ -80,33 +80,33 @@ export const useStyles = makeStyles((theme: Theme) =>
     trackActive: {
       borderColor: theme.palette.primary.dark,
       paddingTop: 6,
-      "&:before": {
+      '&:before': {
         content: '"Aktif"',
         color: theme.colors.white,
-        fontSize: "0.8125rem",
+        fontSize: '0.8125rem',
       },
     },
     trackNonActive: {
       borderColor: `#E8E8E8`,
-      backgroundColor: "#EEEEF3",
+      backgroundColor: '#EEEEF3',
       opacity: 1,
       paddingTop: 6,
-      "&:before": {
+      '&:before': {
         content: '"Tidak Aktif"',
         color: theme.colors.text,
-        fontSize: "0.8125rem",
+        fontSize: '0.8125rem',
       },
     },
     trackDisabled: {
-      "&:before": {
+      '&:before': {
         color: theme.colors.disabled,
       },
     },
     label: {
-      marginLeft: "inherit",
+      marginLeft: 'inherit',
     },
     rootHover: {
-      "&:hover $thumb": {
+      '&:hover $thumb': {
         color: theme.colors.white,
         border: `1px solid ${theme.colors.primary}`,
         height: 24,

@@ -3,14 +3,14 @@
  * [ ] Unit Test
  */
 
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
-import PriusToggle from "../../PriusToggle";
+import PriusToggle from '../../PriusToggle';
 
-import { FieldProps } from "../types";
+import { FieldProps } from '../types';
 
 type FieldToggleProps = {
   handleOnToggle: (ID: string, value: boolean) => void;
@@ -19,8 +19,8 @@ type FieldToggleProps = {
 
 const useStyles = makeStyles(() => ({
   grid: {
-    alignSelf: "center",
-    margin: "0 auto",
+    alignSelf: 'center',
+    margin: '0 auto',
   },
 }));
 

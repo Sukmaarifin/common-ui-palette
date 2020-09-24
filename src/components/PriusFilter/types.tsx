@@ -1,4 +1,4 @@
-import { DateRangeType } from "../../typings";
+import { DateRangeType } from '../../typings';
 
 export type FilterItemType = {
   label: string;

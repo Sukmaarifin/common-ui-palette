@@ -1,19 +1,19 @@
-import React, { ElementType } from "react";
-import clsx from "clsx";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import React, { ElementType } from 'react';
+import clsx from 'clsx';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
   large: {
-    padding: "1.875rem 3.75rem",
+    padding: '1.875rem 3.75rem',
   },
   largeSquare: {
-    padding: "1.875rem",
+    padding: '1.875rem',
   },
   medium: {
-    padding: "1.25rem 2.5rem",
+    padding: '1.25rem 2.5rem',
   },
   mediumSquare: {
-    padding: "1.25rem",
+    padding: '1.25rem',
   },
   noPadding: {
     padding: 0,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     boxShadow: theme.customShadows[2],
   },
   rounded: {
-    borderRadius: "3px",
+    borderRadius: '3px',
   },
 }));
 
@@ -44,7 +44,7 @@ export interface PriusPaperProps {
   /**
    * The padding size
    */
-  padding?: "medium" | "mediumSquare" | "large" | "largeSquare" | "noPadding";
+  padding?: 'medium' | 'mediumSquare' | 'large' | 'largeSquare' | 'noPadding';
   /**
    * If `true`, render PriusPaper with rounded corner
    */
@@ -59,10 +59,10 @@ export interface PriusPaperProps {
 export function PriusPaper({
   className,
   children,
-  component: Component = "div",
+  component: Component = 'div',
   id,
   onClick,
-  padding = "medium",
+  padding = 'medium',
   rounded = false,
   ...props
 }: PriusPaperProps) {

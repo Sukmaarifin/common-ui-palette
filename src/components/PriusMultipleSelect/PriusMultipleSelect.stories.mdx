@@ -1,7 +1,7 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
-import PriusMultipleSelect from "./PriusMultipleSelect";
-import * as stories from "./PriusMultipleSelect.stories.tsx";
+import PriusMultipleSelect from './PriusMultipleSelect';
+import * as stories from './PriusMultipleSelect.stories.tsx';
 
 <Meta
   component={PriusMultipleSelect}
@@ -23,10 +23,10 @@ You can provide its value through props called `options`.
   <Story name="Basic">
     <PriusMultipleSelect
       options={[
-        { label: "Option 1", value: "1", isDisabled: false },
-        { label: "Option 2", value: "2", isDisabled: false },
-        { label: "Option 3", value: "3", isDisabled: true },
-        { label: "Option 4", value: "4", isDisabled: false },
+        { label: 'Option 1', value: '1', isDisabled: false },
+        { label: 'Option 2', value: '2', isDisabled: false },
+        { label: 'Option 3', value: '3', isDisabled: true },
+        { label: 'Option 4', value: '4', isDisabled: false },
       ]}
     />
   </Story>
@@ -40,7 +40,7 @@ You can set the `isCreatable` props to `true` for creating your own options. You
   <Story name="Createable">
     <PriusMultipleSelect
       isCreatable={true}
-      selectedData={[{ label: "Option 1", value: "1", isDisabled: false }]}
+      selectedData={[{ label: 'Option 1', value: '1', isDisabled: false }]}
     />
   </Story>
 </Preview>

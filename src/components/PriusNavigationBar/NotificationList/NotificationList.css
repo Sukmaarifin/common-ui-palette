@@ -6,20 +6,25 @@
   height: 100%;
   background: #ffffff;
   border-left: solid 1px #dedede;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 .prius__side-modal .header-container {
   padding: 3px 15px;
-  border-bottom: 2px solid #dedede; }
+  border-bottom: 2px solid #dedede;
+}
 
 .prius__side-modal .header-text {
   font-size: 13px;
   font-weight: bold;
   font-family: Metropolis, sans-serif;
-  padding: 8px 2px; }
+  padding: 8px 2px;
+}
 
 .notification-item {
-  padding: 15px; }
+  padding: 15px;
+}
 
 .no-margin {
-  border-style: none; }
+  border-style: none;
+}

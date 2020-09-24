@@ -1,68 +1,68 @@
-import React from "react";
-import clsx from "clsx";
-import { makeStyles, Theme, Grid } from "@material-ui/core";
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles, Theme, Grid } from '@material-ui/core';
 
-import { TrashBinOutlinedIcon } from "../../icons";
-import PriusDraggableImage from "../PriusDraggableImage";
-import { ThumbnailSize } from "../PriusThumbnail";
+import { TrashBinOutlinedIcon } from '../../icons';
+import PriusDraggableImage from '../PriusDraggableImage';
+import { ThumbnailSize } from '../PriusThumbnail';
 
 const useStyles = makeStyles((theme: Theme) => ({
   image: {
-    display: "block",
-    objectFit: "cover",
+    display: 'block',
+    objectFit: 'cover',
   },
   small: {
-    width: "2.5rem",
-    height: "2.5rem",
+    width: '2.5rem',
+    height: '2.5rem',
   },
   medium: {
-    width: "4rem",
-    height: "4rem",
+    width: '4rem',
+    height: '4rem',
   },
   big: {
-    width: "5rem",
-    height: "5rem",
+    width: '5rem',
+    height: '5rem',
   },
   deleteContainer: {
-    position: "absolute",
+    position: 'absolute',
     zIndex: 5,
-    transform: "translate(460%, 20%)",
+    transform: 'translate(460%, 20%)',
     backgroundColor: theme.colors.white,
-    width: "0.92rem",
-    borderRadius: "50%",
+    width: '0.92rem',
+    borderRadius: '50%',
   },
   deleteButton: {
-    cursor: "pointer",
-    marginLeft: "0.13rem",
-    padding: "0.06rem",
+    cursor: 'pointer',
+    marginLeft: '0.13rem',
+    padding: '0.06rem',
   },
   error: {
     borderColor: theme.colors.failed,
   },
   middle: {
-    transition: ".5s ease",
+    transition: '.5s ease',
     opacity: 0,
     zIndex: 2,
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    textAlign: "center",
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    textAlign: 'center',
   },
   onHover: {
-    transform: "translate(0, 60%)",
+    transform: 'translate(0, 60%)',
     zIndex: 999,
-    position: "absolute",
-    width: "min-content",
-    fontWeight: "bold",
-    paddingLeft: "1.3rem",
-    textAlign: "center",
+    position: 'absolute',
+    width: 'min-content',
+    fontWeight: 'bold',
+    paddingLeft: '1.3rem',
+    textAlign: 'center',
   },
 }));
 
 export type GridSize =
   | boolean
-  | "auto"
+  | 'auto'
   | 1
   | 2
   | 3
@@ -97,7 +97,7 @@ const MultipleImage = ({
   onError,
   handleChange,
   handleDelete,
-  size = "medium",
+  size = 'medium',
   md,
   sm,
   isError,
@@ -119,8 +119,8 @@ const MultipleImage = ({
       md={md}
       sm={sm}
       style={{
-        marginBottom: "1em",
-        marginRight: "0.5rem",
+        marginBottom: '1em',
+        marginRight: '0.5rem',
       }}
       key={index}
     >
@@ -128,7 +128,7 @@ const MultipleImage = ({
         <div className={classes.deleteContainer}>
           <TrashBinOutlinedIcon
             className={classes.deleteButton}
-            fontSize='small'
+            fontSize="small"
             onClick={() => {
               if (handleDelete) handleDelete(image);
             }}
@@ -142,7 +142,7 @@ const MultipleImage = ({
           imageSource={image}
           size={size}
           onError={onError}
-          className={isError ? classes.error : ""}
+          className={isError ? classes.error : ''}
           index={index}
           moveImage={moveImage}
         />

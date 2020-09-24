@@ -1,15 +1,15 @@
-import React, { ReactElement } from "react";
-import clsx from "clsx";
-import { ClickAwayListener, Grow, Paper } from "@material-ui/core";
-import Popper, { PopperProps } from "@material-ui/core/Popper";
+import React, { ReactElement } from 'react';
+import clsx from 'clsx';
+import { ClickAwayListener, Grow, Paper } from '@material-ui/core';
+import Popper, { PopperProps } from '@material-ui/core/Popper';
 
-import { PriusBackdropCss } from "./PriusBackdropCss";
+import { PriusBackdropCss } from './PriusBackdropCss';
 
 export type PriusBackdropProps = {
   // className forwarded to the Papper element
   paperClassName?: string;
   // placement of the popper
-  placement: PopperProps["placement"];
+  placement: PopperProps['placement'];
   // id forwarded to the Popper element to improve accessibility
   popperId: string;
   // callback: on backdrop close
@@ -106,7 +106,7 @@ export const PriusBackdropNew: React.FC<PriusBackdropProps> = ({
             {...TransitionProps}
             style={{
               transformOrigin:
-                position === "bottom" ? "center top" : "center bottom",
+                position === 'bottom' ? 'center top' : 'center bottom',
             }}
           >
             <div>
@@ -118,7 +118,7 @@ export const PriusBackdropNew: React.FC<PriusBackdropProps> = ({
                     paperClassName ? paperClassName : null
                   )}
                 >
-                  {typeof renderChildren === "function"
+                  {typeof renderChildren === 'function'
                     ? renderChildren(handleClose)
                     : props.children
                     ? props.children

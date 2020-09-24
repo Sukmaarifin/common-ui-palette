@@ -4,14 +4,14 @@ import {
   Preview,
   Props,
   Story,
-} from "@storybook/addon-docs/blocks";
-import { Button, MenuItem } from "@material-ui/core";
-import LinkTo from "@storybook/addon-links/react";
-import { InputBase } from "@material-ui/core";
+} from '@storybook/addon-docs/blocks';
+import { Button, MenuItem } from '@material-ui/core';
+import LinkTo from '@storybook/addon-links/react';
+import { InputBase } from '@material-ui/core';
 
-import { ArrowRightIcon } from "../../icons";
-import PriusFieldset from "../PriusFieldset";
-import PriusInputGroup from "./index";
+import { ArrowRightIcon } from '../../icons';
+import PriusFieldset from '../PriusFieldset';
+import PriusInputGroup from './index';
 
 <Meta
   component={PriusInputGroup}
@@ -37,7 +37,7 @@ To use `PriusInputGroup` that contains dropdown is shown below. Function onChang
         <PriusInputGroup
           valueDropdown="cm"
           valueInput="90"
-          dropdownItem={["cm", "dm", "m"]}
+          dropdownItem={['cm', 'dm', 'm']}
           handleInput={(event) => console.log(event)}
           handleDropdown={(event) => console.log(event.target.value)}
         />
@@ -56,7 +56,7 @@ Else if you want to pass your own `children` component as seen below.
       <PriusFieldset inputId="min-buyer" label="Masukkan Dimensi Barang">
         <PriusInputGroup
           valueDropdown="cm"
-          dropdownItem={["cm", "dm", "m"]}
+          dropdownItem={['cm', 'dm', 'm']}
           handleInput={(event) => console.log(event)}
           handleDropdown={(event) => console.log(event.target.value)}
         >

@@ -1,10 +1,10 @@
-import React from "react";
-import Helmet from "react-helmet";
-import DayPicker, { DateUtils } from "react-day-picker";
+import React from 'react';
+import Helmet from 'react-helmet';
+import DayPicker, { DateUtils } from 'react-day-picker';
 
-import { DateRangeType } from "../../typings";
+import { DateRangeType } from '../../typings';
 
-import "react-day-picker/lib/style.css";
+import 'react-day-picker/lib/style.css';
 
 export type DatePickerProps = {
   selectedDays?: DateRangeType;
@@ -19,7 +19,7 @@ function PriusDatePicker({ selectedDays, onDayClick }: DatePickerProps) {
         selectedDays={
           selectedDays ? [selectedDays.from, selectedDays] : undefined
         }
-        weekdaysShort={["S", "M", "T", "W", "T", "F", "S"]}
+        weekdaysShort={['S', 'M', 'T', 'W', 'T', 'F', 'S']}
         onDayClick={(day) => {
           let dateFrom = day;
           let dateTo = addDays(day, 1);

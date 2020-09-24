@@ -4,8 +4,8 @@
  * [ ] Storybook
  */
 
-import React from "react";
-import { ButtonProps } from "@material-ui/core/Button";
+import React from 'react';
+import { ButtonProps } from '@material-ui/core/Button';
 import {
   Button,
   Dialog,
@@ -13,9 +13,9 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-export type PriusConfirmDialogProps = Pick<ButtonProps, "color" | "variant"> & {
+export type PriusConfirmDialogProps = Pick<ButtonProps, 'color' | 'variant'> & {
   id: string;
   isOpen: boolean;
   buttonActionTitle: string;
@@ -29,11 +29,11 @@ const PriusConfirmDialog = ({
   id,
   isOpen,
   buttonActionTitle,
-  buttonCancelTitle = "Batal",
+  buttonCancelTitle = 'Batal',
   title,
   message,
-  color = "primary",
-  variant = "contained",
+  color = 'primary',
+  variant = 'contained',
   onButtonClick,
 }: PriusConfirmDialogProps) => {
   return (
@@ -51,7 +51,7 @@ const PriusConfirmDialog = ({
           {buttonCancelTitle}
         </Button>
         <Button
-          style={{ minWidth: "7.5rem", borderRadius: "3px" }}
+          style={{ minWidth: '7.5rem', borderRadius: '3px' }}
           id={`${id}-button-action`}
           data-identity={`${id}-button-action`}
           variant={variant}

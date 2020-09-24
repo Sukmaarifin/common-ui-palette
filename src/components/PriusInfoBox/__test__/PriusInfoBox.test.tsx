@@ -1,15 +1,15 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
-import PriusInfoBox, { PriusInfoBoxProps } from "../index";
+import theme from '../../../styles/material-ui-theme';
+import PriusInfoBox, { PriusInfoBoxProps } from '../index';
 
-describe("PriusInfoBox Testing", () => {
+describe('PriusInfoBox Testing', () => {
   const render = () => {
     const props: PriusInfoBoxProps = {
-      title: "Info",
+      title: 'Info',
       message: <p>This is an info message.</p>,
     };
 
@@ -20,7 +20,7 @@ describe("PriusInfoBox Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

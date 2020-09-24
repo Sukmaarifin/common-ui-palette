@@ -1,30 +1,30 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
-import TextField, { FieldText } from "./FieldText";
+import theme from '../../../styles/material-ui-theme';
+import TextField, { FieldText } from './FieldText';
 
-describe("FieldText Testing", () => {
+describe('FieldText Testing', () => {
   const render = () => {
     // mock data for record
     const mockData = {
-      name: "contoh nama",
-      id: "143",
+      name: 'contoh nama',
+      id: '143',
       images: [
-        "https://picsum.photos/id/8/720/480",
-        "https://picsum.photos/id/17/720/480",
-        "https://picsum.photos/id/26/720/480",
-        "https://picsum.photos/id/31/720/480",
-        "https://picsum.photos/id/48/720/480",
+        'https://picsum.photos/id/8/720/480',
+        'https://picsum.photos/id/17/720/480',
+        'https://picsum.photos/id/26/720/480',
+        'https://picsum.photos/id/31/720/480',
+        'https://picsum.photos/id/48/720/480',
       ],
-      syncStatus: "SUCCESS",
+      syncStatus: 'SUCCESS',
     };
 
     const props: FieldText = {
       record: mockData,
-      source: "name",
+      source: 'name',
     };
 
     return mount(
@@ -34,7 +34,7 @@ describe("FieldText Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

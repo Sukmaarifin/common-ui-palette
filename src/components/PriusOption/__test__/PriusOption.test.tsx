@@ -1,31 +1,31 @@
-import React from "react";
-import { shallow } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "../../../styles/material-ui-theme";
+import React from 'react';
+import { shallow } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from '../../../styles/material-ui-theme';
 
-import PriusOption, { PriusOptionProps } from "../PriusOption";
-import { DownloadIcon, TrashBinIcon } from "../../../icons";
+import PriusOption, { PriusOptionProps } from '../PriusOption';
+import { DownloadIcon, TrashBinIcon } from '../../../icons';
 
-describe("PriusOption Testing", () => {
+describe('PriusOption Testing', () => {
   const render = () => {
     const menuData = [
       {
         disabled: true,
         iconLeft: <DownloadIcon />,
-        title: "Download",
-        tooltipText: "Download feature is not ready yet!",
+        title: 'Download',
+        tooltipText: 'Download feature is not ready yet!',
       },
       {
         disabled: false,
         iconLeft: <TrashBinIcon />,
-        title: "Delete",
+        title: 'Delete',
         onClick: jest.fn(),
       },
     ];
 
     const props: PriusOptionProps = {
-      icon: "vertical",
+      icon: 'vertical',
       items: menuData,
     };
 
@@ -36,7 +36,7 @@ describe("PriusOption Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import "./priusPrintPage.css";
+import React, { useEffect } from 'react';
+import './priusPrintPage.css';
 
 export default function PriusPrintPage(props: any) {
   const { children } = props;

@@ -3,28 +3,28 @@
  * [ ] Unit test
  */
 
-import React from "react";
-import clsx from "clsx";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import { Checkbox, FormControlLabel } from "@material-ui/core";
-import { CheckboxProps } from "@material-ui/core/Checkbox";
-import { FormControlLabelProps } from "@material-ui/core/FormControlLabel";
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+import { Checkbox, FormControlLabel } from '@material-ui/core';
+import { CheckboxProps } from '@material-ui/core/Checkbox';
+import { FormControlLabelProps } from '@material-ui/core/FormControlLabel';
 
-import { IconCheckSVG } from "./IconCheckSVG";
+import { IconCheckSVG } from './IconCheckSVG';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    marginTop: "-3px",
-    "&:hover": {
-      backgroundColor: "transparent",
+    marginTop: '-3px',
+    '&:hover': {
+      backgroundColor: 'transparent',
     },
   },
   checkBox: {
     borderRadius: 2,
-    border: "1px solid #E8E8E8",
+    border: '1px solid #E8E8E8',
     background: theme.colors.white,
-    "input:disabled ~ &": {
-      background: "#DCDCDC",
+    'input:disabled ~ &': {
+      background: '#DCDCDC',
       border: `1px solid ${theme.colors.disabled}`,
     },
   },
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: 14,
   },
   position: {
-    marginLeft: "2px",
+    marginLeft: '2px',
   },
 }));
 
@@ -41,19 +41,19 @@ export type PriusCheckboxProps = {
   label?: string;
 } & Pick<
   CheckboxProps,
-  | "id"
-  | "checked"
-  | "value"
-  | "disabled"
-  | "inputProps"
-  | "onChange"
-  | "onKeyDown"
-  | "name"
-  | "className"
-  | "style"
-  | "onClick"
+  | 'id'
+  | 'checked'
+  | 'value'
+  | 'disabled'
+  | 'inputProps'
+  | 'onChange'
+  | 'onKeyDown'
+  | 'name'
+  | 'className'
+  | 'style'
+  | 'onClick'
 > &
-  Pick<FormControlLabelProps, "classes">;
+  Pick<FormControlLabelProps, 'classes'>;
 
 const PriusCheckbox = (props: PriusCheckboxProps) => {
   const classes = useStyles();
@@ -70,7 +70,7 @@ const PriusCheckbox = (props: PriusCheckboxProps) => {
           disabled={props.disabled}
           checkedIcon={
             <IconCheckSVG
-              color={props.disabled ? "#BDBDBD" : "#444444"}
+              color={props.disabled ? '#BDBDBD' : '#444444'}
               className={classes.checkBox}
             />
           }

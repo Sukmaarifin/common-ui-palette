@@ -1,11 +1,11 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-import { AlertType } from "../../typings";
+import { AlertType } from '../../typings';
 
 export type SnackbarContextType = {
   show: (
     message: string,
-    severity?: AlertType["severity"],
+    severity?: AlertType['severity'],
     closable?: boolean,
     detail?: string
   ) => void;

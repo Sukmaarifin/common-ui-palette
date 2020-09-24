@@ -1,42 +1,42 @@
-import React, { useEffect, useState } from "react";
-import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useEffect, useState } from 'react';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core/styles';
 
-import { camelize } from "../../helpers";
+import { camelize } from '../../helpers';
 
-import FallbackImage from "./FallbackImage.svg";
+import FallbackImage from './FallbackImage.svg';
 
 const useStyles = makeStyles(() => ({
   container: {
-    cursor: "pointer",
-    border: "none",
-    background: "transparent",
-    "&:hover": {
-      opacity: "0.6",
+    cursor: 'pointer',
+    border: 'none',
+    background: 'transparent',
+    '&:hover': {
+      opacity: '0.6',
     },
-    "&:focus, &:active": {
-      outline: "none",
+    '&:focus, &:active': {
+      outline: 'none',
     },
   },
   image: {
-    display: "block",
-    objectFit: "cover",
+    display: 'block',
+    objectFit: 'cover',
   },
   small: {
-    width: "2.5rem",
-    height: "2.5rem",
+    width: '2.5rem',
+    height: '2.5rem',
   },
   medium: {
-    width: "4rem",
-    height: "4rem",
+    width: '4rem',
+    height: '4rem',
   },
   big: {
-    width: "5rem",
-    height: "5rem",
+    width: '5rem',
+    height: '5rem',
   },
 }));
 
-export type ThumbnailSize = "small" | "medium" | "big";
+export type ThumbnailSize = 'small' | 'medium' | 'big';
 
 export type PriusThumbnailProps = {
   defaultSource?: React.ReactNode;

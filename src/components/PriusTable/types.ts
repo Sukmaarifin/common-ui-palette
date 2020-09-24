@@ -48,7 +48,7 @@ export type FieldProps = {
   /**
    * text align
    */
-  textAlign?: React.CSSProperties["textAlign"];
+  textAlign?: React.CSSProperties['textAlign'];
   /**
    * padding
    */

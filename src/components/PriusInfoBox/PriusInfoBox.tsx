@@ -3,28 +3,28 @@
  * Handle other severity if needed, for now it's unnecessary.
  */
 
-import React from "react";
-import { Alert, AlertTitle } from "@material-ui/lab";
-import { makeStyles, createStyles } from "@material-ui/core/styles";
-import { Theme } from "@material-ui/core";
+import React from 'react';
+import { Alert, AlertTitle } from '@material-ui/lab';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core';
 
-import { InfoSVG } from "../PriusSnackbar/assets";
+import { InfoSVG } from '../PriusSnackbar/assets';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     alert: {
       color: theme.palette.text.primary,
-      fontSize: "0.8125rem",
-      border: "1px solid",
-      borderTopWidth: "3px",
+      fontSize: '0.8125rem',
+      border: '1px solid',
+      borderTopWidth: '3px',
     },
     action: {
-      alignItems: "start",
+      alignItems: 'start',
       marginTop: theme.spacing(0.75),
     },
     info: {
-      backgroundColor: "#D1F7FD",
-      borderColor: "#75D5F8",
+      backgroundColor: '#D1F7FD',
+      borderColor: '#75D5F8',
       borderTopColor: theme.palette.primary.main,
       marginBottom: theme.spacing(3.5),
     },

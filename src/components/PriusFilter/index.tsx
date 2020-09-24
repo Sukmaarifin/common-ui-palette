@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { Button, Chip, Grid, Icon, IconButton } from "@material-ui/core";
+import React, { useState, useEffect } from 'react';
+import { Button, Chip, Grid, Icon, IconButton } from '@material-ui/core';
 
-import { AddCircleOutlinedIcon } from "../../icons";
-import DatePicker from "../PriusDatePicker";
-import PriusBackdrop from "../PriusBackdrop";
+import { AddCircleOutlinedIcon } from '../../icons';
+import DatePicker from '../PriusDatePicker';
+import PriusBackdrop from '../PriusBackdrop';
 
-import { DateRangeType } from "../../typings";
-import { FilterItemType, FilterProps } from "./types";
+import { DateRangeType } from '../../typings';
+import { FilterItemType, FilterProps } from './types';
 
-import { FilterCss } from "./FilterCss";
+import { FilterCss } from './FilterCss';
 
 const PriusFilter = ({
   date,
@@ -105,7 +105,7 @@ const PriusFilter = ({
 
     setFilters(newFilterData);
 
-    if (label === "filtered_date") {
+    if (label === 'filtered_date') {
       setDateRange(undefined);
       handleActiveFiler(newFilterData, undefined);
     } else {
@@ -161,7 +161,7 @@ const PriusFilter = ({
             ${dateRange.to.getDate()}/${
               dateRange.to.getMonth() + 1
             }/${dateRange.to.getFullYear()}`}
-            onDelete={() => handleFilterDelete("filtered_date")}
+            onDelete={() => handleFilterDelete('filtered_date')}
             deleteIcon={<Icon>clear</Icon>}
             className={classes.chip}
           />
@@ -169,8 +169,8 @@ const PriusFilter = ({
       }
 
       <PriusBackdrop
-        popperId={"dummy_prius_popper"}
-        placement={"top-start"}
+        popperId={'dummy_prius_popper'}
+        placement={'top-start'}
         renderTrigger={(anchorRef: any, handleToggle: () => void) => (
           <IconButton
             aria-label="add"
@@ -187,10 +187,10 @@ const PriusFilter = ({
             <form onSubmit={handleSubmit}>
               {displayDate && (
                 <div className={classes.filterList}>
-                  <div style={{ display: "block" }}>
+                  <div style={{ display: 'block' }}>
                     <strong>Tanggal</strong>
                   </div>
-                  <div style={{ display: "block" }}>
+                  <div style={{ display: 'block' }}>
                     <DatePicker
                       selectedDays={dateRange}
                       onDayClick={handleDateClick}

@@ -1,49 +1,49 @@
-import React, { ReactElement } from "react";
-import get from "lodash/get";
-import clsx from "clsx";
-import { Link } from "react-router-dom";
-import { Grid } from "@material-ui/core";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import React, { ReactElement } from 'react';
+import get from 'lodash/get';
+import clsx from 'clsx';
+import { Link } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
-import PriusTooltip from "../../PriusTooltip/PriusTooltip";
-import PriusBackdrop from "../../PriusBackdrop";
-import PriusLabel from "../../PriusLabel";
-import { FieldProps } from "../types";
-import { getByMaxIndex } from "../../../helpers/getByMaxHelpers";
+import PriusTooltip from '../../PriusTooltip/PriusTooltip';
+import PriusBackdrop from '../../PriusBackdrop';
+import PriusLabel from '../../PriusLabel';
+import { FieldProps } from '../types';
+import { getByMaxIndex } from '../../../helpers/getByMaxHelpers';
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
-    alignSelf: "center",
-    padding: "0 0.8rem",
-    "&.publish": {
+    alignSelf: 'center',
+    padding: '0 0.8rem',
+    '&.publish': {
       zIndex: 1,
     },
   },
   link: {
     color: theme.colors.primary,
-    textDecoration: "underline",
-    cursor: "pointer",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
   },
   textWithDescription: {
-    display: "grid",
-    textAlign: "start",
+    display: 'grid',
+    textAlign: 'start',
     zIndex: 1,
-    position: "relative",
+    position: 'relative',
   },
   description: {
-    fontFamily: "Metropolis",
-    fontSize: "10px",
-    color: "#898989",
+    fontFamily: 'Metropolis',
+    fontSize: '10px',
+    color: '#898989',
   },
 }));
 
 type NotesBadgeProperties = {
   text: string;
-  theme?: "light" | "dark";
-  type?: "primary" | "error" | "success" | "warning";
-  size?: "small" | "normal";
+  theme?: 'light' | 'dark';
+  type?: 'primary' | 'error' | 'success' | 'warning';
+  size?: 'small' | 'normal';
   backdropData?: ReactElement | string;
 };
 
@@ -64,8 +64,8 @@ const TextField = ({
   description,
   fixedWidth,
   hrefPrefix,
-  hrefSource = "",
-  hrefSourceParent = "",
+  hrefSource = '',
+  hrefSourceParent = '',
   id,
   notesBadge,
   record,
@@ -109,9 +109,9 @@ const TextField = ({
     ) : (
       <span
         style={{
-          textTransform: autoCapitalize ? "capitalize" : "none",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
+          textTransform: autoCapitalize ? 'capitalize' : 'none',
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
         }}
       >
         {shownText}
@@ -149,7 +149,7 @@ const TextField = ({
                   theme={notesBadge.theme ? notesBadge.theme : undefined}
                   type={notesBadge.type ? notesBadge.type : undefined}
                   size={notesBadge.size ? notesBadge.size : undefined}
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: 'pointer' }}
                 />
               </span>
             )}
@@ -203,15 +203,15 @@ const TextField = ({
   return (
     <Grid
       item
-      className={clsx(classes.container, hrefPrefix && href ? "publish" : null)}
+      className={clsx(classes.container, hrefPrefix && href ? 'publish' : null)}
       style={{
         ...style,
         flexBasis: fixedWidth ? fixedWidth : width,
         flexShrink: fixedWidth ? 0 : 1,
         maxWidth: fixedWidth ? fixedWidth : width,
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-        textOverflow: "ellipsis",
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
       }}
     >
       {tooltipText ? (
@@ -223,7 +223,7 @@ const TextField = ({
               : tooltip
           }
         >
-          <div style={{ display: "inline-flex" }}>
+          <div style={{ display: 'inline-flex' }}>
             {renderSimpleText()}
 
             {renderTextWithDescription()}

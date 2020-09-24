@@ -1,3 +1,3 @@
-export { default } from "./PriusPaper";
+export { default } from './PriusPaper';
 
-export * from "./PriusPaper";
+export * from './PriusPaper';

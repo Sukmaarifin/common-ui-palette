@@ -2,17 +2,17 @@
  * @todo
  * [ ] Unit Test
  */
-import React, { useState, useEffect } from "react";
-import get from "lodash/get";
-import { makeStyles } from "@material-ui/styles";
-import { Grid } from "@material-ui/core";
-import NumberFormat from "react-number-format";
+import React, { useState, useEffect } from 'react';
+import get from 'lodash/get';
+import { makeStyles } from '@material-ui/styles';
+import { Grid } from '@material-ui/core';
+import NumberFormat from 'react-number-format';
 
-import PriusFieldset from "../../../ui_palette/PriusFieldset";
-import PriusInput from "../../../ui_palette/PriusInputNew";
-import PriusInputGroup from "../../../ui_palette/PriusInputGroup";
+import PriusFieldset from '../../../components/PriusFieldset';
+import PriusInput from '../../../components/PriusInputNew';
+import PriusInputGroup from '../../../components/PriusInputGroup';
 
-import { FieldProps } from "../../../ui_palette/PriusTable/types";
+import { FieldProps } from '../../../components/PriusTable/types';
 
 type FieldInputProps = {
   handleOnChange: (ID: string, input: React.ReactText) => void;
@@ -29,22 +29,22 @@ type FieldInputProps = {
 
 const useStyles = makeStyles(() => ({
   priceInput: {
-    fontSize: "0.8125rem",
-    fontFamily: "Metropolis",
-    margin: "-0.2rem -0.8rem",
-    border: "none",
-    width: "100%",
-    "&:focus": {
-      outline: "none",
+    fontSize: '0.8125rem',
+    fontFamily: 'Metropolis',
+    margin: '-0.2rem -0.8rem',
+    border: 'none',
+    width: '100%',
+    '&:focus': {
+      outline: 'none',
     },
   },
   container: {
-    justifySelf: "flex-end",
-    alignSelf: "center",
-    display: "flex",
-    width: "fit-content",
-    alignItems: "center",
-    paddingRight: "1.375rem",
+    justifySelf: 'flex-end',
+    alignSelf: 'center',
+    display: 'flex',
+    width: 'fit-content',
+    alignItems: 'center',
+    paddingRight: '1.375rem',
   },
 }));
 
@@ -68,7 +68,7 @@ const FieldInput = ({
   leftLabel,
 }: FieldInputProps) => {
   const classes = useStyles();
-  const [input, setInput] = useState<string>("");
+  const [input, setInput] = useState<string>('');
   const [priceInput, setPriceInput] = useState<number>(0);
   const [isError, setIsError] = useState<boolean>(false);
   const ID = get(record, rowID);
@@ -106,7 +106,7 @@ const FieldInput = ({
       item
       style={{
         ...style,
-        alignSelf: "center",
+        alignSelf: 'center',
         flexBasis: fixedWidth ? fixedWidth : width,
         flexShrink: fixedWidth ? 0 : 1,
         maxWidth: fixedWidth ? fixedWidth : width,
@@ -116,8 +116,8 @@ const FieldInput = ({
         <PriusFieldset
           disabled={isDisabled}
           gutterBottom={false}
-          status={isError ? "error" : "normal"}
-          helperText={isRequired ? (isError ? `${title} wajib diisi` : "") : ""}
+          status={isError ? 'error' : 'normal'}
+          helperText={isRequired ? (isError ? `${title} wajib diisi` : '') : ''}
         >
           {isInputPrice ? (
             <PriusInputGroup
@@ -132,9 +132,9 @@ const FieldInput = ({
                 data-identity={fieldId && `${fieldId}`}
                 disabled={isDisabled}
                 allowNegative={false}
-                decimalSeparator={","}
+                decimalSeparator={','}
                 isNumericString={true}
-                thousandSeparator={"."}
+                thousandSeparator={'.'}
                 value={priceInput}
                 className={classes.priceInput}
                 onValueChange={(values) => {
@@ -150,7 +150,7 @@ const FieldInput = ({
               className={className && `${className}`}
               id={fieldId && `${fieldId}`}
               inputProps={{
-                "data-identity": fieldId && `${fieldId}`,
+                'data-identity': fieldId && `${fieldId}`,
               }}
               type="text"
               autoComplete="off"
@@ -161,7 +161,7 @@ const FieldInput = ({
                 isInputString
                   ? handleOnChange(
                       ID,
-                      event.target.value ? (event.target.value as string) : ""
+                      event.target.value ? (event.target.value as string) : ''
                     )
                   : handleOnChange(
                       ID,

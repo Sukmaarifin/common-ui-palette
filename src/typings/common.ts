@@ -27,7 +27,6 @@ export type FreeTranslationType = {
   [key: string]: any;
 };
 
-
 export type ProductVariantType = {
   channelIDs: Array<string>;
   options: Array<VariantOptionType>;
@@ -92,7 +91,6 @@ export type SocialMediaLinkType = {
   instagram: string;
 };
 
-
 export type PageInfoType = {
   totalItems?: number;
   itemPerPage: number;
@@ -113,10 +111,10 @@ export type SortInputType = {
   isAscending: boolean;
 };
 
-export const SEVERITY_ERROR = "error";
-export const SEVERITY_SUCCESS = "success";
-export const SEVERITY_INFO = "info";
-export const SEVERITY_WARNING = "warning";
+export const SEVERITY_ERROR = 'error';
+export const SEVERITY_SUCCESS = 'success';
+export const SEVERITY_INFO = 'info';
+export const SEVERITY_WARNING = 'warning';
 
 export type AlertType = {
   severity:

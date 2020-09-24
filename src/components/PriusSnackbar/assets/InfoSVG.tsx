@@ -1,10 +1,10 @@
-import React from "react";
-import { checkSVGProp } from "../../PriusMenu/assets/typeSVG";
+import React from 'react';
+import { checkSVGProp } from '../../PriusMenu/assets/typeSVG';
 
 export const InfoSVG = ({
-  className = "",
-  width = "16",
-  height = "16",
+  className = '',
+  width = '16',
+  height = '16',
 }: checkSVGProp) => {
   return (
     <svg

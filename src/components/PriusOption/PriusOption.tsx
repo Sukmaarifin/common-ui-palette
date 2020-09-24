@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import clsx from "clsx";
+import React, { useRef, useState } from 'react';
+import clsx from 'clsx';
 import {
   ClickAwayListener,
   Grow,
@@ -10,33 +10,33 @@ import {
   MenuList,
   Paper,
   Popper,
-} from "@material-ui/core";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import { MoreHoriz } from "@material-ui/icons";
+} from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+import { MoreHoriz } from '@material-ui/icons';
 
-import PriusTooltip from "../PriusTooltip";
-import { OptionIcon } from "../../icons";
+import PriusTooltip from '../PriusTooltip';
+import { OptionIcon } from '../../icons';
 
 const useStyles = makeStyles((theme: Theme) => ({
   menuItem: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   iconLeft: {
-    marginRight: "0.625rem",
+    marginRight: '0.625rem',
   },
   iconRight: {
-    marginLeft: "0.625rem",
+    marginLeft: '0.625rem',
   },
   itemIcon: {
-    minWidth: "auto",
+    minWidth: 'auto',
   },
   itemInner: {
-    display: "flex",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center',
   },
   itemText: {
-    "& > *": {
-      fontWeight: "bold",
+    '& > *': {
+      fontWeight: 'bold',
     },
   },
   paper: {
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-type IconPosition = "default" | "vertical";
+type IconPosition = 'default' | 'vertical';
 
 export type ItemType = {
   // disable menu item
@@ -95,12 +95,12 @@ function PriusOption({ icon, items }: PriusOptionProps) {
     <>
       <IconButton
         ref={anchorRef}
-        aria-controls={open ? "menu-list-grow" : undefined}
+        aria-controls={open ? 'menu-list-grow' : undefined}
         aria-haspopup="true"
         onClick={handleToggle}
         data-identity="option-button-toggle"
       >
-        {icon === "vertical" ? <OptionIcon /> : <MoreHoriz />}
+        {icon === 'vertical' ? <OptionIcon /> : <MoreHoriz />}
       </IconButton>
 
       <Popper
@@ -115,7 +115,7 @@ function PriusOption({ icon, items }: PriusOptionProps) {
             {...TransitionProps}
             style={{
               transformOrigin:
-                placement === "bottom" ? "center top" : "center bottom",
+                placement === 'bottom' ? 'center top' : 'center bottom',
             }}
           >
             <Paper className={classes.paper}>

@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
-import CKEditor from "ckeditor4-react";
-import { Grid, createStyles, makeStyles, Theme } from "@material-ui/core";
-import { useMutation } from "react-apollo";
+import React, { useState, useEffect, useRef } from 'react';
+import CKEditor from 'ckeditor4-react';
+import { Grid, createStyles, makeStyles, Theme } from '@material-ui/core';
+import { useMutation } from 'react-apollo';
 
-import PriusCircularProgress from "../PriusCircularProgress";
-import { FileType } from "../PriusImageUploader";
-import PriusButtonText from "../PriusButtonText";
-import { useSnackbar } from "../PriusSnackbar";
+import PriusCircularProgress from '../PriusCircularProgress';
+import { FileType } from '../PriusImageUploader';
+import PriusButtonText from '../PriusButtonText';
+import { useSnackbar } from '../PriusSnackbar';
 
-import { ToolbarType, StartupModeTypes } from "./types";
+import { ToolbarType, StartupModeTypes } from './types';
 import {
   DEFAULT_EXTRA_PLUGINS,
   DEFAULT_HEIGHT,
   DEFAULT_TOOLBAR,
-} from "./constants";
-import { UPLOAD_IMAGE } from "../../graphql";
+} from './constants';
+import { UPLOAD_IMAGE } from '../../graphql';
 
 const useStyle = makeStyles((theme: Theme) =>
   createStyles({
@@ -22,16 +22,16 @@ const useStyle = makeStyles((theme: Theme) =>
       marginTop: 10,
       borderColor: theme.colors.primary,
       border: `1px solid ${theme.colors.primary}`,
-      padding: "4px 20px",
-      borderRadius: "3px",
-      fontWeight: "bold",
-      "&:hover": {
+      padding: '4px 20px',
+      borderRadius: '3px',
+      fontWeight: 'bold',
+      '&:hover': {
         backgroundColor: theme.colors.primary,
         color: theme.colors.white,
       },
     },
     imageUploader: {
-      display: "none",
+      display: 'none',
     },
   })
 );
@@ -64,7 +64,7 @@ const PriusTextEditor = ({
   setTheme,
   setHeight,
   startupMode = StartupModeTypes.WYSIWYG,
-  title = "Text Editor",
+  title = 'Text Editor',
   toolbar = DEFAULT_TOOLBAR,
   uiColor,
   onBlur,
@@ -79,7 +79,7 @@ const PriusTextEditor = ({
     } else if (data) {
       setContentState(data);
     } else {
-      setContentState("");
+      setContentState('');
     }
   }, [previousText, data]);
 
@@ -90,9 +90,9 @@ const PriusTextEditor = ({
       variables: {
         input: {
           file: file.file,
-          bucket: "PRIUS",
+          bucket: 'PRIUS',
           contentType: file.contentType,
-          uploadType: "TEXT_EDITOR_IMAGE",
+          uploadType: 'TEXT_EDITOR_IMAGE',
         },
       },
     }).then((image: any) => {
@@ -111,7 +111,7 @@ const PriusTextEditor = ({
     const target = event.target as HTMLInputElement;
     const file: File = (target.files as FileList)[0];
 
-    if (file?.type.indexOf("image") !== -1) {
+    if (file?.type.indexOf('image') !== -1) {
       try {
         if (file.type) {
           uploadImageToTextEditor({
@@ -120,10 +120,10 @@ const PriusTextEditor = ({
           });
         }
       } catch (e) {
-        snackbar.show(`Error: ${e.message}`, "error");
+        snackbar.show(`Error: ${e.message}`, 'error');
       }
     } else {
-      snackbar.show("Invalid data type: limited to image only.", "error");
+      snackbar.show('Invalid data type: limited to image only.', 'error');
     }
   };
 
@@ -139,7 +139,7 @@ const PriusTextEditor = ({
         config={{
           extraPlugins,
           height: setHeight || height,
-          removeButtons: "Subscript, Superscript",
+          removeButtons: 'Subscript, Superscript',
           resize_enabled: false,
           startupMode,
           title,
@@ -158,7 +158,7 @@ const PriusTextEditor = ({
           },
 
           //filter script and embed styling
-          disallowedContent: "script; *[on*]; style",
+          disallowedContent: 'script; *[on*]; style',
         }}
         data={contentState}
         disabled={true}
@@ -178,7 +178,7 @@ const PriusTextEditor = ({
             {loading && called ? (
               <PriusCircularProgress size={10} isWithText={false} />
             ) : (
-              "Unggah Gambar"
+              'Unggah Gambar'
             )}
           </PriusButtonText>
 

@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Drawer, List, ListItem, Typography } from "@material-ui/core";
+import * as React from 'react';
+import { Drawer, List, ListItem, Typography } from '@material-ui/core';
 
-import "./NotificationList.css";
+import './NotificationList.css';
 
 export type NotificationListProps = {
   items: any;

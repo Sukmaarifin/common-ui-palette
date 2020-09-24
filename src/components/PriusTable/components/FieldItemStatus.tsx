@@ -2,20 +2,20 @@
  * @todo unit testing
  */
 
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
-import { CheckIcon, CloseIcon } from "../../../icons";
-import { FieldProps } from "../../../ui_palette/PriusTable/types";
+import { CheckIcon, CloseIcon } from '../../../icons';
+import { FieldProps } from '../../../components/PriusTable/types';
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
-    alignSelf: "center",
-    padding: "0 1rem",
-    alignContent: "center",
-    justifyContent: "center",
+    alignSelf: 'center',
+    padding: '0 1rem',
+    alignContent: 'center',
+    justifyContent: 'center',
   },
   check: {
     color: theme.colors.success,
@@ -42,7 +42,7 @@ function FieldItemStatus({
   const status: boolean = get(record, source);
 
   const filterStatus: boolean =
-    typeof filter === "string" ? get(record, filter) : filter;
+    typeof filter === 'string' ? get(record, filter) : filter;
 
   let icon: React.ReactElement | null = null;
 
@@ -55,7 +55,7 @@ function FieldItemStatus({
       );
       break;
     case false:
-      icon = <CloseIcon color={filterStatus ? "error" : "disabled"} />;
+      icon = <CloseIcon color={filterStatus ? 'error' : 'disabled'} />;
       break;
     default:
       break;

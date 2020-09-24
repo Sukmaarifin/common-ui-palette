@@ -6,8 +6,8 @@ export type SEOType = {
 };
 
 export const initialSEOs: SEOType = {
-  title: "",
-  description: "",
+  title: '',
+  description: '',
   keywords: [],
-  language: "ID",
+  language: 'ID',
 };

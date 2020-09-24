@@ -1,12 +1,12 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
-import PriusCircularProgress, { PriusCircularProgressProps } from "../index";
+import theme from '../../../styles/material-ui-theme';
+import PriusCircularProgress, { PriusCircularProgressProps } from '../index';
 
-describe("PriusCircularProgress Testing", () => {
+describe('PriusCircularProgress Testing', () => {
   const customProps: PriusCircularProgressProps = {
     isWithText: true,
     size: 20,
@@ -20,13 +20,13 @@ describe("PriusCircularProgress Testing", () => {
     );
   };
 
-  it("render successfully without props", () => {
+  it('render successfully without props', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
-  it("render with props", () => {
+  it('render with props', () => {
     const wrapper = render(customProps);
-    expect(wrapper.text()).toEqual("Memuat . . .");
+    expect(wrapper.text()).toEqual('Memuat . . .');
   });
 });

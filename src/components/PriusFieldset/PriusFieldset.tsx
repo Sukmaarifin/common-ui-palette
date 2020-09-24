@@ -1,64 +1,64 @@
-import React from "react";
-import clsx from "clsx";
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import InputLabel, { InputLabelProps } from "@material-ui/core/InputLabel";
-import { FormControl, FormHelperText, Grid } from "@material-ui/core";
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import InputLabel, { InputLabelProps } from '@material-ui/core/InputLabel';
+import { FormControl, FormHelperText, Grid } from '@material-ui/core';
 
-import PriusTooltip from "../PriusTooltip";
+import PriusTooltip from '../PriusTooltip';
 import {
   QuestionCircleOutlinedIcon,
   CheckCircleOutlinedIcon,
   ExclamationCircleOutlinedIcon,
-} from "../../icons";
+} from '../../icons';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      "& > .MuiInputBase-root.Mui-error": {
+      '& > .MuiInputBase-root.Mui-error': {
         borderColor: theme.colors.failed,
       },
-      "&.success": {
-        "&> .MuiInputBase-root": {
+      '&.success': {
+        '&> .MuiInputBase-root': {
           borderColor: theme.colors.success,
         },
-        "&> .MuiFormLabel-root": {
+        '&> .MuiFormLabel-root': {
           color: theme.colors.success,
         },
-        "&> .MuiFormHelperText-root": {
+        '&> .MuiFormHelperText-root': {
           color: theme.colors.success,
         },
       },
     },
     select: {
-      "& .MuiSelect-icon": {
-        marginRight: "0.625rem",
-        top: "50%",
-        transform: "translateY(-50%)",
-        fontSize: "0.5rem",
+      '& .MuiSelect-icon': {
+        marginRight: '0.625rem',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        fontSize: '0.5rem',
       },
     },
     label: {
       color: theme.colors.text,
-      fontSize: "0.8125rem",
-      position: "relative",
-      display: "inline-flex",
-      marginBottom: "0.3125rem",
-      marginLeft: "0.3125rem",
-      transform: "scale(1)",
-      "&.Mui-focused": {
-        color: "initial",
+      fontSize: '0.8125rem',
+      position: 'relative',
+      display: 'inline-flex',
+      marginBottom: '0.3125rem',
+      marginLeft: '0.3125rem',
+      transform: 'scale(1)',
+      '&.Mui-focused': {
+        color: 'initial',
       },
     },
     tooltipIcon: {
       marginLeft: theme.spacing(0.5),
     },
     helperText: {
-      textTransform: "initial",
-      display: "inline-flex",
-      marginTop: "0.25rem",
-      marginLeft: "0.3125rem",
-      marginRight: "0.3125rem",
-      "& .MuiSvgIcon-root": {
+      textTransform: 'initial',
+      display: 'inline-flex',
+      marginTop: '0.25rem',
+      marginLeft: '0.3125rem',
+      marginRight: '0.3125rem',
+      '& .MuiSvgIcon-root': {
         marginRight: theme.spacing(0.5),
       },
     },
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(3),
     },
     toolbar: {
-      "& > *": {
+      '& > *': {
         marginLeft: theme.spacing(1),
       },
     },
@@ -84,7 +84,7 @@ export type PriusFieldsetProps = {
   label?: string | React.ReactNode;
   labelId?: string;
   required?: boolean;
-  status?: "normal" | "error" | "success";
+  status?: 'normal' | 'error' | 'success';
   toolbar?: React.ReactNode;
   tooltipText?: React.ReactNode;
 };
@@ -100,7 +100,7 @@ export const PriusFieldset: React.FunctionComponent<PriusFieldsetProps> = ({
   label,
   labelId,
   required = false,
-  status = "normal",
+  status = 'normal',
   toolbar,
   tooltipText,
 }) => {
@@ -109,12 +109,12 @@ export const PriusFieldset: React.FunctionComponent<PriusFieldsetProps> = ({
   return (
     <FormControl
       disabled={disabled}
-      error={status === "error"}
+      error={status === 'error'}
       fullWidth={fullWidth}
       required={required}
       className={clsx(
         classes.root,
-        status === "success" ? "success" : undefined,
+        status === 'success' ? 'success' : undefined,
         gutterBottom ? classes.gutterBottom : undefined
       )}
     >
@@ -154,10 +154,10 @@ export const PriusFieldset: React.FunctionComponent<PriusFieldsetProps> = ({
 
       {helperText && (
         <FormHelperText className={classes.helperText}>
-          {status === "error" && (
+          {status === 'error' && (
             <ExclamationCircleOutlinedIcon fontSize="small" />
           )}
-          {status === "success" && <CheckCircleOutlinedIcon fontSize="small" />}
+          {status === 'success' && <CheckCircleOutlinedIcon fontSize="small" />}
           {helperText}
         </FormHelperText>
       )}

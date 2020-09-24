@@ -1,11 +1,11 @@
-import React from "react";
-import clsx from "clsx";
-import { Grid, Typography } from "@material-ui/core";
+import React from 'react';
+import clsx from 'clsx';
+import { Grid, Typography } from '@material-ui/core';
 
-import PriusPaper from "../PriusPaper";
-import PriusLabel from "../PriusLabel";
+import PriusPaper from '../PriusPaper';
+import PriusLabel from '../PriusLabel';
 
-import { useStyles } from "./PriusCardCss";
+import { useStyles } from './PriusCardCss';
 
 export type PriusCardProps = {
   className?: string;
@@ -51,8 +51,8 @@ export function PriusCard({
               text={label}
               type="error"
               style={{
-                marginLeft: "0.5rem",
-                fontSize: "0.65rem",
+                marginLeft: '0.5rem',
+                fontSize: '0.65rem',
                 fontWeight: 300,
               }}
             />

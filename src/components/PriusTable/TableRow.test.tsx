@@ -1,12 +1,12 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../styles/material-ui-theme";
-import TableRow, { TableRowProps } from "./TableRow";
-import FieldText from "./components/FieldText";
-import FieldNumber from "./components/FieldNumber";
+import theme from '../../styles/material-ui-theme';
+import TableRow, { TableRowProps } from './TableRow';
+import FieldText from './components/FieldText';
+import FieldNumber from './components/FieldNumber';
 
 /**
  * Test Case
@@ -24,17 +24,17 @@ import FieldNumber from "./components/FieldNumber";
  * etc?
  */
 
-describe("TableRow Testing", () => {
+describe('TableRow Testing', () => {
   // mock data for record
   const mockData = {
-    site: { name: "Dummy Site" },
+    site: { name: 'Dummy Site' },
     published: true,
     stock: 10,
   };
 
   const collapsedRecords = [
     {
-      channel: "Dummy Channel",
+      channel: 'Dummy Channel',
       price: 19000,
     },
   ];
@@ -49,18 +49,18 @@ describe("TableRow Testing", () => {
       <FieldText source="site.name" width="20%" />,
       <FieldNumber source="stock" width="20%" />,
     ],
-    filterPublished: "published",
+    filterPublished: 'published',
     isExpanded: false,
     isSelected: false,
     menuData: [],
     record: mockData,
-    type: "card",
+    type: 'card',
     handleExpandToggle: jest.fn(),
     handleSelectToggle: jest.fn(),
   };
 
   // snapshot
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <TableRow {...props} />

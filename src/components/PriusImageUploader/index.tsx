@@ -1,22 +1,22 @@
-import React, { useRef } from "react";
-import clsx from "clsx";
+import React, { useRef } from 'react';
+import clsx from 'clsx';
 
-import PriusCircularProgress from "../PriusCircularProgress";
-import { TrashBinOutlinedIcon } from "../../icons";
-import { useSnackbar } from "../PriusSnackbar";
+import PriusCircularProgress from '../PriusCircularProgress';
+import { TrashBinOutlinedIcon } from '../../icons';
+import { useSnackbar } from '../PriusSnackbar';
 import PriusThumbnail, {
   PriusThumbnailProps,
   ThumbnailSize,
-} from "../PriusThumbnail";
+} from '../PriusThumbnail';
 
-import { useStyles } from "./PriusImageUploaderCss";
+import { useStyles } from './PriusImageUploaderCss';
 
 export type FileType = {
   file: File;
   contentType: string;
 };
 
-export type ImageUploaderProps = Pick<PriusThumbnailProps, "defaultSource"> & {
+export type ImageUploaderProps = Pick<PriusThumbnailProps, 'defaultSource'> & {
   altText: string;
   source: string;
   customSize?: ThumbnailSize;
@@ -33,7 +33,7 @@ const PriusImageUploader = ({
   altText,
   defaultSource,
   source,
-  customSize = "big",
+  customSize = 'big',
   fileContent,
   id,
   isError,
@@ -52,7 +52,7 @@ const PriusImageUploader = ({
     const target = event.target as HTMLInputElement;
     const file: File = (target.files as FileList)[0];
 
-    if (file?.type.indexOf("image") !== -1) {
+    if (file?.type.indexOf('image') !== -1) {
       try {
         if (fileContent && file.type) {
           fileContent({
@@ -63,22 +63,22 @@ const PriusImageUploader = ({
 
         if (onSubmit) onSubmit(event);
       } catch (e) {
-        snackbar.show(`Error: ${e.message}`, "error");
+        snackbar.show(`Error: ${e.message}`, 'error');
       }
     } else if (file.size > 2.5e6) {
       snackbar.show(
-        "Unggah Gambar Gagal",
-        "error",
+        'Unggah Gambar Gagal',
+        'error',
         true,
-        "Ukuran file gambar yang ingin Anda unggah terlalu besar."
+        'Ukuran file gambar yang ingin Anda unggah terlalu besar.'
       );
     } else {
-      snackbar.show("Invalid data type: limited to image only.", "error");
+      snackbar.show('Invalid data type: limited to image only.', 'error');
     }
   };
 
   const handlerKeyPress = (event: React.KeyboardEvent<HTMLLabelElement>) => {
-    if (event.key === "Enter" && fileInput.current) {
+    if (event.key === 'Enter' && fileInput.current) {
       fileInput.current.click();
     }
   };
@@ -102,7 +102,7 @@ const PriusImageUploader = ({
             imageSource={source}
             size={customSize}
             onError={onError}
-            className={isError ? classes.error : ""}
+            className={isError ? classes.error : ''}
           />
         </React.Fragment>
       ) : (
@@ -120,9 +120,9 @@ const PriusImageUploader = ({
               className={clsx(
                 classes.thumbnail,
                 defaultSource && classes.container,
-                isError ? classes.error : ""
+                isError ? classes.error : ''
               )}
-              imageSource={""}
+              imageSource={''}
               size={customSize}
             />
           </label>

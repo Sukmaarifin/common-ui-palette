@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import clsx from "clsx";
-import { Grid } from "@material-ui/core";
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import { Grid } from '@material-ui/core';
 
-import uploadIcon from "./UploadIcon.svg";
-import PriusIndicatorLabel, { StatusUploadType } from "../PriusIndicatorLabel";
+import uploadIcon from './UploadIcon.svg';
+import PriusIndicatorLabel, { StatusUploadType } from '../PriusIndicatorLabel';
 
-import { PriusUploadFileCss } from "./PriusUploadFileCss";
+import { PriusUploadFileCss } from './PriusUploadFileCss';
 
 export type PriusUploadFileProps = {
   onUploadFile: (files: any) => void;
@@ -21,9 +21,9 @@ const PriusUploadFile = ({
   id,
 }: PriusUploadFileProps) => {
   const classes = PriusUploadFileCss();
-  const greyBorder = "#ececec";
-  const redBorder = "#e02020";
-  const blueBorder = "#1c9aea";
+  const greyBorder = '#ececec';
+  const redBorder = '#e02020';
+  const blueBorder = '#1c9aea';
 
   const [isOnDrag, setIsOnDrag] = useState<boolean>(false);
   const [dragCounter, setDragCounter] = useState<number>(0);
@@ -75,7 +75,7 @@ const PriusUploadFile = ({
         e.dataTransfer.clearData();
         setDragCounter(0);
         setFile(fileData);
-        setIconFile("document");
+        setIconFile('document');
       }
     }
   };
@@ -85,7 +85,7 @@ const PriusUploadFile = ({
       const fileData = e.target.files[0];
       onUploadFile(fileData);
       setFile(fileData);
-      setIconFile("document");
+      setIconFile('document');
     }
   };
 
@@ -97,7 +97,7 @@ const PriusUploadFile = ({
     <Grid
       container
       id="divFile"
-      className={clsx(classes.box, className ? className : "")}
+      className={clsx(classes.box, className ? className : '')}
       draggable={isOnDrag}
       onDragStart={(event: any) => handleDragIn(event)}
       onDragEnd={(event: any) => handleDragOut(event)}
@@ -138,7 +138,7 @@ const PriusUploadFile = ({
             onDelete={() => {
               setIconFile(uploadIcon);
               setFile(null);
-              setBorderBox("#ececec");
+              setBorderBox('#ececec');
             }}
           />
         )}

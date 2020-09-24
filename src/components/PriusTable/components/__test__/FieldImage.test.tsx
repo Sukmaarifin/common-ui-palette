@@ -1,37 +1,37 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
-import FieldImage, { FieldImageProps } from "../FieldImage";
-import { PriusThumbnailProps } from "../../../PriusThumbnail";
+import FieldImage, { FieldImageProps } from '../FieldImage';
+import { PriusThumbnailProps } from '../../../PriusThumbnail';
 
-describe("FieldImage test", () => {
+describe('FieldImage test', () => {
   const props: FieldImageProps = {
     record: {
-      image: "#some-link-to-image",
+      image: '#some-link-to-image',
     },
-    source: "image",
-    altText: "Super awesome product image",
-    size: "small",
+    source: 'image',
+    altText: 'Super awesome product image',
+    size: 'small',
   };
 
   const passedProps: PriusThumbnailProps = {
-    imageSource: "#some-link-to-image",
-    altText: "Super awesome product image",
-    size: "small",
+    imageSource: '#some-link-to-image',
+    altText: 'Super awesome product image',
+    size: 'small',
   };
 
   // snapshot
-  it("renders correctly", () => {
+  it('renders correctly', () => {
     const wrapper = mount(<FieldImage {...props} />);
 
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   // snapshot
-  it("renders PriusThumbnail with correct props", () => {
+  it('renders PriusThumbnail with correct props', () => {
     const wrapper = mount(<FieldImage {...props} />);
 
-    expect(wrapper.find("PriusThumbnail").props()).toEqual(passedProps);
+    expect(wrapper.find('PriusThumbnail').props()).toEqual(passedProps);
   });
 });

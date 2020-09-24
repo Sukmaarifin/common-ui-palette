@@ -1,22 +1,22 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../../styles/material-ui-theme";
-import FieldStatus, { StatusFieldProps } from "../FieldStatus";
+import theme from '../../../../styles/material-ui-theme';
+import FieldStatus, { StatusFieldProps } from '../FieldStatus';
 
-describe("FieldStatus Testing", () => {
+describe('FieldStatus Testing', () => {
   const render = () => {
     // mock data for record
     const mockData = {
-      id: "143",
-      syncStatus: "SUCCESS",
+      id: '143',
+      syncStatus: 'SUCCESS',
     };
 
     const props: StatusFieldProps = {
       record: mockData,
-      source: "syncStatus",
+      source: 'syncStatus',
     };
 
     return mount(
@@ -26,7 +26,7 @@ describe("FieldStatus Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

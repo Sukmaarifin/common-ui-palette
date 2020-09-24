@@ -1,17 +1,17 @@
-import React from "react";
-import { IconButton, LinearProgress } from "@material-ui/core";
-import { Refresh } from "@material-ui/icons";
-import cslx from "clsx";
+import React from 'react';
+import { IconButton, LinearProgress } from '@material-ui/core';
+import { Refresh } from '@material-ui/icons';
+import cslx from 'clsx';
 
-import { CloseIcon } from "../../icons";
+import { CloseIcon } from '../../icons';
 
-import { PriusIdicatorLabelCss } from "./PriusIndicatorLabelCss";
+import { PriusIdicatorLabelCss } from './PriusIndicatorLabelCss';
 
 export enum StatusUploadType {
-  UPLOAD = "UPLOAD",
-  FAILED = "FAILED",
-  DONE = "DONE",
-  EMPTY = "EMPTY",
+  UPLOAD = 'UPLOAD',
+  FAILED = 'FAILED',
+  DONE = 'DONE',
+  EMPTY = 'EMPTY',
 }
 
 type PriusIndicatorLabelProps = {
@@ -67,8 +67,8 @@ const PriusIndicatorLabel: React.FC<PriusIndicatorLabelProps> = ({
         </span>
       </div>
       {isUploading && (
-        <div style={{ width: "100%" }}>
-          <LinearProgress style={{ width: "100%" }} />
+        <div style={{ width: '100%' }}>
+          <LinearProgress style={{ width: '100%' }} />
         </div>
       )}
     </div>

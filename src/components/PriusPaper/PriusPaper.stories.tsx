@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import PriusPaper from "./PriusPaper";
+import PriusPaper from './PriusPaper';
 
 export default {
   component: PriusPaper,
-  title: "Components|PriusPaper",
+  title: 'Components|PriusPaper',
 };
 
 export const basic = () => (

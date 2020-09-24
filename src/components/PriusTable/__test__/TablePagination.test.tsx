@@ -1,14 +1,14 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
-import TablePagination, { TablePaginationProps } from "../TablePagination";
+import TablePagination, { TablePaginationProps } from '../TablePagination';
 
-describe("TablePagination Testing", () => {
+describe('TablePagination Testing', () => {
   const render = () => {
     // mock data from parent
     const props: TablePaginationProps = {
-      labelPerPage: "produk satu halaman",
+      labelPerPage: 'produk satu halaman',
       pageInfo: {
         totalItems: 25,
         itemPerPage: 10,
@@ -22,7 +22,7 @@ describe("TablePagination Testing", () => {
     return mount(<TablePagination {...props} />);
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
@@ -41,10 +41,10 @@ describe("TablePagination Testing", () => {
   //   expect(wrapper.prop("onChangeRowsPerPage")).toBeCalled();
   // });
 
-  it("simulate on click change page", () => {
+  it('simulate on click change page', () => {
     const wrapper = render();
-    wrapper.find("button").first().simulate("click");
-    wrapper.find("button").at(1).simulate("click");
-    expect(wrapper.prop("onChangePage")).toBeCalled();
+    wrapper.find('button').first().simulate('click');
+    wrapper.find('button').at(1).simulate('click');
+    expect(wrapper.prop('onChangePage')).toBeCalled();
   });
 });

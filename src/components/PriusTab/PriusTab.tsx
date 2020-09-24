@@ -3,13 +3,13 @@
  * [ ] adjust storybook
  */
 
-import React, { CSSProperties } from "react";
-import clsx from "clsx";
-import { Tab, Tabs } from "@material-ui/core";
+import React, { CSSProperties } from 'react';
+import clsx from 'clsx';
+import { Tab, Tabs } from '@material-ui/core';
 
-import { useStyles } from "./PriusTabCss";
+import { useStyles } from './PriusTabCss';
 
-export type TabsType = "standard" | "scrollable";
+export type TabsType = 'standard' | 'scrollable';
 
 export type TabMenu = {
   text: string;
@@ -33,7 +33,7 @@ export const PriusTab = ({
   onChange,
   tabs,
   id,
-  variant = "standard",
+  variant = 'standard',
   ...props
 }: PriusTabProps) => {
   const classes = useStyles();
@@ -46,11 +46,11 @@ export const PriusTab = ({
       className={clsx(
         classes.tabs,
         className,
-        variant === "scrollable" ? classes.tabsScrollable : classes.tabsStandard
+        variant === 'scrollable' ? classes.tabsScrollable : classes.tabsStandard
       )}
       onChange={onChange}
       variant={variant}
-      scrollButtons={variant === "scrollable" ? "on" : "off"}
+      scrollButtons={variant === 'scrollable' ? 'on' : 'off'}
       {...props}
     >
       {tabs.map((item: TabMenu, index: number) => (

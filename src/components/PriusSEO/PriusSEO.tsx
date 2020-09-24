@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useContext } from "react";
-import { Typography } from "@material-ui/core";
+import React, { useState, useEffect, useContext } from 'react';
+import { Typography } from '@material-ui/core';
 
-import PriusFieldset from "../PriusFieldset";
-import PriusInput from "../PriusInputNew";
+import PriusFieldset from '../PriusFieldset';
+import PriusInput from '../PriusInputNew';
 import PriusMultipleSelect, {
   OptionType,
   PriusActionMeta,
-} from "../PriusMultipleSelect";
+} from '../PriusMultipleSelect';
 
-import { SEOType } from "./types";
-import { TenantContext } from "../PriusSSSO";
+import { SEOType } from './types';
+import { TenantContext } from '../PriusSSSO';
 
 export type PriusSEOProps = {
   data: Array<SEOType>;
@@ -63,13 +63,13 @@ const PriusSEO = ({
         selected.push(selectedOption.value)
       );
     }
-    onChange(selected, "keywords");
+    onChange(selected, 'keywords');
   };
 
   return (
     <React.Fragment>
       {showTitle && (
-        <Typography variant="h3" style={{ marginBottom: "2rem" }}>
+        <Typography variant="h3" style={{ marginBottom: '2rem' }}>
           SEO
         </Typography>
       )}
@@ -87,13 +87,13 @@ const PriusSEO = ({
       >
         <PriusInput
           inputProps={{
-            "data-identity": inputId && `${inputId}-input-seoDescription`,
+            'data-identity': inputId && `${inputId}-input-seoDescription`,
           }}
           id="input-seo-description"
           name="description"
           autoComplete="off"
           placeholder="Masukkan meta deskripsi"
-          value={data.length > 0 ? data[0].description : ""}
+          value={data.length > 0 ? data[0].description : ''}
           onChange={(event) => onChangeInput(event)}
         />
       </PriusFieldset>
@@ -131,17 +131,17 @@ const PriusSEO = ({
         helperText={errors?.slug && errors.slug}
         inputId="input-slug"
         label="Slug"
-        status={errors?.slug ? "error" : "normal"}
+        status={errors?.slug ? 'error' : 'normal'}
         tooltipText="Slug digunakan untuk mempersingkat URL produk Anda."
       >
         <PriusInput
           inputProps={{
-            "data-identity": inputId && `${inputId}-input-slug`,
+            'data-identity': inputId && `${inputId}-input-slug`,
           }}
           id="input-slug"
           name="slug"
-          placeholder={placeholder || "Masukkan slug untuk produk anda"}
-          value={slug || ""}
+          placeholder={placeholder || 'Masukkan slug untuk produk anda'}
+          value={slug || ''}
           onChange={(event) => onChangeInput(event)}
         />
       </PriusFieldset>

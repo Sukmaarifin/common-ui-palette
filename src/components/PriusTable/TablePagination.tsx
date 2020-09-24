@@ -1,6 +1,6 @@
-import React from "react";
-import clsx from "clsx";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 import {
   InputBase,
   IconButton,
@@ -8,9 +8,9 @@ import {
   Select,
   Toolbar,
   Typography,
-} from "@material-ui/core";
-import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import NavigateBeforeIcon from "@material-ui/icons/NavigateBefore";
+} from '@material-ui/core';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 
 export const styles = makeStyles((theme: Theme) => ({
   /* Styles applied to the root element. */
@@ -18,7 +18,7 @@ export const styles = makeStyles((theme: Theme) => ({
     color: theme.palette.text.primary,
     fontSize: theme.typography.pxToRem(14),
     // Increase the specificity to override TableCell.
-    "&:last-child": {
+    '&:last-child': {
       padding: 0,
     },
   },
@@ -29,13 +29,13 @@ export const styles = makeStyles((theme: Theme) => ({
   },
   /* Styles applied to the spacer element. */
   spacer: {
-    flex: "1 1 100%",
+    flex: '1 1 100%',
   },
   /* Styles applied to the caption Typography components if `variant="caption"`. */
   caption: {
     flexShrink: 0,
     fontSize: 10,
-    fontFamily: "Metropolis",
+    fontFamily: 'Metropolis',
   },
   /* Styles applied to the Select component root element. */
   selectRoot: {
@@ -46,28 +46,28 @@ export const styles = makeStyles((theme: Theme) => ({
   /* Styles applied to the Select component `select` class. */
   select: {
     fontSize: 10,
-    fontFamily: "Metropolis",
+    fontFamily: 'Metropolis',
     paddingLeft: 8,
     paddingRight: 18,
-    textAlign: "right",
-    textAlignLast: "center", // Align <select> on Chrome.
+    textAlign: 'right',
+    textAlignLast: 'center', // Align <select> on Chrome.
   },
   /* Styles applied to the Select component `icon` class. */
   selectIcon: {
-    width: "1rem",
-    top: "30%",
+    width: '1rem',
+    top: '30%',
   },
   /* Styles applied to the `InputBase` component. */
   input: {
-    color: "inherit",
-    fontSize: "inherit",
+    color: 'inherit',
+    fontSize: 'inherit',
     flexShrink: 0,
   },
   /* Styles applied to the MenuItem component. */
   menuItem: {
     fontSize: 10,
-    fontFamily: "Metropolis",
-    justifyContent: "center",
+    fontFamily: 'Metropolis',
+    justifyContent: 'center',
   },
   /* Styles applied to the internal `TablePaginationActions` component. */
   actions: {
@@ -130,7 +130,7 @@ function TablePagination({
           <InputBase className={clsx(classes.input, classes.selectRoot)} />
         }
         inputProps={{
-          "data-identity": paginationId && `${paginationId}-input-rowsPerPage`,
+          'data-identity': paginationId && `${paginationId}-input-rowsPerPage`,
         }}
         value={pageInfo.itemPerPage}
         onChange={(event) => onChangeRowsPerPage(event)}
@@ -155,7 +155,7 @@ function TablePagination({
         color="inherit"
         variant="body2"
         className={classes.caption}
-        style={{ marginRight: "1rem" }}
+        style={{ marginRight: '1rem' }}
       >
         {labelToDisplayedRows(
           minRowsPerPage,
@@ -168,7 +168,7 @@ function TablePagination({
 
       <IconButton
         aria-label="delete"
-        onClick={() => onChangePage("prev")}
+        onClick={() => onChangePage('prev')}
         disabled={minRowsPerPage === 1}
         data-identity={paginationId && `${paginationId}-button-previousPage`}
       >
@@ -177,7 +177,7 @@ function TablePagination({
 
       <IconButton
         aria-label="delete"
-        onClick={() => onChangePage("next")}
+        onClick={() => onChangePage('next')}
         disabled={
           (maxRowsPerPage > pageInfo.totalItems
             ? pageInfo.totalItems

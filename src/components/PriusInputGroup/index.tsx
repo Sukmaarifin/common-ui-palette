@@ -1,55 +1,55 @@
-import React, { ElementType, ReactElement } from "react";
-import clsx from "clsx";
-import { MenuItem } from "@material-ui/core";
-import { SelectProps } from "@material-ui/core/Select";
-import { makeStyles, Theme } from "@material-ui/core/styles";
-import PriusSelect from "../PriusSelect";
+import React, { ElementType, ReactElement } from 'react';
+import clsx from 'clsx';
+import { MenuItem } from '@material-ui/core';
+import { SelectProps } from '@material-ui/core/Select';
+import { makeStyles, Theme } from '@material-ui/core/styles';
+import PriusSelect from '../PriusSelect';
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
-    borderRadius: "0.1875rem", // ~3px
-    border: "solid 1px #e8e8e8",
-    display: "inline-flex",
-    flexFlow: "row",
-    background: "white",
+    borderRadius: '0.1875rem', // ~3px
+    border: 'solid 1px #e8e8e8',
+    display: 'inline-flex',
+    flexFlow: 'row',
+    background: 'white',
   },
   dropdown: {
-    borderRight: "solid 1px #e8e8e8",
-    fontSize: "0.8rem",
-    padding: "0.2rem 0.8rem",
-    "&:before": {
-      borderBottom: "none",
+    borderRight: 'solid 1px #e8e8e8',
+    fontSize: '0.8rem',
+    padding: '0.2rem 0.8rem',
+    '&:before': {
+      borderBottom: 'none',
     },
   },
   inputContainer: {
-    alignSelf: "center",
-    fontSize: "0.8rem",
-    padding: "0.2rem 0.8rem",
-    display: "flex",
-    flexBasis: "100%",
-    "& > *": {
+    alignSelf: 'center',
+    fontSize: '0.8rem',
+    padding: '0.2rem 0.8rem',
+    display: 'flex',
+    flexBasis: '100%',
+    '& > *': {
       flex: 1,
     },
   },
   disabled: {
     background: theme.colors.grey2,
-    "& input": {
-      background: "inherit",
+    '& input': {
+      background: 'inherit',
     },
   },
   input: {
-    border: "none",
-    outline: "none",
-    fontSize: "0.8125rem",
-    fontFamily: "Metropolis",
+    border: 'none',
+    outline: 'none',
+    fontSize: '0.8125rem',
+    fontFamily: 'Metropolis',
   },
   leftLabel: {
     borderRight: `solid 1px ${theme.colors.grey3}`,
-    padding: "0.4rem",
-    margin: "0.4rem",
+    padding: '0.4rem',
+    margin: '0.4rem',
   },
   select: {
-    border: "none",
+    border: 'none',
     borderRight: `solid 1px ${theme.colors.grey3}`,
   },
   error: {
@@ -99,7 +99,7 @@ function PriusInputGroup({
   required,
   valueDropdown,
   valueInput,
-  width = "-webkit-fill-available",
+  width = '-webkit-fill-available',
   handleDropdown,
   handleInput,
   handleInputBlur,
@@ -125,7 +125,7 @@ function PriusInputGroup({
         <PriusSelect
           {...props}
           id={inputId}
-          inputProps={{ "data-identity": inputId }}
+          inputProps={{ 'data-identity': inputId }}
           disabled={disabled}
           displayEmpty
           name={dropdownName}
@@ -143,7 +143,7 @@ function PriusInputGroup({
         <PriusSelect
           {...props}
           id={inputId}
-          inputProps={{ "data-identity": inputId }}
+          inputProps={{ 'data-identity': inputId }}
           disabled={disabled}
           displayEmpty
           name={dropdownName}

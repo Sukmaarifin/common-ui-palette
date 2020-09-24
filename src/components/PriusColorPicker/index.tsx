@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 import {
   CustomPicker,
   HSLColor,
   RGBColor,
   Color,
   ColorResult,
-} from "react-color";
+} from 'react-color';
 import {
   EditableInput,
   Hue,
   Saturation,
-} from "react-color/lib/components/common";
-import { Grid, Typography } from "@material-ui/core";
-import clsx from "clsx";
+} from 'react-color/lib/components/common';
+import { Grid, Typography } from '@material-ui/core';
+import clsx from 'clsx';
 
 import {
   useStyles,
   editableInputStyle,
   presetColors,
-} from "./PriusColorPickerCss";
+} from './PriusColorPickerCss';
 
 const HuePointer = () => {
   const classes = useStyles();
@@ -47,29 +47,29 @@ export type PriusColorPickerType = {
 const PriusColorPicker = (props: PriusColorPickerType) => {
   const classes = useStyles();
 
-  const handleChange = (color: ColorResult, type: "hex" | "r" | "g" | "b") => {
-    if (type === "hex") {
-      if (typeof color === "string") {
+  const handleChange = (color: ColorResult, type: 'hex' | 'r' | 'g' | 'b') => {
+    if (type === 'hex') {
+      if (typeof color === 'string') {
         if (/^([0-9A-F]{3}){1,2}$/i.test(color)) {
-          props.onChange({ hex: color, source: "hex" });
+          props.onChange({ hex: color, source: 'hex' });
         }
       } else {
-        props.onChange({ hex: color.hex, source: "hex" });
+        props.onChange({ hex: color.hex, source: 'hex' });
       }
     } else {
-      if (typeof color === "string") {
+      if (typeof color === 'string') {
         props.onChange({
-          r: type === "r" ? color : props.rgb?.r,
-          g: type === "g" ? color : props.rgb?.g,
-          b: type === "b" ? color : props.rgb?.b,
-          source: "rgb",
+          r: type === 'r' ? color : props.rgb?.r,
+          g: type === 'g' ? color : props.rgb?.g,
+          b: type === 'b' ? color : props.rgb?.b,
+          source: 'rgb',
         });
       } else {
         props.onChange({
-          r: type === "r" ? color.rgb.r : props.rgb?.r,
-          g: type === "g" ? color.rgb.g : props.rgb?.g,
-          b: type === "b" ? color.rgb.b : props.rgb?.b,
-          source: "rgb",
+          r: type === 'r' ? color.rgb.r : props.rgb?.r,
+          g: type === 'g' ? color.rgb.g : props.rgb?.g,
+          b: type === 'b' ? color.rgb.b : props.rgb?.b,
+          source: 'rgb',
         });
       }
     }
@@ -102,8 +102,8 @@ const PriusColorPicker = (props: PriusColorPickerType) => {
           <Typography>Hex</Typography>
           <EditableInput
             style={editableInputStyle.hex}
-            value={props.hex?.replace("#", "")}
-            onChange={(color: ColorResult) => handleChange(color, "hex")}
+            value={props.hex?.replace('#', '')}
+            onChange={(color: ColorResult) => handleChange(color, 'hex')}
           />
         </Grid>
 
@@ -113,7 +113,7 @@ const PriusColorPicker = (props: PriusColorPickerType) => {
           <EditableInput
             style={editableInputStyle.rgb}
             value={props.rgb?.r}
-            onChange={(color: ColorResult) => handleChange(color, "r")}
+            onChange={(color: ColorResult) => handleChange(color, 'r')}
           />
         </Grid>
         <Grid item>
@@ -121,7 +121,7 @@ const PriusColorPicker = (props: PriusColorPickerType) => {
           <EditableInput
             style={editableInputStyle.rgb}
             value={props.rgb?.g}
-            onChange={(color: ColorResult) => handleChange(color, "g")}
+            onChange={(color: ColorResult) => handleChange(color, 'g')}
           />
         </Grid>
         <Grid item>
@@ -129,7 +129,7 @@ const PriusColorPicker = (props: PriusColorPickerType) => {
           <EditableInput
             style={editableInputStyle.rgbLastChild}
             value={props.rgb?.b}
-            onChange={(color: ColorResult) => handleChange(color, "b")}
+            onChange={(color: ColorResult) => handleChange(color, 'b')}
           />
         </Grid>
       </Grid>

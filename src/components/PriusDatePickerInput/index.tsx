@@ -1,11 +1,11 @@
-import React, { forwardRef, Ref } from "react";
-import DayPickerInput from "react-day-picker/DayPickerInput";
-import { DateUtils } from "react-day-picker";
+import React, { forwardRef, Ref } from 'react';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
+import { DateUtils } from 'react-day-picker';
 
-import { REGEX_DATE } from "../../constants";
+import { REGEX_DATE } from '../../constants';
 
-import "./PriusDatePickerInput.css";
-import "react-day-picker/lib/style.css";
+import './PriusDatePickerInput.css';
+import 'react-day-picker/lib/style.css';
 
 export type DatePickerInputProps = {
   selectedDate: Date | string;
@@ -21,7 +21,7 @@ export default forwardRef((props: DatePickerInputProps, ref: Ref<any>) => {
       inputProps={inputProps}
       dayPickerProps={{
         month: new Date(),
-        weekdaysShort: ["S", "M", "T", "W", "T", "F", "S"],
+        weekdaysShort: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
       }}
       format="dd/MM/yyyy"
       formatDate={formatDate}
@@ -29,7 +29,7 @@ export default forwardRef((props: DatePickerInputProps, ref: Ref<any>) => {
         /** Convert `dd/mm/yyyy` to `mm/dd/yyy` manually */
         const splitDate = value.split(/\//);
         const formattedDate = [splitDate[1], splitDate[0], splitDate[2]].join(
-          "/"
+          '/'
         );
 
         if (
@@ -49,9 +49,9 @@ export default forwardRef((props: DatePickerInputProps, ref: Ref<any>) => {
 });
 
 const formatDate = (date: Date) => {
-  return new Intl.DateTimeFormat(["ban", "id"], {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
+  return new Intl.DateTimeFormat(['ban', 'id'], {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
   }).format(date);
 };

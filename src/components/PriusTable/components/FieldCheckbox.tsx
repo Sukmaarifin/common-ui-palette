@@ -3,14 +3,14 @@
  * [ ] Unit Test
  */
 
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
-import PriusCheckbox from "../../PriusCheckbox";
+import PriusCheckbox from '../../PriusCheckbox';
 
-import { FieldProps } from "../types";
+import { FieldProps } from '../types';
 
 type FieldCheckboxProps = {
   handleOnClick: (ID: string, checked: boolean) => void;
@@ -19,8 +19,8 @@ type FieldCheckboxProps = {
 
 const useStyles = makeStyles(() => ({
   grid: {
-    alignSelf: "center",
-    margin: "0 auto",
+    alignSelf: 'center',
+    margin: '0 auto',
   },
 }));
 
@@ -54,7 +54,7 @@ const FieldCheckbox = ({
         id={fieldId && `${fieldId}`}
         inputProps={
           {
-            "data-identity": fieldId && `${fieldId}`,
+            'data-identity': fieldId && `${fieldId}`,
           } as React.InputHTMLAttributes<HTMLInputElement>
         }
         checked={checkboxSource}

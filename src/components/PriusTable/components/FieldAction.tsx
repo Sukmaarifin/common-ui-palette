@@ -3,13 +3,13 @@
  * [] unit testing
  */
 
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
-import { FieldProps } from "../types";
-import PriusButtonText from "../../PriusButtonText";
+import { FieldProps } from '../types';
+import PriusButtonText from '../../PriusButtonText';
 
 export type FieldActionProps = {
   actionText?: string;
@@ -21,22 +21,22 @@ const useStyles = makeStyles((theme: Theme) => ({
   button: {
     borderColor: theme.colors.primary,
     border: `1px solid ${theme.colors.primary}`,
-    padding: "4px 20px",
-    borderRadius: "3px",
-    "&:hover": {
+    padding: '4px 20px',
+    borderRadius: '3px',
+    '&:hover': {
       backgroundColor: theme.colors.primary,
-      color: "white",
+      color: 'white',
     },
   },
   grid: {
-    justifySelf: "flex-end",
-    alignSelf: "center",
-    marginLeft: "auto",
+    justifySelf: 'flex-end',
+    alignSelf: 'center',
+    marginLeft: 'auto',
   },
 }));
 
 function FieldAction({
-  actionText = "Detail",
+  actionText = 'Detail',
   icon,
   record,
   source,

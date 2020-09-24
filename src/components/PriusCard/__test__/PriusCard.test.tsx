@@ -1,19 +1,19 @@
-import React from "react";
-import { mount } from "enzyme";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
-import PriusCard, { PriusCardProps } from "../index";
-import { AddCircleIcon } from "../../../icons";
+import theme from '../../../styles/material-ui-theme';
+import PriusCard, { PriusCardProps } from '../index';
+import { AddCircleIcon } from '../../../icons';
 
-describe("PriusCard Testing", () => {
+describe('PriusCard Testing', () => {
   const mockProps: PriusCardProps = {
     icon: <AddCircleIcon />,
-    title: "Tambah",
-    desc: "Klik disini untuk menambah",
+    title: 'Tambah',
+    desc: 'Klik disini untuk menambah',
   };
 
-  it("render with required props", () => {
+  it('render with required props', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <PriusCard {...mockProps} />
@@ -26,20 +26,20 @@ describe("PriusCard Testing", () => {
     ).toBeTruthy();
   });
 
-  it("render with label Coming Soon", () => {
+  it('render with label Coming Soon', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <PriusCard label="Coming Soon" {...mockProps} />
       </ThemeProvider>
     );
-    expect(wrapper.find("PriusLabel").first().text()).toStrictEqual(
-      "Coming Soon"
+    expect(wrapper.find('PriusLabel').first().text()).toStrictEqual(
+      'Coming Soon'
     );
   });
 
-  it("render with onClick function", () => {
-    const mockFunction = () => alert("card clicked");
-    jest.spyOn(window, "alert").mockImplementation(() => {});
+  it('render with onClick function', () => {
+    const mockFunction = () => alert('card clicked');
+    jest.spyOn(window, 'alert').mockImplementation(() => {});
 
     const wrapper = mount(
       <ThemeProvider theme={theme}>
@@ -47,8 +47,8 @@ describe("PriusCard Testing", () => {
       </ThemeProvider>
     );
     // user simulate click on PriusCard
-    wrapper.simulate("click");
+    wrapper.simulate('click');
 
-    expect(window.alert).toBeCalledWith("card clicked");
+    expect(window.alert).toBeCalledWith('card clicked');
   });
 });

@@ -1,18 +1,18 @@
-import React from "react";
-import { mount } from "enzyme";
-import toJSON from "enzyme-to-json";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
+import theme from '../../../styles/material-ui-theme';
 
-import PriusButtonText, { PriusButtonTextProps } from "../index";
+import PriusButtonText, { PriusButtonTextProps } from '../index';
 
-describe("PriusButton Testing", () => {
+describe('PriusButton Testing', () => {
   const render = () => {
     const props: PriusButtonTextProps = {
       startIcon: <span>Some Icon</span>,
       endIcon: <span>Some Icon</span>,
-      children: "Text",
+      children: 'Text',
       onClick: jest.fn(),
     };
 
@@ -23,7 +23,7 @@ describe("PriusButton Testing", () => {
     );
   };
 
-  it("render successfully", () => {
+  it('render successfully', () => {
     const wrapper = render();
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

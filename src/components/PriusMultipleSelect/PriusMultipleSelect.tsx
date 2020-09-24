@@ -5,17 +5,17 @@
  * [ ] Fix typing for `onChange` value (ref: https://github.com/JedWatson/react-select/issues/2902)
  */
 
-import React, { useRef } from "react";
-import Select, { components, ActionMeta, InputActionMeta } from "react-select";
-import clsx from "clsx";
-import { Chip, MenuItem, Paper, Typography } from "@material-ui/core";
+import React, { useRef } from 'react';
+import Select, { components, ActionMeta, InputActionMeta } from 'react-select';
+import clsx from 'clsx';
+import { Chip, MenuItem, Paper, Typography } from '@material-ui/core';
 
-import { CloseIcon, DropdownIcon } from "../../icons";
-import PriusTooltip from "../PriusTooltip";
-import PriusCreatableSelect from "./PriusCreatableSelect";
+import { CloseIcon, DropdownIcon } from '../../icons';
+import PriusTooltip from '../PriusTooltip';
+import PriusCreatableSelect from './PriusCreatableSelect';
 
-import { OptionType } from "./types";
-import { priusMultipleSelectCss } from "./PriusMultipleSelectCss";
+import { OptionType } from './types';
+import { priusMultipleSelectCss } from './PriusMultipleSelectCss';
 
 export type PriusActionMeta = ActionMeta;
 
@@ -117,7 +117,7 @@ function PriusMultipleSelect({
       className={clsx(
         classes.container,
         className,
-        isError ? classes.error : ""
+        isError ? classes.error : ''
       )}
       closeMenuOnSelect={closeMenuOnSelect}
       components={{
@@ -163,8 +163,8 @@ function PriusMultipleSelect({
         menuPortal: (base) => ({
           ...base,
           zIndex: 1000,
-          background: "white",
-          boxShadow: "0 7px 30px 0 rgba(0, 0, 0, 0.2)",
+          background: 'white',
+          boxShadow: '0 7px 30px 0 rgba(0, 0, 0, 0.2)',
         }),
       }}
       value={selectedData}
@@ -178,11 +178,7 @@ const NoOptionsMessage = () => <MenuItem disabled>No Options</MenuItem>;
 
 const LoadingMessage = () => <MenuItem disabled>Loading...</MenuItem>;
 
-const Control = ({
-  children,
-  selectProps,
-  ...props
-}: any) => (
+const Control = ({ children, selectProps, ...props }: any) => (
   <components.Control {...props} className={selectProps.classes.control}>
     {children}
   </components.Control>

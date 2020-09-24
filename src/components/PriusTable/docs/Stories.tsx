@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import PriusTable from "../PriusTable";
-import { FieldImage, FieldNumber, FieldText } from "../index";
+import PriusTable from '../PriusTable';
+import { FieldImage, FieldNumber, FieldText } from '../index';
 
 export const basic = () => {
   return (
@@ -27,21 +27,21 @@ export const basic = () => {
       isSelectable
       records={[
         {
-          ID: "300511313229165833",
+          ID: '300511313229165833',
           imageURLs: [
-            "https://storage.googleapis.com/sirclo-1152-storefront/products/e5c025ea-8848-442b-8fc6-051380dc7bca-air-max-red.jpeg",
+            'https://storage.googleapis.com/sirclo-1152-storefront/products/e5c025ea-8848-442b-8fc6-051380dc7bca-air-max-red.jpeg',
           ],
           published: true,
           brand: {
-            ID: "shopwithus2",
-            name: "Shop With Us",
+            ID: 'shopwithus2',
+            name: 'Shop With Us',
           },
           variants: [
             {
-              SKU: "AIRMAX201",
+              SKU: 'AIRMAX201',
               basePrices: [
                 {
-                  code: "IDR",
+                  code: 'IDR',
                   value: 0,
                 },
               ],
@@ -52,28 +52,28 @@ export const basic = () => {
           ],
           details: [
             {
-              name: "AIR MAX RED",
+              name: 'AIR MAX RED',
             },
           ],
-          publishStatus: "Aktif",
+          publishStatus: 'Aktif',
           stock: 0,
         },
         {
-          ID: "302547611129263623",
+          ID: '302547611129263623',
           imageURLs: [
-            "https://storage.googleapis.com/sirclo-1152-storefront/products/e4b4cc55-65b3-4df6-8301-ac56328ffd5f-air-max-silver.jpeg",
+            'https://storage.googleapis.com/sirclo-1152-storefront/products/e4b4cc55-65b3-4df6-8301-ac56328ffd5f-air-max-silver.jpeg',
           ],
           published: true,
           brand: {
-            ID: "shopwithus2",
-            name: "Shop With Us",
+            ID: 'shopwithus2',
+            name: 'Shop With Us',
           },
           variants: [
             {
-              SKU: "SLVR41",
+              SKU: 'SLVR41',
               basePrices: [
                 {
-                  code: "IDR",
+                  code: 'IDR',
                   value: 1250000,
                 },
               ],
@@ -84,29 +84,29 @@ export const basic = () => {
           ],
           details: [
             {
-              name: "AIRMAX SILVERS",
+              name: 'AIRMAX SILVERS',
             },
           ],
-          publishStatus: "Aktif",
+          publishStatus: 'Aktif',
           stock: 0,
         },
         {
-          ID: "297792123699386634",
+          ID: '297792123699386634',
           imageURLs: [
-            "https://storage.googleapis.com/sirclo-1152-storefront/products/58a0adaa-07fd-4cde-9aeb-eaab7991ef1d-ALLIE CROPPED_2.jpg",
-            "https://storage.googleapis.com/sirclo-1152-storefront/products/a9c3a932-19e9-4084-87a5-3eed8b603278-ALLIE CROPPED_1.jpg",
+            'https://storage.googleapis.com/sirclo-1152-storefront/products/58a0adaa-07fd-4cde-9aeb-eaab7991ef1d-ALLIE CROPPED_2.jpg',
+            'https://storage.googleapis.com/sirclo-1152-storefront/products/a9c3a932-19e9-4084-87a5-3eed8b603278-ALLIE CROPPED_1.jpg',
           ],
           published: true,
           brand: {
-            ID: "shopwithus2",
-            name: "Shop With Us",
+            ID: 'shopwithus2',
+            name: 'Shop With Us',
           },
           variants: [
             {
-              SKU: "tank_blue",
+              SKU: 'tank_blue',
               basePrices: [
                 {
-                  code: "IDR",
+                  code: 'IDR',
                   value: 200000,
                 },
               ],
@@ -117,10 +117,10 @@ export const basic = () => {
           ],
           details: [
             {
-              name: "Allie Cropped Tank",
+              name: 'Allie Cropped Tank',
             },
           ],
-          publishStatus: "Aktif",
+          publishStatus: 'Aktif',
           stock: 118,
         },
       ]}
@@ -253,5 +253,5 @@ export const basicCode = `
 />`;
 
 export default {
-  title: "PriusTable",
+  title: 'PriusTable',
 };

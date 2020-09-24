@@ -1,14 +1,14 @@
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
-import { FieldProps } from "../types";
+import { FieldProps } from '../types';
 
 const useStyles = makeStyles(() => ({
   container: {
-    alignSelf: "center",
-    padding: "0 0.8rem",
+    alignSelf: 'center',
+    padding: '0 0.8rem',
   },
 }));
 
@@ -23,7 +23,7 @@ function FieldNumber({
   source,
   style,
   threshold = 0,
-  thresholdedColor = "#dd3628",
+  thresholdedColor = '#dd3628',
   width,
 }: FieldNumberProps) {
   const num = get(record, source);
@@ -39,7 +39,7 @@ function FieldNumber({
       }}
       className={classes.container}
     >
-      <span style={{ color: num <= threshold ? thresholdedColor : "inherit" }}>
+      <span style={{ color: num <= threshold ? thresholdedColor : 'inherit' }}>
         {num}
       </span>
     </Grid>

@@ -3,9 +3,9 @@
  * [ ] Handle menuData for burgerFields and its onClick actions
  */
 
-import React from "react";
-import clsx from "clsx";
-import get from "lodash/get";
+import React from 'react';
+import clsx from 'clsx';
+import get from 'lodash/get';
 import {
   Collapse,
   Grid,
@@ -13,99 +13,99 @@ import {
   Paper,
   Typography,
   Theme,
-} from "@material-ui/core";
-import { createStyles, makeStyles } from "@material-ui/core/styles";
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+} from '@material-ui/core';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
-import PriusOption from "../../ui_palette/PriusOption";
-import PriusCheckbox from "../../ui_palette/PriusCheckbox";
+import PriusOption from '../../components/PriusOption';
+import PriusCheckbox from '../../components/PriusCheckbox';
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     row: {
-      padding: "1rem 2.5rem",
-      alignItems: "center",
-      position: "relative",
+      padding: '1rem 2.5rem',
+      alignItems: 'center',
+      position: 'relative',
       // zIndex: 2,
-      "&:hover, &:active": {
-        boxShadow: "none",
+      '&:hover, &:active': {
+        boxShadow: 'none',
       },
     },
     rowDense: {
-      padding: "1rem",
-      borderBottom: "1px solid #fafafa",
+      padding: '1rem',
+      borderBottom: '1px solid #fafafa',
     },
     rowCard: {
-      margin: "1rem 0",
-      boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.04)",
-      borderRadius: "0.1875rem", // ~3px
+      margin: '1rem 0',
+      boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.04)',
+      borderRadius: '0.1875rem', // ~3px
     },
     cell: {
-      padding: "1.125rem 0",
+      padding: '1.125rem 0',
     },
     collapse: {
-      "& .MuiCollapse-wrapperInner": {
-        padding: "0 2.5rem 1.5rem 2.5rem",
+      '& .MuiCollapse-wrapperInner': {
+        padding: '0 2.5rem 1.5rem 2.5rem',
       },
     },
     collapsedRow: {
-      height: "3.375rem", // ~54px
+      height: '3.375rem', // ~54px
       borderBottom: `solid 1px ${theme.colors.grey4}`,
       "&:last-child > [class*='lineContainer'] > span:last-child": {
-        border: "none",
+        border: 'none',
       },
     },
     collapsedHeader: {
-      padding: "0 0.8rem 0.4rem",
+      padding: '0 0.8rem 0.4rem',
       borderBottom: `solid 1px ${theme.colors.grey4}`,
-      "&:last-child": {
-        borderBottom: "solid 1px black",
+      '&:last-child': {
+        borderBottom: 'solid 1px black',
         flexShrink: 0,
-        paddingLeft: "0.8rem",
+        paddingLeft: '0.8rem',
       },
     },
     lineContainer: {
-      "&> span": {
-        width: "50%",
-        height: "50%",
-        display: "block",
-        marginLeft: "auto",
-        borderLeft: "1px solid #ededed",
-        "&:first-child": {
-          borderBottom: "1px solid #ededed",
+      '&> span': {
+        width: '50%',
+        height: '50%',
+        display: 'block',
+        marginLeft: 'auto',
+        borderLeft: '1px solid #ededed',
+        '&:first-child': {
+          borderBottom: '1px solid #ededed',
         },
       },
     },
     unpublished: {
-      position: "relative",
+      position: 'relative',
       // zIndex: 2,
-      "&:before": {
+      '&:before': {
         // zIndex: 1,
-        position: "absolute",
-        backgroundColor: "#fafafa",
-        opacity: "0.6",
+        position: 'absolute',
+        backgroundColor: '#fafafa',
+        opacity: '0.6',
         content: '""',
-        width: "100%",
-        left: "0",
-        height: "100%",
-        display: "block",
+        width: '100%',
+        left: '0',
+        height: '100%',
+        display: 'block',
       },
     },
     toolbar: {
-      flex: "2.625rem 0 0",
-      display: "flex",
+      flex: '2.625rem 0 0',
+      display: 'flex',
       zIndex: 99,
-      position: "relative",
-      "&.left": {
-        justifyContent: "flex-start",
+      position: 'relative',
+      '&.left': {
+        justifyContent: 'flex-start',
       },
-      "&.right": {
-        justifyContent: "flex-end",
+      '&.right': {
+        justifyContent: 'flex-end',
       },
     },
     spacing: {
-      margin: "0.75rem 0",
+      margin: '0.75rem 0',
     },
   })
 );
@@ -139,7 +139,7 @@ export type TableRowProps = {
   // single data
   record: any;
   // table style
-  type: "dense" | "card";
+  type: 'dense' | 'card';
   /*
    * Handle expand toggling
    * Forwarded from parent.
@@ -175,9 +175,9 @@ const TableRow = ({
   const isExpandable =
     collapsedRecordsPerRow?.length > 0 &&
     collapsedFields?.length > 0 &&
-    typeof handleExpandToggle === "function";
+    typeof handleExpandToggle === 'function';
 
-  const isSelectable = typeof handleSelectToggle === "function";
+  const isSelectable = typeof handleSelectToggle === 'function';
 
   // check data status as if row is disabled or not
   let isRowPublished = true;
@@ -194,7 +194,7 @@ const TableRow = ({
     <Paper
       square
       elevation={0}
-      className={type === "card" ? classes.rowCard : undefined}
+      className={type === 'card' ? classes.rowCard : undefined}
     >
       {/* MAIN ROW CONTAINER */}
       <Grid
@@ -202,18 +202,18 @@ const TableRow = ({
         className={clsx(
           classes.row,
           !isRowPublished ? classes.unpublished : null,
-          type === "dense" ? classes.rowDense : null
+          type === 'dense' ? classes.rowDense : null
         )}
         wrap="nowrap"
         onClick={() => isExpandable && handleExpandToggle()}
-        style={{ cursor: `${isExpandable ? "pointer" : "default"}` }}
+        style={{ cursor: `${isExpandable ? 'pointer' : 'default'}` }}
       >
         {
           /*
            * Render checkbox
            */
           isSelectable && (
-            <Grid item className={clsx(classes.toolbar, "left")}>
+            <Grid item className={clsx(classes.toolbar, 'left')}>
               <PriusCheckbox
                 id={rowId && `${rowId}-checkbox-selectRowToggle`}
                 checked={isSelected}
@@ -224,8 +224,8 @@ const TableRow = ({
                 }
                 inputProps={
                   {
-                    "aria-label": "select",
-                    "data-identity":
+                    'aria-label': 'select',
+                    'data-identity':
                       rowId && `${rowId}-checkbox-selectRowToggle`,
                   } as React.InputHTMLAttributes<HTMLInputElement>
                 }
@@ -259,8 +259,8 @@ const TableRow = ({
           isExpandable && (
             <Grid
               item
-              style={{ marginLeft: "auto", zIndex: 99, position: "relative" }}
-              className={clsx(classes.toolbar, "right")}
+              style={{ marginLeft: 'auto', zIndex: 99, position: 'relative' }}
+              className={clsx(classes.toolbar, 'right')}
             >
               <IconButton
                 aria-label="delete"
@@ -285,7 +285,7 @@ const TableRow = ({
           !isExpandable && menuData.length > 0 && (
             <Grid
               item
-              style={{ marginLeft: "auto" }}
+              style={{ marginLeft: 'auto' }}
               className={classes.toolbar}
             >
               <PriusOption

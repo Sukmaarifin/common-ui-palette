@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 exports.camelize = function (str) {
     return str
-        .replace(/^[_.,\- ]+/, "")
+        .replace(/^[_.,\- ]+/, '')
         .toLowerCase()
         .replace(/[_.\- ]+([\p{Alpha}\p{N}_]|$)/gu, function (_, p1) { return p1.toUpperCase(); })
         .replace(/\d+([\p{Alpha}\p{N}_]|$)/gu, function (m) { return m.toUpperCase(); });

@@ -1,7 +1,7 @@
-import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
-import { Button } from "@material-ui/core";
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Button } from '@material-ui/core';
 
-import PriusBackdrop from "./index";
+import PriusBackdrop from './index';
 
 <Meta
   component={PriusBackdrop}
@@ -23,15 +23,15 @@ Trigger button should be passed via `renderTrigger` props. PriusBackdrop will ha
 <Preview>
   <Story name="Basic">
     <PriusBackdrop
-      popperId={"dummy_prius_popper"}
-      placement={"bottom-start"}
+      popperId={'dummy_prius_popper'}
+      placement={'bottom-start'}
       renderTrigger={(anchorRef, handleToggle) => (
         <Button
           variant="contained"
           color="primary"
           ref={anchorRef}
           onClick={handleToggle}
-          aria-describedby={"dummy_prius_popper"}
+          aria-describedby={'dummy_prius_popper'}
         >
           Toggle Backdrop
         </Button>
@@ -55,15 +55,15 @@ If you need to handle close PriusBackdrop from inside the children, you can pass
 <Preview>
   <Story name="Custom Children">
     <PriusBackdrop
-      popperId={"dummy_prius_popper"}
-      placement={"bottom-start"}
+      popperId={'dummy_prius_popper'}
+      placement={'bottom-start'}
       renderTrigger={(anchorRef, handleToggle) => (
         <Button
           variant="contained"
           color="primary"
           ref={anchorRef}
           onClick={handleToggle}
-          aria-describedby={"dummy_prius_popper"}
+          aria-describedby={'dummy_prius_popper'}
         >
           Toggle Backdrop
         </Button>

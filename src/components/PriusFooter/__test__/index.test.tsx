@@ -1,12 +1,12 @@
-import React from "react";
-import { mount } from "enzyme";
-import { ThemeProvider } from "@material-ui/core/styles";
+import React from 'react';
+import { mount } from 'enzyme';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import theme from "../../../styles/material-ui-theme";
+import theme from '../../../styles/material-ui-theme';
 
-import PriusFooter from "../index";
+import PriusFooter from '../index';
 
-describe("PriusFooter Testing", () => {
+describe('PriusFooter Testing', () => {
   const buttonClick = jest.fn();
 
   const wrapper = mount(
@@ -17,14 +17,14 @@ describe("PriusFooter Testing", () => {
     </ThemeProvider>
   );
 
-  it("render successfully", () => {
-    expect(wrapper.find("PriusFooter")).toBeTruthy();
+  it('render successfully', () => {
+    expect(wrapper.find('PriusFooter')).toBeTruthy();
   });
 
-  it("simulates click children component", () => {
-    wrapper.find(PriusFooter).find("button").simulate("click");
+  it('simulates click children component', () => {
+    wrapper.find(PriusFooter).find('button').simulate('click');
     expect(
-      wrapper.find(PriusFooter).find("button").prop("onClick")
+      wrapper.find(PriusFooter).find('button').prop('onClick')
     ).toHaveBeenCalled();
   });
 });

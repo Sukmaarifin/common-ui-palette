@@ -1,5 +1,5 @@
-import React from "react";
-import { CircularProgress } from "@material-ui/core";
+import React from 'react';
+import { CircularProgress } from '@material-ui/core';
 
 export type PriusCircularProgressProps = {
   isWithText?: boolean;
@@ -12,10 +12,10 @@ export function PriusCircularProgress({
   isWithText = true,
   size = 50,
   style,
-  className = "",
+  className = '',
 }: PriusCircularProgressProps) {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: 'center' }}>
       <CircularProgress size={size} style={style} className={className} />
       {isWithText ? <div>Memuat . . .</div> : null}
     </div>

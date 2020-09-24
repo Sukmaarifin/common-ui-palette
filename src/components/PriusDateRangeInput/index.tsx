@@ -1,10 +1,10 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback } from 'react';
 
-import PriusInput from "../PriusInputNew";
-import PriusDatePicker from "../PriusDatePicker";
+import PriusInput from '../PriusInputNew';
+import PriusDatePicker from '../PriusDatePicker';
 
-import { convertDateUTC } from "../../helpers";
-import { DateRangeType } from "../../typings";
+import { convertDateUTC } from '../../helpers';
+import { DateRangeType } from '../../typings';
 
 type DataDateType = {
   from: string;
@@ -59,9 +59,9 @@ const PriusDateColumn: React.FC<PriusDateColumnProps> = ({
         dateTo.getMonth() + 1
       }/${dateTo.getFullYear()}`;
 
-      return startDate + " - " + endDate;
+      return startDate + ' - ' + endDate;
     }
-    return "";
+    return '';
   };
 
   const [selectedDateRange, setSelectedDateRange] = useState(
@@ -102,8 +102,8 @@ const PriusDateColumn: React.FC<PriusDateColumnProps> = ({
       <PriusInput
         required
         name="date-range"
-        id={id ? id : "input-date-range"}
-        inputProps={{ "data-identity": id && `${id}` }}
+        id={id ? id : 'input-date-range'}
+        inputProps={{ 'data-identity': id && `${id}` }}
         type="text"
         value={selectedDateRange}
         readOnly

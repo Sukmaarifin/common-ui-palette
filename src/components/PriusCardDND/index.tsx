@@ -1,18 +1,18 @@
-import React, { useRef, CSSProperties } from "react";
-import { Link } from "react-router-dom";
-import { Grid, Typography } from "@material-ui/core";
-import clsx from "clsx";
-import { useDrag, useDrop, DropTargetMonitor } from "react-dnd";
+import React, { useRef, CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
+import { Grid, Typography } from '@material-ui/core';
+import clsx from 'clsx';
+import { useDrag, useDrop, DropTargetMonitor } from 'react-dnd';
 
-import PriusThumbnail from "../PriusThumbnail";
-import PriusOption from "../PriusOption";
-import PriusPaper from "../PriusPaper";
-import { camelize } from "../../helpers";
+import PriusThumbnail from '../PriusThumbnail';
+import PriusOption from '../PriusOption';
+import PriusPaper from '../PriusPaper';
+import { camelize } from '../../helpers';
 
-import { useStyles } from "./PriusCardDNDCss";
+import { useStyles } from './PriusCardDNDCss';
 
 const dndType = {
-  CARD: "card",
+  CARD: 'card',
 };
 
 type DragItemType = {
@@ -158,7 +158,7 @@ const PriusCardDND: React.FC<CardProps> = ({
     <PriusPaper
       component="li"
       padding="noPadding"
-      className={!published ? classes.unpublished : ""}
+      className={!published ? classes.unpublished : ''}
     >
       <Grid
         container

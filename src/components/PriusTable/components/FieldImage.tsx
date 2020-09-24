@@ -1,9 +1,9 @@
-import React from "react";
-import get from "lodash/get";
-import { Grid } from "@material-ui/core";
+import React from 'react';
+import get from 'lodash/get';
+import { Grid } from '@material-ui/core';
 
-import PriusThumbnail, { ThumbnailSize } from "../../PriusThumbnail";
-import { FieldProps } from "../types";
+import PriusThumbnail, { ThumbnailSize } from '../../PriusThumbnail';
+import { FieldProps } from '../types';
 
 export interface FieldImageProps extends FieldProps {
   altText: string;

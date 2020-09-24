@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   ListItem,
   ListItemIcon,
   ListItemText,
   useMediaQuery,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-import PriusThumbnail from "../PriusThumbnail";
+import PriusThumbnail from '../PriusThumbnail';
 
 export type PriusCardTemplateProps = {
   imageSource: string;
@@ -19,7 +19,7 @@ function PriusCardTemplate({
   title,
   description,
 }: PriusCardTemplateProps) {
-  const matchesSmallDisplay = useMediaQuery("(max-width: 1366px)");
+  const matchesSmallDisplay = useMediaQuery('(max-width: 1366px)');
   return (
     <ListItem component="div" disableGutters style={{ padding: 0 }}>
       <ListItemIcon>
@@ -31,11 +31,11 @@ function PriusCardTemplate({
       </ListItemIcon>
       <ListItemText
         style={{
-          display: "block",
-          maxWidth: "13.5rem",
-          textOverflow: "ellipsis",
-          overflow: matchesSmallDisplay ? "visible" : "hidden",
-          whiteSpace: matchesSmallDisplay ? "normal" : "nowrap",
+          display: 'block',
+          maxWidth: '13.5rem',
+          textOverflow: 'ellipsis',
+          overflow: matchesSmallDisplay ? 'visible' : 'hidden',
+          whiteSpace: matchesSmallDisplay ? 'normal' : 'nowrap',
         }}
         primary={title}
         secondary={description ? description : null}

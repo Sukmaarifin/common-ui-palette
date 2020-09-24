@@ -1,5 +1,5 @@
 export type GetBrandsResponseType = {
-  tenant: Pick<BrandType, "ID"> & {
+  tenant: Pick<BrandType, 'ID'> & {
     brands: ListBrandType;
   };
 };
@@ -14,4 +14,4 @@ export type BrandType = {
   logoURL: string;
 };
 
-export type GetBrandsParamType = Pick<BrandType, "ID">;
+export type GetBrandsParamType = Pick<BrandType, 'ID'>;

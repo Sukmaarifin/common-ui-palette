@@ -1,13 +1,13 @@
-import React, { useRef } from "react";
-import { useDrop, DropTargetMonitor, useDrag } from "react-dnd";
-import { Grid, Typography } from "@material-ui/core";
+import React, { useRef } from 'react';
+import { useDrop, DropTargetMonitor, useDrag } from 'react-dnd';
+import { Grid, Typography } from '@material-ui/core';
 
-import PriusThumbnail, { PriusThumbnailProps } from "../PriusThumbnail";
+import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
 
-import { useStyles } from "./PriusDraggableImageCss";
+import { useStyles } from './PriusDraggableImageCss';
 
 const dndType = {
-  IMAGE: "image",
+  IMAGE: 'image',
 };
 
 type DragItemType = {
@@ -105,7 +105,7 @@ const PriusDraggableImage = ({
         />
       </Grid>
       <Typography
-        id={"hoverContent"}
+        id={'hoverContent'}
         variant="body2"
         className={classes.onHover}
       >

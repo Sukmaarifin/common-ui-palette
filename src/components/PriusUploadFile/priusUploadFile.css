@@ -5,7 +5,8 @@
   background-color: #ffffff;
   font-family: Metropolis, sans-serif;
   font-size: 13px;
-  color: #444444; }
+  color: #444444;
+}
 
 .prius-upload-file__input {
   position: relative;
@@ -13,7 +14,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+}
 
 .prius-upload-file__input input {
   width: 0.1px;
@@ -21,18 +23,23 @@
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .prius-upload-file__img {
   margin-bottom: 20px;
-  position: inherit; }
+  position: inherit;
+}
 
 .prius-upload-file__link {
   text-decoration: underline;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .prius-upload-file__error {
-  color: #e02020; }
+  color: #e02020;
+}
 
 .prius-upload-file__success {
-  color: #1c9aea; }
+  color: #1c9aea;
+}

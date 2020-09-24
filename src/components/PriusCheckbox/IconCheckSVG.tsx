@@ -1,15 +1,15 @@
-import React from "react";
-import { checkSVGProp } from "../PriusMenu/assets/typeSVG";
+import React from 'react';
+import { checkSVGProp } from '../PriusMenu/assets/typeSVG';
 
 export type IconCheckSVGProps = {
   color?: string;
 } & checkSVGProp;
 
 export const IconCheckSVG = ({
-  className = "",
-  width = "14",
-  height = "14",
-  color = "#444444",
+  className = '',
+  width = '14',
+  height = '14',
+  color = '#444444',
 }: IconCheckSVGProps) => {
   return (
     <svg
