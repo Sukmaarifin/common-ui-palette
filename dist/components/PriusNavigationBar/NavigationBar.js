@@ -22,48 +22,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
-// import clsx from "clsx";
 var core_1 = require("@material-ui/core");
 var icons_1 = require("@material-ui/icons");
 var react_router_1 = require("react-router");
 var react_router_dom_1 = require("react-router-dom");
-// import NotificationList from "./NotificationList/NotificationList";
-// import PriusIconImageGenerator from "../PriusIconImageGenerator/PriusIconImageGenerator";
 var PriusSSSO_1 = require("../../components/PriusSSSO");
 var helpers_1 = require("../../helpers");
 require("./NavigationBar.css");
 var LinkRouter = function (props) { return (React.createElement(core_1.Link, __assign({}, props, { component: react_router_dom_1.Link }))); };
 var NavigationBar = function (props) {
     var mode = React.useContext(PriusSSSO_1.TenantContext).mode;
-    var routes = props.routes, name = props.name, userClick = props.userClick, 
-    // notifClick,
-    // notifStatus,
-    // notif,
-    toggleDropdown = props.toggleDropdown, toggleStatus = props.toggleStatus;
-    // let cards = notif.map((item, id) => {
-    //   let date = item.time.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
-    //   return(
-    //     <Card key={id} style={{ boxShadow: "none" }}>
-    //       <CardContent className="prius__card-container">
-    //         <div className="prius__card-item">
-    //           <PriusIconImageGenerator
-    //             className="prius__card-label"
-    //             text={item.flagStatus}
-    //             type="image"
-    //           />
-    //           <div className="prius__card-content">
-    //             <Typography className="title">
-    //               {item.messages}
-    //             </Typography>
-    //             <Typography className="time">
-    //               {date}
-    //             </Typography>
-    //           </div>
-    //         </div>
-    //       </CardContent>
-    //     </Card>
-    //   );
-    // });
+    var routes = props.routes, name = props.name, userClick = props.userClick, toggleDropdown = props.toggleDropdown, toggleStatus = props.toggleStatus;
     return (React.createElement("div", null,
         React.createElement("div", { className: "prius__navbar__container" },
             React.createElement("div", { className: "prius__navbar__left-side" },
