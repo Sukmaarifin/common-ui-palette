@@ -1,0 +1,81 @@
+import {
+  Description,
+  Meta,
+  Preview,
+  Props,
+  Story,
+} from "@storybook/addon-docs/blocks";
+import { Button, MenuItem } from "@material-ui/core";
+import LinkTo from "@storybook/addon-links/react";
+import { InputBase } from "@material-ui/core";
+
+import { ArrowRightIcon } from "../../icons";
+import PriusFieldset from "../PriusFieldset";
+import PriusInputGroup from "./index";
+
+<Meta
+  component={PriusInputGroup}
+  id="Components|PriusInputGroup"
+  title="Components|PriusInputGroup"
+/>
+
+# PriusInputGroup
+
+`PriusInputGroup` is a functional component that can be used for input group that consits of component [InputBase](https://material-ui.com/api/input-base/) and [Select](https://material-ui.com/api/select/) _(optional)_.
+This component can also set `IconComponent` properties for the dropdown component and set its own `children` components.
+
+## Usage
+
+To use `PriusInputGroup` that contains dropdown is shown below. Function onChange for dropdown will be passed through `handleDropdown` props, meanwhile onChange for input will be passed through `handleInput` props.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <>
+      <PriusFieldset inputId="min-buyer" label="Masukkan Panjang Kain">
+        <PriusInputGroup
+          valueDropdown="cm"
+          valueInput="90"
+          dropdownItem={["cm", "dm", "m"]}
+          handleInput={(event) => console.log(event)}
+          handleDropdown={(event) => console.log(event.target.value)}
+        />
+      </PriusFieldset>
+    </>
+  </Story>
+</Preview>
+
+### Children
+
+Else if you want to pass your own `children` component as seen below.
+
+<Preview>
+  <Story name="Children">
+    <>
+      <PriusFieldset inputId="min-buyer" label="Masukkan Dimensi Barang">
+        <PriusInputGroup
+          valueDropdown="cm"
+          dropdownItem={["cm", "dm", "m"]}
+          handleInput={(event) => console.log(event)}
+          handleDropdown={(event) => console.log(event.target.value)}
+        >
+          <>
+            <InputBase value={8} />
+            <InputBase value={9} />
+            <InputBase value={10} />
+          </>
+        </PriusInputGroup>
+      </PriusFieldset>
+    </>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusInputGroup} />
+
+## Related
+
+- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>
+- <LinkTo kind="Components|PriusInput">PriusInput</LinkTo>

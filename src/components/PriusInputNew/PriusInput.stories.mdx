@@ -1,0 +1,91 @@
+import {
+  Description,
+  Meta,
+  Preview,
+  Props,
+  Story,
+} from "@storybook/addon-docs/blocks";
+import { Button, MenuItem } from "@material-ui/core";
+import LinkTo from "@storybook/addon-links/react";
+
+import PriusFieldset from "../PriusFieldset";
+import PriusInput from "./PriusInput";
+
+<Meta
+  component={PriusInput}
+  id="Components|PriusInput"
+  title="Components|PriusInput"
+/>
+
+# PriusInput
+
+`PriusInput` component provides a simple wrapper of [InputBase](https://material-ui.com/api/input-base/#inputbase-api) with custom styles.
+
+## Usage
+
+`PriusInput` usage acts the same as [InputBase](https://material-ui.com/api/input-base/#inputbase-api) and so all props are inherited from there. Should be wrapped inside `PriusFieldset` or any other native component like `<label/>`.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <>
+      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+        <PriusInput
+          name="name"
+          type="text"
+          id="min-buyer"
+          placeholder="50,000"
+        />
+      </PriusFieldset>
+    </>
+  </Story>
+</Preview>
+
+### startAdornment
+
+<Preview>
+  <Story name="StartAdornment">
+    <>
+      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+        <PriusInput
+          name="name"
+          type="text"
+          id="min-buyer"
+          placeholder="50,000"
+          startAdornment={<InputAdornment position="start">Rp.</InputAdornment>}
+        />
+      </PriusFieldset>
+    </>
+  </Story>
+</Preview>
+
+### endAdornment
+
+<Preview>
+  <Story name="EndAdornment">
+    <>
+      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+        <PriusInput
+          name="name"
+          type="text"
+          id="min-buyer"
+          placeholder="50,000"
+          endAdornment={
+            <Button variant="contained" style={{ borderRadius: 0 }}>
+              Submit
+            </Button>
+          }
+        />
+      </PriusFieldset>
+    </>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusInput} />
+
+## Related
+
+- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>

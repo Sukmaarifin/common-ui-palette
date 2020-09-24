@@ -1,0 +1,89 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+import { Grid, Button } from "@material-ui/core";
+import LinkTo from "@storybook/addon-links/react";
+
+import { MergeOutlinedIcon } from "../../icons/";
+import PriusTooltip from "./PriusTooltip";
+
+<Meta
+  component={PriusTooltip}
+  id="Components|PriusTooltip"
+  title="Components|PriusTooltip"
+/>
+
+# PriusTooltip
+
+`PriusTooltip` can be used to display additional information on user actions (e.g. hover, focus, etc).
+`PriusTooltip` is a simple wrapper of [MaterialUI Tooltip](https://material-ui.com/components/tooltips/) with custom styling. All of its props are inherited to the `PriusTooltip`
+
+---
+
+---
+
+---
+
+## Usage
+
+Here are some common usage of `PriusTooltip`. You can check [MaterialUI Tooltip Doc](https://material-ui.com/components/tooltips/) for more advance usage.
+
+### Basic
+
+You can wrap the children with `PriusTooltip` which will show the `PriusTooltip` when users hover, focus, or tap to it.
+
+<Preview>
+  <Story name="Basic">
+    <PriusTooltip title="PriusTooltip can be used to display additional information on user actions (e.g. hover, focus, etc)">
+      <Button background="primary">Hover on me! I have a tooltip.</Button>
+    </PriusTooltip>
+  </Story>
+</Preview>
+
+### Placement
+
+We can set initial `PriusTooltip` placement. And it will automatically adapt the placement if there is no space available.
+
+<Preview>
+  <Story name="Placement">
+    <Grid>
+      <PriusTooltip placement="top" title="I should popping up on the top!">
+        <Button>Top</Button>
+      </PriusTooltip>
+      <PriusTooltip placement="right" title="I should popping up on the right!">
+        <Button>Right</Button>
+      </PriusTooltip>
+      <PriusTooltip
+        placement="bottom"
+        title="I should popping up on the bottom!"
+      >
+        <Button>Bottom</Button>
+      </PriusTooltip>
+      <PriusTooltip placement="left" title="I should popping up on the left!">
+        <Button>Left</Button>
+      </PriusTooltip>
+    </Grid>
+  </Story>
+</Preview>
+
+### Image
+
+<Preview>
+  <Story name="Image">
+    <Grid>
+      <PriusTooltip
+        placement="top"
+        title="I should popping up on the top!"
+        img="connexi-logo.png"
+      >
+        <Button>Tooltip with image</Button>
+      </PriusTooltip>
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={PriusTooltip} />
+
+## Related
+
+- <LinkTo kind="Styleguide|Iconography">Iconography</LinkTo>

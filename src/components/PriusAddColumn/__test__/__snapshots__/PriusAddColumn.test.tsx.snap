@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prius add column test render successfully 1`] = `
+<PriusAddColumn
+  inputElement={
+    <input
+      placeholder="masukkan"
+      type="text"
+    />
+  }
+  onChangeValue={[MockFunction]}
+  removeIcon={
+    <span>
+      delete
+    </span>
+  }
+>
+  <div>
+    <div
+      className=""
+      key="0"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="masukkan"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</PriusAddColumn>
+`;
+
+exports[`Prius add column test render successfully 2`] = `
+<PriusAddColumn
+  inputElement={
+    <React.Fragment>
+      <select
+        form="carform"
+        name="carlist"
+      >
+        <option
+          value=""
+        >
+          Choose
+        </option>
+        <option
+          value="volvo"
+        >
+          Volvo
+        </option>
+        <option
+          value="saab"
+        >
+          Saab
+        </option>
+        <option
+          value="opel"
+        >
+          Opel
+        </option>
+        <option
+          value="audi"
+        >
+          Audi
+        </option>
+      </select>
+      <input
+        placeholder="masukkan"
+        type="text"
+      />
+    </React.Fragment>
+  }
+  onChangeValue={[MockFunction]}
+  removeIcon={
+    <span>
+      delete
+    </span>
+  }
+>
+  <div>
+    <div
+      className=""
+      key="0"
+    >
+      <span
+        key="0"
+      >
+        <select
+          form="carform"
+          name="carlist"
+          onChange={[Function]}
+          value=""
+        >
+          <option
+            value=""
+          >
+            Choose
+          </option>
+          <option
+            value="volvo"
+          >
+            Volvo
+          </option>
+          <option
+            value="saab"
+          >
+            Saab
+          </option>
+          <option
+            value="opel"
+          >
+            Opel
+          </option>
+          <option
+            value="audi"
+          >
+            Audi
+          </option>
+        </select>
+      </span>
+      <span
+        key="1"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="masukkan"
+          type="text"
+          value=""
+        />
+      </span>
+    </div>
+  </div>
+</PriusAddColumn>
+`;
