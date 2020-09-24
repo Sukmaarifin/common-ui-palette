@@ -1,32 +1,31 @@
-import React, { createContext, useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { useMutation } from "@apollo/react-hooks";
-import { ApolloError } from "apollo-boost";
-import CryptoJS from "crypto-js";
+import React, { createContext, useEffect } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { useMutation } from '@apollo/react-hooks';
+import CryptoJS from 'crypto-js';
 
-import PriusCircularProgress from "../PriusCircularProgress";
-import usePersistedState from "../../helpers/usePersistedState";
+import PriusCircularProgress from '../PriusCircularProgress';
+import usePersistedState from '../../helpers/usePersistedState';
 import {
   PRIUS_NAME,
   PRIUS_URL,
   RADEN_URL,
   MODE,
   SECRET_KEY,
-} from "../../configs";
+} from '../../configs';
 import {
   GET_TOKEN,
   GetTokenParamType,
   GetTokenResponseType,
-} from "../../graphql";
+} from '../../graphql';
 
 const useStyles = makeStyles(() => ({
   container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    fontSize: "50px",
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    fontSize: '50px',
   },
 }));
 
@@ -54,26 +53,26 @@ export type TTenantContext = {
 };
 
 //TODO: get active language and currency from current user information
-const DEFAULT_LANGUAGE = "ID";
-const DEFAULT_CURRENCY = "IDR";
+const DEFAULT_LANGUAGE = 'ID';
+const DEFAULT_CURRENCY = 'IDR';
 
 export const TenantContext = createContext<TTenantContext>({
   account: {
-    ID: "",
-    email: "",
-    firstName: "",
-    lastName: "",
+    ID: '',
+    email: '',
+    firstName: '',
+    lastName: '',
   },
-  brandID: "",
+  brandID: '',
   brands: [],
-  currency: "",
-  lang: "",
-  mode: "",
+  currency: '',
+  lang: '',
+  mode: '',
   tenant: {
-    ID: "",
-    name: "",
+    ID: '',
+    name: '',
   },
-  token: "",
+  token: '',
 });
 
 const redirectToPriusSSSO = () => {
@@ -94,11 +93,11 @@ export const PriusSSSO = (props: any) => {
   const classes = useStyles();
 
   // BRAND_ID is an active or a selected brand
-  const [brandId, setBrandId] = usePersistedState("BRAND_ID", "");
-  const [tenant, setTenant] = usePersistedState("TENANT", "");
-  const [brands, setBrands] = usePersistedState("BRANDS", "");
-  const [account, setAccount] = usePersistedState("ACCOUNT", "");
-  const [token, setToken] = usePersistedState("TOKEN", "");
+  const [brandId, setBrandId] = usePersistedState('BRAND_ID', '');
+  const [tenant, setTenant] = usePersistedState('TENANT', '');
+  const [brands, setBrands] = usePersistedState('BRANDS', '');
+  const [account, setAccount] = usePersistedState('ACCOUNT', '');
+  const [token, setToken] = usePersistedState('TOKEN', '');
 
   const [getToken] = useMutation<GetTokenResponseType, GetTokenParamType>(
     GET_TOKEN,
@@ -136,18 +135,18 @@ export const PriusSSSO = (props: any) => {
           setToken(encryptedToken);
         }
       },
-      onError: (error: ApolloError) => {
-        console.log(`Error: ${error.message}`);
+      onError: () => {
+        // console.log(`Error: ${error.message}`);
       },
     }
   );
 
   useEffect(() => {
-    if (!brandId || brandId === "") {
-      if (new URL(window.location.href).href.includes("?code=")) {
+    if (!brandId || brandId === '') {
+      if (new URL(window.location.href).href.includes('?code=')) {
         // if user is authenticated and set local storage
-        const hrefData = window.location.href.split("?")[1].split("&");
-        const access_token = hrefData[0].split("=")[1];
+        const hrefData = window.location.href.split('?')[1].split('&');
+        const access_token = hrefData[0].split('=')[1];
 
         getToken({
           variables: {
@@ -178,7 +177,7 @@ export const PriusSSSO = (props: any) => {
         token,
       }}
     >
-      {brandId !== "" ? (
+      {brandId !== '' ? (
         props.children
       ) : (
         <div className={classes.container}>

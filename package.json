@@ -75,6 +75,7 @@
     "doc": "npx styleguidist server",
     "eject": "react-scripts eject",
     "format": "prettier --write .",
+    "lint:fix": "eslint . --fix --ext ts --ext tsx --ext js",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "prefile1": "copyfiles -u 1 ./src/**/*.svg ./src/**/*.png ./src/**/*.jpg ./src/**/*.css ./src/**/*.eot ./src/**/*.ttf ./src/**/*.woff2 ./src/**/*.scss dist/",
     "prefile2": "copyfiles -u 1 ./src/**/**/*.svg ./src/**/**/*.png ./src/**/**/*.jpg ./src/**/**/*.css ./src/**/**/*.eot ./src/**/**/*.ttf ./src/**/**/*.woff2 ./src/**/**/*.scss dist/",

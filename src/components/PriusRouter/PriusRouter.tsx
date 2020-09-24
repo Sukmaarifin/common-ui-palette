@@ -3,18 +3,17 @@
  * [ ] Delete mode if no longer used
  */
 
-import React, { useContext, useEffect } from "react";
-import { Route, RouteProps, RouteComponentProps } from "react-router-dom";
-import { useLazyQuery } from "@apollo/react-hooks";
-import { ApolloError } from "apollo-boost";
+import React, { useContext, useEffect } from 'react';
+import { Route, RouteProps, RouteComponentProps } from 'react-router-dom';
+import { useLazyQuery } from '@apollo/react-hooks';
 
-import ErrorPage from "./ErrorPage";
+import ErrorPage from './ErrorPage';
 
-import { handlerPathname } from "../PriusNavigationBar";
-import { TenantContext } from "../PriusSSSO";
-import { GET_ACCESS_TO, GetAccessParamType } from "../../graphql";
-import { ROUTE_BY_PLAN } from "./types";
-import { ENV } from "../../configs";
+import { handlerPathname } from '../PriusNavigationBar';
+import { TenantContext } from '../PriusSSSO';
+import { GET_ACCESS_TO, GetAccessParamType } from '../../graphql';
+import { ROUTE_BY_PLAN } from './types';
+import { ENV } from '../../configs';
 
 export type PriusRouterProps = RouteProps & {
   modes: Array<string>;
@@ -31,28 +30,28 @@ const PriusRouter = ({
   const { account, mode } = useContext(TenantContext);
 
   // check which feature has access to by ID
-  const [haveAccessTo, { data: isAllowed }] = useLazyQuery<
+  const [haveAccessTo /*, { data: isAllowed }*/] = useLazyQuery<
     boolean,
     GetAccessParamType
   >(GET_ACCESS_TO, {
-    fetchPolicy: "cache-and-network",
+    fetchPolicy: 'cache-and-network',
     // remove when isAllowed used
     onCompleted() {
-      console.log(isAllowed);
+      // console.log(isAllowed);
     },
-    onError(error: ApolloError) {
-      console.log(error.message);
+    onError() {
+      // console.log(error.message);
     },
   });
 
   useEffect(() => {
     if (
-      ENV !== "development" &&
-      ENV !== "staging" &&
-      ENV !== "production" &&
+      ENV !== 'development' &&
+      ENV !== 'staging' &&
+      ENV !== 'production' &&
       rest.location?.pathname
     ) {
-      const currentPath = rest.location.pathname.split("/");
+      const currentPath = rest.location.pathname.split('/');
       let tempResource: string | undefined = undefined;
 
       if (currentPath?.length >= 3) {
@@ -69,8 +68,8 @@ const PriusRouter = ({
                 handlerObjectKey(
                   ROUTE_BY_PLAN,
                   handlerPathname(currentPath.filter((x) => x))
-                ) || "/", // set default if current path doesn't match
-              resource: tempResource || "", // optional
+                ) || '/', // set default if current path doesn't match
+              resource: tempResource || '', // optional
             },
           ],
         },
@@ -86,7 +85,7 @@ const PriusRouter = ({
 
   // Remove when ready
   const isAuthenticated: boolean =
-    ENV === "development" || ENV === "staging" ? true : modes.includes(mode);
+    ENV === 'development' || ENV === 'staging' ? true : modes.includes(mode);
 
   return (
     <Route
