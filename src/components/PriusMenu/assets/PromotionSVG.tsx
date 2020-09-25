@@ -1,11 +1,11 @@
-import React from 'react';
-import { checkSVGProp } from './typeSVG';
+import React from "react";
+import { checkSVGProp } from "./typeSVG";
 
 export default function PromotionSVG({
-  className = '',
-  fill = '#FFFFFF',
-  width = '21',
-  height = '21',
+  className = "",
+  fill = "#FFFFFF",
+  width = "21",
+  height = "21",
 }: checkSVGProp) {
   return (
     <svg

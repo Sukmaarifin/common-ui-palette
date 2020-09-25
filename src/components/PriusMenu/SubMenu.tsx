@@ -1,12 +1,12 @@
-import React from 'react';
-import { Drawer, Icon, List, ListItem, ListItemText } from '@material-ui/core';
-import clsx from 'clsx';
-import { RouteComponentProps } from 'react-router';
-import { withRouter, Link } from 'react-router-dom';
+import React from "react";
+import { Drawer, Icon, List, ListItem, ListItemText } from "@material-ui/core";
+import clsx from "clsx";
+import { RouteComponentProps } from "react-router";
+import { withRouter } from "react-router-dom";
 
-import { camelize } from '../../helpers';
+import Menu from "./Menu";
 
-import MainMenuCss from './MainMenuCss';
+import MainMenuCss from "./MainMenuCss";
 
 export type fieldSubMenu = {
   label: string;
@@ -17,12 +17,14 @@ type SubMenuProps = {
   getUrl: (value: string) => void;
   data: fieldSubMenu[];
   parentMenu: string;
+  base: string;
 } & RouteComponentProps;
 
-const SubMenu = ({ getUrl, data, parentMenu, history }: SubMenuProps) => {
+const SubMenu = ({ getUrl, data, parentMenu, history, base }: SubMenuProps) => {
   const classes = MainMenuCss();
 
   const pathname = history.location.pathname;
+  const pathnames = history.location.pathname.split("/").filter((x) => x);
 
   if (data.length > 0) {
     return (
@@ -36,37 +38,37 @@ const SubMenu = ({ getUrl, data, parentMenu, history }: SubMenuProps) => {
       >
         <div className={classes.toolbar} />
         <List>
-          <ListItem button key="0" onClick={() => getUrl('back')}>
+          <ListItem button key="0" onClick={() => getUrl("back")}>
             <Icon className={classes.activeIcon}>keyboard_backspace</Icon>
             <ListItemText
               className={classes.activeSubMenu}
               primary={parentMenu}
             />
           </ListItem>
-          {data.map((text: fieldSubMenu, index: string | number) => (
-            <Link
-              id={camelize(text.label)}
-              data-identity={`subMenu-anchor-${camelize(text.label)}`}
-              to={`${text?.url}`}
-              key={index}
+          {data.map((text: fieldSubMenu, index: number) => (
+            <Menu 
+              route={text} 
+              index={index}
+              pathname={pathnames[0]}
               className={classes.link}
+              base={base}
             >
               <ListItem
                 button
                 key={index}
-                onClick={() => getUrl(text.url ? text.url : '')}
+                onClick={() => getUrl(text.url ? text.url : "")}
               >
                 <ListItemText
                   className={clsx(
                     classes.drawerListSubMenu,
                     text.url && pathname === text.url
                       ? classes.activeSubMenu
-                      : ''
+                      : ""
                   )}
                   primary={text.label}
                 />
               </ListItem>
-            </Link>
+            </Menu>
           ))}
         </List>
       </Drawer>
