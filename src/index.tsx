@@ -46,11 +46,11 @@ export * from './components/PriusFieldset';
 export { default as Filter } from './components/PriusFilter';
 export * from './components/PriusFilter';
 
-export { default as Footer } from './components/PriusFilter';
-export * from './components/PriusFilter';
+export { default as Footer } from './components/PriusFooter';
+export * from './components/PriusFooter';
 
-export { default as FileUploader } from './components/PriusUploadFile';
-export * from './components/PriusUploadFile';
+export { default as FileUploader } from './components/PriusFileUploader';
+export * from './components/PriusFileUploader';
 
 export { default as ImageUploader } from './components/PriusImageUploader';
 export * from './components/PriusImageUploader';
@@ -67,8 +67,8 @@ export * from './components/PriusInputNew';
 export { default as InputGroup } from './components/PriusInputGroup';
 export * from './components/PriusInputGroup';
 
-export { default as Label } from './components/PriusLabel';
-export * from './components/PriusLabel';
+export { default as Label } from './components/PriusLabel/PriusLabel';
+export * from './components/PriusLabel/PriusLabel';
 
 export { default as Menu } from './components/PriusMenu';
 export * from './components/PriusMenu';
@@ -94,11 +94,16 @@ export * from './components/PriusPrintPage';
 export { default as Router } from './components/PriusRouter';
 export * from './components/PriusRouter';
 
+export { default as Select } from './components/PriusSelect';
+export * from './components/PriusSelect';
+
 export { default as SEO } from './components/PriusSEO';
 export * from './components/PriusSEO';
 
-export { default as Select } from './components/PriusSelect';
-export * from './components/PriusSelect';
+export * from './components/PriusSnackbar';
+
+export { default as SSSO } from './components/PriusSSSO';
+export * from './components/PriusSSSO';
 
 export { default as Tab } from './components/PriusTab';
 export * from './components/PriusTab';
@@ -118,8 +123,14 @@ export * from './components/PriusTextEditor';
 export { default as Thumbnail } from './components/PriusThumbnail';
 export * from './components/PriusThumbnail';
 
-export { default as Tooltip } from './components/PriusTooltip';
-export * from './components/PriusTooltip';
+export { default as Title } from './components/PriusTitle';
+export * from './components/PriusTitle';
 
 export { default as Toggle } from './components/PriusToggle';
 export * from './components/PriusToggle';
+
+export { default as MainContainer } from './components/MainContainer';
+export * from './components/MainContainer';
+
+export { default as Tooltip } from './components/PriusTooltip';
+export * from './components/PriusTooltip';

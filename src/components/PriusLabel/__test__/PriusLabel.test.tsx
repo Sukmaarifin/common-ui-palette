@@ -4,7 +4,7 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusLabel, { PriusLabelProps } from '../index';
+import PriusLabel, { PriusLabelProps } from '../PriusLabel';
 
 describe('PriusLabel Testing', () => {
   const render = () => {

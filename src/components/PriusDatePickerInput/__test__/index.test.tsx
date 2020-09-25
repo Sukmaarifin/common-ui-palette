@@ -1,7 +1,9 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import PriusDatePickerInput, { DatePickerInputProps } from '../index';
+import PriusDatePickerInput, {
+  DatePickerInputProps,
+} from '../PriusDatePickerInput';
 
 describe('PriusDatePickerInput Testing', () => {
   const render = () => {

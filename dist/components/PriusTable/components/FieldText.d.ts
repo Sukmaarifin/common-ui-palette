@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { FieldProps } from '../types';
-declare type NotesBadgeProperties = {
+export declare type NotesBadgeProperties = {
     text: string;
     theme?: 'light' | 'dark';
     type?: 'primary' | 'error' | 'success' | 'warning';

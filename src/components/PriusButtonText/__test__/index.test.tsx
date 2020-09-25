@@ -5,7 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
 
-import PriusButtonText, { PriusButtonTextProps } from '../index';
+import PriusButtonText, { PriusButtonTextProps } from '../PriusButtonText';
 
 describe('PriusButton Testing', () => {
   const render = () => {

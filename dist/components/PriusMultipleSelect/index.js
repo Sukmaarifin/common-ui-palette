@@ -6,3 +6,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var PriusMultipleSelect_1 = require("./PriusMultipleSelect");
 exports.default = PriusMultipleSelect_1.default;
 __export(require("./PriusMultipleSelect"));
+__export(require("./PriusCreatableSelect"));

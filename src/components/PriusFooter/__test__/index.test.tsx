@@ -4,7 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
 
-import PriusFooter from '../index';
+import PriusFooter from '../PriusFooter';
 
 describe('PriusFooter Testing', () => {
   const buttonClick = jest.fn();

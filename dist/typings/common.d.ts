@@ -77,7 +77,7 @@ export declare type SocialMediaLinkType = {
     instagram: string;
 };
 export declare type PageInfoType = {
-    totalItems?: number;
+    totalItems: number;
     itemPerPage: number;
     pageNumber: number;
 };

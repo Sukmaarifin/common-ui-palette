@@ -15,7 +15,7 @@ var styles_1 = require("@material-ui/core/styles");
 var KeyboardArrowDown_1 = __importDefault(require("@material-ui/icons/KeyboardArrowDown"));
 var KeyboardArrowUp_1 = __importDefault(require("@material-ui/icons/KeyboardArrowUp"));
 var PriusOption_1 = __importDefault(require("../../components/PriusOption"));
-var PriusCheckbox_1 = __importDefault(require("../../components/PriusCheckbox"));
+var PriusCheckbox_1 = __importDefault(require("../PriusCheckbox"));
 exports.useStyles = styles_1.makeStyles(function (theme) {
     return styles_1.createStyles({
         row: {

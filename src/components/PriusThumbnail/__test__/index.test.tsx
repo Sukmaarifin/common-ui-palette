@@ -2,7 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
-import PriusThumbnail, { PriusThumbnailProps } from '..';
+import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
 
 describe('PriusThumbnail test', () => {
   const props: PriusThumbnailProps = {

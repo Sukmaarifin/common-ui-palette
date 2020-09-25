@@ -32,7 +32,7 @@ var core_1 = require("@material-ui/core");
 var react_number_format_1 = __importDefault(require("react-number-format"));
 var PriusFieldset_1 = __importDefault(require("../../../components/PriusFieldset"));
 var PriusInputNew_1 = __importDefault(require("../../../components/PriusInputNew"));
-var PriusInputGroup_1 = __importDefault(require("../../../components/PriusInputGroup"));
+var PriusInputGroup_1 = __importDefault(require("../../PriusInputGroup"));
 var useStyles = styles_1.makeStyles(function () { return ({
     priceInput: {
         fontSize: '0.8125rem',
