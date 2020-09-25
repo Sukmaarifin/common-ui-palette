@@ -1,4 +1,9 @@
 import React, { CSSProperties } from 'react';
+export declare type DragItemType = {
+    index: number;
+    id: string;
+    type: string;
+};
 export declare type CardProps = {
     ID: string;
     text: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-declare type TenantBrandInfoType = {
+export declare type TenantBrandInfoType = {
     ID: string;
     name: string;
 };
@@ -21,5 +21,5 @@ export declare type TTenantContext = {
 };
 export declare const TenantContext: React.Context<TTenantContext>;
 export declare const logoutSSSO: () => void;
-export declare const PriusSSSO: (props: any) => JSX.Element;
-export {};
+declare const PriusSSSO: (props: any) => JSX.Element;
+export default PriusSSSO;

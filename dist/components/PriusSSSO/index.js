@@ -58,7 +58,7 @@ exports.logoutSSSO = function () {
     window.localStorage.clear();
     redirectToPriusSSSO();
 };
-exports.PriusSSSO = function (props) {
+var PriusSSSO = function (props) {
     var classes = useStyles();
     // BRAND_ID is an active or a selected brand
     var _a = usePersistedState_1.default('BRAND_ID', ''), brandId = _a[0], setBrandId = _a[1];
@@ -129,3 +129,4 @@ exports.PriusSSSO = function (props) {
         } }, brandId !== '' ? (props.children) : (react_1.default.createElement("div", { className: classes.container },
         react_1.default.createElement(PriusCircularProgress_1.default, { size: 80 })))));
 };
+exports.default = PriusSSSO;

@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
-import PriusTooltip from '../../PriusTooltip/PriusTooltip';
+import PriusTooltip from '../../PriusTooltip';
 import PriusBackdrop from '../../PriusBackdrop';
-import PriusLabel from '../../PriusLabel';
+import PriusLabel from '../../PriusLabel/PriusLabel';
 import { FieldProps } from '../types';
 import { getByMaxIndex } from '../../../helpers/getByMaxHelpers';
 

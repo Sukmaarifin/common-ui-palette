@@ -5,7 +5,7 @@ export declare enum StatusUploadType {
     DONE = "DONE",
     EMPTY = "EMPTY"
 }
-declare type PriusIndicatorLabelProps = {
+export declare type PriusIndicatorLabelProps = {
     status: StatusUploadType;
     name: string;
     size?: number;

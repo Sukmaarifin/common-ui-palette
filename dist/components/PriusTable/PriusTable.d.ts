@@ -3,6 +3,12 @@ import { WithStyles } from '@material-ui/styles';
 import { RowData } from './TableRow';
 import { PriusTableCss } from './PriusTableCss';
 import { SortDataType } from './types';
+export declare type TableHeaderData = {
+    fixedWidth?: string;
+    sortOption?: SortDataType;
+    title?: string;
+    width?: string;
+};
 /**
  * @DEPRECATED
  * Use PaginationType instead

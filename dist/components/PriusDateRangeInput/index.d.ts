@@ -1,7 +1,11 @@
 import React from 'react';
-declare type DataDateType = {
+export declare type DataDateType = {
     from: string;
     to: string;
+};
+export declare type DateType = {
+    from: Date;
+    to: Date;
 };
 export declare type PriusDateColumnProps = {
     id?: string;

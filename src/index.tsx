@@ -49,8 +49,8 @@ export * from './components/PriusFilter';
 export { default as Footer } from './components/PriusFooter';
 export * from './components/PriusFooter';
 
-export { default as FileUploader } from './components/PriusUploadFile';
-export * from './components/PriusUploadFile';
+export { default as FileUploader } from './components/PriusFileUploader';
+export * from './components/PriusFileUploader';
 
 export { default as ImageUploader } from './components/PriusImageUploader';
 export * from './components/PriusImageUploader';
@@ -67,8 +67,8 @@ export * from './components/PriusInputNew';
 export { default as InputGroup } from './components/PriusInputGroup';
 export * from './components/PriusInputGroup';
 
-export { default as Label } from './components/PriusLabel';
-export * from './components/PriusLabel';
+export { default as Label } from './components/PriusLabel/PriusLabel';
+export * from './components/PriusLabel/PriusLabel';
 
 export { default as Menu } from './components/PriusMenu';
 export * from './components/PriusMenu';
