@@ -123,3 +123,6 @@ export * from './components/PriusTooltip';
 
 export { default as Toggle } from './components/PriusToggle';
 export * from './components/PriusToggle';
+
+export { default as MainContainer } from './components/MainContainer';
+export * from './components/MainContainer';
