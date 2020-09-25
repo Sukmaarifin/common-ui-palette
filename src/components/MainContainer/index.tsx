@@ -17,7 +17,7 @@ export type RouteType = {
 };
 
 export type MainContainerPropType = {
-  children: React.ReactDOM;
+  children: React.ReactElement;
   route: Array<RouteType>;
 };
 
