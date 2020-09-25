@@ -97,6 +97,9 @@ export * from './src/components/PriusRouter';
 export { default as SEO } from './src/components/PriusSEO';
 export * from './src/components/PriusSEO';
 
+export { default as SSSO } from './src/components/PriusSSSO';
+export * from './src/components/PriusSSSO';
+
 export { default as Select } from './src/components/PriusSelect';
 export * from './src/components/PriusSelect';
 
@@ -114,6 +117,9 @@ export * from './src/components/PriusTextbox';
 
 export { default as TextEditor } from './src/components/PriusTextEditor';
 export * from './src/components/PriusTextEditor';
+
+export { default as Title } from './src/components/PriusTitle';
+export * from './src/components/PriusTitle';
 
 export { default as Thumbnail } from './src/components/PriusThumbnail';
 export * from './src/components/PriusThumbnail';
