@@ -20,7 +20,7 @@ const Menu = ({ route, children, index, pathname, className, base }: MenuProps) 
 
   if(route.url !== "#" && tmpUrl[0] !== pathname) {
     return (
-      <a href={`http://${window.location.hostname}:${base}${route.url}`} key={index}>
+      <a style={{textDecoration: "none"}} href={`http://${window.location.hostname}:${base}${route.url}`} key={index}>
         {children}
       </a>
     )
