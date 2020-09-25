@@ -46,8 +46,8 @@ export * from './components/PriusFieldset';
 export { default as Filter } from './components/PriusFilter';
 export * from './components/PriusFilter';
 
-export { default as Footer } from './components/PriusFilter';
-export * from './components/PriusFilter';
+export { default as Footer } from './components/PriusFooter';
+export * from './components/PriusFooter';
 
 export { default as FileUploader } from './components/PriusUploadFile';
 export * from './components/PriusUploadFile';
@@ -94,11 +94,16 @@ export * from './components/PriusPrintPage';
 export { default as Router } from './components/PriusRouter';
 export * from './components/PriusRouter';
 
+export { default as Select } from './components/PriusSelect';
+export * from './components/PriusSelect';
+
 export { default as SEO } from './components/PriusSEO';
 export * from './components/PriusSEO';
 
-export { default as Select } from './components/PriusSelect';
-export * from './components/PriusSelect';
+export * from './components/PriusSnackbar';
+
+export { default as SSSO } from './components/PriusSSSO';
+export * from './components/PriusSSSO';
 
 export { default as Tab } from './components/PriusTab';
 export * from './components/PriusTab';
@@ -118,8 +123,11 @@ export * from './components/PriusTextEditor';
 export { default as Thumbnail } from './components/PriusThumbnail';
 export * from './components/PriusThumbnail';
 
-export { default as Tooltip } from './components/PriusTooltip';
-export * from './components/PriusTooltip';
+export { default as Title } from './components/PriusTitle';
+export * from './components/PriusTitle';
 
 export { default as Toggle } from './components/PriusToggle';
 export * from './components/PriusToggle';
+
+export { default as Tooltip } from './components/PriusTooltip';
+export * from './components/PriusTooltip';
