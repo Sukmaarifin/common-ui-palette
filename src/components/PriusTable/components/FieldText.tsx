@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-type NotesBadgeProperties = {
+export type NotesBadgeProperties = {
   text: string;
   theme?: 'light' | 'dark';
   type?: 'primary' | 'error' | 'success' | 'warning';

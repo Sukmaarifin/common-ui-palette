@@ -29,7 +29,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-type TenantBrandInfoType = {
+export type TenantBrandInfoType = {
   ID: string;
   name: string;
 };
@@ -89,7 +89,7 @@ export const logoutSSSO = () => {
   redirectToPriusSSSO();
 };
 
-export const PriusSSSO = (props: any) => {
+const PriusSSSO = (props: any) => {
   const classes = useStyles();
 
   // BRAND_ID is an active or a selected brand
@@ -187,3 +187,5 @@ export const PriusSSSO = (props: any) => {
     </TenantContext.Provider>
   );
 };
+
+export default PriusSSSO;

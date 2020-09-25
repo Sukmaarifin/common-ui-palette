@@ -92,7 +92,7 @@ export type SocialMediaLinkType = {
 };
 
 export type PageInfoType = {
-  totalItems?: number;
+  totalItems: number;
   itemPerPage: number;
   pageNumber: number;
 };
