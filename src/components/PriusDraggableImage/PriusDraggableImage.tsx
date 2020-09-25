@@ -3,17 +3,12 @@ import { useDrop, DropTargetMonitor, useDrag } from 'react-dnd';
 import { Grid, Typography } from '@material-ui/core';
 
 import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
+import { DragItemType } from '../PriusCardDND';
 
 import { useStyles } from './PriusDraggableImageCss';
 
 const dndType = {
   IMAGE: 'image',
-};
-
-type DragItemType = {
-  index: number;
-  id: string;
-  type: string;
 };
 
 type PriusDraggableImageProps = PriusThumbnailProps & {

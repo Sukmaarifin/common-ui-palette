@@ -15,7 +15,7 @@ const dndType = {
   CARD: 'card',
 };
 
-type DragItemType = {
+export type DragItemType = {
   index: number;
   id: string;
   type: string;
