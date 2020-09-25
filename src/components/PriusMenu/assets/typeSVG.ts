@@ -1,5 +1,5 @@
-type inactiveColor = '#FFFFFF';
-type activeColor = '#1c9aea';
+type inactiveColor = "#FFFFFF";
+type activeColor = "#1c9aea";
 
 export type checkSVGProp = {
   className?: string;

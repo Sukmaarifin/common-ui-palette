@@ -6,7 +6,7 @@
  * [ ] remove onComplete when data used
  */
 
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect } from "react";
 import {
   Drawer,
   Icon,
@@ -14,75 +14,84 @@ import {
   ListItem,
   ListItemText,
   Typography,
-} from '@material-ui/core';
-import clsx from 'clsx';
-import { Link } from 'react-router-dom';
-import { useLazyQuery } from '@apollo/react-hooks';
-import { ApolloError } from 'apollo-boost';
+} from "@material-ui/core";
+import clsx from "clsx";
+import { withRouter } from "react-router-dom";
+import { useLazyQuery } from "@apollo/react-hooks";
+import { ApolloError } from "apollo-boost";
+import { RouteComponentProps } from "react-router";
 
-import { useSnackbar } from '../PriusSnackbar';
-import { menuConnexi } from './menuConnexi';
-import { menuStore } from './menuStore';
-import SubMenu, { fieldSubMenu } from './SubMenu';
-import { checkSVGProp } from './assets/typeSVG';
-import { camelize } from '../../helpers';
+import Menu from "./Menu";
+
+import { useSnackbar } from "../PriusSnackbar";
+import { menuConnexi } from "./menuConnexi";
+import { menuStore } from "./menuStore";
+import SubMenu, { fieldSubMenu } from "./SubMenu";
+import { checkSVGProp } from "./assets/typeSVG";
 
 import {
   DEFAULT_PLAN,
   ROUTE_BY_PLAN,
   DEFAULT_PLAN_STAGING,
   FeatureTypeStrings,
-} from '../PriusRouter/types';
-import { TenantContext } from '../PriusSSSO';
-import { ENV } from '../../configs';
+} from "../PriusRouter/types";
+import { TenantContext } from "../PriusSSSO";
+import { ENV } from "../../configs";
 import {
   GET_ALLOWED_ACTIONS,
   GetAllowedActionsResponseType,
   GetAllowedActionsParamType,
-} from '../../graphql';
+} from "../../graphql";
 
-import MainMenuCss from './MainMenuCss';
+import MainMenuCss from "./MainMenuCss";
 
-type fieldMenu = {
+export type fieldMenu = {
   label: string;
   url: string;
   icon: (props: checkSVGProp) => React.ReactNode;
   submenu: fieldSubMenu[];
+  base: string;
 };
 
 type mainMenuContainerState = {
   isOpenSubMenu: boolean;
   subMenu: fieldSubMenu[];
   activeLabel: string;
+  base: string;
 };
 
-const MainMenu = () => {
+type MainMenuProps = RouteComponentProps;
+
+const MainMenu = ({ history }: MainMenuProps) => {
   const { account } = useContext(TenantContext);
   const classes = MainMenuCss();
   const snackbar = useSnackbar();
   const [menuState, setMenuState] = useState<mainMenuContainerState>({
     isOpenSubMenu: false,
     subMenu: [],
-    activeLabel: '',
+    activeLabel: "",
+    base: "",
+
   });
+  const pathnames = history.location.pathname.split("/").filter((x) => x);
 
   const [getAllowedActions, { data }] = useLazyQuery<
     GetAllowedActionsResponseType,
     GetAllowedActionsParamType
   >(GET_ALLOWED_ACTIONS, {
-    fetchPolicy: 'cache-and-network',
+    fetchPolicy: "cache-and-network",
     // remove when data already used
     onCompleted() {
-      // console.log(data);
+      console.log(data);
     },
     onError(error: ApolloError) {
-      snackbar.show(`${error}`, 'error');
+      snackbar.show(`${error}`, "error");
     },
   });
 
   useEffect(() => {
     // Remove production when ready
-    if (ENV !== 'development' && ENV !== 'staging' && ENV !== 'production') {
+    if (ENV !== "development" && ENV !== "staging" && ENV !== "production") {
       getAllowedActions({
         variables: {
           accountID: account.ID,
@@ -95,7 +104,7 @@ const MainMenu = () => {
   const iconSubMenu = (hasSubMenu: number) => {
     if (hasSubMenu && !menuState.isOpenSubMenu) {
       return (
-        <Icon style={{ color: '#ffffff', opacity: 0.4 }}>
+        <Icon style={{ color: "#ffffff", opacity: 0.4 }}>
           keyboard_arrow_right
         </Icon>
       );
@@ -109,20 +118,22 @@ const MainMenu = () => {
         isOpenSubMenu: true,
         subMenu: submenu,
         activeLabel: text.label,
+        base: text.base
       });
     } else {
       setMenuState({
         isOpenSubMenu: false,
         subMenu: [],
         activeLabel: text.label,
+        base: text.base
       });
     }
   };
 
   const handlerMenu = (listMenu: Array<fieldMenu>) => {
-    if (ENV === 'development') return listMenu;
+    if (ENV === "development") return listMenu;
 
-    const defaultPlan = ENV === 'staging' ? DEFAULT_PLAN_STAGING : DEFAULT_PLAN;
+    const defaultPlan = ENV === "staging" ? DEFAULT_PLAN_STAGING : DEFAULT_PLAN;
 
     const allowedActions: Array<FeatureTypeStrings> =
       data?.actions && Array.isArray(data.actions) ? data.actions : defaultPlan;
@@ -135,7 +146,7 @@ const MainMenu = () => {
       (tmpMenu: Array<fieldMenu>, menu: fieldMenu) => {
         if (menu?.submenu?.length) {
           const submenu: Array<fieldSubMenu> = menu.submenu.filter(
-            (tmpSubMenu: fieldSubMenu) => urls.includes(tmpSubMenu?.url || '')
+            (tmpSubMenu: fieldSubMenu) => urls.includes(tmpSubMenu?.url || "")
           );
           if (submenu?.length) {
             tmpMenu.push({ ...menu, submenu: submenu });
@@ -157,17 +168,18 @@ const MainMenu = () => {
   const drawerListMenu = (menu: fieldMenu[]) => {
     return (
       <List>
-        {menu.map((text, index) => (
-          <Link
-            id={camelize(text.label)}
-            data-identity={`menu-anchor-${camelize(text.label)}`}
-            to={text.url}
-            key={index}
+        {menu.map((text, index) => (     
+          <Menu 
+            route={text} 
+            index={index}
+            pathname={pathnames[0]}
             className={classes.link}
+            base={text.base}
+            key={index}
           >
             <ListItem button key={index} onClick={() => onClickMenu(text)}>
-              <Icon classes={{ root: classes.iconRoot }}>
-                {text.icon({
+               <Icon classes={{ root: classes.iconRoot }}>
+                 {text.icon({
                   className: clsx(
                     classes.imageIcon,
                     menuState.activeLabel !== text.label
@@ -176,8 +188,8 @@ const MainMenu = () => {
                   ),
                   fill:
                     menuState.activeLabel === text.label
-                      ? '#1c9aea'
-                      : '#FFFFFF',
+                      ? "#1c9aea"
+                      : "#FFFFFF",
                 })}
               </Icon>
               <ListItemText
@@ -187,8 +199,8 @@ const MainMenu = () => {
                     style={{
                       fontWeight:
                         menuState.activeLabel === text.label
-                          ? 'bold'
-                          : 'normal',
+                          ? "bold"
+                          : "normal",
                       opacity: menuState.activeLabel === text.label ? 1 : 0.4,
                     }}
                   >
@@ -198,7 +210,48 @@ const MainMenu = () => {
               />
               {iconSubMenu(text.submenu.length)}
             </ListItem>
-          </Link>
+          </Menu>
+          // <Link
+          //   id={camelize(text.label)}
+          //   data-identity={`menu-anchor-${camelize(text.label)}`}
+          //   to={text.url}
+          //   key={index}
+          //   className={classes.link}
+          // >
+          //   <ListItem button key={index} onClick={() => onClickMenu(text)}>
+          //     <Icon classes={{ root: classes.iconRoot }}>
+          //       {text.icon({
+          //         className: clsx(
+          //           classes.imageIcon,
+          //           menuState.activeLabel !== text.label
+          //             ? classes.imageIconInactive
+          //             : null
+          //         ),
+          //         fill:
+          //           menuState.activeLabel === text.label
+          //             ? "#1c9aea"
+          //             : "#FFFFFF",
+          //       })}
+          //     </Icon>
+          //     <ListItemText
+          //       primary={
+          //         <Typography
+          //           className={classes.menuList}
+          //           style={{
+          //             fontWeight:
+          //               menuState.activeLabel === text.label
+          //                 ? "bold"
+          //                 : "normal",
+          //             opacity: menuState.activeLabel === text.label ? 1 : 0.4,
+          //           }}
+          //         >
+          //           {text.label}
+          //         </Typography>
+          //       }
+          //     />
+          //     {iconSubMenu(text.submenu.length)}
+          //   </ListItem>
+          // </Link>
         ))}
       </List>
     );
@@ -230,7 +283,7 @@ const MainMenu = () => {
         >
           <span
             style={{
-              display: menuState.isOpenSubMenu ? 'none' : 'inline',
+              display: menuState.isOpenSubMenu ? "none" : "inline",
             }}
           >
             Sales Channel
@@ -242,14 +295,15 @@ const MainMenu = () => {
 
       <SubMenu
         getUrl={(url: string) =>
-          url === 'back' &&
+          url === "back" &&
           setMenuState({ ...menuState, isOpenSubMenu: false, subMenu: [] })
         }
         data={menuState.subMenu}
         parentMenu={menuState.activeLabel}
+        base={menuState.base}
       />
     </nav>
   );
 };
 
-export default MainMenu;
+export default withRouter(MainMenu);
