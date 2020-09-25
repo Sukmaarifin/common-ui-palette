@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var styles_1 = require("@material-ui/core/styles");
-exports.PriusUploadFileCss = styles_1.makeStyles(function (theme) { return ({
+exports.PriusFileUploaderCss = styles_1.makeStyles(function (theme) { return ({
     box: {
         margin: '1rem 0',
         height: '216px',

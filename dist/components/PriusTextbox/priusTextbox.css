@@ -1,0 +1,9 @@
+.prius-textbox__title {
+  margin-bottom: -5px;
+  margin-left: 5px;
+}
+
+.MuiOutlinedInput-multiline.MuiOutlinedInput-marginDense {
+  font-family: Metropolis, sans-serif;
+  font-size: 13px;
+}

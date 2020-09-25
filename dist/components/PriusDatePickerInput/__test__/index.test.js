@@ -16,14 +16,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var enzyme_1 = require("enzyme");
-var index_1 = __importDefault(require("../index"));
+var PriusDatePickerInput_1 = __importDefault(require("../PriusDatePickerInput"));
 describe('PriusDatePickerInput Testing', function () {
     var render = function () {
         var props = {
             selectedDate: new Date(),
             onDayClick: jest.fn(),
         };
-        return enzyme_1.mount(react_1.default.createElement(index_1.default, __assign({}, props)));
+        return enzyme_1.mount(react_1.default.createElement(PriusDatePickerInput_1.default, __assign({}, props)));
     };
     it('render successfully', function () {
         var wrapper = render();

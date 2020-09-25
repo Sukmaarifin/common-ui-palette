@@ -17,7 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var enzyme_1 = require("enzyme");
 var enzyme_to_json_1 = __importDefault(require("enzyme-to-json"));
-var __1 = __importDefault(require(".."));
+var PriusBackdrop_1 = __importDefault(require("../PriusBackdrop"));
 describe('PriusBackdrop test', function () {
     var props = {
         popperId: 'dummy_prius_popper',
@@ -26,11 +26,11 @@ describe('PriusBackdrop test', function () {
     };
     // snapshot
     it('renders correctly', function () {
-        var wrapper = enzyme_1.mount(react_1.default.createElement(__1.default, __assign({}, props), "Lorem ipsum, dolor sit amet consectetur"));
+        var wrapper = enzyme_1.mount(react_1.default.createElement(PriusBackdrop_1.default, __assign({}, props), "Lorem ipsum, dolor sit amet consectetur"));
         expect(enzyme_to_json_1.default(wrapper)).toMatchSnapshot();
     });
     it('renders trigger button with its aria atribute', function () {
-        var wrapper = enzyme_1.shallow(react_1.default.createElement(__1.default, __assign({}, props), "Hello, I am popping up!"));
+        var wrapper = enzyme_1.shallow(react_1.default.createElement(PriusBackdrop_1.default, __assign({}, props), "Hello, I am popping up!"));
         expect(wrapper.find('button[aria-describedby="dummy_prius_popper"]').first()).toHaveLength(1);
     });
 });

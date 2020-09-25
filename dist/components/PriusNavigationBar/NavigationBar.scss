@@ -1,0 +1,121 @@
+.prius__navbar__container {
+  height: 50px;
+  display: block;
+  background: white;
+}
+.prius__navbar__left-side {
+  display: flex;
+  float: left;
+  padding: 13px 50px;
+}
+.prius__navbar__right-side {
+  height: 50px;
+  display: flex;
+  float: right;
+}
+.prius__navbar__sync {
+  width: auto;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.prius__navbar__notif {
+  width: auto;
+  padding: 7px 0;
+}
+.prius__navbar__user {
+  width: 166px;
+  padding: 5.5px 20px;
+}
+.prius__navbar__button {
+  text-transform: none;
+  font-family: Metropolis, sans-serif;
+  font-size: 13px;
+  margin-top: 4px;
+  color: #444444;
+  padding: 5px 8px;
+}
+.prius__link {
+  color: #5b5b5b !important;
+  font-size: 0.9375rem !important;
+  font-family: Metropolis !important, sans-serif;
+}
+.prius__link-disable {
+  color: #e0e0e0 !important;
+  font-size: 0.9375rem !important;
+  font-family: Metropolis !important, sans-serif;
+}
+.prius__refresh {
+  font-family: Metropolis, sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 5.5px;
+  &.onloading {
+    color: #c8c8c8;
+  }
+}
+.prius__clickable-circle {
+  cursor: pointer;
+  &:hover {
+    background: #f0f0f0;
+  }
+  &:active {
+    background: #d9dadb;
+  }
+  padding-left: 4px;
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  margin-top: 3px;
+  position: relative;
+}
+.prius__clickable-circle .alerted-row {
+  border-radius: 50%;
+  border: 1px solid #db4437;
+  width: 8px;
+  height: 8px;
+  background: #db4437;
+}
+.prius__card-container {
+  padding: 7px 15px !important;
+}
+.prius__card-item {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.prius__card-label {
+  padding: 7px;
+  margin: 0 5px;
+}
+.prius__card-content {
+  display: flex;
+  flex-direction: column;
+}
+.prius__card-content .title {
+  padding-top: 8px;
+  width: auto;
+  font-size: 13px;
+}
+.prius__card-content .time {
+  margin: 6px 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.loading {
+  padding: 5.5px;
+  cursor: pointer;
+  color: #5b5b5b !important;
+}
+.refresh {
+  cursor: pointer;
+  width: 22px !important;
+}
+.notifications {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}

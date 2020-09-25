@@ -15,10 +15,10 @@ var clsx_1 = __importDefault(require("clsx"));
 var core_1 = require("@material-ui/core");
 var UploadIcon_svg_1 = __importDefault(require("./UploadIcon.svg"));
 var PriusIndicatorLabel_1 = __importStar(require("../PriusIndicatorLabel"));
-var PriusUploadFileCss_1 = require("./PriusUploadFileCss");
-var PriusUploadFile = function (_a) {
+var PriusFileUploaderCss_1 = require("./PriusFileUploaderCss");
+var PriusFileUploader = function (_a) {
     var onUploadFile = _a.onUploadFile, statusUpload = _a.statusUpload, className = _a.className, id = _a.id;
-    var classes = PriusUploadFileCss_1.PriusUploadFileCss();
+    var classes = PriusFileUploaderCss_1.PriusFileUploaderCss();
     var greyBorder = '#ececec';
     var redBorder = '#e02020';
     var blueBorder = '#1c9aea';
@@ -90,4 +90,4 @@ var PriusUploadFile = function (_a) {
                 setBorderBox('#ececec');
             } })))));
 };
-exports.default = PriusUploadFile;
+exports.default = PriusFileUploader;
