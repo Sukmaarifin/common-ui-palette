@@ -4,7 +4,9 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusCircularProgress, { PriusCircularProgressProps } from '../index';
+import PriusCircularProgress, {
+  PriusCircularProgressProps,
+} from '../PriusCircularProgress';
 
 describe('PriusCircularProgress Testing', () => {
   const customProps: PriusCircularProgressProps = {

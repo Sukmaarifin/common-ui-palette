@@ -19,7 +19,7 @@ var enzyme_1 = require("enzyme");
 var enzyme_to_json_1 = __importDefault(require("enzyme-to-json"));
 var styles_1 = require("@material-ui/core/styles");
 var material_ui_theme_1 = __importDefault(require("../../../styles/material-ui-theme"));
-var index_1 = __importDefault(require("../index"));
+var PriusInputGroup_1 = __importDefault(require("../PriusInputGroup"));
 var icons_1 = require("../../../icons");
 describe('InputDropdwon Testing', function () {
     var render = function () {
@@ -33,7 +33,7 @@ describe('InputDropdwon Testing', function () {
             handleDropdown: jest.fn(),
         };
         return enzyme_1.mount(react_1.default.createElement(styles_1.ThemeProvider, { theme: material_ui_theme_1.default },
-            react_1.default.createElement(index_1.default, __assign({}, props))));
+            react_1.default.createElement(PriusInputGroup_1.default, __assign({}, props))));
     };
     it('render successfully', function () {
         var wrapper = render();

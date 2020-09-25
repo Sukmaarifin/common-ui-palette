@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusCard, { PriusCardProps } from '../index';
+import PriusCard, { PriusCardProps } from '../PriusCard';
 import { AddCircleIcon } from '../../../icons';
 
 describe('PriusCard Testing', () => {

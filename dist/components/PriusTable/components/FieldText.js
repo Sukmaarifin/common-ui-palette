@@ -20,9 +20,9 @@ var clsx_1 = __importDefault(require("clsx"));
 var react_router_dom_1 = require("react-router-dom");
 var core_1 = require("@material-ui/core");
 var styles_1 = require("@material-ui/core/styles");
-var PriusTooltip_1 = __importDefault(require("../../PriusTooltip/PriusTooltip"));
+var PriusTooltip_1 = __importDefault(require("../../PriusTooltip"));
 var PriusBackdrop_1 = __importDefault(require("../../PriusBackdrop"));
-var PriusLabel_1 = __importDefault(require("../../PriusLabel"));
+var PriusLabel_1 = __importDefault(require("../../PriusLabel/PriusLabel"));
 var getByMaxHelpers_1 = require("../../../helpers/getByMaxHelpers");
 var useStyles = styles_1.makeStyles(function (theme) { return ({
     container: {

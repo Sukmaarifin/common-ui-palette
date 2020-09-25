@@ -3,7 +3,7 @@
  * [ ] Unit Test
  */
 import React from 'react';
-import { FieldProps } from '../../../components/PriusTable/types';
+import { FieldProps } from '../../../components/PriusTable';
 declare type FieldInputProps = {
     handleOnChange: (ID: string, input: React.ReactText) => void;
     rowID: string;

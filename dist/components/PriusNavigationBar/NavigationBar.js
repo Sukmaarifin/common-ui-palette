@@ -26,7 +26,7 @@ var core_1 = require("@material-ui/core");
 var icons_1 = require("@material-ui/icons");
 var react_router_1 = require("react-router");
 var react_router_dom_1 = require("react-router-dom");
-var PriusSSSO_1 = require("../../components/PriusSSSO");
+var PriusSSSO_1 = require("../PriusSSSO");
 var helpers_1 = require("../../helpers");
 require("./NavigationBar.css");
 var LinkRouter = function (props) { return (React.createElement(core_1.Link, __assign({}, props, { component: react_router_dom_1.Link }))); };

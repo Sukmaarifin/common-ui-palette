@@ -19,7 +19,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import PriusOption from '../../components/PriusOption';
-import PriusCheckbox from '../../components/PriusCheckbox';
+import PriusCheckbox from '../PriusCheckbox';
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({

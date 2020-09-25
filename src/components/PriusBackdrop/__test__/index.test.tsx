@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
-import PriusBackdrop, { PriusBackdropProps } from '..';
+import PriusBackdrop, { PriusBackdropProps } from '../PriusBackdrop';
 
 describe('PriusBackdrop test', () => {
   const props: PriusBackdropProps = {

@@ -18,7 +18,7 @@ var react_1 = __importDefault(require("react"));
 var enzyme_1 = require("enzyme");
 var styles_1 = require("@material-ui/core/styles");
 var material_ui_theme_1 = __importDefault(require("../../../styles/material-ui-theme"));
-var index_1 = __importDefault(require("../index"));
+var PriusCard_1 = __importDefault(require("../PriusCard"));
 var icons_1 = require("../../../icons");
 describe('PriusCard Testing', function () {
     var mockProps = {
@@ -28,19 +28,19 @@ describe('PriusCard Testing', function () {
     };
     it('render with required props', function () {
         var wrapper = enzyme_1.mount(react_1.default.createElement(styles_1.ThemeProvider, { theme: material_ui_theme_1.default },
-            react_1.default.createElement(index_1.default, __assign({}, mockProps))));
+            react_1.default.createElement(PriusCard_1.default, __assign({}, mockProps))));
         expect(wrapper.containsMatchingElement(react_1.default.createElement("div", { className: "makeStyles-title-7" }, "Tambah"))).toBeTruthy();
     });
     it('render with label Coming Soon', function () {
         var wrapper = enzyme_1.mount(react_1.default.createElement(styles_1.ThemeProvider, { theme: material_ui_theme_1.default },
-            react_1.default.createElement(index_1.default, __assign({ label: "Coming Soon" }, mockProps))));
+            react_1.default.createElement(PriusCard_1.default, __assign({ label: "Coming Soon" }, mockProps))));
         expect(wrapper.find('PriusLabel').first().text()).toStrictEqual('Coming Soon');
     });
     it('render with onClick function', function () {
         var mockFunction = function () { return alert('card clicked'); };
         jest.spyOn(window, 'alert').mockImplementation(function () { });
         var wrapper = enzyme_1.mount(react_1.default.createElement(styles_1.ThemeProvider, { theme: material_ui_theme_1.default },
-            react_1.default.createElement(index_1.default, __assign({ onClick: mockFunction }, mockProps))));
+            react_1.default.createElement(PriusCard_1.default, __assign({ onClick: mockFunction }, mockProps))));
         // user simulate click on PriusCard
         wrapper.simulate('click');
         expect(window.alert).toBeCalledWith('card clicked');

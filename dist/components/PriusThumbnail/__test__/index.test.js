@@ -17,7 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var enzyme_1 = require("enzyme");
 var enzyme_to_json_1 = __importDefault(require("enzyme-to-json"));
-var __1 = __importDefault(require(".."));
+var PriusThumbnail_1 = __importDefault(require("../PriusThumbnail"));
 describe('PriusThumbnail test', function () {
     var props = {
         imageSource: '#some-cool-image.jpg',
@@ -26,7 +26,7 @@ describe('PriusThumbnail test', function () {
     };
     // snapshot
     it('renders correctly', function () {
-        var wrapper = enzyme_1.mount(react_1.default.createElement(__1.default, __assign({}, props)));
+        var wrapper = enzyme_1.mount(react_1.default.createElement(PriusThumbnail_1.default, __assign({}, props)));
         expect(enzyme_to_json_1.default(wrapper)).toMatchSnapshot();
     });
 });

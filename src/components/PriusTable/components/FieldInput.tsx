@@ -10,9 +10,9 @@ import NumberFormat from 'react-number-format';
 
 import PriusFieldset from '../../../components/PriusFieldset';
 import PriusInput from '../../../components/PriusInputNew';
-import PriusInputGroup from '../../../components/PriusInputGroup';
+import PriusInputGroup from '../../PriusInputGroup';
 
-import { FieldProps } from '../../../components/PriusTable/types';
+import { FieldProps } from '../../../components/PriusTable';
 
 type FieldInputProps = {
   handleOnChange: (ID: string, input: React.ReactText) => void;
