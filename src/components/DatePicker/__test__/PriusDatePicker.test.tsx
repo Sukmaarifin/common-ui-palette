@@ -1,16 +1,16 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import PriusDatePicker, { DatePickerProps } from '../PriusDatePicker';
+import DatePicker, { DatePickerProps } from '../DatePicker';
 
-describe('PriusDatePicker Testing', () => {
+describe('DatePicker Testing', () => {
   const render = () => {
     const props: DatePickerProps = {
       selectedDays: { from: new Date(), to: new Date() },
       onDayClick: jest.fn(),
     };
 
-    return mount(<PriusDatePicker {...props} />);
+    return mount(<DatePicker {...props} />);
   };
 
   it('render successfully', () => {

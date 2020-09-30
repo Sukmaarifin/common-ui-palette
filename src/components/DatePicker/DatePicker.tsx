@@ -11,7 +11,7 @@ export type DatePickerProps = {
   onDayClick: (from: Date, to: Date) => void;
 };
 
-function PriusDatePicker({ selectedDays, onDayClick }: DatePickerProps) {
+function DatePicker({ selectedDays, onDayClick }: DatePickerProps) {
   return (
     <React.Fragment>
       <DayPicker
@@ -78,7 +78,7 @@ function PriusDatePicker({ selectedDays, onDayClick }: DatePickerProps) {
   );
 }
 
-export default PriusDatePicker;
+export default DatePicker;
 
 const addDays = (date: Date, days: number) => {
   var dt = new Date();

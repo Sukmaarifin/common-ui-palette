@@ -28,8 +28,8 @@ export * from './components/ColorPicker';
 export { default as ConfirmDialog } from './components/ConfirmDialog';
 export * from './components/ConfirmDialog';
 
-export { default as DatePicker } from './components/PriusDatePicker';
-export * from './components/PriusDatePicker';
+export { default as DatePicker } from './components/DatePicker';
+export * from './components/DatePicker';
 
 export { default as DatePickerInput } from './components/PriusDatePickerInput';
 export * from './components/PriusDatePickerInput';

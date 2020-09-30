@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 import PriusInput from '../PriusInputNew';
-import PriusDatePicker from '../PriusDatePicker';
+import DatePicker from '../DatePicker';
 
 import { convertDateUTC } from '../../helpers';
 import { DateRangeType } from '../../typings';
@@ -112,7 +112,7 @@ const PriusDateColumn: React.FC<PriusDateColumnProps> = ({
         onKeyDown={handleCalendarToggle}
       />
       {openCalendar && (
-        <PriusDatePicker
+        <DatePicker
           selectedDays={date}
           onDayClick={handleDateRangeValue}
         />

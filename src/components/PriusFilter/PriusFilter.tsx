@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Chip, Grid, Icon, IconButton } from '@material-ui/core';
 
 import { AddCircleOutlinedIcon } from '../../icons';
-import DatePicker from '../PriusDatePicker';
+import DatePicker from '../DatePicker';
 import Backdrop from '../Backdrop';
 
 import { DateRangeType } from '../../typings';
