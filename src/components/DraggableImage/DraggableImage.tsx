@@ -5,20 +5,20 @@ import { Grid, Typography } from '@material-ui/core';
 import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
 import { DragItemType } from '../CardDND';
 
-import { useStyles } from './PriusDraggableImageCss';
+import { useStyles } from './DraggableImageCss';
 
 const dndType = {
   IMAGE: 'image',
 };
 
-type PriusDraggableImageProps = PriusThumbnailProps & {
+type DraggableImageProps = PriusThumbnailProps & {
   /* key in item */
   index: number;
   /* action on moving the image */
   moveImage: (dragIndex: number, hoverIndex: number) => void;
 };
 
-const PriusDraggableImage = ({
+const DraggableImage = ({
   altText,
   imageSource,
   size,
@@ -26,7 +26,7 @@ const PriusDraggableImage = ({
   className,
   index,
   moveImage,
-}: PriusDraggableImageProps) => {
+}: DraggableImageProps) => {
   const classes = useStyles();
   const ref = useRef<HTMLDivElement>(null);
   const [, drop] = useDrop({
@@ -110,4 +110,4 @@ const PriusDraggableImage = ({
   );
 };
 
-export default PriusDraggableImage;
+export default DraggableImage;

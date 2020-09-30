@@ -31,14 +31,14 @@ export * from './src/components/ConfirmDialog';
 export { default as DatePicker } from './src/components/DatePicker';
 export * from './src/components/DatePicker';
 
-export { default as DatePickerInput } from './src/components/PriusDatePickerInput';
-export * from './src/components/PriusDatePickerInput';
+export { default as DatePickerInput } from './src/components/DatePickerInput';
+export * from './src/components/DatePickerInput';
 
-export { default as DateRangeInput } from './src/components/PriusDateRangeInput';
-export * from './src/components/PriusDateRangeInput';
+export { default as DateRangeInput } from './src/components/DateRangeInput';
+export * from './src/components/DateRangeInput';
 
-export { default as DraggableImage } from './src/components/PriusDraggableImage';
-export * from './src/components/PriusDraggableImage';
+export { default as DraggableImage } from './src/components/DraggableImage';
+export * from './src/components/DraggableImage';
 
 export { default as Fieldset } from './src/components/PriusFieldset';
 export * from './src/components/PriusFieldset';

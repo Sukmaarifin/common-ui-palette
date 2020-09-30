@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { makeStyles, Theme, Grid } from '@material-ui/core';
 
 import { TrashBinOutlinedIcon } from '../../icons';
-import PriusDraggableImage from '../PriusDraggableImage';
+import DraggableImage from '../DraggableImage';
 import { ThumbnailSize } from '../PriusThumbnail';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -137,7 +137,7 @@ const MultipleImage = ({
       )}
 
       <div className={clsx(classes[size], className && className)}>
-        <PriusDraggableImage
+        <DraggableImage
           altText={`image of products`}
           imageSource={image}
           size={size}
