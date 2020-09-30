@@ -31,8 +31,8 @@ export * from './components/ConfirmDialog';
 export { default as DatePicker } from './components/DatePicker';
 export * from './components/DatePicker';
 
-export { default as DatePickerInput } from './components/PriusDatePickerInput';
-export * from './components/PriusDatePickerInput';
+export { default as DatePickerInput } from './components/DatePickerInput';
+export * from './components/DatePickerInput';
 
 export { default as DateRangeInput } from './components/PriusDateRangeInput';
 export * from './components/PriusDateRangeInput';
