@@ -21,7 +21,7 @@ export type ToggleProps = Pick<
   label?: string;
 };
 
-type PriusToggleProps = ToggleProps & {
+type ToggleComponentProps = ToggleProps & {
   /**
    * toggle appearance type, "regular" or "table"
    */
@@ -29,7 +29,7 @@ type PriusToggleProps = ToggleProps & {
   checked: boolean;
 };
 
-const PriusToggle = ({ type = 'table', ...props }: PriusToggleProps) => {
+const ToggleComponent = ({ type = 'table', ...props }: ToggleComponentProps) => {
   if (type === 'regular') {
     return <RegularToggle {...props} />;
   } else {
@@ -37,4 +37,4 @@ const PriusToggle = ({ type = 'table', ...props }: PriusToggleProps) => {
   }
 };
 
-export default PriusToggle;
+export default ToggleComponent;

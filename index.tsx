@@ -127,5 +127,5 @@ export * from './src/components/Thumbnail';
 export { default as Tooltip } from './src/components/Tooltip';
 export * from './src/components/Tooltip';
 
-export { default as Toggle } from './src/components/PriusToggle';
-export * from './src/components/PriusToggle';
+export { default as Toggle } from './src/components/Toggle';
+export * from './src/components/Toggle';

@@ -8,17 +8,17 @@ import {
 } from '@storybook/addon-docs/blocks';
 import { Grid } from '@material-ui/core';
 
-import PriusToggle from './index';
+import Toggle from './index';
 
 <Meta
-  component={PriusToggle}
-  id="Components|PriusToggle"
-  title="Components|PriusToggle"
+  component={Toggle}
+  id="Components|Toggle"
+  title="Components|Toggle"
 />
 
-# PriusToggle
+# Toggle
 
-`PriusToggle` is a [FormControlLabel](https://material-ui.com/api/form-control-label) that wrap [Switch](https://material-ui.com/components/switches/) component.
+`Toggle` is a [FormControlLabel](https://material-ui.com/api/form-control-label) that wrap [Switch](https://material-ui.com/components/switches/) component.
 It can be used for boolean inputs (true / false, on / off, active / non-active).
 This component have two `type` of apperance: **regular** and **table**.
 
@@ -34,12 +34,12 @@ Should provide `checked` and `onChange` props.
       const [checked, setChecked] = useState(false);
       return (
         <Grid container style={{ margin: 12 }}>
-          <PriusToggle
+          <Toggle
             type="regular"
             checked={checked}
             onChange={() => setChecked(!checked)}
           />
-          <PriusToggle
+          <Toggle
             type="regular"
             label="Some Label"
             checked={checked}
@@ -56,8 +56,8 @@ Should provide `checked` and `onChange` props.
 <Preview>
   <Story name="regular-disabled">
     <Grid container style={{ margin: 12 }}>
-      <PriusToggle disabled type="regular" checked={true} />
-      <PriusToggle disabled type="regular" checked={false} />
+      <Toggle disabled type="regular" checked={true} />
+      <Toggle disabled type="regular" checked={false} />
     </Grid>
   </Story>
 </Preview>
@@ -70,7 +70,7 @@ Should provide `checked` and `onChange` props.
       const [checked, setChecked] = useState(false);
       return (
         <Grid container style={{ margin: 12 }}>
-          <PriusToggle
+          <Toggle
             type="table"
             checked={checked}
             onChange={() => setChecked(!checked)}
@@ -86,14 +86,14 @@ Should provide `checked` and `onChange` props.
 <Preview>
   <Story name="table-disabled">
     <Grid container style={{ margin: 12 }}>
-      <PriusToggle disabled type="table" checked={false} />
-      <PriusToggle disabled type="table" checked={true} />
+      <Toggle disabled type="table" checked={false} />
+      <Toggle disabled type="table" checked={true} />
     </Grid>
   </Story>
 </Preview>
 
 ## Props
 
-<Props of={PriusToggle} />
+<Props of={Toggle} />
 
 ## Related

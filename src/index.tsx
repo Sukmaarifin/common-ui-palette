@@ -126,8 +126,8 @@ export * from './components/Thumbnail';
 export { default as Title } from './components/Title';
 export * from './components/Title';
 
-export { default as Toggle } from './components/PriusToggle';
-export * from './components/PriusToggle';
+export { default as Toggle } from './components/Toggle';
+export * from './components/Toggle';
 
 export { default as MainContainer } from './components/MainContainer';
 export * from './components/MainContainer';

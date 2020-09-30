@@ -8,7 +8,7 @@ import get from 'lodash/get';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import PriusToggle from '../../PriusToggle';
+import Toggle from '../../Toggle';
 
 import { FieldProps } from '../types';
 
@@ -49,7 +49,7 @@ const FieldToggle = ({
         maxWidth: fixedWidth ? fixedWidth : width,
       }}
     >
-      <PriusToggle
+      <Toggle
         id={fieldId && `${fieldId}`}
         data-identity={fieldId && `${fieldId}`}
         type="table"
