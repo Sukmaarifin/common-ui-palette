@@ -1,6 +1,6 @@
-# PriusOption
+# Option
 
-PriusOption component provide easy way to show menu that triggered via 3-dotted-button (vertical or horizontal). You can just pass menu items via `items` props. Each item should have their own onClick handler.
+Option component provide easy way to show menu that triggered via 3-dotted-button (vertical or horizontal). You can just pass menu items via `items` props. Each item should have their own onClick handler.
 
 ## Example data for items prop
 
@@ -24,7 +24,7 @@ const menuData = [
 ## How to use
 
 ```
-<PriusOption
+<Option
   icon="vertical"
   items={menuData}
 />

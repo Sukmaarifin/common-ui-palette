@@ -4,10 +4,10 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../../../styles/material-ui-theme';
 
-import PriusOption, { PriusOptionProps } from '../PriusOption';
+import Option, { OptionProps } from '../Option';
 import { DownloadIcon, TrashBinIcon } from '../../../icons';
 
-describe('PriusOption Testing', () => {
+describe('Option Testing', () => {
   const render = () => {
     const menuData = [
       {
@@ -24,14 +24,14 @@ describe('PriusOption Testing', () => {
       },
     ];
 
-    const props: PriusOptionProps = {
+    const props: OptionProps = {
       icon: 'vertical',
       items: menuData,
     };
 
     return shallow(
       <ThemeProvider theme={theme}>
-        <PriusOption {...props} />
+        <Option {...props} />
       </ThemeProvider>
     );
   };

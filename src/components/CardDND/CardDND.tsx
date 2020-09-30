@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { useDrag, useDrop, DropTargetMonitor } from 'react-dnd';
 
 import PriusThumbnail from '../PriusThumbnail';
-import PriusOption from '../PriusOption';
+import Option from '../Option';
 import PriusPaper from '../PriusPaper';
 import { camelize } from '../../helpers';
 
@@ -197,7 +197,7 @@ const PropsDND: React.FC<CardPropsDND> = ({
         </Grid>
         {cardOptions.length > 0 && (
           <Grid item>
-            <PriusOption icon="vertical" items={cardOptions} />
+            <Option icon="vertical" items={cardOptions} />
           </Grid>
         )}
       </Grid>

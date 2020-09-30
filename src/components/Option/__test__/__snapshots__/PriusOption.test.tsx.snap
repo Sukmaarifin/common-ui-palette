@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusOption Testing render successfully 1`] = `
+exports[`Option Testing render successfully 1`] = `
 <ContextProvider
   value={
     Object {
@@ -527,7 +527,7 @@ exports[`PriusOption Testing render successfully 1`] = `
     }
   }
 >
-  <PriusOption
+  <Option
     icon="vertical"
     items={
       Array [

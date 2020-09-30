@@ -63,14 +63,14 @@ export type ItemType = {
   onClick?: () => void;
 };
 
-export type PriusOptionProps = {
+export type OptionProps = {
   // icon position
   icon?: IconPosition;
   // menu items
   items: Array<ItemType>;
 };
 
-function PriusOption({ icon, items }: PriusOptionProps) {
+function Option({ icon, items }: OptionProps) {
   const classes = useStyles();
 
   const [open, setOpen] = useState(false);
@@ -189,4 +189,4 @@ function Item({ data, classes }: { data: ItemType; classes: any }) {
   );
 }
 
-export default PriusOption;
+export default Option;

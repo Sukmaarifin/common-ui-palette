@@ -18,7 +18,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
-import PriusOption from '../../components/PriusOption';
+import Option from '../../components/Option';
 import Checkbox from '../Checkbox';
 
 export const useStyles = makeStyles((theme: Theme) =>
@@ -288,7 +288,7 @@ const TableRow = ({
               style={{ marginLeft: 'auto' }}
               className={classes.toolbar}
             >
-              <PriusOption
+              <Option
                 icon="vertical"
                 items={menuData}
                 //TO DO: handle click actions

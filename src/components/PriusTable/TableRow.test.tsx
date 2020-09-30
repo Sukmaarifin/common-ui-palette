@@ -19,7 +19,7 @@ import FieldNumber from './components/FieldNumber';
  * 		- `collapsedFields.length > 0` > 0
  *    - typeof `handleExpandToggle` = "function"
  * 5. render all collapsedRow
- * 6. render menu (PriusOption) if `menuData` is preserved
+ * 6. render menu (Option) if `menuData` is preserved
  * 7. snapshot
  * etc?
  */
