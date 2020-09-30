@@ -73,8 +73,8 @@ export * from './src/components/Label';
 export { default as Menu } from './src/components/Menu';
 export * from './src/components/Menu';
 
-export { default as MultipleImage } from './src/components/PriusMultipleImage';
-export * from './src/components/PriusMultipleImage';
+export { default as MultipleImage } from './src/components/MultipleImage';
+export * from './src/components/MultipleImage';
 
 export { default as MultipleSelect } from './src/components/PriusMultipleSelect';
 export * from './src/components/PriusMultipleSelect';
