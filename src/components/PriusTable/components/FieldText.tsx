@@ -7,7 +7,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 
 import PriusTooltip from '../../PriusTooltip';
 import Backdrop from '../../Backdrop';
-import PriusLabel from '../../PriusLabel/PriusLabel';
+import Label from '../../Label/Label';
 import { FieldProps } from '../types';
 import { getByMaxIndex } from '../../../helpers/getByMaxHelpers';
 
@@ -120,13 +120,13 @@ const TextField = ({
   };
 
   /**
-   * render component PriusLabel if only received notesBadge props
+   * render component Label if only received notesBadge props
    */
   const isNotesBadge = () => {
     if (notesBadge) {
       if (!notesBadge.backdropData)
         return (
-          <PriusLabel
+          <Label
             text={notesBadge.text}
             theme={notesBadge.theme ? notesBadge.theme : undefined}
             type={notesBadge.type ? notesBadge.type : undefined}
@@ -144,7 +144,7 @@ const TextField = ({
                 ref={anchorRef}
                 onClick={handleToggle}
               >
-                <PriusLabel
+                <Label
                   text={notesBadge.text}
                   theme={notesBadge.theme ? notesBadge.theme : undefined}
                   type={notesBadge.type ? notesBadge.type : undefined}

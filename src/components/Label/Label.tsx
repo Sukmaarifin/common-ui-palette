@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export type PriusLabelProps = {
+export type LabelProps = {
   leftIcon?: ReactElement;
   text: string;
   theme?: 'light' | 'dark';
@@ -74,14 +74,14 @@ export type PriusLabelProps = {
   style?: React.CSSProperties;
 };
 
-export function PriusLabel({
+export function Label({
   leftIcon,
   theme = 'dark',
   type = 'primary',
   size = 'small',
   text,
   style,
-}: PriusLabelProps) {
+}: LabelProps) {
   const classes = useStyles();
 
   return (
@@ -95,4 +95,4 @@ export function PriusLabel({
   );
 }
 
-export default PriusLabel;
+export default Label;

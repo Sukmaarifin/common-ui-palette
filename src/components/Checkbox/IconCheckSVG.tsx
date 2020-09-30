@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkSVGProp } from '../PriusMenu/assets/typeSVG';
+import { checkSVGProp } from '../Menu/assets/typeSVG';
 
 export type IconCheckSVGProps = {
   color?: string;

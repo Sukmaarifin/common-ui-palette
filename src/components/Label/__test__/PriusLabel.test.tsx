@@ -4,11 +4,11 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusLabel, { PriusLabelProps } from '../PriusLabel';
+import Label, { LabelProps } from '../Label';
 
-describe('PriusLabel Testing', () => {
+describe('Label Testing', () => {
   const render = () => {
-    const props: PriusLabelProps = {
+    const props: LabelProps = {
       theme: 'dark',
       type: 'primary',
       size: 'small',
@@ -17,7 +17,7 @@ describe('PriusLabel Testing', () => {
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusLabel {...props} />
+        <Label {...props} />
       </ThemeProvider>
     );
   };

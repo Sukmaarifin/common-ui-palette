@@ -67,11 +67,11 @@ export * from './components/InputNew';
 export { default as InputGroup } from './components/InputGroup';
 export * from './components/InputGroup';
 
-export { default as Label } from './components/PriusLabel/PriusLabel';
-export * from './components/PriusLabel/PriusLabel';
+export { default as Label } from './components/Label/Label';
+export * from './components/Label/Label';
 
-export { default as Menu } from './components/PriusMenu';
-export * from './components/PriusMenu';
+export { default as Menu } from './components/Menu';
+export * from './components/Menu';
 
 export { default as MultipleImage } from './components/PriusMultipleImage';
 export * from './components/PriusMultipleImage';

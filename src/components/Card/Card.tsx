@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Grid, Typography } from '@material-ui/core';
 
 import PriusPaper from '../PriusPaper';
-import PriusLabel from '../PriusLabel';
+import Label from '../Label';
 
 import { useStyles } from './CardCss';
 
@@ -47,7 +47,7 @@ export function Card({
         <Grid className={classes.title}>
           {title}
           {label && (
-            <PriusLabel
+            <Label
               text={label}
               type="error"
               style={{

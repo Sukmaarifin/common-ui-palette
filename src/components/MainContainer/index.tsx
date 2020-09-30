@@ -4,7 +4,7 @@ import Backend from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 
 import PriusNavigationBar from "../PriusNavigationBar";
-import PriusMenu from "../PriusMenu";
+import Menu from "../Menu";
 import PriusTitle from "../PriusTitle";
 
 import { logoutSSSO, TenantContext } from "../PriusSSSO";
@@ -43,7 +43,7 @@ export const MainContainer = (props: MainContainerPropType) => {
         }}
       >
         <PriusTitle />
-        <PriusMenu />
+        <Menu />
         <Grid item md={12} style={{ width: "-webkit-fill-available" }}>
           <PriusNavigationBar
             routes={route}
