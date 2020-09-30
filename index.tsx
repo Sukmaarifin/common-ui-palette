@@ -22,11 +22,11 @@ export * from './src/components/Checkbox';
 export { default as CircularProgress } from './src/components/CircularProgress';
 export * from './src/components/CircularProgress';
 
-export { default as ColorPicker } from './src/components/PriusColorPicker';
-export * from './src/components/PriusColorPicker';
+export { default as ColorPicker } from './src/components/ColorPicker';
+export * from './src/components/ColorPicker';
 
-export { default as ConfirmDialog } from './src/components/PriusConfirmDialog';
-export * from './src/components/PriusConfirmDialog';
+export { default as ConfirmDialog } from './src/components/ConfirmDialog';
+export * from './src/components/ConfirmDialog';
 
 export { default as DatePicker } from './src/components/PriusDatePicker';
 export * from './src/components/PriusDatePicker';

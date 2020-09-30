@@ -15,7 +15,7 @@ import {
   DialogTitle,
 } from '@material-ui/core';
 
-export type PriusConfirmDialogProps = Pick<ButtonProps, 'color' | 'variant'> & {
+export type ConfirmDialogProps = Pick<ButtonProps, 'color' | 'variant'> & {
   id: string;
   isOpen: boolean;
   buttonActionTitle: string;
@@ -25,7 +25,7 @@ export type PriusConfirmDialogProps = Pick<ButtonProps, 'color' | 'variant'> & {
   onButtonClick: (value: boolean) => void;
 };
 
-const PriusConfirmDialog = ({
+const ConfirmDialog = ({
   id,
   isOpen,
   buttonActionTitle,
@@ -35,7 +35,7 @@ const PriusConfirmDialog = ({
   color = 'primary',
   variant = 'contained',
   onButtonClick,
-}: PriusConfirmDialogProps) => {
+}: ConfirmDialogProps) => {
   return (
     <Dialog open={isOpen} maxWidth="xs" aria-labelledby={`${id}-dialog-title`}>
       <DialogTitle id={`${id}-dialog-title`}>{title}</DialogTitle>
@@ -65,4 +65,4 @@ const PriusConfirmDialog = ({
   );
 };
 
-export default PriusConfirmDialog;
+export default ConfirmDialog;

@@ -25,8 +25,8 @@ export * from './components/CircularProgress';
 export { default as ColorPicker } from './components/ColorPicker';
 export * from './components/ColorPicker';
 
-export { default as ConfirmDialog } from './components/PriusConfirmDialog';
-export * from './components/PriusConfirmDialog';
+export { default as ConfirmDialog } from './components/ConfirmDialog';
+export * from './components/ConfirmDialog';
 
 export { default as DatePicker } from './components/PriusDatePicker';
 export * from './components/PriusDatePicker';
