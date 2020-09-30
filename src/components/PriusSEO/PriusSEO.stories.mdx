@@ -2,7 +2,7 @@ import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import LinkTo from '@storybook/addon-links/react';
 
 import PriusSEO from './index';
-import PriusPaper from '../PriusPaper';
+import Paper from '../Paper';
 
 <Meta
   component={PriusSEO}
@@ -16,13 +16,13 @@ import PriusPaper from '../PriusPaper';
 
 ## Usage
 
-Usually, we wrap `PriusSEO` component with <LinkTo kind="Components| PriusPaper">PriusPaper</LinkTo> component.
+Usually, we wrap `PriusSEO` component with <LinkTo kind="Components| Paper">Paper</LinkTo> component.
 
 ### Basic
 
 <Preview>
   <Story name="Basic">
-    <PriusPaper padding="large">
+    <Paper padding="large">
       <PriusSEO
         data={[
           {
@@ -36,7 +36,7 @@ Usually, we wrap `PriusSEO` component with <LinkTo kind="Components| PriusPaper"
         slug="test-slug"
         placeholder="Masukkan slug"
       />
-    </PriusPaper>
+    </Paper>
   </Story>
 </Preview>
 
@@ -48,4 +48,4 @@ Usually, we wrap `PriusSEO` component with <LinkTo kind="Components| PriusPaper"
 
 - <LinkTo kind="Components|PriusInput">PriusInput</LinkTo>
 - <LinkTo kind="Components|PriusMultipleSelect">PriusMultipleSelect</LinkTo>
-- <LinkTo kind="Components|PriusPaper">PriusPaper</LinkTo>
+- <LinkTo kind="Components|Paper">Paper</LinkTo>

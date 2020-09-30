@@ -85,8 +85,8 @@ export * from './src/components/NavigationBar';
 export { default as Option } from './src/components/Option';
 export * from './src/components/Option';
 
-export { default as Paper } from './src/components/PriusPaper';
-export * from './src/components/PriusPaper';
+export { default as Paper } from './src/components/Paper';
+export * from './src/components/Paper';
 
 export { default as PrintPage } from './src/components/PriusPrintPage';
 export * from './src/components/PriusPrintPage';

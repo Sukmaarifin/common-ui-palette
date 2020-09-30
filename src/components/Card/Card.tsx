@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { Grid, Typography } from '@material-ui/core';
 
-import PriusPaper from '../PriusPaper';
+import Paper from '../Paper';
 import Label from '../Label';
 
 import { useStyles } from './CardCss';
@@ -33,7 +33,7 @@ export function Card({
   });
 
   return (
-    <PriusPaper
+    <Paper
       className={clsx(
         classes.promotion,
         onClick ? classes.clickable : null,
@@ -60,7 +60,7 @@ export function Card({
         </Grid>
         <Typography className={classes.desc}>{desc}</Typography>
       </Grid>
-    </PriusPaper>
+    </Paper>
   );
 }
 

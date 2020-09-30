@@ -4,13 +4,13 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../../../styles/material-ui-theme';
 
-import PriusPaper, { PriusPaperProps } from '../PriusPaper';
+import Paper, { PaperProps } from '../Paper';
 
-describe('PriusPaper Testing', () => {
-  const mountComponent = (props: PriusPaperProps) =>
+describe('Paper Testing', () => {
+  const mountComponent = (props: PaperProps) =>
     mount(
       <ThemeProvider theme={theme}>
-        <PriusPaper {...props}>Hello from PriusPaper!</PriusPaper>
+        <Paper {...props}>Hello from Paper!</Paper>
       </ThemeProvider>
     );
 
@@ -18,7 +18,7 @@ describe('PriusPaper Testing', () => {
     const wrapper = mountComponent({ padding: 'largeSquare' });
     expect(
       wrapper
-        .find('PriusPaper')
+        .find('Paper')
         .childAt(0)
         .hasClass(/-(largeSquare)-(\d+)/)
     ).toBe(true);
@@ -28,7 +28,7 @@ describe('PriusPaper Testing', () => {
     const wrapper = mountComponent({ rounded: true });
     expect(
       wrapper
-        .find('PriusPaper')
+        .find('Paper')
         .childAt(0)
         .hasClass(/-(rounded)-(\d+)/)
     ).toBe(true);
@@ -36,7 +36,7 @@ describe('PriusPaper Testing', () => {
 
   it('render with custom component', () => {
     const wrapper = mountComponent({ component: 'section' });
-    expect(wrapper.find('PriusPaper').childAt(0).is('section')).toBe(true);
+    expect(wrapper.find('Paper').childAt(0).is('section')).toBe(true);
   });
 
   it('render successfully', () => {

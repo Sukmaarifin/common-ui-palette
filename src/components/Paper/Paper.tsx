@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export interface PriusPaperProps {
-  /* The content inside PriusPaper */
+export interface PaperProps {
+  /* The content inside Paper */
   children?: React.ReactNode;
   /* CSS Class name */
   className?: string;
@@ -46,7 +46,7 @@ export interface PriusPaperProps {
    */
   padding?: 'medium' | 'mediumSquare' | 'large' | 'largeSquare' | 'noPadding';
   /**
-   * If `true`, render PriusPaper with rounded corner
+   * If `true`, render Paper with rounded corner
    */
   rounded?: boolean;
   /* OnClick handler, will be passed to root component */
@@ -54,9 +54,9 @@ export interface PriusPaperProps {
 }
 
 /**
- * `PriusPaper` component provides a simple container with predefined padding, white background, and box-shadow.
+ * `Paper` component provides a simple container with predefined padding, white background, and box-shadow.
  */
-export function PriusPaper({
+export function Paper({
   className,
   children,
   component: Component = 'div',
@@ -65,7 +65,7 @@ export function PriusPaper({
   padding = 'medium',
   rounded = false,
   ...props
-}: PriusPaperProps) {
+}: PaperProps) {
   const classes = useStyles();
 
   return (
@@ -86,4 +86,4 @@ export function PriusPaper({
   );
 }
 
-export default PriusPaper;
+export default Paper;

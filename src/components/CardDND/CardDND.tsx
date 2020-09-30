@@ -6,7 +6,7 @@ import { useDrag, useDrop, DropTargetMonitor } from 'react-dnd';
 
 import PriusThumbnail from '../PriusThumbnail';
 import Option from '../Option';
-import PriusPaper from '../PriusPaper';
+import Paper from '../Paper';
 import { camelize } from '../../helpers';
 
 import { useStyles } from './CardDNDCss';
@@ -155,7 +155,7 @@ const PropsDND: React.FC<CardPropsDND> = ({
   });
 
   return (
-    <PriusPaper
+    <Paper
       component="li"
       padding="noPadding"
       className={!published ? classes.unpublished : ''}
@@ -201,7 +201,7 @@ const PropsDND: React.FC<CardPropsDND> = ({
           </Grid>
         )}
       </Grid>
-    </PriusPaper>
+    </Paper>
   );
 };
 

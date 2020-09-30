@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusPaper Testing render successfully 1`] = `
+exports[`Paper Testing render successfully 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -527,12 +527,12 @@ exports[`PriusPaper Testing render successfully 1`] = `
     }
   }
 >
-  <PriusPaper>
+  <Paper>
     <div
       className="makeStyles-root-6 makeStyles-medium-3"
     >
-      Hello from PriusPaper!
+      Hello from Paper!
     </div>
-  </PriusPaper>
+  </Paper>
 </ThemeProvider>
 `;
