@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { TenantContext } from '../SSSO';
 
-const PriusTitle = () => {
+const Title = () => {
   const { tenant } = useContext(TenantContext);
 
   const tenantName = tenant?.name ? tenant.name : 'SIRCLO';
@@ -13,4 +13,4 @@ const PriusTitle = () => {
   return <></>;
 };
 
-export default PriusTitle;
+export default Title;

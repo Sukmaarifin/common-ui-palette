@@ -118,8 +118,8 @@ export * from './src/components/Textbox';
 export { default as TextEditor } from './src/components/TextEditor';
 export * from './src/components/TextEditor';
 
-export { default as Title } from './src/components/PriusTitle';
-export * from './src/components/PriusTitle';
+export { default as Title } from './src/components/Title';
+export * from './src/components/Title';
 
 export { default as Thumbnail } from './src/components/Thumbnail';
 export * from './src/components/Thumbnail';

@@ -5,7 +5,7 @@ import { DndProvider } from "react-dnd";
 
 import NavigationBar from "../NavigationBar";
 import Menu from "../Menu";
-import PriusTitle from "../PriusTitle";
+import Title from "../Title";
 
 import { logoutSSSO, TenantContext } from "../SSSO";
 
@@ -42,7 +42,7 @@ export const MainContainer = (props: MainContainerPropType) => {
           top: "0",
         }}
       >
-        <PriusTitle />
+        <Title />
         <Menu />
         <Grid item md={12} style={{ width: "-webkit-fill-available" }}>
           <NavigationBar

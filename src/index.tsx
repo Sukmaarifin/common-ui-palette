@@ -123,8 +123,8 @@ export * from './components/TextEditor';
 export { default as Thumbnail } from './components/Thumbnail';
 export * from './components/Thumbnail';
 
-export { default as Title } from './components/PriusTitle';
-export * from './components/PriusTitle';
+export { default as Title } from './components/Title';
+export * from './components/Title';
 
 export { default as Toggle } from './components/PriusToggle';
 export * from './components/PriusToggle';
