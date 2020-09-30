@@ -97,8 +97,8 @@ export * from './components/Router';
 export { default as Select } from './components/PriusSelect';
 export * from './components/PriusSelect';
 
-export { default as SEO } from './components/PriusSEO';
-export * from './components/PriusSEO';
+export { default as SEO } from './components/SEO';
+export * from './components/SEO';
 
 export * from './components/PriusSnackbar';
 
