@@ -8,7 +8,7 @@ import { Alert, AlertTitle } from '@material-ui/lab';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { Theme } from '@material-ui/core';
 
-import { InfoSVG } from '../PriusSnackbar/assets';
+import { InfoSVG } from '../Snackbar/assets';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import CircularProgress from '../CircularProgress';
 import { TrashBinOutlinedIcon } from '../../icons';
-import { useSnackbar } from '../PriusSnackbar';
+import { useSnackbar } from '../Snackbar';
 import Thumbnail, {
   ThumbnailProps,
   ThumbnailSize,

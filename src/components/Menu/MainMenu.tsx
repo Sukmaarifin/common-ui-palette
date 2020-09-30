@@ -23,7 +23,7 @@ import { RouteComponentProps } from "react-router";
 
 import Menu from "./Menu";
 
-import { useSnackbar } from "../PriusSnackbar";
+import { useSnackbar } from "../Snackbar";
 import { menuConnexi } from "./menuConnexi";
 import { menuStore } from "./menuStore";
 import SubMenu, { fieldSubMenu } from "./SubMenu";

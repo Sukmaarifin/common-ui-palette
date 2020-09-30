@@ -6,7 +6,7 @@ import { useMutation } from 'react-apollo';
 import CircularProgress from '../CircularProgress';
 import { FileType } from '../ImageUploader';
 import ButtonText from '../ButtonText';
-import { useSnackbar } from '../PriusSnackbar';
+import { useSnackbar } from '../Snackbar';
 
 import { ToolbarType, StartupModeTypes } from './types';
 import {

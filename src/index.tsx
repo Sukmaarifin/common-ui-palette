@@ -100,7 +100,7 @@ export * from './components/Select';
 export { default as SEO } from './components/SEO';
 export * from './components/SEO';
 
-export * from './components/PriusSnackbar';
+export * from './components/Snackbar';
 
 export { default as SSSO } from './components/SSSO';
 export * from './components/SSSO';

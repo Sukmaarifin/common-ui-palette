@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 import { useLazyQuery } from '@apollo/react-hooks';
 import { ApolloError } from 'apollo-boost';
 
-import { useSnackbar } from '../PriusSnackbar';
+import { useSnackbar } from '../Snackbar';
 import { menuConnexi } from './menuConnexi';
 import { menuStore } from './menuStore';
 import SubMenu, { fieldSubMenu } from './SubMenu';
