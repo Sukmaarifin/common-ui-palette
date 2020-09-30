@@ -3,9 +3,9 @@ import clsx from 'clsx';
 import { ClickAwayListener, Grow, Paper } from '@material-ui/core';
 import Popper, { PopperProps } from '@material-ui/core/Popper';
 
-import { PriusBackdropCss } from './PriusBackdropCss';
+import { BackdropCss } from './BackdropCss';
 
-export type PriusBackdropProps = {
+export type BackdropProps = {
   // className forwarded to the Papper element
   paperClassName?: string;
   // placement of the popper
@@ -29,7 +29,7 @@ export type PriusBackdropProps = {
   renderOnHover?: boolean;
 };
 
-export const PriusBackdropNew: React.FC<PriusBackdropProps> = ({
+export const BackdropNew: React.FC<BackdropProps> = ({
   paperClassName,
   placement,
   popperId,
@@ -40,7 +40,7 @@ export const PriusBackdropNew: React.FC<PriusBackdropProps> = ({
   renderOnHover,
   ...props
 }) => {
-  const classes = PriusBackdropCss();
+  const classes = BackdropCss();
 
   const anchorRef = React.useRef<HTMLButtonElement | HTMLAnchorElement>(null);
   const [arrowRef, setArrowRef] = React.useState<HTMLSpanElement | null>(null);
@@ -133,4 +133,4 @@ export const PriusBackdropNew: React.FC<PriusBackdropProps> = ({
   );
 };
 
-export default PriusBackdropNew;
+export default BackdropNew;

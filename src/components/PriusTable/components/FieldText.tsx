@@ -6,7 +6,7 @@ import { Grid } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
 import PriusTooltip from '../../PriusTooltip';
-import PriusBackdrop from '../../PriusBackdrop';
+import Backdrop from '../../Backdrop';
 import PriusLabel from '../../PriusLabel/PriusLabel';
 import { FieldProps } from '../types';
 import { getByMaxIndex } from '../../../helpers/getByMaxHelpers';
@@ -135,7 +135,7 @@ const TextField = ({
         );
       else
         return (
-          <PriusBackdrop
+          <Backdrop
             placement="right-start"
             popperId="prius-backdrop"
             renderTrigger={(anchorRef: any, handleToggle: () => void) => (
@@ -155,7 +155,7 @@ const TextField = ({
             )}
           >
             {notesBadge.backdropData}
-          </PriusBackdrop>
+          </Backdrop>
         );
     }
   };

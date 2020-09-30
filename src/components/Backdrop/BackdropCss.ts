@@ -1,6 +1,6 @@
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
-export const PriusBackdropCss = makeStyles((theme: Theme) => ({
+export const BackdropCss = makeStyles((theme: Theme) => ({
   paper: {
     boxShadow: '0 0px 30px 0 rgba(0, 0, 0, 0.2)',
     padding: '1.25rem',

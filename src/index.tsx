@@ -1,5 +1,5 @@
-export { default as Backdrop } from './components/PriusBackdrop';
-export * from './components/PriusBackdrop';
+export { default as Backdrop } from './components/Backdrop';
+export * from './components/Backdrop';
 
 export { default as BrandDropdown } from './components/PriusBrandDropdown';
 export * from './components/PriusBrandDropdown';

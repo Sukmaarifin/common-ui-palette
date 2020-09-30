@@ -3,7 +3,7 @@ import { Button, Chip, Grid, Icon, IconButton } from '@material-ui/core';
 
 import { AddCircleOutlinedIcon } from '../../icons';
 import DatePicker from '../PriusDatePicker';
-import PriusBackdrop from '../PriusBackdrop';
+import Backdrop from '../Backdrop';
 
 import { DateRangeType } from '../../typings';
 import { FilterItemType, FilterProps } from './types';
@@ -168,7 +168,7 @@ const PriusFilter = ({
         ) : null
       }
 
-      <PriusBackdrop
+      <Backdrop
         popperId={'dummy_prius_popper'}
         placement={'top-start'}
         renderTrigger={(anchorRef: any, handleToggle: () => void) => (
