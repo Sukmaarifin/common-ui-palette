@@ -9,7 +9,7 @@ import { Grid } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
 import { FieldProps } from '../types';
-import PriusButtonText from '../../PriusButtonText';
+import ButtonText from '../../ButtonText';
 
 export type FieldActionProps = {
   actionText?: string;
@@ -63,7 +63,7 @@ function FieldAction({
         maxWidth: fixedWidth ? fixedWidth : width,
       }}
     >
-      <PriusButtonText
+      <ButtonText
         className={classes.button}
         color="primary"
         onClick={onClick}
@@ -72,7 +72,7 @@ function FieldAction({
         {icon}
 
         {actionText}
-      </PriusButtonText>
+      </ButtonText>
     </Grid>
   );
 }

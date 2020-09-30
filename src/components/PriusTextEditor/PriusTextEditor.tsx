@@ -5,7 +5,7 @@ import { useMutation } from 'react-apollo';
 
 import PriusCircularProgress from '../PriusCircularProgress';
 import { FileType } from '../PriusImageUploader';
-import PriusButtonText from '../PriusButtonText';
+import ButtonText from '../ButtonText';
 import { useSnackbar } from '../PriusSnackbar';
 
 import { ToolbarType, StartupModeTypes } from './types';
@@ -169,7 +169,7 @@ const PriusTextEditor = ({
 
       {startupMode === StartupModeTypes.WYSIWYG && (
         <Grid item>
-          <PriusButtonText
+          <ButtonText
             color="primary"
             onClick={imageInputClick}
             className={classes.uploadImageButton}
@@ -180,7 +180,7 @@ const PriusTextEditor = ({
             ) : (
               'Unggah Gambar'
             )}
-          </PriusButtonText>
+          </ButtonText>
 
           {!loading && (
             <input

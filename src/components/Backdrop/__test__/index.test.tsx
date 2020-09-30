@@ -2,10 +2,10 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
-import PriusBackdrop, { PriusBackdropProps } from '../PriusBackdrop';
+import PriusBackdrop, { BackdropProps } from '../Backdrop';
 
 describe('PriusBackdrop test', () => {
-  const props: PriusBackdropProps = {
+  const props: BackdropProps = {
     popperId: 'dummy_prius_popper',
     placement: 'bottom-start',
     renderTrigger: (anchorRef: any, handleToggle: () => void) => (

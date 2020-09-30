@@ -1,8 +1,8 @@
 export { default as Backdrop } from './src/components/Backdrop';
 export * from './src/components/Backdrop';
 
-export { default as BrandDropdown } from './src/components/PriusBrandDropdown';
-export * from './src/components/PriusBrandDropdown';
+export { default as BrandDropdown } from './src/components/BrandDropdown';
+export * from './src/components/BrandDropdown';
 
 export { default as ButtonText } from './src/components/PriusButtonText';
 export * from './src/components/PriusButtonText';

@@ -8,7 +8,7 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import TableRow, { RowData } from './TableRow';
 import { PriusTableCss } from './PriusTableCss';
 import TablePagination from './TablePagination';
-import PriusButtonText from '../PriusButtonText';
+import ButtonText from '../ButtonText';
 import { SortDataType } from './types';
 import PriusCheckbox from '../PriusCheckbox';
 
@@ -225,7 +225,7 @@ export class PriusTable extends React.Component<
                   className={classes.headerColumn}
                 >
                   {handleSort && header.sortOption && sortedBy ? (
-                    <PriusButtonText
+                    <ButtonText
                       className={clsx(
                         classes.headerButton,
                         header.sortOption.fieldName === sortedBy.fieldName &&
@@ -247,7 +247,7 @@ export class PriusTable extends React.Component<
                       inputId={id}
                     >
                       {header.title}
-                    </PriusButtonText>
+                    </ButtonText>
                   ) : (
                     <span>{header.title}</span>
                   )}

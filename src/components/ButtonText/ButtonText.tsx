@@ -5,7 +5,7 @@ import clsx from 'clsx';
 
 import { camelize } from '../../helpers';
 
-export type PriusButtonTextProps = ButtonBaseProps & {
+export type ButtonTextProps = ButtonBaseProps & {
   bold?: boolean;
   children?: React.ReactNode;
   color?: 'default' | 'inherit' | 'primary' | 'secondary';
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-const PriusButtonText = React.forwardRef(
+const ButtonText = React.forwardRef(
   (
     {
       bold = false,
@@ -58,7 +58,7 @@ const PriusButtonText = React.forwardRef(
       onClick,
       disabled,
       inputId,
-    }: PriusButtonTextProps,
+    }: ButtonTextProps,
     _
   ) => {
     const classes = useStyles();
@@ -90,4 +90,4 @@ const PriusButtonText = React.forwardRef(
   }
 );
 
-export default PriusButtonText;
+export default ButtonText;

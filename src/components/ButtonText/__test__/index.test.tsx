@@ -5,11 +5,11 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
 
-import PriusButtonText, { PriusButtonTextProps } from '../PriusButtonText';
+import ButtonText, { ButtonTextProps } from '../ButtonText';
 
-describe('PriusButton Testing', () => {
+describe('ButtonText Testing', () => {
   const render = () => {
-    const props: PriusButtonTextProps = {
+    const props: ButtonTextProps = {
       startIcon: <span>Some Icon</span>,
       endIcon: <span>Some Icon</span>,
       children: 'Text',
@@ -18,7 +18,7 @@ describe('PriusButton Testing', () => {
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusButtonText {...props} />
+        <ButtonText {...props} />
       </ThemeProvider>
     );
   };

@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export type PriusBrandDropdownProps = {
+export type BrandDropdownProps = {
   id?: string;
   placeholder?: string;
   isMulti?: boolean;
@@ -53,7 +53,7 @@ export type PriusBrandDropdownProps = {
   isWithLogo?: boolean;
 };
 
-function PriusBrandDropdown({
+function BrandDropdown({
   id,
   placeholder,
   isMulti = false,
@@ -61,7 +61,7 @@ function PriusBrandDropdown({
   selectedData,
   onChangeSelect,
   isWithLogo = false,
-}: PriusBrandDropdownProps) {
+}: BrandDropdownProps) {
   const { brandID } = useContext(TenantContext);
   const [brands, setBrands] = useState<Array<OptionType>>([]);
   const [selectedBrands, setSelectedBrands] = useState<Array<OptionType>>([]);
@@ -181,4 +181,4 @@ function PriusBrandDropdown({
   );
 }
 
-export default PriusBrandDropdown;
+export default BrandDropdown;
