@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core';
 import clsx from 'clsx';
 
-import PriusFieldset from '../PriusFieldset';
+import Fieldset from '../Fieldset';
 
 import { ToggleProps } from './index';
 
@@ -129,7 +129,7 @@ const RegularToggle = ({
   const classes = useStyles();
 
   return (
-    <PriusFieldset label={label}>
+    <Fieldset label={label}>
       <FormControlLabel
         style={style}
         className={className}
@@ -169,7 +169,7 @@ const RegularToggle = ({
         label={null}
         classes={{ root: classes.label }}
       />
-    </PriusFieldset>
+    </Fieldset>
   );
 };
 

@@ -40,8 +40,8 @@ export * from './components/DateRangeInput';
 export { default as DraggableImage } from './components/DraggableImage';
 export * from './components/DraggableImage';
 
-export { default as Fieldset } from './components/PriusFieldset';
-export * from './components/PriusFieldset';
+export { default as Fieldset } from './components/Fieldset';
+export * from './components/Fieldset';
 
 export { default as Filter } from './components/PriusFilter';
 export * from './components/PriusFilter';

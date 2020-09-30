@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Typography } from '@material-ui/core';
 
-import PriusFieldset from '../PriusFieldset';
+import Fieldset from '../Fieldset';
 import PriusInput from '../PriusInputNew';
 import PriusMultipleSelect, {
   OptionType,
@@ -74,7 +74,7 @@ const PriusSEO = ({
         </Typography>
       )}
 
-      <PriusFieldset
+      <Fieldset
         fullWidth
         inputId="input-seo-description"
         label="Deskripsi"
@@ -96,9 +96,9 @@ const PriusSEO = ({
           value={data.length > 0 ? data[0].description : ''}
           onChange={(event) => onChangeInput(event)}
         />
-      </PriusFieldset>
+      </Fieldset>
 
-      <PriusFieldset
+      <Fieldset
         fullWidth
         inputId="input-keywords"
         status="normal"
@@ -123,9 +123,9 @@ const PriusSEO = ({
             label: keyword,
           }))}
         />
-      </PriusFieldset>
+      </Fieldset>
 
-      <PriusFieldset
+      <Fieldset
         disabled={!isSlugActive}
         fullWidth
         helperText={errors?.slug && errors.slug}
@@ -144,7 +144,7 @@ const PriusSEO = ({
           value={slug || ''}
           onChange={(event) => onChangeInput(event)}
         />
-      </PriusFieldset>
+      </Fieldset>
     </React.Fragment>
   );
 };

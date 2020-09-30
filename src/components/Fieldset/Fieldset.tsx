@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export type PriusFieldsetProps = {
+export type FieldsetProps = {
   children: React.ReactNode;
   disabled?: boolean;
   fullWidth?: boolean;
@@ -89,7 +89,7 @@ export type PriusFieldsetProps = {
   tooltipText?: React.ReactNode;
 };
 
-export const PriusFieldset: React.FunctionComponent<PriusFieldsetProps> = ({
+export const Fieldset: React.FunctionComponent<FieldsetProps> = ({
   children,
   disabled = false,
   fullWidth = false,
@@ -165,4 +165,4 @@ export const PriusFieldset: React.FunctionComponent<PriusFieldsetProps> = ({
   );
 };
 
-export default PriusFieldset;
+export default Fieldset;

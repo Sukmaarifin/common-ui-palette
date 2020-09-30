@@ -6,17 +6,17 @@ import { InputLabel, FormControl, FormHelperText } from '@material-ui/core';
 
 import theme from '../../../styles/material-ui-theme';
 
-import PriusFieldset from '../PriusFieldset';
+import Fieldset from '../Fieldset';
 import PriusTooltip from '../../PriusTooltip';
 import {
   CheckCircleOutlinedIcon,
   ExclamationCircleOutlinedIcon,
 } from '../../../icons';
 
-describe('PriusFieldset test', () => {
+describe('Fieldset test', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <PriusFieldset
+      <Fieldset
         label="Email"
         inputId="input-email"
         tooltipText="Halo"
@@ -24,7 +24,7 @@ describe('PriusFieldset test', () => {
         helperText="Lorem ipsum color dolot"
       >
         <span id="children">Children</span>
-      </PriusFieldset>
+      </Fieldset>
     </ThemeProvider>
   );
 
@@ -58,7 +58,7 @@ describe('PriusFieldset test', () => {
   it("render correct components if `status` is 'error'", () => {
     const wrapper2 = mount(
       <ThemeProvider theme={theme}>
-        <PriusFieldset
+        <Fieldset
           label="Email"
           inputId="input-email"
           tooltipText="Halo"
@@ -66,7 +66,7 @@ describe('PriusFieldset test', () => {
           helperText="Lorem ipsum color dolot"
         >
           <span id="children">Children</span>
-        </PriusFieldset>
+        </Fieldset>
       </ThemeProvider>
     );
 
