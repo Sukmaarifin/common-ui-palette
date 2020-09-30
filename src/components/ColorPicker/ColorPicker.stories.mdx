@@ -9,17 +9,17 @@ import {
 import { Grid } from '@material-ui/core';
 import { CustomPicker, ColorResult } from 'react-color';
 
-import PriusColorPicker from './index';
+import ColorPicker from './index';
 
 <Meta
-  component={PriusColorPicker}
-  id="Components|PriusColorPicker"
-  title="Components|PriusColorPicker"
+  component={ColorPicker}
+  id="Components|ColorPicker"
+  title="Components|ColorPicker"
 />
 
-# PriusColorPicker
+# ColorPicker
 
-`PriusColorPicker` is a custom color picker component that wrap [`react-color`](https://casesandberg.github.io/react-color/)'s [Helper Components](https://casesandberg.github.io/react-color/#create-helpers).
+`ColorPicker` is a custom color picker component that wrap [`react-color`](https://casesandberg.github.io/react-color/)'s [Helper Components](https://casesandberg.github.io/react-color/#create-helpers).
 It can be used to input and get color code by hex or rgb.
 
 ## Usage
@@ -34,7 +34,7 @@ Should provide `color` and `onChange` props.
       const [values, setValues] = useState('#FF00FF');
       return (
         <Grid container style={{ margin: 12 }}>
-          <PriusColorPicker
+          <ColorPicker
             color={values}
             onChange={(color) => setValues(color.hex)}
           />

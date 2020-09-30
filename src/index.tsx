@@ -22,8 +22,8 @@ export * from './components/Checkbox';
 export { default as CircularProgress } from './components/CircularProgress';
 export * from './components/CircularProgress';
 
-export { default as ColorPicker } from './components/PriusColorPicker';
-export * from './components/PriusColorPicker';
+export { default as ColorPicker } from './components/ColorPicker';
+export * from './components/ColorPicker';
 
 export { default as ConfirmDialog } from './components/PriusConfirmDialog';
 export * from './components/PriusConfirmDialog';

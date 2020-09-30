@@ -18,7 +18,7 @@ import {
   useStyles,
   editableInputStyle,
   presetColors,
-} from './PriusColorPickerCss';
+} from './ColorPickerCss';
 
 const HuePointer = () => {
   const classes = useStyles();
@@ -30,7 +30,7 @@ const SaturationPointer = () => {
   return <Grid className={classes.saturationPointer} />;
 };
 
-export type PriusColorPickerType = {
+export type ColorPickerType = {
   hex?: string;
   hsl?: HSLColor;
   rgb?: RGBColor;
@@ -44,7 +44,7 @@ export type PriusColorPickerType = {
   onChange: (selectedColor: any) => void;
 };
 
-const PriusColorPicker = (props: PriusColorPickerType) => {
+const ColorPicker = (props: ColorPickerType) => {
   const classes = useStyles();
 
   const handleChange = (color: ColorResult, type: 'hex' | 'r' | 'g' | 'b') => {
@@ -156,4 +156,4 @@ const PriusColorPicker = (props: PriusColorPickerType) => {
   );
 };
 
-export default CustomPicker(PriusColorPicker);
+export default CustomPicker(ColorPicker);
