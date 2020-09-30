@@ -16,8 +16,8 @@ export * from './src/components/CardDND';
 export { default as CardTemplate } from './src/components/CardTemplate';
 export * from './src/components/CardTemplate';
 
-export { default as Checkbox } from './src/components/PriusCheckbox';
-export * from './src/components/PriusCheckbox';
+export { default as Checkbox } from './src/components/Checkbox';
+export * from './src/components/Checkbox';
 
 export { default as CircularProgress } from './src/components/PriusCircularProgress';
 export * from './src/components/PriusCircularProgress';

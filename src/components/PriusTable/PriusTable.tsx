@@ -10,7 +10,7 @@ import { PriusTableCss } from './PriusTableCss';
 import TablePagination from './TablePagination';
 import ButtonText from '../ButtonText';
 import { SortDataType } from './types';
-import PriusCheckbox from '../PriusCheckbox';
+import Checkbox from '../Checkbox';
 
 export type TableHeaderData = {
   fixedWidth?: string;
@@ -182,7 +182,7 @@ export class PriusTable extends React.Component<
              */
             isSelectable && (
               <Grid item className={clsx(classes.toolbar, 'left')}>
-                <PriusCheckbox
+                <Checkbox
                   id={id && `${id}-checkbox-selectAll`}
                   checked={selectedRows.length === records.length}
                   value="SELECT_ALL"

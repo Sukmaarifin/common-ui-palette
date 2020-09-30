@@ -19,7 +19,7 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 import PriusOption from '../../components/PriusOption';
-import PriusCheckbox from '../PriusCheckbox';
+import Checkbox from '../Checkbox';
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -214,7 +214,7 @@ const TableRow = ({
            */
           isSelectable && (
             <Grid item className={clsx(classes.toolbar, 'left')}>
-              <PriusCheckbox
+              <Checkbox
                 id={rowId && `${rowId}-checkbox-selectRowToggle`}
                 checked={isSelected}
                 value="CHECK_ROW"

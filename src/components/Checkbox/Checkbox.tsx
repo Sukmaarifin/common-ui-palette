@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export type PriusCheckboxProps = {
+export type CheckboxProps = {
   label?: string;
 } & Pick<
   CheckboxProps,
@@ -55,7 +55,7 @@ export type PriusCheckboxProps = {
 > &
   Pick<FormControlLabelProps, 'classes'>;
 
-const PriusCheckbox = (props: PriusCheckboxProps) => {
+const CheckboxComponent = (props: CheckboxProps) => {
   const classes = useStyles();
 
   return (
@@ -91,4 +91,4 @@ const PriusCheckbox = (props: PriusCheckboxProps) => {
   );
 };
 
-export default PriusCheckbox;
+export default CheckboxComponent;
