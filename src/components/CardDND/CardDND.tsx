@@ -9,7 +9,7 @@ import PriusOption from '../PriusOption';
 import PriusPaper from '../PriusPaper';
 import { camelize } from '../../helpers';
 
-import { useStyles } from './PriusCardDNDCss';
+import { useStyles } from './CardDNDCss';
 
 const dndType = {
   CARD: 'card',
@@ -50,7 +50,7 @@ export type CardPropsDND = {
   metaId?: string;
 };
 
-const PriusCardDND: React.FC<CardPropsDND> = ({
+const PropsDND: React.FC<CardPropsDND> = ({
   ID,
   text,
   thumbnail,
@@ -205,4 +205,4 @@ const PriusCardDND: React.FC<CardPropsDND> = ({
   );
 };
 
-export default PriusCardDND;
+export default PropsDND;

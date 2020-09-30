@@ -10,8 +10,8 @@ export * from './components/ButtonText';
 export { default as Card } from './components/Card';
 export * from './components/Card';
 
-export { default as CardDND } from './components/PriusCardDND';
-export * from './components/PriusCardDND';
+export { default as CardDND } from './components/CardDND';
+export * from './components/CardDND';
 
 export { default as CardTemplate } from './components/PriusCardTemplate';
 export * from './components/PriusCardTemplate';

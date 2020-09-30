@@ -4,14 +4,14 @@ export * from './src/components/Backdrop';
 export { default as BrandDropdown } from './src/components/BrandDropdown';
 export * from './src/components/BrandDropdown';
 
-export { default as ButtonText } from './src/components/PriusButtonText';
-export * from './src/components/PriusButtonText';
+export { default as ButtonText } from './src/components/ButtonText';
+export * from './src/components/ButtonText';
 
-export { default as Card } from './src/components/PriusCard';
-export * from './src/components/PriusCard';
+export { default as Card } from './src/components/Card';
+export * from './src/components/Card';
 
-export { default as CardDND } from './src/components/PriusCardDND';
-export * from './src/components/PriusCardDND';
+export { default as CardDND } from './src/components/CardDND';
+export * from './src/components/CardDND';
 
 export { default as CardTemplate } from './src/components/PriusCardTemplate';
 export * from './src/components/PriusCardTemplate';
@@ -49,8 +49,8 @@ export * from './src/components/PriusFilter';
 export { default as Footer } from './src/components/PriusFooter';
 export * from './src/components/PriusFooter';
 
-export { default as FileUploader } from './src/components/PriusUploadFile';
-export * from './src/components/PriusUploadFile';
+export { default as FileUploader } from './src/components/PriusFileUploader';
+export * from './src/components/PriusFileUploader';
 
 export { default as ImageUploader } from './src/components/PriusImageUploader';
 export * from './src/components/PriusImageUploader';

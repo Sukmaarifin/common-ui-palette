@@ -3,7 +3,7 @@ import { useDrop, DropTargetMonitor, useDrag } from 'react-dnd';
 import { Grid, Typography } from '@material-ui/core';
 
 import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
-import { DragItemType } from '../PriusCardDND';
+import { DragItemType } from '../CardDND';
 
 import { useStyles } from './PriusDraggableImageCss';
 
