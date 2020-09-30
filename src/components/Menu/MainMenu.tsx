@@ -35,7 +35,7 @@ import {
   DEFAULT_PLAN_STAGING,
   FeatureTypeStrings,
 } from "../Router/types";
-import { TenantContext } from "../PriusSSSO";
+import { TenantContext } from "../SSSO";
 import { ENV } from "../../configs";
 import {
   GET_ALLOWED_ACTIONS,

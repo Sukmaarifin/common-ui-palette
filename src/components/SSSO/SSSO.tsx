@@ -75,7 +75,7 @@ export const TenantContext = createContext<TTenantContext>({
   token: '',
 });
 
-const redirectToPriusSSSO = () => {
+const redirectToSSSO = () => {
   const state = Math.random().toString(36).substring(7).toUpperCase(); // GENERATE 15 RANDOM STRING
   const url = `${RADEN_URL}/authorize?client_id=${PRIUS_NAME}&redirect_uri=${encodeURIComponent(
     PRIUS_URL
@@ -86,10 +86,10 @@ const redirectToPriusSSSO = () => {
 
 export const logoutSSSO = () => {
   window.localStorage.clear();
-  redirectToPriusSSSO();
+  redirectToSSSO();
 };
 
-const PriusSSSO = (props: any) => {
+const SSSOComponent = (props: any) => {
   const classes = useStyles();
 
   // BRAND_ID is an active or a selected brand
@@ -159,7 +159,7 @@ const PriusSSSO = (props: any) => {
         });
       } else {
         // if user not logged in
-        redirectToPriusSSSO();
+        redirectToSSSO();
       }
     }
   }, [brandId, getToken]);
@@ -188,4 +188,4 @@ const PriusSSSO = (props: any) => {
   );
 };
 
-export default PriusSSSO;
+export default SSSOComponent;

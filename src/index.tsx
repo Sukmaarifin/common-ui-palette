@@ -102,8 +102,8 @@ export * from './components/SEO';
 
 export * from './components/PriusSnackbar';
 
-export { default as SSSO } from './components/PriusSSSO';
-export * from './components/PriusSSSO';
+export { default as SSSO } from './components/SSSO';
+export * from './components/SSSO';
 
 export { default as Tab } from './components/PriusTab';
 export * from './components/PriusTab';

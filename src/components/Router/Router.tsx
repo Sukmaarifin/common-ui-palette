@@ -10,7 +10,7 @@ import { useLazyQuery } from '@apollo/react-hooks';
 import ErrorPage from './ErrorPage';
 
 import { handlerPathname } from '../NavigationBar';
-import { TenantContext } from '../PriusSSSO';
+import { TenantContext } from '../SSSO';
 import { GET_ACCESS_TO, GetAccessParamType } from '../../graphql';
 import { ROUTE_BY_PLAN } from './types';
 import { ENV } from '../../configs';

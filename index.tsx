@@ -97,8 +97,8 @@ export * from './src/components/Router';
 export { default as SEO } from './src/components/SEO';
 export * from './src/components/SEO';
 
-export { default as SSSO } from './src/components/PriusSSSO';
-export * from './src/components/PriusSSSO';
+export { default as SSSO } from './src/components/SSSO';
+export * from './src/components/SSSO';
 
 export { default as Select } from './src/components/PriusSelect';
 export * from './src/components/PriusSelect';

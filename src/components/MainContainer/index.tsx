@@ -7,7 +7,7 @@ import NavigationBar from "../NavigationBar";
 import Menu from "../Menu";
 import PriusTitle from "../PriusTitle";
 
-import { logoutSSSO, TenantContext } from "../PriusSSSO";
+import { logoutSSSO, TenantContext } from "../SSSO";
 
 export type RouteType = {
   url: string;

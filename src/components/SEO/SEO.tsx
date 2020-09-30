@@ -9,9 +9,9 @@ import MultipleSelect, {
 } from '../MultipleSelect';
 
 import { SEOType } from './types';
-import { TenantContext } from '../PriusSSSO';
+import { TenantContext } from '../SSSO';
 
-export type PriusSEOProps = {
+export type SEOProps = {
   data: Array<SEOType>;
   errors?: any;
   isSlugActive: boolean;
@@ -22,7 +22,7 @@ export type PriusSEOProps = {
   showTitle?: boolean;
 };
 
-const PriusSEO = ({
+const SEOComponent = ({
   data,
   errors,
   isSlugActive,
@@ -31,7 +31,7 @@ const PriusSEO = ({
   onChange,
   inputId,
   showTitle = true,
-}: PriusSEOProps) => {
+}: SEOProps) => {
   const { lang } = useContext(TenantContext);
 
   const [keywords, setKeywords] = useState<Array<string>>([]);
@@ -149,4 +149,4 @@ const PriusSEO = ({
   );
 };
 
-export default PriusSEO;
+export default SEOComponent;

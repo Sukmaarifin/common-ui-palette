@@ -9,7 +9,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { makeStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
 import { Grid, MenuItem } from '@material-ui/core';
 
-import { TenantContext } from '../PriusSSSO';
+import { TenantContext } from '../SSSO';
 import MultipleSelect, { OptionType } from '../MultipleSelect';
 import PriusSelect from '../PriusSelect';
 

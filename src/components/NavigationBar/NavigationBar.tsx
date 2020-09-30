@@ -19,7 +19,7 @@ import { KeyboardArrowDown } from '@material-ui/icons';
 import { Route } from 'react-router';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { TenantContext } from '../PriusSSSO';
+import { TenantContext } from '../SSSO';
 
 import { camelize } from '../../helpers';
 
