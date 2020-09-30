@@ -5,12 +5,12 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import { MenuItem } from '@material-ui/core';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusSelect from '../PriusSelect';
+import Select from '../Select';
 
-describe('PriusSelect test', () => {
+describe('Select test', () => {
   const wrapper = mount(
     <ThemeProvider theme={theme}>
-      <PriusSelect
+      <Select
         name="currency"
         id="input-currency"
         placeholder="Lorem ipsum color dolot"
@@ -21,7 +21,7 @@ describe('PriusSelect test', () => {
         <MenuItem value={'jpy'} disabled>
           Japanese Yen
         </MenuItem>
-      </PriusSelect>
+      </Select>
     </ThemeProvider>
   );
 

@@ -100,8 +100,8 @@ export * from './src/components/SEO';
 export { default as SSSO } from './src/components/SSSO';
 export * from './src/components/SSSO';
 
-export { default as Select } from './src/components/PriusSelect';
-export * from './src/components/PriusSelect';
+export { default as Select } from './src/components/Select';
+export * from './src/components/Select';
 
 export { default as Tab } from './src/components/PriusTab';
 export * from './src/components/PriusTab';

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { MenuItem } from '@material-ui/core';
 import { SelectProps } from '@material-ui/core/Select';
 import { makeStyles, Theme } from '@material-ui/core/styles';
-import PriusSelect from '../PriusSelect';
+import SelectComponent from '../Select';
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {
@@ -122,7 +122,7 @@ function InputGroup({
       style={{ width: width }}
     >
       {dropdownItem && valueDropdown ? (
-        <PriusSelect
+        <SelectComponent
           {...props}
           id={inputId}
           inputProps={{ 'data-identity': inputId && `${inputId}-dropdown` }}
@@ -138,9 +138,9 @@ function InputGroup({
               {item}
             </MenuItem>
           ))}
-        </PriusSelect>
+        </SelectComponent>
       ) : dropdownItems && valueDropdown !== undefined ? (
-        <PriusSelect
+        <SelectComponent
           {...props}
           id={inputId}
           inputProps={{ 'data-identity': inputId && `${inputId}-dropdown` }}
@@ -156,7 +156,7 @@ function InputGroup({
               {item.label}
             </MenuItem>
           ))}
-        </PriusSelect>
+        </SelectComponent>
       ) : leftLabel ? (
         <span className={classes.leftLabel}> {leftLabel} </span>
       ) : null}

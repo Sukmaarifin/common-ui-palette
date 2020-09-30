@@ -11,7 +11,7 @@ import { Grid, MenuItem } from '@material-ui/core';
 
 import { TenantContext } from '../SSSO';
 import MultipleSelect, { OptionType } from '../MultipleSelect';
-import PriusSelect from '../PriusSelect';
+import SelectComponent from '../Select';
 
 import { GetBrandsResponseType, GetBrandsParamType, BrandType } from './types';
 import theme from '../../styles/material-ui-theme';
@@ -128,7 +128,7 @@ function BrandDropdown({
 
   if (isWithLogo) {
     return (
-      <PriusSelect
+      <SelectComponent
         id={id && `${id}-select-menuBrand`}
         inputProps={{
           'data-identity': id && `${id}-select-menuBrand`,
@@ -161,7 +161,7 @@ function BrandDropdown({
             {brand.labelElement}
           </MenuItem>
         ))}
-      </PriusSelect>
+      </SelectComponent>
     );
   }
 

@@ -31,9 +31,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export type PriusSelectProps = SelectProps;
+export type SelectComponentProps = SelectProps;
 
-export const PriusSelect: React.FunctionComponent<PriusSelectProps> = React.forwardRef(
+export const SelectComponent: React.FunctionComponent<SelectComponentProps> = React.forwardRef(
   ({ placeholder, id, className, ...props }, ref) => {
     const classes = useStyles();
 
@@ -59,12 +59,12 @@ export const PriusSelect: React.FunctionComponent<PriusSelectProps> = React.forw
   }
 );
 
-export default PriusSelect;
+export default SelectComponent;
 
 /**
  * Universal typing for `option`.
  *
- * Since `PriusSelect` doesn't have mechanism for passing `options` via prop,
+ * Since `SelectComponent` doesn't have mechanism for passing `options` via prop,
  * it is not required to use this typing
  */
 export type SelectOptionType = {

@@ -94,8 +94,8 @@ export * from './components/PrintPage';
 export { default as Router } from './components/Router';
 export * from './components/Router';
 
-export { default as Select } from './components/PriusSelect';
-export * from './components/PriusSelect';
+export { default as Select } from './components/Select';
+export * from './components/Select';
 
 export { default as SEO } from './components/SEO';
 export * from './components/SEO';
