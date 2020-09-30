@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './priusPrintPage.css';
+import './index.css';
 
-export default function PriusPrintPage(props: any) {
+export default function PrintPage(props: any) {
   const { children } = props;
 
   useEffect(() => {

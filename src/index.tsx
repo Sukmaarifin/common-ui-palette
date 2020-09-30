@@ -88,8 +88,8 @@ export * from './components/Option';
 export { default as Paper } from './components/Paper';
 export * from './components/Paper';
 
-export { default as PrintPage } from './components/PriusPrintPage';
-export * from './components/PriusPrintPage';
+export { default as PrintPage } from './components/PrintPage';
+export * from './components/PrintPage';
 
 export { default as Router } from './components/PriusRouter';
 export * from './components/PriusRouter';
