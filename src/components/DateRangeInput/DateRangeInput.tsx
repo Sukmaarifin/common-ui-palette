@@ -16,13 +16,13 @@ export type DateType = {
   to: Date;
 };
 
-export type PriusDateColumnProps = {
+export type DateRangeInputProps = {
   id?: string;
   data?: DataDateType;
   onChange?: Function;
 };
 
-const PriusDateColumn: React.FC<PriusDateColumnProps> = ({
+const DateRangeInput: React.FC<DateRangeInputProps> = ({
   id,
   data,
   onChange,
@@ -121,4 +121,4 @@ const PriusDateColumn: React.FC<PriusDateColumnProps> = ({
   );
 };
 
-export default PriusDateColumn;
+export default DateRangeInput;

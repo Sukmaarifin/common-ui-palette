@@ -34,8 +34,8 @@ export * from './components/DatePicker';
 export { default as DatePickerInput } from './components/DatePickerInput';
 export * from './components/DatePickerInput';
 
-export { default as DateRangeInput } from './components/PriusDateRangeInput';
-export * from './components/PriusDateRangeInput';
+export { default as DateRangeInput } from './components/DateRangeInput';
+export * from './components/DateRangeInput';
 
 export { default as DraggableImage } from './components/PriusDraggableImage';
 export * from './components/PriusDraggableImage';
