@@ -91,8 +91,8 @@ export * from './src/components/Paper';
 export { default as PrintPage } from './src/components/PrintPage';
 export * from './src/components/PrintPage';
 
-export { default as Router } from './src/components/PriusRouter';
-export * from './src/components/PriusRouter';
+export { default as Router } from './src/components/Router';
+export * from './src/components/Router';
 
 export { default as SEO } from './src/components/PriusSEO';
 export * from './src/components/PriusSEO';

@@ -34,7 +34,7 @@ import {
   ROUTE_BY_PLAN,
   DEFAULT_PLAN_STAGING,
   FeatureTypeStrings,
-} from "../PriusRouter/types";
+} from "../Router/types";
 import { TenantContext } from "../PriusSSSO";
 import { ENV } from "../../configs";
 import {
