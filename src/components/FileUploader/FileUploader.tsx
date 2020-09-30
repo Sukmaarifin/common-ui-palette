@@ -5,9 +5,9 @@ import { Grid } from '@material-ui/core';
 import uploadIcon from './UploadIcon.svg';
 import PriusIndicatorLabel, { StatusUploadType } from '../PriusIndicatorLabel';
 
-import { PriusFileUploaderCss } from './PriusFileUploaderCss';
+import { FileUploaderCss } from './FileUploaderCss';
 
-export type PriusFileUploaderProps = {
+export type FileUploaderProps = {
   onUploadFile: (files: any) => void;
   statusUpload: StatusUploadType;
   className?: string;
@@ -19,8 +19,8 @@ const PriusFileUploader = ({
   statusUpload,
   className,
   id,
-}: PriusFileUploaderProps) => {
-  const classes = PriusFileUploaderCss();
+}: FileUploaderProps) => {
+  const classes = FileUploaderCss();
   const greyBorder = '#ececec';
   const redBorder = '#e02020';
   const blueBorder = '#1c9aea';

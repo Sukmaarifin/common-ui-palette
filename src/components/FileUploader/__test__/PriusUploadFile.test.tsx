@@ -4,19 +4,19 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusUploadFile, { PriusFileUploaderProps } from '../PriusFileUploader';
+import UploadFile, { FileUploaderProps } from '../FileUploader';
 import { StatusUploadType } from '../../PriusIndicatorLabel';
 
-describe('PriusUploadFile Testing', () => {
+describe('UploadFile Testing', () => {
   const render = () => {
-    const props: PriusFileUploaderProps = {
+    const props: FileUploaderProps = {
       statusUpload: StatusUploadType.EMPTY,
       onUploadFile: jest.fn(),
     };
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusUploadFile {...props} />
+        <UploadFile {...props} />
       </ThemeProvider>
     );
   };

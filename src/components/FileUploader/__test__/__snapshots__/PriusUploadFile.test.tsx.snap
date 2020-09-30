@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusUploadFile Testing render successfully 1`] = `
-<PriusUploadFile
+exports[`UploadFile Testing render successfully 1`] = `
+<UploadFile
   onUploadFile={[MockFunction]}
   reUpload={[MockFunction]}
   statusUpload=""
@@ -66,5 +66,5 @@ exports[`PriusUploadFile Testing render successfully 1`] = `
       </div>
     </div>
   </div>
-</PriusUploadFile>
+</UploadFile>
 `;

@@ -1,6 +1,6 @@
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
-export const PriusFileUploaderCss = makeStyles((theme: Theme) => ({
+export const FileUploaderCss = makeStyles((theme: Theme) => ({
   box: {
     margin: '1rem 0',
     height: '216px',
