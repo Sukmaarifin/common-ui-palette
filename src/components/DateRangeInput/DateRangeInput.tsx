@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 
-import PriusInput from '../PriusInputNew';
+import Input from '../InputNew';
 import DatePicker from '../DatePicker';
 
 import { convertDateUTC } from '../../helpers';
@@ -99,7 +99,7 @@ const DateRangeInput: React.FC<DateRangeInputProps> = ({
 
   return (
     <>
-      <PriusInput
+      <Input
         required
         name="date-range"
         id={id ? id : 'input-date-range'}

@@ -9,7 +9,7 @@ import { Grid, MenuItem } from '@material-ui/core';
 import LinkTo from '@storybook/addon-links/react';
 
 import PriusFieldset from './PriusFieldset';
-import PriusInput from '../PriusInputNew';
+import Input from '../InputNew';
 import PriusSelect from '../PriusSelect';
 
 <Meta
@@ -25,7 +25,7 @@ It provides control for the form elements.
 
 ## Usage
 
-You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`) or custom form elements (e.g. `<PriusInput />, <PriusSelect />, <PriusMultipleSelect />`) as a children.
+You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`) or custom form elements (e.g. `<Input />, <PriusSelect />, <PriusMultipleSelect />`) as a children.
 
 ### Basic
 
@@ -34,7 +34,7 @@ You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`
     <Grid container spacing={5}>
       <Grid item md={6}>
         <PriusFieldset fullWidth inputId="input-email" label="Email">
-          <PriusInput
+          <Input
             id="input-email"
             name="email"
             placeholder="some@email.com"
@@ -84,7 +84,7 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
           status="success"
           tooltipText="Lorem ipsum color dolot"
         >
-          <PriusInput
+          <Input
             id="input-email-2"
             name="email-2"
             placeholder="some@email.com"
@@ -101,7 +101,7 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
           status="error"
           tooltipText="Lorem ipsum color dolot"
         >
-          <PriusInput
+          <Input
             id="input-email-3"
             name="email-3"
             placeholder="some@email.com"
@@ -119,6 +119,6 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
 
 ## Related
 
-- <LinkTo kind="Components|PriusInput">PriusInput</LinkTo>
+- <LinkTo kind="Components|Input">Input</LinkTo>
 - <LinkTo kind="Components|PriusMultipleSelect">PriusMultipleSelect</LinkTo>
 - <LinkTo kind="Components|PriusSelect">PriusSelect</LinkTo>

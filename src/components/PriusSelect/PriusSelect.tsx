@@ -3,7 +3,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Select, { SelectProps } from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 
-import PriusInput from '../PriusInputNew';
+import Input from '../InputNew';
 import { DropdownIcon } from '../../icons';
 import clsx from 'clsx';
 
@@ -42,7 +42,7 @@ export const PriusSelect: React.FunctionComponent<PriusSelectProps> = React.forw
         {...props}
         ref={ref}
         className={clsx(classes.select, className ? className : '')}
-        input={<PriusInput id={id} />}
+        input={<Input id={id} />}
         IconComponent={DropdownIcon}
         MenuProps={{
           classes: {

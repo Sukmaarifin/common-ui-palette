@@ -9,7 +9,7 @@ import { Grid } from '@material-ui/core';
 import NumberFormat from 'react-number-format';
 
 import Fieldset from '../../Fieldset';
-import PriusInput from '../../../components/PriusInputNew';
+import InputComponent from '../../../components/InputNew';
 import PriusInputGroup from '../../PriusInputGroup';
 
 import { FieldProps } from '../../../components/PriusTable';
@@ -145,7 +145,7 @@ const FieldInput = ({
               />
             </PriusInputGroup>
           ) : (
-            <PriusInput
+            <InputComponent
               disabled={isDisabled}
               className={className && `${className}`}
               id={fieldId && `${fieldId}`}

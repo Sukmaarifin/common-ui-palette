@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Typography } from '@material-ui/core';
 
 import Fieldset from '../Fieldset';
-import PriusInput from '../PriusInputNew';
+import Input from '../InputNew';
 import PriusMultipleSelect, {
   OptionType,
   PriusActionMeta,
@@ -85,7 +85,7 @@ const PriusSEO = ({
           </span>
         }
       >
-        <PriusInput
+        <Input
           inputProps={{
             'data-identity': inputId && `${inputId}-input-seoDescription`,
           }}
@@ -134,7 +134,7 @@ const PriusSEO = ({
         status={errors?.slug ? 'error' : 'normal'}
         tooltipText="Slug digunakan untuk mempersingkat URL produk Anda."
       >
-        <PriusInput
+        <Input
           inputProps={{
             'data-identity': inputId && `${inputId}-input-slug`,
           }}

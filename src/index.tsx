@@ -61,8 +61,8 @@ export * from './components/IndicatorLabel';
 export { default as InfoBox } from './components/InfoBox';
 export * from './components/InfoBox';
 
-export { default as Input } from './components/PriusInputNew';
-export * from './components/PriusInputNew';
+export { default as Input } from './components/InputNew';
+export * from './components/InputNew';
 
 export { default as InputGroup } from './components/PriusInputGroup';
 export * from './components/PriusInputGroup';
