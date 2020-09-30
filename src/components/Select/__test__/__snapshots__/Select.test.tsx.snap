@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputDropdwon Testing render successfully 1`] = `
+exports[`Select test renders without error 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -532,47 +532,47 @@ exports[`InputDropdwon Testing render successfully 1`] = `
     }
   }
 >
-  <InputGroup
-    dropdownIcon={
-      Object {
-        "$$typeof": Symbol(react.memo),
-        "compare": null,
-        "displayName": "ArrowRightIcon",
-        "muiName": "SvgIcon",
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "render": [Function],
-        },
-      }
-    }
-    dropdownItem={
-      Array [
-        "JNE",
-        "TIKI",
-      ]
-    }
-    handleDropdown={[MockFunction]}
-    handleInput={[MockFunction]}
-    placeholder="Masukkan no. Resi"
-    valueDropdown="JNE"
-    valueInput="90"
+  <ForwardRef
+    id="input-currency"
+    name="currency"
+    placeholder="Lorem ipsum color dolot"
+    value="usd"
   >
-    <div
-      className="makeStyles-container-1"
-      style={
+    <WithStyles(ForwardRef(Select))
+      IconComponent={
         Object {
-          "width": "-webkit-fill-available",
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "displayName": "DropdownIcon",
+          "muiName": "SvgIcon",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
         }
       }
+      MenuProps={
+        Object {
+          "classes": Object {
+            "paper": "makeStyles-menuPaper-2",
+          },
+        }
+      }
+      className="makeStyles-select-1"
+      input={
+        <ForwardRef
+          id="input-currency"
+        />
+      }
+      name="currency"
+      value="usd"
     >
-      <ForwardRef
-        className="makeStyles-select-7"
-        displayEmpty={true}
-        dropdownIcon={
+      <ForwardRef(Select)
+        IconComponent={
           Object {
             "$$typeof": Symbol(react.memo),
             "compare": null,
-            "displayName": "ArrowRightIcon",
+            "displayName": "DropdownIcon",
             "muiName": "SvgIcon",
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -580,60 +580,79 @@ exports[`InputDropdwon Testing render successfully 1`] = `
             },
           }
         }
-        inputProps={
+        MenuProps={
           Object {
-            "data-identity": undefined,
+            "classes": Object {
+              "paper": "makeStyles-menuPaper-2",
+            },
           }
         }
-        onChange={[Function]}
-        value="JNE"
+        className="makeStyles-select-1"
+        classes={
+          Object {
+            "disabled": "Mui-disabled",
+            "filled": "MuiSelect-filled",
+            "icon": "MuiSelect-icon",
+            "iconFilled": "MuiSelect-iconFilled",
+            "iconOpen": "MuiSelect-iconOpen",
+            "iconOutlined": "MuiSelect-iconOutlined",
+            "nativeInput": "MuiSelect-nativeInput",
+            "outlined": "MuiSelect-outlined",
+            "root": "MuiSelect-root",
+            "select": "MuiSelect-select",
+            "selectMenu": "MuiSelect-selectMenu",
+          }
+        }
+        input={
+          <ForwardRef
+            id="input-currency"
+          />
+        }
+        name="currency"
+        value="usd"
       >
-        <WithStyles(ForwardRef(Select))
-          IconComponent={
+        <ForwardRef
+          className="makeStyles-select-1"
+          id="input-currency"
+          inputComponent={
             Object {
-              "$$typeof": Symbol(react.memo),
-              "compare": null,
-              "displayName": "DropdownIcon",
-              "muiName": "SvgIcon",
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "render": [Function],
+              "$$typeof": Symbol(react.forward_ref),
+              "propTypes": Object {
+                "IconComponent": [Function],
+                "MenuProps": [Function],
+                "SelectDisplayProps": [Function],
+                "aria-label": [Function],
+                "autoFocus": [Function],
+                "autoWidth": [Function],
+                "children": [Function],
+                "className": [Function],
+                "classes": [Function],
+                "defaultValue": [Function],
+                "disabled": [Function],
+                "displayEmpty": [Function],
+                "inputRef": [Function],
+                "labelId": [Function],
+                "multiple": [Function],
+                "name": [Function],
+                "onBlur": [Function],
+                "onChange": [Function],
+                "onClose": [Function],
+                "onFocus": [Function],
+                "onOpen": [Function],
+                "open": [Function],
+                "readOnly": [Function],
+                "renderValue": [Function],
+                "tabIndex": [Function],
+                "type": [Function],
+                "value": [Function],
+                "variant": [Function],
               },
+              "render": [Function],
             }
           }
-          MenuProps={
-            Object {
-              "classes": Object {
-                "paper": "makeStyles-menuPaper-10",
-              },
-            }
-          }
-          className="makeStyles-select-9 makeStyles-select-7"
-          displayEmpty={true}
-          dropdownIcon={
-            Object {
-              "$$typeof": Symbol(react.memo),
-              "compare": null,
-              "displayName": "ArrowRightIcon",
-              "muiName": "SvgIcon",
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "render": [Function],
-              },
-            }
-          }
-          input={<ForwardRef />}
           inputProps={
             Object {
-              "data-identity": undefined,
-            }
-          }
-          onChange={[Function]}
-          value="JNE"
-        >
-          <ForwardRef(Select)
-            IconComponent={
-              Object {
+              "IconComponent": Object {
                 "$$typeof": Symbol(react.memo),
                 "compare": null,
                 "displayName": "DropdownIcon",
@@ -642,18 +661,42 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 },
-              }
-            }
-            MenuProps={
-              Object {
+              },
+              "MenuProps": Object {
                 "classes": Object {
-                  "paper": "makeStyles-menuPaper-10",
+                  "paper": "makeStyles-menuPaper-2",
                 },
-              }
-            }
-            className="makeStyles-select-9 makeStyles-select-7"
-            classes={
-              Object {
+              },
+              "SelectDisplayProps": Object {
+                "id": undefined,
+              },
+              "autoWidth": false,
+              "children": Array [
+                <ForwardRef(WithStyles)
+                  className="makeStyles-placeholder-3"
+                >
+                  Lorem ipsum color dolot
+                </ForwardRef(WithStyles)>,
+                Array [
+                  <ForwardRef(WithStyles)
+                    value="usd"
+                  >
+                    United States Dollar
+                  </ForwardRef(WithStyles)>,
+                  <ForwardRef(WithStyles)
+                    value="idr"
+                  >
+                    Indonesian Rupiah
+                  </ForwardRef(WithStyles)>,
+                  <ForwardRef(WithStyles)
+                    disabled={true}
+                    value="jpy"
+                  >
+                    Japanese Yen
+                  </ForwardRef(WithStyles)>,
+                ],
+              ],
+              "classes": Object {
                 "disabled": "Mui-disabled",
                 "filled": "MuiSelect-filled",
                 "icon": "MuiSelect-icon",
@@ -665,44 +708,169 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                 "root": "MuiSelect-root",
                 "select": "MuiSelect-select",
                 "selectMenu": "MuiSelect-selectMenu",
-              }
+              },
+              "displayEmpty": false,
+              "labelId": undefined,
+              "multiple": false,
+              "onClose": undefined,
+              "onOpen": undefined,
+              "open": undefined,
+              "renderValue": undefined,
+              "type": undefined,
+              "variant": "standard",
             }
-            displayEmpty={true}
-            dropdownIcon={
+          }
+          name="currency"
+          value="usd"
+        >
+          <WithStyles(ForwardRef(InputBase))
+            className="makeStyles-select-1"
+            classes={
               Object {
-                "$$typeof": Symbol(react.memo),
-                "compare": null,
-                "displayName": "ArrowRightIcon",
-                "muiName": "SvgIcon",
-                "type": Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "render": [Function],
-                },
+                "adornedEnd": "makeStyles-adornedEnd-10",
+                "adornedStart": "makeStyles-adornedStart-9",
+                "disabled": "makeStyles-disabled-8",
+                "error": "makeStyles-error-7",
+                "input": "makeStyles-input-6",
+                "multiline": "makeStyles-multiline-11",
+                "root": "makeStyles-root-5",
               }
             }
-            input={<ForwardRef />}
+            id="input-currency"
+            inputComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "propTypes": Object {
+                  "IconComponent": [Function],
+                  "MenuProps": [Function],
+                  "SelectDisplayProps": [Function],
+                  "aria-label": [Function],
+                  "autoFocus": [Function],
+                  "autoWidth": [Function],
+                  "children": [Function],
+                  "className": [Function],
+                  "classes": [Function],
+                  "defaultValue": [Function],
+                  "disabled": [Function],
+                  "displayEmpty": [Function],
+                  "inputRef": [Function],
+                  "labelId": [Function],
+                  "multiple": [Function],
+                  "name": [Function],
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "onClose": [Function],
+                  "onFocus": [Function],
+                  "onOpen": [Function],
+                  "open": [Function],
+                  "readOnly": [Function],
+                  "renderValue": [Function],
+                  "tabIndex": [Function],
+                  "type": [Function],
+                  "value": [Function],
+                  "variant": [Function],
+                },
+                "render": [Function],
+              }
+            }
             inputProps={
               Object {
-                "data-identity": undefined,
-              }
-            }
-            onChange={[Function]}
-            value="JNE"
-          >
-            <ForwardRef
-              className="makeStyles-select-9 makeStyles-select-7"
-              dropdownIcon={
-                Object {
+                "IconComponent": Object {
                   "$$typeof": Symbol(react.memo),
                   "compare": null,
-                  "displayName": "ArrowRightIcon",
+                  "displayName": "DropdownIcon",
                   "muiName": "SvgIcon",
                   "type": Object {
                     "$$typeof": Symbol(react.forward_ref),
                     "render": [Function],
                   },
+                },
+                "MenuProps": Object {
+                  "classes": Object {
+                    "paper": "makeStyles-menuPaper-2",
+                  },
+                },
+                "SelectDisplayProps": Object {
+                  "id": undefined,
+                },
+                "autoWidth": false,
+                "children": Array [
+                  <ForwardRef(WithStyles)
+                    className="makeStyles-placeholder-3"
+                  >
+                    Lorem ipsum color dolot
+                  </ForwardRef(WithStyles)>,
+                  Array [
+                    <ForwardRef(WithStyles)
+                      value="usd"
+                    >
+                      United States Dollar
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      value="idr"
+                    >
+                      Indonesian Rupiah
+                    </ForwardRef(WithStyles)>,
+                    <ForwardRef(WithStyles)
+                      disabled={true}
+                      value="jpy"
+                    >
+                      Japanese Yen
+                    </ForwardRef(WithStyles)>,
+                  ],
+                ],
+                "classes": Object {
+                  "disabled": "Mui-disabled",
+                  "filled": "MuiSelect-filled",
+                  "icon": "MuiSelect-icon",
+                  "iconFilled": "MuiSelect-iconFilled",
+                  "iconOpen": "MuiSelect-iconOpen",
+                  "iconOutlined": "MuiSelect-iconOutlined",
+                  "nativeInput": "MuiSelect-nativeInput",
+                  "outlined": "MuiSelect-outlined",
+                  "root": "MuiSelect-root",
+                  "select": "MuiSelect-select",
+                  "selectMenu": "MuiSelect-selectMenu",
+                },
+                "displayEmpty": false,
+                "labelId": undefined,
+                "multiple": false,
+                "onClose": undefined,
+                "onOpen": undefined,
+                "open": undefined,
+                "renderValue": undefined,
+                "type": undefined,
+                "variant": "standard",
+              }
+            }
+            name="currency"
+            value="usd"
+          >
+            <ForwardRef(InputBase)
+              className="makeStyles-select-1"
+              classes={
+                Object {
+                  "adornedEnd": "MuiInputBase-adornedEnd makeStyles-adornedEnd-10",
+                  "adornedStart": "MuiInputBase-adornedStart makeStyles-adornedStart-9",
+                  "colorSecondary": "MuiInputBase-colorSecondary",
+                  "disabled": "Mui-disabled makeStyles-disabled-8",
+                  "error": "Mui-error makeStyles-error-7",
+                  "focused": "Mui-focused",
+                  "formControl": "MuiInputBase-formControl",
+                  "fullWidth": "MuiInputBase-fullWidth",
+                  "input": "MuiInputBase-input makeStyles-input-6",
+                  "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+                  "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+                  "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+                  "inputMarginDense": "MuiInputBase-inputMarginDense",
+                  "inputMultiline": "MuiInputBase-inputMultiline",
+                  "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+                  "marginDense": "MuiInputBase-marginDense",
+                  "multiline": "MuiInputBase-multiline makeStyles-multiline-11",
+                  "root": "MuiInputBase-root makeStyles-root-5",
                 }
               }
+              id="input-currency"
               inputComponent={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
@@ -753,7 +921,7 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                   },
                   "MenuProps": Object {
                     "classes": Object {
-                      "paper": "makeStyles-menuPaper-10",
+                      "paper": "makeStyles-menuPaper-2",
                     },
                   },
                   "SelectDisplayProps": Object {
@@ -761,17 +929,27 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                   },
                   "autoWidth": false,
                   "children": Array [
-                    undefined,
+                    <ForwardRef(WithStyles)
+                      className="makeStyles-placeholder-3"
+                    >
+                      Lorem ipsum color dolot
+                    </ForwardRef(WithStyles)>,
                     Array [
                       <ForwardRef(WithStyles)
-                        value="JNE"
+                        value="usd"
                       >
-                        JNE
+                        United States Dollar
                       </ForwardRef(WithStyles)>,
                       <ForwardRef(WithStyles)
-                        value="TIKI"
+                        value="idr"
                       >
-                        TIKI
+                        Indonesian Rupiah
+                      </ForwardRef(WithStyles)>,
+                      <ForwardRef(WithStyles)
+                        disabled={true}
+                        value="jpy"
+                      >
+                        Japanese Yen
                       </ForwardRef(WithStyles)>,
                     ],
                   ],
@@ -788,8 +966,7 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                     "select": "MuiSelect-select",
                     "selectMenu": "MuiSelect-selectMenu",
                   },
-                  "data-identity": undefined,
-                  "displayEmpty": true,
+                  "displayEmpty": false,
                   "labelId": undefined,
                   "multiple": false,
                   "onClose": undefined,
@@ -800,73 +977,16 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                   "variant": "standard",
                 }
               }
-              onChange={[Function]}
-              value="JNE"
+              name="currency"
+              value="usd"
             >
-              <WithStyles(ForwardRef(InputBase))
-                className="makeStyles-select-9 makeStyles-select-7"
-                classes={
-                  Object {
-                    "adornedEnd": "makeStyles-adornedEnd-18",
-                    "adornedStart": "makeStyles-adornedStart-17",
-                    "disabled": "makeStyles-disabled-16",
-                    "error": "makeStyles-error-15",
-                    "input": "makeStyles-input-14",
-                    "multiline": "makeStyles-multiline-19",
-                    "root": "makeStyles-root-13",
-                  }
-                }
-                dropdownIcon={
-                  Object {
-                    "$$typeof": Symbol(react.memo),
-                    "compare": null,
-                    "displayName": "ArrowRightIcon",
-                    "muiName": "SvgIcon",
-                    "type": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                  }
-                }
-                inputComponent={
-                  Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "propTypes": Object {
-                      "IconComponent": [Function],
-                      "MenuProps": [Function],
-                      "SelectDisplayProps": [Function],
-                      "aria-label": [Function],
-                      "autoFocus": [Function],
-                      "autoWidth": [Function],
-                      "children": [Function],
-                      "className": [Function],
-                      "classes": [Function],
-                      "defaultValue": [Function],
-                      "disabled": [Function],
-                      "displayEmpty": [Function],
-                      "inputRef": [Function],
-                      "labelId": [Function],
-                      "multiple": [Function],
-                      "name": [Function],
-                      "onBlur": [Function],
-                      "onChange": [Function],
-                      "onClose": [Function],
-                      "onFocus": [Function],
-                      "onOpen": [Function],
-                      "open": [Function],
-                      "readOnly": [Function],
-                      "renderValue": [Function],
-                      "tabIndex": [Function],
-                      "type": [Function],
-                      "value": [Function],
-                      "variant": [Function],
-                    },
-                    "render": [Function],
-                  }
-                }
-                inputProps={
-                  Object {
-                    "IconComponent": Object {
+              <div
+                className="MuiInputBase-root makeStyles-root-5 makeStyles-select-1"
+                onClick={[Function]}
+              >
+                <ForwardRef(SelectInput)
+                  IconComponent={
+                    Object {
                       "$$typeof": Symbol(react.memo),
                       "compare": null,
                       "displayName": "DropdownIcon",
@@ -875,32 +995,24 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                         "$$typeof": Symbol(react.forward_ref),
                         "render": [Function],
                       },
-                    },
-                    "MenuProps": Object {
+                    }
+                  }
+                  MenuProps={
+                    Object {
                       "classes": Object {
-                        "paper": "makeStyles-menuPaper-10",
+                        "paper": "makeStyles-menuPaper-2",
                       },
-                    },
-                    "SelectDisplayProps": Object {
+                    }
+                  }
+                  SelectDisplayProps={
+                    Object {
                       "id": undefined,
-                    },
-                    "autoWidth": false,
-                    "children": Array [
-                      undefined,
-                      Array [
-                        <ForwardRef(WithStyles)
-                          value="JNE"
-                        >
-                          JNE
-                        </ForwardRef(WithStyles)>,
-                        <ForwardRef(WithStyles)
-                          value="TIKI"
-                        >
-                          TIKI
-                        </ForwardRef(WithStyles)>,
-                      ],
-                    ],
-                    "classes": Object {
+                    }
+                  }
+                  autoWidth={false}
+                  className="MuiInputBase-input makeStyles-input-6"
+                  classes={
+                    Object {
                       "disabled": "Mui-disabled",
                       "filled": "MuiSelect-filled",
                       "icon": "MuiSelect-icon",
@@ -912,292 +1024,159 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                       "root": "MuiSelect-root",
                       "select": "MuiSelect-select",
                       "selectMenu": "MuiSelect-selectMenu",
-                    },
-                    "data-identity": undefined,
-                    "displayEmpty": true,
-                    "labelId": undefined,
-                    "multiple": false,
-                    "onClose": undefined,
-                    "onOpen": undefined,
-                    "open": undefined,
-                    "renderValue": undefined,
-                    "type": undefined,
-                    "variant": "standard",
-                  }
-                }
-                onChange={[Function]}
-                value="JNE"
-              >
-                <ForwardRef(InputBase)
-                  className="makeStyles-select-9 makeStyles-select-7"
-                  classes={
-                    Object {
-                      "adornedEnd": "MuiInputBase-adornedEnd makeStyles-adornedEnd-18",
-                      "adornedStart": "MuiInputBase-adornedStart makeStyles-adornedStart-17",
-                      "colorSecondary": "MuiInputBase-colorSecondary",
-                      "disabled": "Mui-disabled makeStyles-disabled-16",
-                      "error": "Mui-error makeStyles-error-15",
-                      "focused": "Mui-focused",
-                      "formControl": "MuiInputBase-formControl",
-                      "fullWidth": "MuiInputBase-fullWidth",
-                      "input": "MuiInputBase-input makeStyles-input-14",
-                      "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
-                      "inputAdornedStart": "MuiInputBase-inputAdornedStart",
-                      "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
-                      "inputMarginDense": "MuiInputBase-inputMarginDense",
-                      "inputMultiline": "MuiInputBase-inputMultiline",
-                      "inputTypeSearch": "MuiInputBase-inputTypeSearch",
-                      "marginDense": "MuiInputBase-marginDense",
-                      "multiline": "MuiInputBase-multiline makeStyles-multiline-19",
-                      "root": "MuiInputBase-root makeStyles-root-13",
                     }
                   }
-                  dropdownIcon={
-                    Object {
-                      "$$typeof": Symbol(react.memo),
-                      "compare": null,
-                      "displayName": "ArrowRightIcon",
-                      "muiName": "SvgIcon",
-                      "type": Object {
-                        "$$typeof": Symbol(react.forward_ref),
-                        "render": [Function],
-                      },
-                    }
-                  }
-                  inputComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "propTypes": Object {
-                        "IconComponent": [Function],
-                        "MenuProps": [Function],
-                        "SelectDisplayProps": [Function],
-                        "aria-label": [Function],
-                        "autoFocus": [Function],
-                        "autoWidth": [Function],
-                        "children": [Function],
-                        "className": [Function],
-                        "classes": [Function],
-                        "defaultValue": [Function],
-                        "disabled": [Function],
-                        "displayEmpty": [Function],
-                        "inputRef": [Function],
-                        "labelId": [Function],
-                        "multiple": [Function],
-                        "name": [Function],
-                        "onBlur": [Function],
-                        "onChange": [Function],
-                        "onClose": [Function],
-                        "onFocus": [Function],
-                        "onOpen": [Function],
-                        "open": [Function],
-                        "readOnly": [Function],
-                        "renderValue": [Function],
-                        "tabIndex": [Function],
-                        "type": [Function],
-                        "value": [Function],
-                        "variant": [Function],
-                      },
-                      "render": [Function],
-                    }
-                  }
-                  inputProps={
-                    Object {
-                      "IconComponent": Object {
-                        "$$typeof": Symbol(react.memo),
-                        "compare": null,
-                        "displayName": "DropdownIcon",
-                        "muiName": "SvgIcon",
-                        "type": Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "render": [Function],
-                        },
-                      },
-                      "MenuProps": Object {
-                        "classes": Object {
-                          "paper": "makeStyles-menuPaper-10",
-                        },
-                      },
-                      "SelectDisplayProps": Object {
-                        "id": undefined,
-                      },
-                      "autoWidth": false,
-                      "children": Array [
-                        undefined,
-                        Array [
-                          <ForwardRef(WithStyles)
-                            value="JNE"
-                          >
-                            JNE
-                          </ForwardRef(WithStyles)>,
-                          <ForwardRef(WithStyles)
-                            value="TIKI"
-                          >
-                            TIKI
-                          </ForwardRef(WithStyles)>,
-                        ],
-                      ],
-                      "classes": Object {
-                        "disabled": "Mui-disabled",
-                        "filled": "MuiSelect-filled",
-                        "icon": "MuiSelect-icon",
-                        "iconFilled": "MuiSelect-iconFilled",
-                        "iconOpen": "MuiSelect-iconOpen",
-                        "iconOutlined": "MuiSelect-iconOutlined",
-                        "nativeInput": "MuiSelect-nativeInput",
-                        "outlined": "MuiSelect-outlined",
-                        "root": "MuiSelect-root",
-                        "select": "MuiSelect-select",
-                        "selectMenu": "MuiSelect-selectMenu",
-                      },
-                      "data-identity": undefined,
-                      "displayEmpty": true,
-                      "labelId": undefined,
-                      "multiple": false,
-                      "onClose": undefined,
-                      "onOpen": undefined,
-                      "open": undefined,
-                      "renderValue": undefined,
-                      "type": undefined,
-                      "variant": "standard",
-                    }
-                  }
+                  displayEmpty={false}
+                  id="input-currency"
+                  inputRef={[Function]}
+                  multiple={false}
+                  name="currency"
+                  onAnimationStart={[Function]}
+                  onBlur={[Function]}
                   onChange={[Function]}
-                  value="JNE"
+                  onFocus={[Function]}
+                  value="usd"
+                  variant="standard"
                 >
                   <div
-                    className="MuiInputBase-root makeStyles-root-13 makeStyles-select-9 makeStyles-select-7"
-                    dropdownIcon={
+                    aria-haspopup="listbox"
+                    aria-labelledby="mui-component-select-currency"
+                    className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-6"
+                    id="mui-component-select-currency"
+                    onBlur={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                    onMouseDown={[Function]}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    United States Dollar
+                  </div>
+                  <input
+                    aria-hidden={true}
+                    className="MuiSelect-nativeInput"
+                    id="input-currency"
+                    name="currency"
+                    onAnimationStart={[Function]}
+                    onChange={[Function]}
+                    tabIndex={-1}
+                    value="usd"
+                  />
+                  <ForwardRef
+                    className="MuiSelect-icon"
+                  >
+                    <WithStyles(ForwardRef(SvgIcon))
+                      className="MuiSelect-icon"
+                    >
+                      <ForwardRef(SvgIcon)
+                        className="MuiSelect-icon"
+                        classes={
+                          Object {
+                            "colorAction": "MuiSvgIcon-colorAction",
+                            "colorDisabled": "MuiSvgIcon-colorDisabled",
+                            "colorError": "MuiSvgIcon-colorError",
+                            "colorPrimary": "MuiSvgIcon-colorPrimary",
+                            "colorSecondary": "MuiSvgIcon-colorSecondary",
+                            "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
+                            "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
+                            "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
+                            "root": "MuiSvgIcon-root",
+                          }
+                        }
+                        viewBox="0 0 21 21"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="MuiSvgIcon-root MuiSelect-icon"
+                          focusable="false"
+                          viewBox="0 0 21 21"
+                        >
+                          <path
+                            d="M20.81 5.748A2.495 2.495 0 0 0 18.494 4.2H2.504A2.494 2.494 0 0 0 .191 5.748a2.494 2.494 0 0 0 .546 2.728l7.996 7.966c.47.47 1.1.728 1.767.728.67 0 1.296-.258 1.766-.728l7.996-7.966c.72-.717.935-1.788.547-2.728"
+                          />
+                        </svg>
+                      </ForwardRef(SvgIcon)>
+                    </WithStyles(ForwardRef(SvgIcon))>
+                  </ForwardRef>
+                  <WithStyles(ForwardRef(Menu))
+                    MenuListProps={
                       Object {
-                        "$$typeof": Symbol(react.memo),
-                        "compare": null,
-                        "displayName": "ArrowRightIcon",
-                        "muiName": "SvgIcon",
-                        "type": Object {
-                          "$$typeof": Symbol(react.forward_ref),
-                          "render": [Function],
+                        "aria-labelledby": undefined,
+                        "disableListWrap": true,
+                        "role": "listbox",
+                      }
+                    }
+                    PaperProps={
+                      Object {
+                        "style": Object {
+                          "minWidth": undefined,
                         },
                       }
                     }
-                    onClick={[Function]}
-                  >
-                    <ForwardRef(SelectInput)
-                      IconComponent={
-                        Object {
-                          "$$typeof": Symbol(react.memo),
-                          "compare": null,
-                          "displayName": "DropdownIcon",
-                          "muiName": "SvgIcon",
-                          "type": Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "render": [Function],
-                          },
-                        }
-                      }
-                      MenuProps={
-                        Object {
-                          "classes": Object {
-                            "paper": "makeStyles-menuPaper-10",
-                          },
-                        }
-                      }
-                      SelectDisplayProps={
-                        Object {
-                          "id": undefined,
-                        }
-                      }
-                      autoWidth={false}
-                      className="MuiInputBase-input makeStyles-input-14"
-                      classes={
-                        Object {
-                          "disabled": "Mui-disabled",
-                          "filled": "MuiSelect-filled",
-                          "icon": "MuiSelect-icon",
-                          "iconFilled": "MuiSelect-iconFilled",
-                          "iconOpen": "MuiSelect-iconOpen",
-                          "iconOutlined": "MuiSelect-iconOutlined",
-                          "nativeInput": "MuiSelect-nativeInput",
-                          "outlined": "MuiSelect-outlined",
-                          "root": "MuiSelect-root",
-                          "select": "MuiSelect-select",
-                          "selectMenu": "MuiSelect-selectMenu",
-                        }
-                      }
-                      displayEmpty={true}
-                      inputRef={[Function]}
-                      multiple={false}
-                      onAnimationStart={[Function]}
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onFocus={[Function]}
-                      value="JNE"
-                      variant="standard"
-                    >
+                    anchorEl={
                       <div
                         aria-haspopup="listbox"
-                        className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-14"
-                        onBlur={[Function]}
-                        onFocus={[Function]}
-                        onKeyDown={[Function]}
-                        onMouseDown={[Function]}
+                        aria-labelledby="mui-component-select-currency"
+                        class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-6"
+                        id="mui-component-select-currency"
                         role="button"
-                        tabIndex={0}
+                        tabindex="0"
                       >
-                        JNE
+                        United States Dollar
                       </div>
-                      <input
-                        aria-hidden={true}
-                        className="MuiSelect-nativeInput"
-                        onAnimationStart={[Function]}
-                        onChange={[Function]}
-                        tabIndex={-1}
-                        value="JNE"
-                      />
-                      <ForwardRef
-                        className="MuiSelect-icon"
-                      >
-                        <WithStyles(ForwardRef(SvgIcon))
-                          className="MuiSelect-icon"
-                        >
-                          <ForwardRef(SvgIcon)
-                            className="MuiSelect-icon"
-                            classes={
-                              Object {
-                                "colorAction": "MuiSvgIcon-colorAction",
-                                "colorDisabled": "MuiSvgIcon-colorDisabled",
-                                "colorError": "MuiSvgIcon-colorError",
-                                "colorPrimary": "MuiSvgIcon-colorPrimary",
-                                "colorSecondary": "MuiSvgIcon-colorSecondary",
-                                "fontSizeInherit": "MuiSvgIcon-fontSizeInherit",
-                                "fontSizeLarge": "MuiSvgIcon-fontSizeLarge",
-                                "fontSizeSmall": "MuiSvgIcon-fontSizeSmall",
-                                "root": "MuiSvgIcon-root",
-                              }
-                            }
-                            viewBox="0 0 21 21"
-                          >
-                            <svg
-                              aria-hidden={true}
-                              className="MuiSvgIcon-root MuiSelect-icon"
-                              focusable="false"
-                              viewBox="0 0 21 21"
-                            >
-                              <path
-                                d="M20.81 5.748A2.495 2.495 0 0 0 18.494 4.2H2.504A2.494 2.494 0 0 0 .191 5.748a2.494 2.494 0 0 0 .546 2.728l7.996 7.966c.47.47 1.1.728 1.767.728.67 0 1.296-.258 1.766-.728l7.996-7.966c.72-.717.935-1.788.547-2.728"
-                              />
-                            </svg>
-                          </ForwardRef(SvgIcon)>
-                        </WithStyles(ForwardRef(SvgIcon))>
-                      </ForwardRef>
-                      <WithStyles(ForwardRef(Menu))
-                        MenuListProps={
-                          Object {
-                            "aria-labelledby": undefined,
-                            "disableListWrap": true,
-                            "role": "listbox",
-                          }
+                    }
+                    classes={
+                      Object {
+                        "paper": "makeStyles-menuPaper-2",
+                      }
+                    }
+                    id="menu-currency"
+                    onClose={[Function]}
+                    open={false}
+                  >
+                    <ForwardRef(Menu)
+                      MenuListProps={
+                        Object {
+                          "aria-labelledby": undefined,
+                          "disableListWrap": true,
+                          "role": "listbox",
                         }
+                      }
+                      PaperProps={
+                        Object {
+                          "style": Object {
+                            "minWidth": undefined,
+                          },
+                        }
+                      }
+                      anchorEl={
+                        <div
+                          aria-haspopup="listbox"
+                          aria-labelledby="mui-component-select-currency"
+                          class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-6"
+                          id="mui-component-select-currency"
+                          role="button"
+                          tabindex="0"
+                        >
+                          United States Dollar
+                        </div>
+                      }
+                      classes={
+                        Object {
+                          "list": "MuiMenu-list",
+                          "paper": "MuiMenu-paper makeStyles-menuPaper-2",
+                        }
+                      }
+                      id="menu-currency"
+                      onClose={[Function]}
+                      open={false}
+                    >
+                      <WithStyles(ForwardRef(Popover))
                         PaperProps={
                           Object {
+                            "classes": Object {
+                              "root": "MuiMenu-paper makeStyles-menuPaper-2",
+                            },
                             "style": Object {
                               "minWidth": undefined,
                             },
@@ -1206,32 +1185,40 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                         anchorEl={
                           <div
                             aria-haspopup="listbox"
-                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-14"
+                            aria-labelledby="mui-component-select-currency"
+                            class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-6"
+                            id="mui-component-select-currency"
                             role="button"
                             tabindex="0"
                           >
-                            JNE
+                            United States Dollar
                           </div>
                         }
-                        classes={
+                        anchorOrigin={
                           Object {
-                            "paper": "makeStyles-menuPaper-10",
+                            "horizontal": "left",
+                            "vertical": "top",
                           }
                         }
-                        id="menu-"
+                        getContentAnchorEl={[Function]}
+                        id="menu-currency"
                         onClose={[Function]}
+                        onEntering={[Function]}
                         open={false}
-                      >
-                        <ForwardRef(Menu)
-                          MenuListProps={
-                            Object {
-                              "aria-labelledby": undefined,
-                              "disableListWrap": true,
-                              "role": "listbox",
-                            }
+                        transformOrigin={
+                          Object {
+                            "horizontal": "left",
+                            "vertical": "top",
                           }
+                        }
+                        transitionDuration="auto"
+                      >
+                        <ForwardRef(Popover)
                           PaperProps={
                             Object {
+                              "classes": Object {
+                                "root": "MuiMenu-paper makeStyles-menuPaper-2",
+                              },
                               "style": Object {
                                 "minWidth": undefined,
                               },
@@ -1240,150 +1227,63 @@ exports[`InputDropdwon Testing render successfully 1`] = `
                           anchorEl={
                             <div
                               aria-haspopup="listbox"
-                              class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-14"
+                              aria-labelledby="mui-component-select-currency"
+                              class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-6"
+                              id="mui-component-select-currency"
                               role="button"
                               tabindex="0"
                             >
-                              JNE
+                              United States Dollar
                             </div>
+                          }
+                          anchorOrigin={
+                            Object {
+                              "horizontal": "left",
+                              "vertical": "top",
+                            }
                           }
                           classes={
                             Object {
-                              "list": "MuiMenu-list",
-                              "paper": "MuiMenu-paper makeStyles-menuPaper-10",
+                              "paper": "MuiPopover-paper",
+                              "root": "MuiPopover-root",
                             }
                           }
-                          id="menu-"
+                          getContentAnchorEl={[Function]}
+                          id="menu-currency"
                           onClose={[Function]}
+                          onEntering={[Function]}
                           open={false}
+                          transformOrigin={
+                            Object {
+                              "horizontal": "left",
+                              "vertical": "top",
+                            }
+                          }
+                          transitionDuration="auto"
                         >
-                          <WithStyles(ForwardRef(Popover))
-                            PaperProps={
+                          <ForwardRef(Modal)
+                            BackdropProps={
                               Object {
-                                "classes": Object {
-                                  "root": "MuiMenu-paper makeStyles-menuPaper-10",
-                                },
-                                "style": Object {
-                                  "minWidth": undefined,
-                                },
+                                "invisible": true,
                               }
                             }
-                            anchorEl={
-                              <div
-                                aria-haspopup="listbox"
-                                class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-14"
-                                role="button"
-                                tabindex="0"
-                              >
-                                JNE
-                              </div>
-                            }
-                            anchorOrigin={
-                              Object {
-                                "horizontal": "left",
-                                "vertical": "top",
-                              }
-                            }
-                            getContentAnchorEl={[Function]}
-                            id="menu-"
+                            className="MuiPopover-root"
+                            container={<body />}
+                            id="menu-currency"
                             onClose={[Function]}
-                            onEntering={[Function]}
                             open={false}
-                            transformOrigin={
-                              Object {
-                                "horizontal": "left",
-                                "vertical": "top",
-                              }
-                            }
-                            transitionDuration="auto"
-                          >
-                            <ForwardRef(Popover)
-                              PaperProps={
-                                Object {
-                                  "classes": Object {
-                                    "root": "MuiMenu-paper makeStyles-menuPaper-10",
-                                  },
-                                  "style": Object {
-                                    "minWidth": undefined,
-                                  },
-                                }
-                              }
-                              anchorEl={
-                                <div
-                                  aria-haspopup="listbox"
-                                  class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input makeStyles-input-14"
-                                  role="button"
-                                  tabindex="0"
-                                >
-                                  JNE
-                                </div>
-                              }
-                              anchorOrigin={
-                                Object {
-                                  "horizontal": "left",
-                                  "vertical": "top",
-                                }
-                              }
-                              classes={
-                                Object {
-                                  "paper": "MuiPopover-paper",
-                                  "root": "MuiPopover-root",
-                                }
-                              }
-                              getContentAnchorEl={[Function]}
-                              id="menu-"
-                              onClose={[Function]}
-                              onEntering={[Function]}
-                              open={false}
-                              transformOrigin={
-                                Object {
-                                  "horizontal": "left",
-                                  "vertical": "top",
-                                }
-                              }
-                              transitionDuration="auto"
-                            >
-                              <ForwardRef(Modal)
-                                BackdropProps={
-                                  Object {
-                                    "invisible": true,
-                                  }
-                                }
-                                className="MuiPopover-root"
-                                container={<body />}
-                                id="menu-"
-                                onClose={[Function]}
-                                open={false}
-                              />
-                            </ForwardRef(Popover)>
-                          </WithStyles(ForwardRef(Popover))>
-                        </ForwardRef(Menu)>
-                      </WithStyles(ForwardRef(Menu))>
-                    </ForwardRef(SelectInput)>
-                  </div>
-                </ForwardRef(InputBase)>
-              </WithStyles(ForwardRef(InputBase))>
-            </ForwardRef>
-          </ForwardRef(Select)>
-        </WithStyles(ForwardRef(Select))>
-      </ForwardRef>
-      <div
-        className="makeStyles-inputContainer-3"
-      >
-        <input
-          aria-label="description"
-          className="makeStyles-input-5"
-          onChange={[Function]}
-          placeholder="Masukkan no. Resi"
-          style={
-            Object {
-              "width": "-webkit-fill-available",
-            }
-          }
-          value="90"
-        />
-      </div>
-    </div>
-  </InputGroup>
+                          />
+                        </ForwardRef(Popover)>
+                      </WithStyles(ForwardRef(Popover))>
+                    </ForwardRef(Menu)>
+                  </WithStyles(ForwardRef(Menu))>
+                </ForwardRef(SelectInput)>
+              </div>
+            </ForwardRef(InputBase)>
+          </WithStyles(ForwardRef(InputBase))>
+        </ForwardRef>
+      </ForwardRef(Select)>
+    </WithStyles(ForwardRef(Select))>
+  </ForwardRef>
 </ThemeProvider>
 `;

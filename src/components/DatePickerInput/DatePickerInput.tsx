@@ -4,7 +4,7 @@ import { DateUtils } from 'react-day-picker';
 
 import { REGEX_DATE } from '../../constants';
 
-import './PriusDatePickerInput.css';
+import './index.css';
 import 'react-day-picker/lib/style.css';
 
 export type DatePickerInputProps = {

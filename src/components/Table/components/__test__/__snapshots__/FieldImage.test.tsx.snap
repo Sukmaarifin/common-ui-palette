@@ -145,7 +145,7 @@ exports[`FieldImage test renders correctly 1`] = `
           }
         }
       >
-        <PriusThumbnail
+        <ThumbnailComponent
           altText="Super awesome product image"
           imageSource="#some-link-to-image"
           size="small"
@@ -156,7 +156,7 @@ exports[`FieldImage test renders correctly 1`] = `
             onError={[Function]}
             src="#some-link-to-image"
           />
-        </PriusThumbnail>
+        </ThumbnailComponent>
       </div>
     </ForwardRef(Grid)>
   </WithStyles(ForwardRef(Grid))>

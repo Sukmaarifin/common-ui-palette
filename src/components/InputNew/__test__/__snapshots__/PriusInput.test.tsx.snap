@@ -31,10 +31,15 @@ exports[`PriusInput test renders without error 1`] = `
         "grey": "#EEEEEE",
         "grey2": "#F4F4F4",
         "grey3": "#ECEBED",
+        "grey4": "#E8E8E8",
         "info": "#898989",
         "placeholder": "#E0E0E0",
         "primary": "#1C9AEA",
+        "primary2": "#1478C9",
+        "secondary": "#DD3628",
+        "secondary2": "#BE1D1E",
         "success": "#00B969",
+        "success2": "#008566",
         "text": "#444444",
         "warning": "#FFCC00",
         "white": "#FFFFFF",
@@ -284,9 +289,9 @@ exports[`PriusInput test renders without error 1`] = `
         "divider": "rgba(0, 0, 0, 0.12)",
         "error": Object {
           "contrastText": "#fff",
-          "dark": "#d32f2f",
-          "light": "#e57373",
-          "main": "#f44336",
+          "dark": "#DD3626",
+          "light": "#DD3626",
+          "main": "#DD3626",
         },
         "getContrastText": [Function],
         "grey": Object {
@@ -313,21 +318,21 @@ exports[`PriusInput test renders without error 1`] = `
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "#1C9AEA",
+          "dark": "#1478C9",
           "light": "#1C9AEA",
           "main": "#1C9AEA",
         },
         "secondary": Object {
           "contrastText": "#fff",
-          "dark": "#c51162",
-          "light": "#ff4081",
-          "main": "#f50057",
+          "dark": "#BE1D1E",
+          "light": "#DD3628",
+          "main": "#DD3628",
         },
         "success": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "#388e3c",
-          "light": "#81c784",
-          "main": "#4caf50",
+          "dark": "#008566",
+          "light": "#00B969",
+          "main": "#00B969",
         },
         "text": Object {
           "disabled": "#BDBDBD",
@@ -527,32 +532,32 @@ exports[`PriusInput test renders without error 1`] = `
     }
   }
 >
-  <WithStyles(WithStyles(ForwardRef(InputBase)))>
+  <ForwardRef>
     <WithStyles(ForwardRef(InputBase))
       classes={
         Object {
-          "adornedEnd": "WithStyles(ForwardRef(InputBase))-adornedEnd-6",
-          "adornedStart": "WithStyles(ForwardRef(InputBase))-adornedStart-5",
-          "disabled": "WithStyles(ForwardRef(InputBase))-disabled-4",
-          "error": "WithStyles(ForwardRef(InputBase))-error-3",
-          "input": "WithStyles(ForwardRef(InputBase))-input-2",
-          "multiline": "WithStyles(ForwardRef(InputBase))-multiline-7",
-          "root": "WithStyles(ForwardRef(InputBase))-root-1",
+          "adornedEnd": "makeStyles-adornedEnd-6",
+          "adornedStart": "makeStyles-adornedStart-5",
+          "disabled": "makeStyles-disabled-4",
+          "error": "makeStyles-error-3",
+          "input": "makeStyles-input-2",
+          "multiline": "makeStyles-multiline-7",
+          "root": "makeStyles-root-1",
         }
       }
     >
       <ForwardRef(InputBase)
         classes={
           Object {
-            "adornedEnd": "MuiInputBase-adornedEnd WithStyles(ForwardRef(InputBase))-adornedEnd-6",
-            "adornedStart": "MuiInputBase-adornedStart WithStyles(ForwardRef(InputBase))-adornedStart-5",
+            "adornedEnd": "MuiInputBase-adornedEnd makeStyles-adornedEnd-6",
+            "adornedStart": "MuiInputBase-adornedStart makeStyles-adornedStart-5",
             "colorSecondary": "MuiInputBase-colorSecondary",
-            "disabled": "Mui-disabled WithStyles(ForwardRef(InputBase))-disabled-4",
-            "error": "Mui-error WithStyles(ForwardRef(InputBase))-error-3",
+            "disabled": "Mui-disabled makeStyles-disabled-4",
+            "error": "Mui-error makeStyles-error-3",
             "focused": "Mui-focused",
             "formControl": "MuiInputBase-formControl",
             "fullWidth": "MuiInputBase-fullWidth",
-            "input": "MuiInputBase-input WithStyles(ForwardRef(InputBase))-input-2",
+            "input": "MuiInputBase-input makeStyles-input-2",
             "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
             "inputAdornedStart": "MuiInputBase-inputAdornedStart",
             "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
@@ -560,17 +565,17 @@ exports[`PriusInput test renders without error 1`] = `
             "inputMultiline": "MuiInputBase-inputMultiline",
             "inputTypeSearch": "MuiInputBase-inputTypeSearch",
             "marginDense": "MuiInputBase-marginDense",
-            "multiline": "MuiInputBase-multiline WithStyles(ForwardRef(InputBase))-multiline-7",
-            "root": "MuiInputBase-root WithStyles(ForwardRef(InputBase))-root-1",
+            "multiline": "MuiInputBase-multiline makeStyles-multiline-7",
+            "root": "MuiInputBase-root makeStyles-root-1",
           }
         }
       >
         <div
-          className="MuiInputBase-root WithStyles(ForwardRef(InputBase))-root-1"
+          className="MuiInputBase-root makeStyles-root-1"
           onClick={[Function]}
         >
           <input
-            className="MuiInputBase-input WithStyles(ForwardRef(InputBase))-input-2"
+            className="MuiInputBase-input makeStyles-input-2"
             onAnimationStart={[Function]}
             onBlur={[Function]}
             onChange={[Function]}
@@ -580,6 +585,6 @@ exports[`PriusInput test renders without error 1`] = `
         </div>
       </ForwardRef(InputBase)>
     </WithStyles(ForwardRef(InputBase))>
-  </WithStyles(WithStyles(ForwardRef(InputBase)))>
+  </ForwardRef>
 </ThemeProvider>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusLabel Testing render successfully 1`] = `
+exports[`Label Testing render successfully 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -31,10 +31,15 @@ exports[`PriusLabel Testing render successfully 1`] = `
         "grey": "#EEEEEE",
         "grey2": "#F4F4F4",
         "grey3": "#ECEBED",
+        "grey4": "#E8E8E8",
         "info": "#898989",
         "placeholder": "#E0E0E0",
         "primary": "#1C9AEA",
+        "primary2": "#1478C9",
+        "secondary": "#DD3628",
+        "secondary2": "#BE1D1E",
         "success": "#00B969",
+        "success2": "#008566",
         "text": "#444444",
         "warning": "#FFCC00",
         "white": "#FFFFFF",
@@ -284,9 +289,9 @@ exports[`PriusLabel Testing render successfully 1`] = `
         "divider": "rgba(0, 0, 0, 0.12)",
         "error": Object {
           "contrastText": "#fff",
-          "dark": "#d32f2f",
-          "light": "#e57373",
-          "main": "#f44336",
+          "dark": "#DD3626",
+          "light": "#DD3626",
+          "main": "#DD3626",
         },
         "getContrastText": [Function],
         "grey": Object {
@@ -313,21 +318,21 @@ exports[`PriusLabel Testing render successfully 1`] = `
         },
         "primary": Object {
           "contrastText": "#fff",
-          "dark": "#1C9AEA",
+          "dark": "#1478C9",
           "light": "#1C9AEA",
           "main": "#1C9AEA",
         },
         "secondary": Object {
           "contrastText": "#fff",
-          "dark": "#c51162",
-          "light": "#ff4081",
-          "main": "#f50057",
+          "dark": "#BE1D1E",
+          "light": "#DD3628",
+          "main": "#DD3628",
         },
         "success": Object {
           "contrastText": "rgba(0, 0, 0, 0.87)",
-          "dark": "#388e3c",
-          "light": "#81c784",
-          "main": "#4caf50",
+          "dark": "#008566",
+          "light": "#00B969",
+          "main": "#00B969",
         },
         "text": Object {
           "disabled": "#BDBDBD",
@@ -527,7 +532,7 @@ exports[`PriusLabel Testing render successfully 1`] = `
     }
   }
 >
-  <PriusLabel
+  <Label
     size="small"
     text="example"
     theme="dark"
@@ -538,6 +543,6 @@ exports[`PriusLabel Testing render successfully 1`] = `
     >
       example
     </span>
-  </PriusLabel>
+  </Label>
 </ThemeProvider>
 `;

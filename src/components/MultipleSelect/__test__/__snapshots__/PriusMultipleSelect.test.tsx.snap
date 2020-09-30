@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusMultipleSelect Testing render successfully 1`] = `
+exports[`MultipleSelect Testing render successfully 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -532,7 +532,7 @@ exports[`PriusMultipleSelect Testing render successfully 1`] = `
     }
   }
 >
-  <PriusMultipleSelect
+  <MultipleSelect
     onChange={[MockFunction]}
     options={
       Array [
@@ -1193,8 +1193,10 @@ exports[`PriusMultipleSelect Testing render successfully 1`] = `
                       }
                       innerRef={[Function]}
                       isDisabled={false}
+                      isFocused={false}
                       isMulti={true}
                       isRtl={false}
+                      menuIsOpen={false}
                       options={
                         Array [
                           Object {
@@ -2405,6 +2407,6 @@ exports[`PriusMultipleSelect Testing render successfully 1`] = `
         </SelectContainer>
       </Select>
     </StateManager>
-  </PriusMultipleSelect>
+  </MultipleSelect>
 </ThemeProvider>
 `;
