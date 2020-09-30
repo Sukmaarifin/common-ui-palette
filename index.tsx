@@ -19,8 +19,8 @@ export * from './src/components/CardTemplate';
 export { default as Checkbox } from './src/components/Checkbox';
 export * from './src/components/Checkbox';
 
-export { default as CircularProgress } from './src/components/PriusCircularProgress';
-export * from './src/components/PriusCircularProgress';
+export { default as CircularProgress } from './src/components/CircularProgress';
+export * from './src/components/CircularProgress';
 
 export { default as ColorPicker } from './src/components/PriusColorPicker';
 export * from './src/components/PriusColorPicker';

@@ -1,25 +1,25 @@
 import React from 'react';
-import { CircularProgress } from '@material-ui/core';
+import { CircularProgress as CircularProgressUI } from '@material-ui/core';
 
-export type PriusCircularProgressProps = {
+export type CircularProgressProps = {
   isWithText?: boolean;
   size?: number;
   style?: React.CSSProperties;
   className?: string;
 };
 
-export function PriusCircularProgress({
+export function CircularProgress({
   isWithText = true,
   size = 50,
   style,
   className = '',
-}: PriusCircularProgressProps) {
+}: CircularProgressProps) {
   return (
     <div style={{ textAlign: 'center' }}>
-      <CircularProgress size={size} style={style} className={className} />
+      <CircularProgressUI size={size} style={style} className={className} />
       {isWithText ? <div>Memuat . . .</div> : null}
     </div>
   );
 }
 
-export default PriusCircularProgress;
+export default CircularProgress;

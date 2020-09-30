@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusCircularProgress Testing render successfully without props 1`] = `
+exports[`CircularProgress Testing render successfully without props 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -532,7 +532,7 @@ exports[`PriusCircularProgress Testing render successfully without props 1`] = `
     }
   }
 >
-  <PriusCircularProgress>
+  <CircularProgress>
     <div
       style={
         Object {
@@ -593,6 +593,6 @@ exports[`PriusCircularProgress Testing render successfully without props 1`] = `
         Memuat . . .
       </div>
     </div>
-  </PriusCircularProgress>
+  </CircularProgress>
 </ThemeProvider>
 `;

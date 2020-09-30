@@ -3,7 +3,7 @@ import CKEditor from 'ckeditor4-react';
 import { Grid, createStyles, makeStyles, Theme } from '@material-ui/core';
 import { useMutation } from 'react-apollo';
 
-import PriusCircularProgress from '../PriusCircularProgress';
+import CircularProgress from '../CircularProgress';
 import { FileType } from '../PriusImageUploader';
 import ButtonText from '../ButtonText';
 import { useSnackbar } from '../PriusSnackbar';
@@ -176,7 +176,7 @@ const PriusTextEditor = ({
             inputId="texteditor-input-image"
           >
             {loading && called ? (
-              <PriusCircularProgress size={10} isWithText={false} />
+              <CircularProgress size={10} isWithText={false} />
             ) : (
               'Unggah Gambar'
             )}

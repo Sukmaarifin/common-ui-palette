@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useMutation } from '@apollo/react-hooks';
 import CryptoJS from 'crypto-js';
 
-import PriusCircularProgress from '../PriusCircularProgress';
+import CircularProgress from '../CircularProgress';
 import usePersistedState from '../../helpers/usePersistedState';
 import {
   PRIUS_NAME,
@@ -181,7 +181,7 @@ const PriusSSSO = (props: any) => {
         props.children
       ) : (
         <div className={classes.container}>
-          <PriusCircularProgress size={80} />
+          <CircularProgress size={80} />
         </div>
       )}
     </TenantContext.Provider>

@@ -1,8 +1,8 @@
 import React from 'react';
-import PriusCircularProgress from '../../src/components/PriusCircularProgress';
+import CircularProgress from '../../src/components/CircularProgress';
 
-const PriusCircularProgressExample = () => {
-  return <PriusCircularProgress />;
+const CircularProgressExample = () => {
+  return <CircularProgress />;
 };
 
-export default PriusCircularProgressExample;
+export default CircularProgressExample;

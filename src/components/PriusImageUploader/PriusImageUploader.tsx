@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import clsx from 'clsx';
 
-import PriusCircularProgress from '../PriusCircularProgress';
+import CircularProgress from '../CircularProgress';
 import { TrashBinOutlinedIcon } from '../../icons';
 import { useSnackbar } from '../PriusSnackbar';
 import PriusThumbnail, {
@@ -86,7 +86,7 @@ const PriusImageUploader = ({
   return (
     <div>
       {isLoading ? (
-        <PriusCircularProgress />
+        <CircularProgress />
       ) : source ? (
         <React.Fragment>
           <div className={classes.deleteContainer}>

@@ -4,20 +4,20 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusCircularProgress, {
-  PriusCircularProgressProps,
-} from '../PriusCircularProgress';
+import CircularProgress, {
+  CircularProgressProps,
+} from '../CircularProgress';
 
-describe('PriusCircularProgress Testing', () => {
-  const customProps: PriusCircularProgressProps = {
+describe('CircularProgress Testing', () => {
+  const customProps: CircularProgressProps = {
     isWithText: true,
     size: 20,
   };
 
-  const render = (props?: PriusCircularProgressProps) => {
+  const render = (props?: CircularProgressProps) => {
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusCircularProgress {...props} />
+        <CircularProgress {...props} />
       </ThemeProvider>
     );
   };
