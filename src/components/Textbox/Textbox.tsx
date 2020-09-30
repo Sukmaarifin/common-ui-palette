@@ -28,7 +28,7 @@ const CustomTextbox = withStyles((theme: Theme) =>
   })
 )(TextField);
 
-export type PriusTextboxProps = {
+export type TextboxProps = {
   id?: string;
   placeholder?: string;
   multiline?: boolean;
@@ -40,7 +40,7 @@ export type PriusTextboxProps = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const PriusTextbox: React.FunctionComponent<PriusTextboxProps> = ({
+export const Textbox: React.FunctionComponent<TextboxProps> = ({
   id,
   placeholder,
   multiline = false,
@@ -69,4 +69,4 @@ export const PriusTextbox: React.FunctionComponent<PriusTextboxProps> = ({
   );
 };
 
-export default PriusTextbox;
+export default Textbox;

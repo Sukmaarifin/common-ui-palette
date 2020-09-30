@@ -4,11 +4,11 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusTextbox, { PriusTextboxProps } from '../PriusTextbox';
+import Textbox, { TextboxProps } from '../Textbox';
 
-describe('Prius textbox test', () => {
+describe('Textbox test', () => {
   const render = () => {
-    const props: PriusTextboxProps = {
+    const props: TextboxProps = {
       id: 'prius-textbox',
       placeholder: 'Typing',
       multiline: false,
@@ -21,7 +21,7 @@ describe('Prius textbox test', () => {
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusTextbox {...props} />
+        <Textbox {...props} />
       </ThemeProvider>
     );
   };
