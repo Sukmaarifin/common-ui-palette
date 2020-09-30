@@ -10,7 +10,7 @@ import { makeStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
 import { Grid, MenuItem } from '@material-ui/core';
 
 import { TenantContext } from '../PriusSSSO';
-import PriusMultipleSelect, { OptionType } from '../PriusMultipleSelect';
+import MultipleSelect, { OptionType } from '../MultipleSelect';
 import PriusSelect from '../PriusSelect';
 
 import { GetBrandsResponseType, GetBrandsParamType, BrandType } from './types';
@@ -167,7 +167,7 @@ function BrandDropdown({
 
   return (
     <ThemeProvider theme={theme}>
-      <PriusMultipleSelect
+      <MultipleSelect
         id={`${id}-select-brand`}
         isClearable={isClearable}
         isMulti={isMulti}

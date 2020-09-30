@@ -3,10 +3,10 @@ import { Typography } from '@material-ui/core';
 
 import Fieldset from '../Fieldset';
 import Input from '../InputNew';
-import PriusMultipleSelect, {
+import MultipleSelect, {
   OptionType,
   PriusActionMeta,
-} from '../PriusMultipleSelect';
+} from '../MultipleSelect';
 
 import { SEOType } from './types';
 import { TenantContext } from '../PriusSSSO';
@@ -110,7 +110,7 @@ const PriusSEO = ({
           </span>
         }
       >
-        <PriusMultipleSelect
+        <MultipleSelect
           isCreatable
           isDeletable
           id={inputId && `${inputId}-input-seoKeywords`}

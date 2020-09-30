@@ -3,17 +3,17 @@ import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Select from 'react-select';
-import CreatableSelect from 'react-select/creatable';
+import ReactCreatableSelect from 'react-select/creatable';
 
 import theme from '../../../styles/material-ui-theme';
 
-import PriusMultipleSelect, {
-  PriusMultipleSelectProps,
-} from '../PriusMultipleSelect';
-import PriusCreatableSelect from '../PriusCreatableSelect';
+import MultipleSelect, {
+  MultipleSelectProps,
+} from '../MultipleSelect';
+import CreatableSelect from '../CreatableSelect';
 
-describe('PriusMultipleSelect Testing', () => {
-  const customProps: PriusMultipleSelectProps = {
+describe('MultipleSelect Testing', () => {
+  const customProps: MultipleSelectProps = {
     placeholder: 'Pilih salah satu',
     options: [
       { label: 'San Jose Sharks', value: 'SJS', isDisabled: false },
@@ -23,10 +23,10 @@ describe('PriusMultipleSelect Testing', () => {
     onChange: jest.fn(),
   };
 
-  const render = (props: PriusMultipleSelectProps) => {
+  const render = (props: MultipleSelectProps) => {
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusMultipleSelect {...props} />
+        <MultipleSelect {...props} />
       </ThemeProvider>
     );
   };
@@ -42,10 +42,10 @@ describe('PriusMultipleSelect Testing', () => {
     expect(wrapper.find(Select)).toHaveLength(1);
   });
 
-  it('render `PriusCreatableSelect` that contain `CreatableSelect` from `react-select/creatable`', () => {
+  it('render `CreatableSelect` that contain `ReactCreatableSelect` from `react-select/creatable`', () => {
     const wrapper = render({ ...customProps, isCreatable: true });
 
-    const priusCreatableSelect = wrapper.find(PriusCreatableSelect);
-    expect(priusCreatableSelect.find(CreatableSelect)).toHaveLength(1);
+    const priusCreatableSelect = wrapper.find(CreatableSelect);
+    expect(priusCreatableSelect.find(ReactCreatableSelect)).toHaveLength(1);
   });
 });

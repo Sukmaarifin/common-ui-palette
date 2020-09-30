@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import PriusMultipleSelect from './PriusMultipleSelect';
+import MultipleSelect from './MultipleSelect';
 import { OptionType } from './types';
 
 export const ControlledComponent = () => {
@@ -11,7 +11,7 @@ export const ControlledComponent = () => {
   };
 
   return (
-    <PriusMultipleSelect
+    <MultipleSelect
       placeholder="Enter to create option"
       options={[
         { label: 'Option 1', value: '1', isDisabled: false },

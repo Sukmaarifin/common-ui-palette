@@ -12,14 +12,14 @@ import { Chip, MenuItem, Paper, Typography } from '@material-ui/core';
 
 import { CloseIcon, DropdownIcon } from '../../icons';
 import PriusTooltip from '../PriusTooltip';
-import PriusCreatableSelect from './PriusCreatableSelect';
+import PriusCreatableSelect from './CreatableSelect';
 
 import { OptionType } from './types';
-import { priusMultipleSelectCss } from './PriusMultipleSelectCss';
+import { multipleSelectCss } from './MultipleSelectCss';
 
 export type PriusActionMeta = ActionMeta;
 
-export type PriusMultipleSelectProps = {
+export type MultipleSelectProps = {
   backspaceRemoveValue?: boolean;
   blurInputOnSelect?: boolean;
   className?: string;
@@ -51,7 +51,7 @@ export type PriusMultipleSelectProps = {
   onInputChange?: (value: string, type: InputActionMeta) => void;
 };
 
-function PriusMultipleSelect({
+function MultipleSelect({
   backspaceRemoveValue = true,
   blurInputOnSelect = true,
   className,
@@ -81,8 +81,8 @@ function PriusMultipleSelect({
   onError,
   onFocus,
   onInputChange,
-}: PriusMultipleSelectProps) {
-  const classes = priusMultipleSelectCss();
+}: MultipleSelectProps) {
+  const classes = multipleSelectCss();
 
   if (isCreatable) {
     return (
@@ -172,7 +172,7 @@ function PriusMultipleSelect({
   );
 }
 
-export default PriusMultipleSelect;
+export default MultipleSelect;
 
 const NoOptionsMessage = () => <MenuItem disabled>No Options</MenuItem>;
 

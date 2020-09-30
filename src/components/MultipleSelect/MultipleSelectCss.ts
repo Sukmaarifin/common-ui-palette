@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
-export const priusMultipleSelectCss = makeStyles((theme: Theme) =>
+export const multipleSelectCss = makeStyles((theme: Theme) =>
   createStyles({
     control: {
       boxShadow: 'none !important',
