@@ -5,7 +5,7 @@ import cslx from 'clsx';
 
 import { CloseIcon } from '../../icons';
 
-import { PriusIdicatorLabelCss } from './PriusIndicatorLabelCss';
+import { IdicatorLabelCss } from './IndicatorLabelCss';
 
 export enum StatusUploadType {
   UPLOAD = 'UPLOAD',
@@ -14,7 +14,7 @@ export enum StatusUploadType {
   EMPTY = 'EMPTY',
 }
 
-export type PriusIndicatorLabelProps = {
+export type IndicatorLabelProps = {
   status: StatusUploadType;
   name: string;
   size?: number;
@@ -23,7 +23,7 @@ export type PriusIndicatorLabelProps = {
   id?: string;
 };
 
-const PriusIndicatorLabel: React.FC<PriusIndicatorLabelProps> = ({
+const IndicatorLabel: React.FC<IndicatorLabelProps> = ({
   status,
   name,
   size,
@@ -31,7 +31,7 @@ const PriusIndicatorLabel: React.FC<PriusIndicatorLabelProps> = ({
   onDelete,
   id,
 }) => {
-  const classes = PriusIdicatorLabelCss();
+  const classes = IdicatorLabelCss();
 
   const isError = status === StatusUploadType.FAILED;
   const isUploading = status === StatusUploadType.UPLOAD;
@@ -75,4 +75,4 @@ const PriusIndicatorLabel: React.FC<PriusIndicatorLabelProps> = ({
   );
 };
 
-export default PriusIndicatorLabel;
+export default IndicatorLabel;

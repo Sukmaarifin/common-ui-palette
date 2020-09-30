@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Grid } from '@material-ui/core';
 
 import uploadIcon from './UploadIcon.svg';
-import PriusIndicatorLabel, { StatusUploadType } from '../PriusIndicatorLabel';
+import IndicatorLabel, { StatusUploadType } from '../IndicatorLabel';
 
 import { FileUploaderCss } from './FileUploaderCss';
 
@@ -129,7 +129,7 @@ const PriusFileUploader = ({
             </Grid>
           </>
         ) : (
-          <PriusIndicatorLabel
+          <IndicatorLabel
             id={id}
             status={statusUpload}
             name={file.name}

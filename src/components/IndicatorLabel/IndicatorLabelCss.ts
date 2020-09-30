@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export const PriusIdicatorLabelCss = makeStyles(() => ({
+export const IdicatorLabelCss = makeStyles(() => ({
   container: {
     padding: 0,
     borderRadius: '3px',

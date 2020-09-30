@@ -55,8 +55,8 @@ export * from './components/FileUploader';
 export { default as ImageUploader } from './components/ImageUploader';
 export * from './components/ImageUploader';
 
-export { default as IndicatorLabel } from './components/PriusIndicatorLabel';
-export * from './components/PriusIndicatorLabel';
+export { default as IndicatorLabel } from './components/IndicatorLabel';
+export * from './components/IndicatorLabel';
 
 export { default as InfoBox } from './components/PriusInfoBox';
 export * from './components/PriusInfoBox';

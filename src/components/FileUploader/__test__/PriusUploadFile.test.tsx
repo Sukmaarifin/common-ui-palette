@@ -5,7 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
 import UploadFile, { FileUploaderProps } from '../FileUploader';
-import { StatusUploadType } from '../../PriusIndicatorLabel';
+import { StatusUploadType } from '../../IndicatorLabel';
 
 describe('UploadFile Testing', () => {
   const render = () => {
