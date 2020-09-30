@@ -3,7 +3,7 @@ import { Grid } from "@material-ui/core";
 import Backend from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 
-import PriusNavigationBar from "../PriusNavigationBar";
+import NavigationBar from "../NavigationBar";
 import Menu from "../Menu";
 import PriusTitle from "../PriusTitle";
 
@@ -45,7 +45,7 @@ export const MainContainer = (props: MainContainerPropType) => {
         <PriusTitle />
         <Menu />
         <Grid item md={12} style={{ width: "-webkit-fill-available" }}>
-          <PriusNavigationBar
+          <NavigationBar
             routes={route}
             name={`${firstName} ${lastName}`}
             userClick={logoutSSSO}

@@ -79,8 +79,8 @@ export * from './components/MultipleImage';
 export { default as MultipleSelect } from './components/MultipleSelect';
 export * from './components/MultipleSelect';
 
-export { default as NavigationBar } from './components/PriusNavigationBar';
-export * from './components/PriusNavigationBar';
+export { default as NavigationBar } from './components/NavigationBar';
+export * from './components/NavigationBar';
 
 export { default as Option } from './components/PriusOption';
 export * from './components/PriusOption';
