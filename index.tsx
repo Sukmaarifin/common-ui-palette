@@ -40,14 +40,14 @@ export * from './src/components/DateRangeInput';
 export { default as DraggableImage } from './src/components/DraggableImage';
 export * from './src/components/DraggableImage';
 
-export { default as Fieldset } from './src/components/PriusFieldset';
-export * from './src/components/PriusFieldset';
+export { default as Fieldset } from './src/components/Fieldset';
+export * from './src/components/Fieldset';
 
-export { default as Filter } from './src/components/PriusFilter';
-export * from './src/components/PriusFilter';
+export { default as Filter } from './src/components/Filter';
+export * from './src/components/Filter';
 
-export { default as Footer } from './src/components/PriusFooter';
-export * from './src/components/PriusFooter';
+export { default as Footer } from './src/components/Footer';
+export * from './src/components/Footer';
 
 export { default as FileUploader } from './src/components/PriusFileUploader';
 export * from './src/components/PriusFileUploader';

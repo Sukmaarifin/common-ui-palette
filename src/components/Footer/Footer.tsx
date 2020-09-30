@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-type PriusFooterProps = {
+type FooterProps = {
   children?: React.ReactElement;
 };
 
-function PriusFooter({ children }: PriusFooterProps) {
+function Footer({ children }: FooterProps) {
   const classes = useStyles();
 
   return (
@@ -37,4 +37,4 @@ function PriusFooter({ children }: PriusFooterProps) {
   );
 }
 
-export default PriusFooter;
+export default Footer;
