@@ -8,17 +8,17 @@ import {
 
 import PriusThumbnail from '../PriusThumbnail';
 
-export type PriusCardTemplateProps = {
+export type CardTemplateProps = {
   imageSource: string;
   title: string;
   description?: string;
 };
 
-function PriusCardTemplate({
+function CardTemplate({
   imageSource,
   title,
   description,
-}: PriusCardTemplateProps) {
+}: CardTemplateProps) {
   const matchesSmallDisplay = useMediaQuery('(max-width: 1366px)');
   return (
     <ListItem component="div" disableGutters style={{ padding: 0 }}>
@@ -44,4 +44,4 @@ function PriusCardTemplate({
   );
 }
 
-export default PriusCardTemplate;
+export default CardTemplate;

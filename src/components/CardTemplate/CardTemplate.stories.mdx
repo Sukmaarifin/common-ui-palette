@@ -2,17 +2,17 @@ import LinkTo from '@storybook/addon-links/react';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { Grid, ListItem } from '@material-ui/core';
 
-import PriusCardTemplate from './PriusCardTemplate';
+import CardTemplate from './CardTemplate';
 
 <Meta
-  component={PriusCardTemplate}
-  id="Components|PriusCardTemplate"
-  title="Components|PriusCardTemplate"
+  component={CardTemplate}
+  id="Components|CardTemplate"
+  title="Components|CardTemplate"
 />
 
-# PriusCardTemplate
+# CardTemplate
 
-`PriusCardTemplate` is a wrapper component consist of <LinkTo kind="Components|PriusThumbnail">PriusThumbnail</LinkTo> and [ListItemText](https://material-ui.com/api/list-item-text/) Material-UI.
+`CardTemplate` is a wrapper component consist of <LinkTo kind="Components|PriusThumbnail">PriusThumbnail</LinkTo> and [ListItemText](https://material-ui.com/api/list-item-text/) Material-UI.
 
 ## Usage
 
@@ -27,7 +27,7 @@ import PriusCardTemplate from './PriusCardTemplate';
             padding: '1rem',
           }}
         >
-          <PriusCardTemplate imageSource={''} title="Produk" />
+          <CardTemplate imageSource={''} title="Produk" />
         </ListItem>
       </Grid>
       <Grid item md={8}>
@@ -38,7 +38,7 @@ import PriusCardTemplate from './PriusCardTemplate';
             padding: '1rem',
           }}
         >
-          <PriusCardTemplate
+          <CardTemplate
             imageSource={''}
             title="Produk"
             description="SKU"
@@ -51,4 +51,4 @@ import PriusCardTemplate from './PriusCardTemplate';
 
 ## Props
 
-<Props of={PriusCardTemplate} />
+<Props of={CardTemplate} />

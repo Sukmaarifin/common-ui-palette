@@ -13,8 +13,8 @@ export * from './src/components/Card';
 export { default as CardDND } from './src/components/CardDND';
 export * from './src/components/CardDND';
 
-export { default as CardTemplate } from './src/components/PriusCardTemplate';
-export * from './src/components/PriusCardTemplate';
+export { default as CardTemplate } from './src/components/CardTemplate';
+export * from './src/components/CardTemplate';
 
 export { default as Checkbox } from './src/components/PriusCheckbox';
 export * from './src/components/PriusCheckbox';

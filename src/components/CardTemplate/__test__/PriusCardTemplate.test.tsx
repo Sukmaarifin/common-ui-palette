@@ -1,11 +1,11 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
-import Template, { PriusCardTemplateProps } from '../PriusCardTemplate';
+import Template, { CardTemplateProps } from '../CardTemplate';
 
 describe('Template Testing', () => {
   const render = () => {
-    const props: PriusCardTemplateProps = {
+    const props: CardTemplateProps = {
       imageSource:
         'https://cdn.shopify.com/s/files/1/1750/7921/products/19_Front.jpg?v=1559243865',
       title: 'nama',
