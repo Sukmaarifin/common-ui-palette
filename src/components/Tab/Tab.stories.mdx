@@ -1,7 +1,7 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 
 import PriusTab from './PriusTab';
-import PriusTabPanel from '../PriusTabPanel';
+import TabPanel from '../TabPanel';
 
 <Meta
   component={PriusTab}
@@ -13,7 +13,7 @@ import PriusTabPanel from '../PriusTabPanel';
 
 `PriusTab` is a component wrapper of [Tabs](https://material-ui.com/components/tabs/)
 to organize content and easy to explore and switch between different views.
-It uses `PriusTabPanel` as the [TabPanel](https://material-ui.com/api/tab-panel/). When the tab is activated, the corresponding panel is made visible, and all other panels are hidden.
+It uses `TabPanel` as the [TabPanel](https://material-ui.com/api/tab-panel/). When the tab is activated, the corresponding panel is made visible, and all other panels are hidden.
 
 ### Basic
 
@@ -31,15 +31,15 @@ It uses `PriusTabPanel` as the [TabPanel](https://material-ui.com/api/tab-panel/
         ]}
         centered
       />
-      <PriusTabPanel value={0} index={0} p={0}>
+      <TabPanel value={0} index={0} p={0}>
         Item One
-      </PriusTabPanel>
-      <PriusTabPanel value={0} index={1} p={0}>
+      </TabPanel>
+      <TabPanel value={0} index={1} p={0}>
         Item Two
-      </PriusTabPanel>
-      <PriusTabPanel value={0} index={2} p={0}>
+      </TabPanel>
+      <TabPanel value={0} index={2} p={0}>
         Item Three
-      </PriusTabPanel>
+      </TabPanel>
     </>
   </Story>
 </Preview>

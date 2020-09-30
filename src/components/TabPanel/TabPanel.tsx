@@ -1,19 +1,19 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
 
-interface PriusTabPanelProps {
+interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
   value: number;
   p?: number;
 }
 
-export default function PriusTabPanel({
+export default function TabPanel({
   value,
   index,
   children,
   p = 3,
-}: PriusTabPanelProps) {
+}: TabPanelProps) {
   return (
     <div
       role="tabpanel"
