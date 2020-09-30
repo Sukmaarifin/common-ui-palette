@@ -4,7 +4,7 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusInputGroup, { InputGroupProps } from '../PriusInputGroup';
+import InputGroup, { InputGroupProps } from '../InputGroup';
 import { ArrowRightIcon } from '../../../icons';
 
 describe('InputDropdwon Testing', () => {
@@ -21,7 +21,7 @@ describe('InputDropdwon Testing', () => {
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusInputGroup {...props} />
+        <InputGroup {...props} />
       </ThemeProvider>
     );
   };

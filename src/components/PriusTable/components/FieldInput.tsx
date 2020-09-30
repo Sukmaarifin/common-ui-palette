@@ -10,7 +10,7 @@ import NumberFormat from 'react-number-format';
 
 import Fieldset from '../../Fieldset';
 import InputComponent from '../../../components/InputNew';
-import PriusInputGroup from '../../PriusInputGroup';
+import InputGroup from '../../InputGroup';
 
 import { FieldProps } from '../../../components/PriusTable';
 
@@ -120,7 +120,7 @@ const FieldInput = ({
           helperText={isRequired ? (isError ? `${title} wajib diisi` : '') : ''}
         >
           {isInputPrice ? (
-            <PriusInputGroup
+            <InputGroup
               inputId={fieldId && `${fieldId}`}
               name="inputCurrency"
               leftLabel={leftLabel}
@@ -143,7 +143,7 @@ const FieldInput = ({
                   handleOnChange(ID, floatValue ? floatValue : 0);
                 }}
               />
-            </PriusInputGroup>
+            </InputGroup>
           ) : (
             <InputComponent
               disabled={isDisabled}

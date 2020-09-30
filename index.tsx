@@ -64,8 +64,8 @@ export * from './src/components/InfoBox';
 export { default as Input } from './src/components/InputNew';
 export * from './src/components/InputNew';
 
-export { default as InputGroup } from './src/components/PriusInputGroup';
-export * from './src/components/PriusInputGroup';
+export { default as InputGroup } from './src/components/InputGroup';
+export * from './src/components/InputGroup';
 
 export { default as Label } from './src/components/PriusLabel';
 export * from './src/components/PriusLabel';

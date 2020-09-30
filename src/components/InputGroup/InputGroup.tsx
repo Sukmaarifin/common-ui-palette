@@ -87,7 +87,7 @@ export interface InputGroupProps extends SelectProps {
   handleInputKeyDown?: (event: React.KeyboardEvent) => void;
 }
 
-function PriusInputGroup({
+function InputGroup({
   children,
   inputId,
   name,
@@ -186,4 +186,4 @@ function PriusInputGroup({
   );
 }
 
-export default PriusInputGroup;
+export default InputGroup;
