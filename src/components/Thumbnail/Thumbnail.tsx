@@ -38,7 +38,7 @@ const useStyles = makeStyles(() => ({
 
 export type ThumbnailSize = 'small' | 'medium' | 'big';
 
-export type PriusThumbnailProps = {
+export type ThumbnailProps = {
   defaultSource?: React.ReactNode;
   altText: string;
   className?: string;
@@ -50,7 +50,7 @@ export type PriusThumbnailProps = {
   id?: string;
 };
 
-const PriusThumbnail = ({
+const ThumbnailComponent = ({
   altText,
   className,
   defaultSource,
@@ -60,7 +60,7 @@ const PriusThumbnail = ({
   onError,
   onClick,
   id,
-}: PriusThumbnailProps) => {
+}: ThumbnailProps) => {
   const classes = useStyles();
 
   const [source, setSource] = useState<any>();
@@ -108,4 +108,4 @@ const PriusThumbnail = ({
   );
 };
 
-export default PriusThumbnail;
+export default ThumbnailComponent;

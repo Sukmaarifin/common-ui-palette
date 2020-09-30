@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
 import FieldImage, { FieldImageProps } from '../FieldImage';
-import { PriusThumbnailProps } from '../../../PriusThumbnail';
+import { ThumbnailProps } from '../../../Thumbnail';
 
 describe('FieldImage test', () => {
   const props: FieldImageProps = {
@@ -15,7 +15,7 @@ describe('FieldImage test', () => {
     size: 'small',
   };
 
-  const passedProps: PriusThumbnailProps = {
+  const passedProps: ThumbnailProps = {
     imageSource: '#some-link-to-image',
     altText: 'Super awesome product image',
     size: 'small',

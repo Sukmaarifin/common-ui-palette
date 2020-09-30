@@ -2,10 +2,10 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
-import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
+import Thumbnail, { ThumbnailProps } from '../Thumbnail';
 
-describe('PriusThumbnail test', () => {
-  const props: PriusThumbnailProps = {
+describe('Thumbnail test', () => {
+  const props: ThumbnailProps = {
     imageSource: '#some-cool-image.jpg',
     altText: 'Indonesia',
     size: 'small',
@@ -13,7 +13,7 @@ describe('PriusThumbnail test', () => {
 
   // snapshot
   it('renders correctly', () => {
-    const wrapper = mount(<PriusThumbnail {...props} />);
+    const wrapper = mount(<Thumbnail {...props} />);
 
     expect(toJSON(wrapper)).toMatchSnapshot();
   });

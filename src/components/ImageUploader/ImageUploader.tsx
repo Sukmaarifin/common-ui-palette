@@ -4,10 +4,10 @@ import clsx from 'clsx';
 import CircularProgress from '../CircularProgress';
 import { TrashBinOutlinedIcon } from '../../icons';
 import { useSnackbar } from '../PriusSnackbar';
-import PriusThumbnail, {
-  PriusThumbnailProps,
+import Thumbnail, {
+  ThumbnailProps,
   ThumbnailSize,
-} from '../PriusThumbnail';
+} from '../Thumbnail';
 
 import { useStyles } from './ImageUploaderCss';
 
@@ -16,7 +16,7 @@ export type FileType = {
   contentType: string;
 };
 
-export type ImageUploaderProps = Pick<PriusThumbnailProps, 'defaultSource'> & {
+export type ImageUploaderProps = Pick<ThumbnailProps, 'defaultSource'> & {
   altText: string;
   source: string;
   customSize?: ThumbnailSize;
@@ -97,7 +97,7 @@ const ImageUploader = ({
               onClick={onDelete}
             />
           </div>
-          <PriusThumbnail
+          <Thumbnail
             altText={altText}
             imageSource={source}
             size={customSize}
@@ -114,7 +114,7 @@ const ImageUploader = ({
             }}
             htmlFor={id}
           >
-            <PriusThumbnail
+            <Thumbnail
               defaultSource={defaultSource}
               altText={altText}
               className={clsx(

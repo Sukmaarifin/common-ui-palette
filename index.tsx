@@ -121,8 +121,8 @@ export * from './src/components/PriusTextEditor';
 export { default as Title } from './src/components/PriusTitle';
 export * from './src/components/PriusTitle';
 
-export { default as Thumbnail } from './src/components/PriusThumbnail';
-export * from './src/components/PriusThumbnail';
+export { default as Thumbnail } from './src/components/Thumbnail';
+export * from './src/components/Thumbnail';
 
 export { default as Tooltip } from './src/components/PriusTooltip';
 export * from './src/components/PriusTooltip';

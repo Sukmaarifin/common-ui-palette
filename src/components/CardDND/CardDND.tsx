@@ -4,7 +4,7 @@ import { Grid, Typography } from '@material-ui/core';
 import clsx from 'clsx';
 import { useDrag, useDrop, DropTargetMonitor } from 'react-dnd';
 
-import PriusThumbnail from '../PriusThumbnail';
+import Thumbnail from '../Thumbnail';
 import Option from '../Option';
 import Paper from '../Paper';
 import { camelize } from '../../helpers';
@@ -170,7 +170,7 @@ const PropsDND: React.FC<CardPropsDND> = ({
       >
         {thumbnail && (
           <Grid item>
-            <PriusThumbnail
+            <Thumbnail
               imageSource={thumbnail}
               altText={text}
               size="small"

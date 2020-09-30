@@ -6,7 +6,7 @@ import {
   useMediaQuery,
 } from '@material-ui/core';
 
-import PriusThumbnail from '../PriusThumbnail';
+import Thumbnail from '../Thumbnail';
 
 export type CardTemplateProps = {
   imageSource: string;
@@ -23,7 +23,7 @@ function CardTemplate({
   return (
     <ListItem component="div" disableGutters style={{ padding: 0 }}>
       <ListItemIcon>
-        <PriusThumbnail
+        <Thumbnail
           imageSource={imageSource}
           altText="Image of product variant"
           size="small"

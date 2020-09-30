@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useDrop, DropTargetMonitor, useDrag } from 'react-dnd';
 import { Grid, Typography } from '@material-ui/core';
 
-import PriusThumbnail, { PriusThumbnailProps } from '../PriusThumbnail';
+import Thumbnail, { ThumbnailProps } from '../Thumbnail';
 import { DragItemType } from '../CardDND';
 
 import { useStyles } from './DraggableImageCss';
@@ -11,7 +11,7 @@ const dndType = {
   IMAGE: 'image',
 };
 
-type DraggableImageProps = PriusThumbnailProps & {
+type DraggableImageProps = ThumbnailProps & {
   /* key in item */
   index: number;
   /* action on moving the image */
@@ -91,7 +91,7 @@ const DraggableImage = ({
   return (
     <Grid ref={ref} style={{ opacity }} className={classes.container}>
       <Grid id="imageHover">
-        <PriusThumbnail
+        <Thumbnail
           altText={altText}
           imageSource={imageSource}
           size={size}

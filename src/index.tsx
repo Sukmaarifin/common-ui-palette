@@ -120,8 +120,8 @@ export * from './components/Textbox';
 export { default as TextEditor } from './components/PriusTextEditor';
 export * from './components/PriusTextEditor';
 
-export { default as Thumbnail } from './components/PriusThumbnail';
-export * from './components/PriusThumbnail';
+export { default as Thumbnail } from './components/Thumbnail';
+export * from './components/Thumbnail';
 
 export { default as Title } from './components/PriusTitle';
 export * from './components/PriusTitle';

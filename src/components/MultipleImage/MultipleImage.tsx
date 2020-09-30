@@ -4,7 +4,7 @@ import { makeStyles, Theme, Grid } from '@material-ui/core';
 
 import { TrashBinOutlinedIcon } from '../../icons';
 import DraggableImage from '../DraggableImage';
-import { ThumbnailSize } from '../PriusThumbnail';
+import { ThumbnailSize } from '../Thumbnail';
 
 const useStyles = makeStyles((theme: Theme) => ({
   image: {

@@ -2,7 +2,7 @@ import React from 'react';
 import get from 'lodash/get';
 import { Grid } from '@material-ui/core';
 
-import PriusThumbnail, { ThumbnailSize } from '../../PriusThumbnail';
+import Thumbnail, { ThumbnailSize } from '../../Thumbnail';
 import { FieldProps } from '../types';
 
 export interface FieldImageProps extends FieldProps {
@@ -31,7 +31,7 @@ export function ImageField({
         flexShrink: fixedWidth ? 0 : 1,
       }}
     >
-      <PriusThumbnail imageSource={imageSource} altText={altText} size={size} />
+      <Thumbnail imageSource={imageSource} altText={altText} size={size} />
     </Grid>
   );
 }
