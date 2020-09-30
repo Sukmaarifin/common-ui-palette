@@ -7,8 +7,8 @@ export * from './components/BrandDropdown';
 export { default as ButtonText } from './components/ButtonText';
 export * from './components/ButtonText';
 
-export { default as Card } from './components/PriusCard';
-export * from './components/PriusCard';
+export { default as Card } from './components/Card';
+export * from './components/Card';
 
 export { default as CardDND } from './components/PriusCardDND';
 export * from './components/PriusCardDND';

@@ -3,11 +3,11 @@ import { mount } from 'enzyme';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusCard, { PriusCardProps } from '../PriusCard';
+import Card, { CardProps } from '../Card';
 import { AddCircleIcon } from '../../../icons';
 
-describe('PriusCard Testing', () => {
-  const mockProps: PriusCardProps = {
+describe('Card Testing', () => {
+  const mockProps: CardProps = {
     icon: <AddCircleIcon />,
     title: 'Tambah',
     desc: 'Klik disini untuk menambah',
@@ -16,7 +16,7 @@ describe('PriusCard Testing', () => {
   it('render with required props', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
-        <PriusCard {...mockProps} />
+        <Card {...mockProps} />
       </ThemeProvider>
     );
     expect(
@@ -29,7 +29,7 @@ describe('PriusCard Testing', () => {
   it('render with label Coming Soon', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
-        <PriusCard label="Coming Soon" {...mockProps} />
+        <Card label="Coming Soon" {...mockProps} />
       </ThemeProvider>
     );
     expect(wrapper.find('PriusLabel').first().text()).toStrictEqual(
@@ -43,10 +43,10 @@ describe('PriusCard Testing', () => {
 
     const wrapper = mount(
       <ThemeProvider theme={theme}>
-        <PriusCard onClick={mockFunction} {...mockProps} />
+        <Card onClick={mockFunction} {...mockProps} />
       </ThemeProvider>
     );
-    // user simulate click on PriusCard
+    // user simulate click on Card
     wrapper.simulate('click');
 
     expect(window.alert).toBeCalledWith('card clicked');

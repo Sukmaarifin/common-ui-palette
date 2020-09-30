@@ -5,9 +5,9 @@ import { Grid, Typography } from '@material-ui/core';
 import PriusPaper from '../PriusPaper';
 import PriusLabel from '../PriusLabel';
 
-import { useStyles } from './PriusCardCss';
+import { useStyles } from './CardCss';
 
-export type PriusCardProps = {
+export type CardProps = {
   className?: string;
   desc: string;
   icon: JSX.Element;
@@ -17,7 +17,7 @@ export type PriusCardProps = {
   onClick?: () => void;
 };
 
-export function PriusCard({
+export function Card({
   className,
   desc,
   icon,
@@ -25,7 +25,7 @@ export function PriusCard({
   label,
   title,
   onClick,
-}: PriusCardProps) {
+}: CardProps) {
   const classes = useStyles();
 
   const iconWithClasses = React.cloneElement(icon, {
@@ -64,4 +64,4 @@ export function PriusCard({
   );
 }
 
-export default PriusCard;
+export default Card;

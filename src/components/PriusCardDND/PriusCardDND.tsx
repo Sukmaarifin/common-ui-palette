@@ -21,7 +21,7 @@ export type DragItemType = {
   type: string;
 };
 
-export type CardProps = {
+export type CardPropsDND = {
   /* ID of item */
   ID: string;
   /* First text / title */
@@ -50,7 +50,7 @@ export type CardProps = {
   metaId?: string;
 };
 
-const PriusCardDND: React.FC<CardProps> = ({
+const PriusCardDND: React.FC<CardPropsDND> = ({
   ID,
   text,
   thumbnail,

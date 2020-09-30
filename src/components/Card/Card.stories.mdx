@@ -2,18 +2,18 @@ import LinkTo from '@storybook/addon-links/react';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { Grid } from '@material-ui/core';
 
-import PriusCard from './index';
+import Card from './index';
 import { MembershipOutlinedIcon, CashbackIcon } from '../../icons';
 
 <Meta
-  component={PriusCard}
-  id="Components|PriusCard"
-  title="Components|PriusCard"
+  component={Card}
+  id="Components|Card"
+  title="Components|Card"
 />
 
-# PriusCard
+# Card
 
-`PriusCard` is a custom combination component between <LinkTo kind="Components|PriusPaper">PriusPaper</LinkTo> and <LinkTo kind="Components|PriusLabel">PriusLabel</LinkTo>.
+`Card` is a custom combination component between <LinkTo kind="Components|PriusPaper">PriusPaper</LinkTo> and <LinkTo kind="Components|PriusLabel">PriusLabel</LinkTo>.
 
 ## Usage
 
@@ -24,7 +24,7 @@ In this case, `icon` is required based on the design palette. If you didn't pass
 <Preview>
   <Story name="Basic">
     <Grid md={6}>
-      <PriusCard
+      <Card
         icon={<MembershipOutlinedIcon />}
         title="Discount"
         desc="Berlaku di BukaLapak, Shopee, Tokopedia, dan LAZADA"
@@ -42,14 +42,14 @@ In this case, `icon` is required based on the design palette. If you didn't pass
   <Story name="Disabled">
     <Grid container spacing={8}>
       <Grid item md={5}>
-        <PriusCard
+        <Card
           icon={<MembershipOutlinedIcon />}
           title="Discount"
           desc="Berlaku di BukaLapak, Shopee, Tokopedia, dan LAZADA"
         />
       </Grid>
       <Grid item md={5}>
-        <PriusCard
+        <Card
           icon={<CashbackIcon />}
           title="Cashback"
           desc="Berlaku di BukaLapak, Shopee, Tokopedia, dan LAZADA"
@@ -62,4 +62,4 @@ In this case, `icon` is required based on the design palette. If you didn't pass
 
 ## Props
 
-<Props of={PriusCard} />
+<Props of={Card} />
