@@ -7,7 +7,7 @@ import React, { CSSProperties } from 'react';
 import clsx from 'clsx';
 import { Tab, Tabs } from '@material-ui/core';
 
-import { useStyles } from './PriusTabCss';
+import { useStyles } from './TabCss';
 
 export type TabsType = 'standard' | 'scrollable';
 
@@ -17,7 +17,7 @@ export type TabMenu = {
   disabled: boolean;
 };
 
-export type PriusTabProps = {
+export type TabProps = {
   activeTab: string | number;
   className?: string;
   style?: CSSProperties;
@@ -27,7 +27,7 @@ export type PriusTabProps = {
   id?: string;
 };
 
-export const PriusTab = ({
+export const TabComponent = ({
   activeTab,
   className,
   onChange,
@@ -35,7 +35,7 @@ export const PriusTab = ({
   id,
   variant = 'standard',
   ...props
-}: PriusTabProps) => {
+}: TabProps) => {
   const classes = useStyles();
 
   return (
@@ -67,4 +67,4 @@ export const PriusTab = ({
   );
 };
 
-export default PriusTab;
+export default TabComponent;

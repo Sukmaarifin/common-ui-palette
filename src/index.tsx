@@ -105,8 +105,8 @@ export * from './components/PriusSnackbar';
 export { default as SSSO } from './components/SSSO';
 export * from './components/SSSO';
 
-export { default as Tab } from './components/PriusTab';
-export * from './components/PriusTab';
+export { default as Tab } from './components/Tab';
+export * from './components/Tab';
 
 export { default as Table } from './components/PriusTable';
 export * from './components/PriusTable';

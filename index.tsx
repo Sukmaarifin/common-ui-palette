@@ -103,8 +103,8 @@ export * from './src/components/SSSO';
 export { default as Select } from './src/components/Select';
 export * from './src/components/Select';
 
-export { default as Tab } from './src/components/PriusTab';
-export * from './src/components/PriusTab';
+export { default as Tab } from './src/components/Tab';
+export * from './src/components/Tab';
 
 export { default as Table } from './src/components/PriusTable';
 export * from './src/components/PriusTable';
