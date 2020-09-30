@@ -8,9 +8,9 @@ import Backdrop from '../Backdrop';
 import { DateRangeType } from '../../typings';
 import { FilterItemType, FilterProps } from './types';
 
-import { FilterCss } from './PriusFilterCss';
+import { FilterCss } from './FilterCss';
 
-const PriusFilter = ({
+const FilterComponent = ({
   date,
   displayDate = false,
   filterData,
@@ -284,7 +284,7 @@ const PriusFilter = ({
   );
 };
 
-export default PriusFilter;
+export default FilterComponent;
 
 const generateFilterFields = (
   filterItems: Array<FilterItemType>

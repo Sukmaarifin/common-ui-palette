@@ -43,8 +43,8 @@ export * from './components/DraggableImage';
 export { default as Fieldset } from './components/Fieldset';
 export * from './components/Fieldset';
 
-export { default as Filter } from './components/PriusFilter';
-export * from './components/PriusFilter';
+export { default as Filter } from './components/Filter';
+export * from './components/Filter';
 
 export { default as Footer } from './components/PriusFooter';
 export * from './components/PriusFooter';
