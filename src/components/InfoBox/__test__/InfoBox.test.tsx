@@ -4,18 +4,18 @@ import toJSON from 'enzyme-to-json';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 import theme from '../../../styles/material-ui-theme';
-import PriusInfoBox, { PriusInfoBoxProps } from '../index';
+import InfoBox, { InfoBoxProps } from '../index';
 
-describe('PriusInfoBox Testing', () => {
+describe('InfoBox Testing', () => {
   const render = () => {
-    const props: PriusInfoBoxProps = {
+    const props: InfoBoxProps = {
       title: 'Info',
       message: <p>This is an info message.</p>,
     };
 
     return mount(
       <ThemeProvider theme={theme}>
-        <PriusInfoBox {...props} />
+        <InfoBox {...props} />
       </ThemeProvider>
     );
   };

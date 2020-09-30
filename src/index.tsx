@@ -58,8 +58,8 @@ export * from './components/ImageUploader';
 export { default as IndicatorLabel } from './components/IndicatorLabel';
 export * from './components/IndicatorLabel';
 
-export { default as InfoBox } from './components/PriusInfoBox';
-export * from './components/PriusInfoBox';
+export { default as InfoBox } from './components/InfoBox';
+export * from './components/InfoBox';
 
 export { default as Input } from './components/PriusInputNew';
 export * from './components/PriusInputNew';

@@ -34,13 +34,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export type PriusInfoBoxProps = {
+export type InfoBoxProps = {
   action?: React.ReactNode;
   message: React.ReactNode;
   title?: string;
 };
 
-const PriusInfoBox = ({ action, message, title }: PriusInfoBoxProps) => {
+const InfoBox = ({ action, message, title }: InfoBoxProps) => {
   const classes = useStyles();
 
   return (
@@ -68,4 +68,4 @@ const PriusInfoBox = ({ action, message, title }: PriusInfoBoxProps) => {
   );
 };
 
-export default PriusInfoBox;
+export default InfoBox;
