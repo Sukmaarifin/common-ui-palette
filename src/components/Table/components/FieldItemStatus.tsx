@@ -8,7 +8,7 @@ import { Grid } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
 import { CheckIcon, CloseIcon } from '../../../icons';
-import { FieldProps } from '../../../components/PriusTable/types';
+import { FieldProps } from '../types';
 
 const useStyles = makeStyles((theme: Theme) => ({
   container: {

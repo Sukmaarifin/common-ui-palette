@@ -9,8 +9,8 @@ import { Grid, Button } from '@material-ui/core';
 import LinkTo from '@storybook/addon-links/react';
 
 import { MergeOutlinedIcon } from '../../../icons/';
-import PriusTable from '../PriusTable';
-import ShadowPriusTable from './ShadowPriusTable';
+import Table from '../Table';
+import ShadowTable from './ShadowTable';
 import {
   FieldImage,
   FieldItemStatus,
@@ -22,14 +22,14 @@ import {
 import * as stories from './Stories';
 
 <Meta
-  component={PriusTable}
-  id="Components|PriusTable"
-  title="Components|PriusTable"
+  component={Table}
+  id="Components|Table"
+  title="Components|Table"
 />
 
-# PriusTable
+# Table
 
-`PriusTable` can be used to display set of data as rows and columns.
+`Table` can be used to display set of data as rows and columns.
 
 ---
 
@@ -39,22 +39,22 @@ import * as stories from './Stories';
 
 ## Usage
 
-Here are some common usage of `PriusTable`
+Here are some common usage of `Table`
 
 ```tsx
-import PriusTable, {
+import Table, {
   FieldImage,
   FieldItemStatus,
   FieldNumber,
   FieldStatus,
   FieldText,
-} from 'path/to/PriusTable';
+} from 'path/to/Table';
 ```
 
 ### `Field` Mechanism
 
-`PriusTable` uses `Field` component mechanism to set table structure.
-Below are the default `Field` components supported by`PriusTable`:
+`Table` uses `Field` component mechanism to set table structure.
+Below are the default `Field` components supported by`Table`:
 
 - **`FieldImage`** to show image thumbnail
 
@@ -76,10 +76,10 @@ Below are the default `Field` components supported by`PriusTable`:
 
   <Props of={FieldText} />
 
-You can also make your own custom `Field` component. In order to be compatible with the `PriusTable`, those custom `Field` should implements/extends the `FieldProps` type.
+You can also make your own custom `Field` component. In order to be compatible with the `Table`, those custom `Field` should implements/extends the `FieldProps` type.
 
 ```tsx
-import { FieldProps } from "path/to/PriusTable";
+import { FieldProps } from "path/to/Table";
 
 type CustomFieldProps = FieldProps & {
   ...
@@ -99,4 +99,4 @@ function CustomField(props: CustomFieldProps) {
 
 ## Props
 
-<Props of={ShadowPriusTable} exclude="classes" />
+<Props of={ShadowTable} exclude="classes" />

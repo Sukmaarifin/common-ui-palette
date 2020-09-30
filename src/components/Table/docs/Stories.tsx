@@ -1,11 +1,11 @@
 import React from 'react';
 
-import PriusTable from '../PriusTable';
+import Table from '../Table';
 import { FieldImage, FieldNumber, FieldText } from '../index';
 
 export const basic = () => {
   return (
-    <PriusTable
+    <Table
       fields={[
         <FieldImage
           source="imageURLs[0]"
@@ -130,7 +130,7 @@ export const basic = () => {
 };
 
 export const basicCode = `
-<PriusTable
+<Table
   fields={[
     <FieldImage
       source="imageURLs[0]"
@@ -253,5 +253,5 @@ export const basicCode = `
 />`;
 
 export default {
-  title: 'PriusTable',
+  title: 'Table',
 };

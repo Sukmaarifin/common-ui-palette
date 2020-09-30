@@ -6,7 +6,7 @@ import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 
 import TableRow, { RowData } from './TableRow';
-import { PriusTableCss } from './PriusTableCss';
+import { TableCss } from './TableCss';
 import TablePagination from './TablePagination';
 import ButtonText from '../ButtonText';
 import { SortDataType } from './types';
@@ -39,7 +39,7 @@ export interface TableData extends RowData {
 
 export type TableType = 'card' | 'dense';
 
-export type PriusTableState = {
+export type TableState = {
   // expanded rows index, -1 means no expanded rows
   expandedRow: number;
   // selected rows index
@@ -50,7 +50,7 @@ export type PriusTableState = {
   page: number;
 };
 
-export type PriusTableBaseProps = {
+export type TableBaseProps = {
   // field inside burger button
   burgerFields?: Array<any>;
   // fields type of collapsed element
@@ -85,14 +85,14 @@ export type PriusTableBaseProps = {
   placeholder?: string;
 };
 
-export type PriusTableProps = PriusTableBaseProps &
-  WithStyles<typeof PriusTableCss>;
+export type TableProps = TableBaseProps &
+  WithStyles<typeof TableCss>;
 
-export class PriusTable extends React.Component<
-  PriusTableProps,
-  PriusTableState
+export class TableComponent extends React.Component<
+  TableProps,
+  TableState
 > {
-  state: PriusTableState = {
+  state: TableState = {
     expandedRow: -1,
     selectedRows: this.props.selectedRows || [],
     rowsPerPage: 25,
@@ -320,4 +320,4 @@ export class PriusTable extends React.Component<
   }
 }
 
-export default withStyles(PriusTableCss)(PriusTable);
+export default withStyles(TableCss)(TableComponent);

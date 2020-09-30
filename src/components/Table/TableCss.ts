@@ -1,6 +1,6 @@
 import { createStyles, Theme } from '@material-ui/core/styles';
 
-export const PriusTableCss = (theme: Theme) =>
+export const TableCss = (theme: Theme) =>
   createStyles({
     header: {
       color: 'rgba(0, 0, 0, 0.87)',

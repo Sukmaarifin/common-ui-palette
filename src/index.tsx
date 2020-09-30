@@ -108,8 +108,8 @@ export * from './components/SSSO';
 export { default as Tab } from './components/Tab';
 export * from './components/Tab';
 
-export { default as Table } from './components/PriusTable';
-export * from './components/PriusTable';
+export { default as Table } from './components/Table';
+export * from './components/Table';
 
 export { default as TabPanel } from './components/PriusTabPanel';
 export * from './components/PriusTabPanel';

@@ -9,10 +9,10 @@ import { Grid } from '@material-ui/core';
 import NumberFormat from 'react-number-format';
 
 import Fieldset from '../../Fieldset';
-import InputComponent from '../../../components/InputNew';
+import InputComponent from '../../InputNew';
 import InputGroup from '../../InputGroup';
 
-import { FieldProps } from '../../../components/PriusTable';
+import { FieldProps } from '..';
 
 type FieldInputProps = {
   handleOnChange: (ID: string, input: React.ReactText) => void;

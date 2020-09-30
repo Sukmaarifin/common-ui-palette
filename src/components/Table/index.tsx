@@ -1,5 +1,5 @@
-export { default } from './PriusTable';
-export * from './PriusTable';
+export { default } from './Table';
+export * from './Table';
 
 export { default as TablePagination } from './TablePagination';
 export * from './TablePagination';
