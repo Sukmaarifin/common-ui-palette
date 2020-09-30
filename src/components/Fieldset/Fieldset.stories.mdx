@@ -8,19 +8,19 @@ import {
 import { Grid, MenuItem } from '@material-ui/core';
 import LinkTo from '@storybook/addon-links/react';
 
-import PriusFieldset from './PriusFieldset';
+import Fieldset from './Fieldset';
 import Input from '../InputNew';
 import PriusSelect from '../PriusSelect';
 
 <Meta
-  component={PriusFieldset}
-  id="Components|PriusFieldset"
-  title="Components|PriusFieldset"
+  component={Fieldset}
+  id="Components|Fieldset"
+  title="Components|Fieldset"
 />
 
-# PriusFieldset
+# Fieldset
 
-`PriusFieldset` is a simple wrapper component consist of [FormControl](https://material-ui.com/api/form-control/#formcontrol-api), [InputLabel](https://material-ui.com/api/input-label/#inputlabel-api), [FormHelperText](https://material-ui.com/api/form-helper-text/#formhelpertext-api), and `PriusTooltip`.
+`Fieldset` is a simple wrapper component consist of [FormControl](https://material-ui.com/api/form-control/#formcontrol-api), [InputLabel](https://material-ui.com/api/input-label/#inputlabel-api), [FormHelperText](https://material-ui.com/api/form-helper-text/#formhelpertext-api), and `PriusTooltip`.
 It provides control for the form elements.
 
 ## Usage
@@ -33,17 +33,17 @@ You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`
   <Story name="Basic">
     <Grid container spacing={5}>
       <Grid item md={6}>
-        <PriusFieldset fullWidth inputId="input-email" label="Email">
+        <Fieldset fullWidth inputId="input-email" label="Email">
           <Input
             id="input-email"
             name="email"
             placeholder="some@email.com"
             type="email"
           />
-        </PriusFieldset>
+        </Fieldset>
       </Grid>
       <Grid item md={6}>
-        <PriusFieldset
+        <Fieldset
           fullWidth
           helperText="Lorem ipsum color dolot sit amet"
           inputId="input-currency"
@@ -62,7 +62,7 @@ You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`
               Japanese Yen
             </MenuItem>
           </PriusSelect>
-        </PriusFieldset>
+        </Fieldset>
       </Grid>
     </Grid>
   </Story>
@@ -70,13 +70,13 @@ You can put native form elements (e.g. `<input />`, `<select />`, `<textarea />`
 
 ### Status
 
-You can change `status` props to provide a semantic state to the `PriusFieldset`.
+You can change `status` props to provide a semantic state to the `Fieldset`.
 
 <Preview>
   <Story name="Status">
     <Grid container spacing={5}>
       <Grid item md={6}>
-        <PriusFieldset
+        <Fieldset
           fullWidth
           helperText="Lorem ipsum color dolot"
           inputId="input-email-2"
@@ -90,10 +90,10 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
             placeholder="some@email.com"
             type="email"
           />
-        </PriusFieldset>
+        </Fieldset>
       </Grid>
       <Grid item md={6}>
-        <PriusFieldset
+        <Fieldset
           fullWidth
           helperText="Lorem ipsum color dolot"
           inputId="input-email-3"
@@ -107,7 +107,7 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
             placeholder="some@email.com"
             type="email"
           />
-        </PriusFieldset>
+        </Fieldset>
       </Grid>
     </Grid>
   </Story>
@@ -115,7 +115,7 @@ You can change `status` props to provide a semantic state to the `PriusFieldset`
 
 ## Props
 
-<Props of={PriusFieldset} />
+<Props of={Fieldset} />
 
 ## Related
 

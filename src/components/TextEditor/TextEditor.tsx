@@ -55,7 +55,7 @@ export type TextEditorProps = {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const PriusTextEditor = ({
+const TextEditor = ({
   data,
   extraPlugins = DEFAULT_EXTRA_PLUGINS,
   height = DEFAULT_HEIGHT,
@@ -199,4 +199,4 @@ const PriusTextEditor = ({
   );
 };
 
-export default PriusTextEditor;
+export default TextEditor;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PriusFieldset test renders without error 1`] = `
+exports[`Fieldset test renders without error 1`] = `
 <ThemeProvider
   theme={
     Object {
@@ -527,7 +527,7 @@ exports[`PriusFieldset test renders without error 1`] = `
     }
   }
 >
-  <PriusFieldset
+  <Fieldset
     helperText="Lorem ipsum color dolot"
     inputId="input-email"
     label="Email"
@@ -1168,6 +1168,6 @@ exports[`PriusFieldset test renders without error 1`] = `
         </div>
       </ForwardRef(FormControl)>
     </WithStyles(ForwardRef(FormControl))>
-  </PriusFieldset>
+  </Fieldset>
 </ThemeProvider>
 `;

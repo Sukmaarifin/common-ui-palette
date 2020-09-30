@@ -115,8 +115,8 @@ export * from './src/components/TabPanel';
 export { default as Textbox } from './src/components/Textbox';
 export * from './src/components/Textbox';
 
-export { default as TextEditor } from './src/components/PriusTextEditor';
-export * from './src/components/PriusTextEditor';
+export { default as TextEditor } from './src/components/TextEditor';
+export * from './src/components/TextEditor';
 
 export { default as Title } from './src/components/PriusTitle';
 export * from './src/components/PriusTitle';

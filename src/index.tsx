@@ -117,8 +117,8 @@ export * from './components/TabPanel';
 export { default as Textbox } from './components/Textbox';
 export * from './components/Textbox';
 
-export { default as TextEditor } from './components/PriusTextEditor';
-export * from './components/PriusTextEditor';
+export { default as TextEditor } from './components/TextEditor';
+export * from './components/TextEditor';
 
 export { default as Thumbnail } from './components/Thumbnail';
 export * from './components/Thumbnail';

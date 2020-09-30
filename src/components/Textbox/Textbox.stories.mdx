@@ -1,24 +1,24 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import LinkTo from '@storybook/addon-links/react';
 
-import PriusTextbox from './PriusTextbox';
-import PriusFieldset from '../PriusFieldset';
+import Textbox from './Textbox';
+import Fieldset from '../Fieldset';
 
 <Meta
-  component={PriusTextbox}
-  id="Components|PriusTextbox"
-  title="Components|PriusTextbox"
+  component={Textbox}
+  id="Components|Textbox"
+  title="Components|Textbox"
 />
 
-# PriusTextbox
+# Textbox
 
-`PriusTextbox` is a component provides a simple wrapper of
+`Textbox` is a component provides a simple wrapper of
 [TextField](https://material-ui.com/components/text-fields/)
 for editing, displaying, or entering plain text including a title, input and help text with custom styles.
 
 ## Usage
 
-Should be wrapped inside `PriusFieldset` or any other native component like `<label/>`.
+Should be wrapped inside `Fieldset` or any other native component like `<label/>`.
 
 ### Basic
 
@@ -26,7 +26,7 @@ Should be wrapped inside `PriusFieldset` or any other native component like `<la
   <Story name="Basic">
     <>
       <label for="prius-textbox">Input Paragraph</label>
-      <PriusTextbox
+      <Textbox
         id="prius-textbox"
         placeholder="Your text here"
         multiline
@@ -41,12 +41,12 @@ Should be wrapped inside `PriusFieldset` or any other native component like `<la
 
 ### Custom Validation
 
-You can change `isError` props to provide a semantic state to the `PriusTextbox`.
-You can combine with `PriusFieldset` as a wrapper to provide feedback to the user about the error.
+You can change `isError` props to provide a semantic state to the `Textbox`.
+You can combine with `Fieldset` as a wrapper to provide feedback to the user about the error.
 
 <Preview>
   <Story name="Custom Validation">
-    <PriusFieldset
+    <Fieldset
       fullWidth
       label="Label"
       helperText="Lorem ipsum color dolot sit amet"
@@ -54,7 +54,7 @@ You can combine with `PriusFieldset` as a wrapper to provide feedback to the use
       tooltipText="Lorem ipsum color dolor sit amet"
       status="error"
     >
-      <PriusTextbox
+      <Textbox
         id="prius-textbox-2"
         placeholder="Your text here"
         multiline
@@ -64,14 +64,14 @@ You can combine with `PriusFieldset` as a wrapper to provide feedback to the use
         isError={true}
         onChange={() => void 0}
       />
-    </PriusFieldset>
+    </Fieldset>
   </Story>
 </Preview>
 
 ## Props
 
-<Props of={PriusTextbox} />
+<Props of={Textbox} />
 
 ## Related
 
-- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>
+- <LinkTo kind="Components|Fieldset">Fieldset</LinkTo>

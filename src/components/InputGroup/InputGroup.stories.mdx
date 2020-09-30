@@ -10,7 +10,7 @@ import LinkTo from '@storybook/addon-links/react';
 import { InputBase } from '@material-ui/core';
 
 import { ArrowRightIcon } from '../../icons';
-import PriusFieldset from '../PriusFieldset';
+import Fieldset from '../Fieldset';
 import PriusInputGroup from './index';
 
 <Meta
@@ -33,7 +33,7 @@ To use `PriusInputGroup` that contains dropdown is shown below. Function onChang
 <Preview>
   <Story name="Basic">
     <>
-      <PriusFieldset inputId="min-buyer" label="Masukkan Panjang Kain">
+      <Fieldset inputId="min-buyer" label="Masukkan Panjang Kain">
         <PriusInputGroup
           valueDropdown="cm"
           valueInput="90"
@@ -41,7 +41,7 @@ To use `PriusInputGroup` that contains dropdown is shown below. Function onChang
           handleInput={(event) => console.log(event)}
           handleDropdown={(event) => console.log(event.target.value)}
         />
-      </PriusFieldset>
+      </Fieldset>
     </>
   </Story>
 </Preview>
@@ -53,7 +53,7 @@ Else if you want to pass your own `children` component as seen below.
 <Preview>
   <Story name="Children">
     <>
-      <PriusFieldset inputId="min-buyer" label="Masukkan Dimensi Barang">
+      <Fieldset inputId="min-buyer" label="Masukkan Dimensi Barang">
         <PriusInputGroup
           valueDropdown="cm"
           dropdownItem={['cm', 'dm', 'm']}
@@ -66,7 +66,7 @@ Else if you want to pass your own `children` component as seen below.
             <InputBase value={10} />
           </>
         </PriusInputGroup>
-      </PriusFieldset>
+      </Fieldset>
     </>
   </Story>
 </Preview>
@@ -77,5 +77,5 @@ Else if you want to pass your own `children` component as seen below.
 
 ## Related
 
-- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>
+- <LinkTo kind="Components|Fieldset">Fieldset</LinkTo>
 - <LinkTo kind="Components|PriusInput">PriusInput</LinkTo>

@@ -527,7 +527,7 @@ exports[`Prius textbox test render successfully 1`] = `
     }
   }
 >
-  <PriusTextbox
+  <Textbox
     id="prius-textbox"
     multiline={false}
     name="Prius-Textbox"
@@ -813,6 +813,6 @@ exports[`Prius textbox test render successfully 1`] = `
         </WithStyles(ForwardRef(TextField))>
       </WithStyles(WithStyles(ForwardRef(TextField)))>
     </div>
-  </PriusTextbox>
+  </Textbox>
 </ThemeProvider>
 `;

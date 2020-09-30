@@ -8,7 +8,7 @@ import {
 import { Button, MenuItem } from '@material-ui/core';
 import LinkTo from '@storybook/addon-links/react';
 
-import PriusFieldset from '../PriusFieldset';
+import Fieldset from '../Fieldset';
 import PriusInput from './PriusInput';
 
 <Meta
@@ -23,21 +23,21 @@ import PriusInput from './PriusInput';
 
 ## Usage
 
-`PriusInput` usage acts the same as [InputBase](https://material-ui.com/api/input-base/#inputbase-api) and so all props are inherited from there. Should be wrapped inside `PriusFieldset` or any other native component like `<label/>`.
+`PriusInput` usage acts the same as [InputBase](https://material-ui.com/api/input-base/#inputbase-api) and so all props are inherited from there. Should be wrapped inside `Fieldset` or any other native component like `<label/>`.
 
 ### Basic
 
 <Preview>
   <Story name="Basic">
     <>
-      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+      <Fieldset inputId="min-buyer" label="Min. Pembelian">
         <PriusInput
           name="name"
           type="text"
           id="min-buyer"
           placeholder="50,000"
         />
-      </PriusFieldset>
+      </Fieldset>
     </>
   </Story>
 </Preview>
@@ -47,7 +47,7 @@ import PriusInput from './PriusInput';
 <Preview>
   <Story name="StartAdornment">
     <>
-      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+      <Fieldset inputId="min-buyer" label="Min. Pembelian">
         <PriusInput
           name="name"
           type="text"
@@ -55,7 +55,7 @@ import PriusInput from './PriusInput';
           placeholder="50,000"
           startAdornment={<InputAdornment position="start">Rp.</InputAdornment>}
         />
-      </PriusFieldset>
+      </Fieldset>
     </>
   </Story>
 </Preview>
@@ -65,7 +65,7 @@ import PriusInput from './PriusInput';
 <Preview>
   <Story name="EndAdornment">
     <>
-      <PriusFieldset inputId="min-buyer" label="Min. Pembelian">
+      <Fieldset inputId="min-buyer" label="Min. Pembelian">
         <PriusInput
           name="name"
           type="text"
@@ -77,7 +77,7 @@ import PriusInput from './PriusInput';
             </Button>
           }
         />
-      </PriusFieldset>
+      </Fieldset>
     </>
   </Story>
 </Preview>
@@ -88,4 +88,4 @@ import PriusInput from './PriusInput';
 
 ## Related
 
-- <LinkTo kind="Components|PriusFieldset">PriusFieldset</LinkTo>
+- <LinkTo kind="Components|Fieldset">Fieldset</LinkTo>
