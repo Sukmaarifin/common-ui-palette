@@ -1,8 +1,8 @@
 import React from 'react';
-import Tooltip, { TooltipProps } from '@material-ui/core/Tooltip';
+import Tooltip, { TooltipProps as TooltipUIProps } from '@material-ui/core/Tooltip';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
-import './priusTooltip.css';
+import './index.css';
 
 function arrowGenerator(color: string) {
   return {
@@ -98,12 +98,12 @@ const useStylesCustom = makeStyles(() =>
   })
 );
 
-export type PriusTooltipProps = TooltipProps & {
+export type TooltipProps = TooltipUIProps & {
   title: React.ReactNode;
   img?: string;
 };
 
-const PriusTooltip = ({ img, title, ...props }: PriusTooltipProps) => {
+const TooltipComponent = ({ img, title, ...props }: TooltipProps) => {
   const { arrow, ...classes } = useStylesCustom();
   const [arrowRef, setArrowRef] = React.useState<HTMLSpanElement | null>(null);
 
@@ -137,4 +137,4 @@ const PriusTooltip = ({ img, title, ...props }: PriusTooltipProps) => {
   );
 };
 
-export default PriusTooltip;
+export default TooltipComponent;

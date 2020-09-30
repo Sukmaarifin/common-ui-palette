@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
-import PriusTooltip from '../../PriusTooltip';
+import Tooltip from '../../Tooltip';
 import Backdrop from '../../Backdrop';
 import Label from '../../Label/Label';
 import { FieldProps } from '../types';
@@ -215,7 +215,7 @@ const TextField = ({
       }}
     >
       {tooltipText ? (
-        <PriusTooltip
+        <Tooltip
           placement="top"
           title={
             Array.isArray(tooltip)
@@ -228,7 +228,7 @@ const TextField = ({
 
             {renderTextWithDescription()}
           </div>
-        </PriusTooltip>
+        </Tooltip>
       ) : (
         <>
           {renderSimpleText()}

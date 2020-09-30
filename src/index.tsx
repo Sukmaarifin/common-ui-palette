@@ -132,5 +132,5 @@ export * from './components/PriusToggle';
 export { default as MainContainer } from './components/MainContainer';
 export * from './components/MainContainer';
 
-export { default as Tooltip } from './components/PriusTooltip';
-export * from './components/PriusTooltip';
+export { default as Tooltip } from './components/Tooltip';
+export * from './components/Tooltip';

@@ -14,7 +14,7 @@ import {
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import { MoreHoriz } from '@material-ui/icons';
 
-import PriusTooltip from '../PriusTooltip';
+import Tooltip from '../Tooltip';
 import { OptionIcon } from '../../icons';
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -143,7 +143,7 @@ function Item({ data, classes }: { data: ItemType; classes: any }) {
       onClick={() => data.onClick && !data.disabled && data.onClick()}
     >
       {data.tooltipText ? (
-        <PriusTooltip title={data.tooltipText} placement="top">
+        <Tooltip title={data.tooltipText} placement="top">
           <div className={classes.itemInner}>
             {data.iconLeft && (
               <ListItemIcon
@@ -165,7 +165,7 @@ function Item({ data, classes }: { data: ItemType; classes: any }) {
               </ListItemIcon>
             )}
           </div>
-        </PriusTooltip>
+        </Tooltip>
       ) : (
         <React.Fragment>
           {data.iconLeft && (

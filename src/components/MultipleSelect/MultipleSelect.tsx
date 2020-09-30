@@ -11,8 +11,8 @@ import clsx from 'clsx';
 import { Chip, MenuItem, Paper, Typography } from '@material-ui/core';
 
 import { CloseIcon, DropdownIcon } from '../../icons';
-import PriusTooltip from '../PriusTooltip';
-import PriusCreatableSelect from './CreatableSelect';
+import Tooltip from '../Tooltip';
+import CreatableSelect from './CreatableSelect';
 
 import { OptionType } from './types';
 import { multipleSelectCss } from './MultipleSelectCss';
@@ -86,7 +86,7 @@ function MultipleSelect({
 
   if (isCreatable) {
     return (
-      <PriusCreatableSelect
+      <CreatableSelect
         backspaceRemoveValue={backspaceRemoveValue}
         classes={classes}
         components={{
@@ -201,13 +201,13 @@ const Option = ({ data, isFocused, innerProps, innerRef }: any) => {
       {...innerProps}
     >
       {data.isDisabled && data.tooltipText ? (
-        <PriusTooltip placement="top" title={data.tooltipText}>
+        <Tooltip placement="top" title={data.tooltipText}>
           <Typography variant="inherit" noWrap>
             {renderedChildren}
           </Typography>
-        </PriusTooltip>
+        </Tooltip>
       ) : (
-        <PriusTooltip
+        <Tooltip
           placement="top"
           title={data.renderedChildren}
           disableHoverListener={!data.open}
@@ -215,7 +215,7 @@ const Option = ({ data, isFocused, innerProps, innerRef }: any) => {
           <Typography variant="inherit" noWrap ref={divRef}>
             {renderedChildren}
           </Typography>
-        </PriusTooltip>
+        </Tooltip>
       )}
     </MenuItem>
   );

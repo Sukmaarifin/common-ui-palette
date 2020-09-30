@@ -2,17 +2,17 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 
-import PriusTooltip, { PriusTooltipProps } from '../PriusTooltip';
+import Tooltip, { TooltipProps } from '../Tooltip';
 
 describe('Prius tooltip test', () => {
   const render = () => {
-    const props: PriusTooltipProps = {
+    const props: TooltipProps = {
       children: <button>aku</button>,
       placement: 'top',
       title: 'Lorem ipsum',
     };
 
-    return mount(<PriusTooltip {...props} />);
+    return mount(<Tooltip {...props} />);
   };
 
   it('render successfully', () => {
@@ -23,7 +23,7 @@ describe('Prius tooltip test', () => {
   it('render with img props', () => {
     const preview = 'default-user-img.jpg';
     const wrapper = mount(
-      <PriusTooltip
+      <Tooltip
         children={<button></button>}
         placement={'top'}
         title={'Lorem ipsum'}

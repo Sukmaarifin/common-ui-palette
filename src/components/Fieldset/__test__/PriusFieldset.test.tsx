@@ -7,7 +7,7 @@ import { InputLabel, FormControl, FormHelperText } from '@material-ui/core';
 import theme from '../../../styles/material-ui-theme';
 
 import Fieldset from '../Fieldset';
-import PriusTooltip from '../../PriusTooltip';
+import Tooltip from '../../Tooltip';
 import {
   CheckCircleOutlinedIcon,
   ExclamationCircleOutlinedIcon,
@@ -36,8 +36,8 @@ describe('Fieldset test', () => {
     expect(wrapper.find(InputLabel)).toHaveLength(1);
   });
 
-  it('render PriusTooltip if `tooltipText` is provided', () => {
-    expect(wrapper.find(PriusTooltip)).toHaveLength(1);
+  it('render Tooltip if `tooltipText` is provided', () => {
+    expect(wrapper.find(Tooltip)).toHaveLength(1);
   });
 
   it('render FormHelperText if `helperText` is provided', () => {

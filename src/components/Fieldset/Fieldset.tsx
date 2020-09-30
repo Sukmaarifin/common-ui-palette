@@ -4,7 +4,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import InputLabel, { InputLabelProps } from '@material-ui/core/InputLabel';
 import { FormControl, FormHelperText, Grid } from '@material-ui/core';
 
-import PriusTooltip from '../PriusTooltip';
+import Tooltip from '../Tooltip';
 import {
   QuestionCircleOutlinedIcon,
   CheckCircleOutlinedIcon,
@@ -131,13 +131,13 @@ export const Fieldset: React.FunctionComponent<FieldsetProps> = ({
               >
                 {label}
                 {tooltipText && (
-                  <PriusTooltip placement="top" title={tooltipText}>
+                  <Tooltip placement="top" title={tooltipText}>
                     <QuestionCircleOutlinedIcon
                       fontSize="small"
                       className={classes.tooltipIcon}
                       tabIndex={0}
                     />
-                  </PriusTooltip>
+                  </Tooltip>
                 )}
               </InputLabel>
             </Grid>
