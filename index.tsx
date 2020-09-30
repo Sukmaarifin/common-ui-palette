@@ -49,11 +49,11 @@ export * from './src/components/Filter';
 export { default as Footer } from './src/components/Footer';
 export * from './src/components/Footer';
 
-export { default as FileUploader } from './src/components/PriusFileUploader';
-export * from './src/components/PriusFileUploader';
+export { default as FileUploader } from './src/components/FileUploader';
+export * from './src/components/FileUploader';
 
-export { default as ImageUploader } from './src/components/PriusImageUploader';
-export * from './src/components/PriusImageUploader';
+export { default as ImageUploader } from './src/components/ImageUploader';
+export * from './src/components/ImageUploader';
 
 export { default as IndicatorLabel } from './src/components/PriusIndicatorLabel';
 export * from './src/components/PriusIndicatorLabel';

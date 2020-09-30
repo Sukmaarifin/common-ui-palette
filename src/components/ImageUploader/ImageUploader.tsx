@@ -9,7 +9,7 @@ import PriusThumbnail, {
   ThumbnailSize,
 } from '../PriusThumbnail';
 
-import { useStyles } from './PriusImageUploaderCss';
+import { useStyles } from './ImageUploaderCss';
 
 export type FileType = {
   file: File;
@@ -29,7 +29,7 @@ export type ImageUploaderProps = Pick<PriusThumbnailProps, 'defaultSource'> & {
   isLoading?: boolean;
 };
 
-const PriusImageUploader = ({
+const ImageUploader = ({
   altText,
   defaultSource,
   source,
@@ -141,4 +141,4 @@ const PriusImageUploader = ({
   );
 };
 
-export default PriusImageUploader;
+export default ImageUploader;

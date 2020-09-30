@@ -4,7 +4,7 @@ import { Grid, createStyles, makeStyles, Theme } from '@material-ui/core';
 import { useMutation } from 'react-apollo';
 
 import CircularProgress from '../CircularProgress';
-import { FileType } from '../PriusImageUploader';
+import { FileType } from '../ImageUploader';
 import ButtonText from '../ButtonText';
 import { useSnackbar } from '../PriusSnackbar';
 
