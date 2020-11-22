@@ -45,7 +45,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 ## NPM LINK
-1. [/olympus] run command `npm link`
-2. [/template] run command `npm link @sirclo/nexus`
-3. [/template/node_modules/react] run command `npm link`
-4. [/olympus] run command `npm link react`
+1. [/olympus]() run command `npm link`
+2. [/template]() run command `npm link @sirclo/nexus`
+3. [/template/node_modules/react]() run command `npm link`
+4. [/olympus]() run command `npm link react`
