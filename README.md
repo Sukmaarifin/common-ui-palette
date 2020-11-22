@@ -42,3 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## NPM LINK
+1. [/olympus] run command `npm link`
+2. [/template] run command `npm link @sirclo/nexus`
+3. [/template/node_modules/react] run command `npm link`
+4. [/olympus] run command `npm link react`
