@@ -1,0 +1,58 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Grid } from '@material-ui/core';
+
+import CircularProgress from './index';
+
+<Meta
+  component={CircularProgress}
+  id="Components|CircularProgress"
+  title="Components|CircularProgress"
+/>
+
+# CircularProgress
+
+`CircularProgress` is a customize component from [Circular, Linear Progress](https://material-ui.com/components/progress/) Material-UI.
+
+## Usage
+
+By default, `isWithText` props is set to **true**. If you want to render it with without any custom text you need to set `isWithText` to false.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <>
+      <Grid container spacing={5} alignItems="center">
+        <Grid item>
+          <CircularProgress isWithText={false} />
+        </Grid>
+        <Grid item>
+          <CircularProgress size={20} isWithText={false} />
+        </Grid>
+      </Grid>
+    </>
+  </Story>
+</Preview>
+
+### withText
+
+Either way, `CircularProgress` will render pure [Circular, Linear Progress](https://material-ui.com/components/progress/) Material-UI with a custom text based on the design palette.
+
+<Preview>
+  <Story name="WithText">
+    <>
+      <Grid container spacing={5} alignItems="center">
+        <Grid item>
+          <CircularProgress />
+        </Grid>
+        <Grid item>
+          <CircularProgress size={20} />
+        </Grid>
+      </Grid>
+    </>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={CircularProgress} />

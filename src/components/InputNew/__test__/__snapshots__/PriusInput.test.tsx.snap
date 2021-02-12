@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PriusInput test renders without error 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "breakpoints": Object {
+        "between": [Function],
+        "down": [Function],
+        "keys": Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ],
+        "only": [Function],
+        "up": [Function],
+        "values": Object {
+          "lg": 1280,
+          "md": 960,
+          "sm": 600,
+          "xl": 1920,
+          "xs": 0,
+        },
+        "width": [Function],
+      },
+      "colors": Object {
+        "disabled": "#BDBDBD",
+        "failed": "#DD3626",
+        "grey": "#EEEEEE",
+        "grey2": "#F4F4F4",
+        "grey3": "#ECEBED",
+        "grey4": "#E8E8E8",
+        "info": "#898989",
+        "placeholder": "#E0E0E0",
+        "primary": "#1C9AEA",
+        "primary2": "#1478C9",
+        "secondary": "#DD3628",
+        "secondary2": "#BE1D1E",
+        "success": "#00B969",
+        "success2": "#008566",
+        "text": "#444444",
+        "warning": "#FFCC00",
+        "white": "#FFFFFF",
+      },
+      "customShadows": Object {
+        "1": " 0 7px 30px 0 rgba(0, 0, 0, 0.2)",
+        "2": "0px 4px 8px rgba(0, 0, 0, 0.04)",
+      },
+      "direction": "ltr",
+      "mixins": Object {
+        "gutters": [Function],
+        "toolbar": Object {
+          "@media (min-width:0px) and (orientation: landscape)": Object {
+            "minHeight": 48,
+          },
+          "@media (min-width:600px)": Object {
+            "minHeight": 64,
+          },
+          "minHeight": 56,
+        },
+      },
+      "overrides": Object {
+        "MuiButton": Object {
+          "contained": Object {
+            "&:hover": Object {
+              "boxShadow": "none",
+            },
+            "backgroundColor": "transparent",
+            "boxShadow": "none",
+          },
+          "containedPrimary": Object {
+            "&:hover": Object {
+              "backgroundColor": "#0288D1",
+            },
+          },
+          "iconSizeLarge": Object {
+            "&>*:first-child": Object {
+              "fontSize": "1.3125rem",
+            },
+          },
+          "iconSizeMedium": Object {
+            "&>*:first-child": Object {
+              "fontSize": "1rem",
+            },
+          },
+          "iconSizeSmall": Object {
+            "&>*:first-child": Object {
+              "fontSize": "0.625rem",
+            },
+          },
+          "label": Object {
+            "lineHeight": "1rem",
+          },
+          "outlined": Object {
+            "padding": "0.5625rem 0.875rem !important",
+          },
+          "outlinedSizeLarge": Object {
+            "padding": "0.625rem 1.0625rem !important",
+          },
+          "outlinedSizeSmall": Object {
+            "padding": "0.4375rem 0.6875rem !important",
+          },
+          "root": Object {
+            "borderRadius": "0.375rem",
+            "minWidth": "2rem",
+            "padding": "0.625rem 0.9375rem",
+            "textTransform": "unset",
+          },
+          "sizeLarge": Object {
+            "&>*:first-child": Object {
+              "lineHeight": "1.3125rem",
+            },
+            "fontSize": "1.125rem",
+            "padding": "0.6875rem 1.125rem",
+          },
+          "sizeSmall": Object {
+            "&>*:first-child": Object {
+              "lineHeight": "0.625rem",
+            },
+            "fontSize": "0.625rem",
+            "padding": "0.5rem 0.75rem",
+          },
+          "text": Object {
+            "padding": "auto",
+          },
+        },
+        "MuiButtonBase": Object {
+          "root": Object {
+            "&$disabled": Object {
+              "background": "#F4F4F4",
+            },
+          },
+        },
+        "MuiCheckbox": Object {
+          "root": Object {
+            "color": "#EEEEEE",
+          },
+        },
+        "MuiChip": Object {
+          "deleteIcon": Object {
+            "fontSize": "0.625rem!important",
+            "height": "0.625rem!important",
+            "margin": "0 0.625rem 0 -0.25rem",
+            "width": "0.625rem!important",
+          },
+          "label": Object {
+            "paddingLeft": "0.625rem",
+            "paddingRight": "0.625rem",
+          },
+          "root": Object {
+            "backgroundColor": "#F4F4F4",
+            "borderRadius": "0.75rem",
+            "color": "#444444",
+            "height": "1.625rem",
+          },
+        },
+        "MuiDialog": Object {
+          "paperWidthXs": Object {
+            "maxWidth": "30rem",
+          },
+        },
+        "MuiDialogActions": Object {
+          "root": Object {
+            "padding": "1.25rem 2.5rem",
+          },
+        },
+        "MuiDialogContent": Object {
+          "root": Object {
+            "& > *:last-child": Object {
+              "marginBottom": "0.625rem !important",
+            },
+            "&:first-child": Object {
+              "paddingTop": "1.875rem",
+            },
+            "&:last-child": Object {
+              "paddingBottom": "1.875rem",
+            },
+            "padding": "0.625rem 2.5rem",
+          },
+        },
+        "MuiDialogContentText": Object {
+          "root": Object {
+            "color": "#444444 !important",
+            "marginBottom": "1.25rem !important",
+          },
+        },
+        "MuiDialogTitle": Object {
+          "root": Object {
+            "fontSize": "1.0625rem",
+            "fontWeight": "bold",
+            "letterSpacing": "normal",
+            "lineHeight": 1.29,
+            "padding": "1.875rem 2.5rem 1.25rem 2.5rem",
+          },
+        },
+        "MuiDivider": Object {
+          "root": Object {
+            "backgroundColor": "#ECEBED",
+          },
+        },
+        "MuiIconButton": Object {
+          "label": Object {
+            "lineHeight": "1rem",
+          },
+          "root": Object {
+            "padding": "0.625rem",
+          },
+          "sizeSmall": Object {
+            "& .MuiSvgIcon-root": Object {
+              "fontSize": "0.625rem",
+            },
+            "padding": "0.5625rem",
+          },
+        },
+        "MuiInputAdornment": Object {
+          "root": Object {
+            "& > .MuiTypography-root": Object {
+              "fontSize": "inherit",
+            },
+            "fontSize": "0.8125rem",
+          },
+        },
+        "MuiListItem": Object {
+          "gutters": Object {
+            "padding": "0.25rem 1rem",
+          },
+          "root": Object {
+            "&$disabled": Object {
+              "&:hover": Object {
+                "background": "initial",
+              },
+              "pointerEvents": "auto",
+            },
+            "&$selected": Object {
+              "backgroundColor": "#F4F4F4",
+              "color": "#3f3356",
+            },
+          },
+        },
+        "MuiListItemText": Object {
+          "secondary": Object {
+            "marginTop": "0.25rem",
+          },
+        },
+        "MuiSelect": Object {
+          "icon": Object {
+            "color": "initial",
+            "fontSize": "0.5rem",
+          },
+        },
+        "MuiSvgIcon": Object {
+          "fontSizeLarge": Object {
+            "fontSize": "1.3125rem !important",
+          },
+          "fontSizeSmall": Object {
+            "fontSize": "0.625rem !important",
+          },
+          "root": Object {
+            "fontSize": "1rem",
+          },
+        },
+      },
+      "palette": Object {
+        "action": Object {
+          "activatedOpacity": 0.12,
+          "active": "rgba(0, 0, 0, 0.54)",
+          "disabled": "rgba(0, 0, 0, 0.26)",
+          "disabledBackground": "rgba(0, 0, 0, 0.12)",
+          "disabledOpacity": 0.38,
+          "focus": "rgba(0, 0, 0, 0.12)",
+          "focusOpacity": 0.12,
+          "hover": "rgba(0, 0, 0, 0.04)",
+          "hoverOpacity": 0.04,
+          "selected": "rgba(0, 0, 0, 0.08)",
+          "selectedOpacity": 0.08,
+        },
+        "augmentColor": [Function],
+        "background": Object {
+          "default": "#fafafa",
+          "paper": "#fff",
+        },
+        "common": Object {
+          "black": "#000",
+          "white": "#fff",
+        },
+        "contrastThreshold": 3,
+        "divider": "rgba(0, 0, 0, 0.12)",
+        "error": Object {
+          "contrastText": "#fff",
+          "dark": "#DD3626",
+          "light": "#DD3626",
+          "main": "#DD3626",
+        },
+        "getContrastText": [Function],
+        "grey": Object {
+          "100": "#f5f5f5",
+          "200": "#eeeeee",
+          "300": "#e0e0e0",
+          "400": "#bdbdbd",
+          "50": "#fafafa",
+          "500": "#9e9e9e",
+          "600": "#757575",
+          "700": "#616161",
+          "800": "#424242",
+          "900": "#212121",
+          "A100": "#d5d5d5",
+          "A200": "#aaaaaa",
+          "A400": "#303030",
+          "A700": "#616161",
+        },
+        "info": Object {
+          "contrastText": "#fff",
+          "dark": "#1976d2",
+          "light": "#64b5f6",
+          "main": "#2196f3",
+        },
+        "primary": Object {
+          "contrastText": "#fff",
+          "dark": "#1478C9",
+          "light": "#1C9AEA",
+          "main": "#1C9AEA",
+        },
+        "secondary": Object {
+          "contrastText": "#fff",
+          "dark": "#BE1D1E",
+          "light": "#DD3628",
+          "main": "#DD3628",
+        },
+        "success": Object {
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "dark": "#008566",
+          "light": "#00B969",
+          "main": "#00B969",
+        },
+        "text": Object {
+          "disabled": "#BDBDBD",
+          "hint": "#E0E0E0",
+          "primary": "#444444",
+          "secondary": "#898989",
+        },
+        "tonalOffset": 0.2,
+        "type": "light",
+        "warning": Object {
+          "contrastText": "rgba(0, 0, 0, 0.87)",
+          "dark": "#f57c00",
+          "light": "#ffb74d",
+          "main": "#ff9800",
+        },
+      },
+      "props": Object {
+        "MuiCheckbox": Object {
+          "checkedIcon": <UNDEFINED />,
+          "color": "default",
+          "icon": <UNDEFINED />,
+          "indeterminateIcon": <UNDEFINED />,
+        },
+        "MuiDialogTitle": Object {
+          "disableTypography": true,
+        },
+        "MuiSvgIcon": Object {
+          "viewBox": "0 0 21 21",
+        },
+      },
+      "shadows": Array [
+        "none",
+        "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
+        "0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12)",
+        "0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12)",
+        "0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)",
+        "0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)",
+        "0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)",
+        "0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12)",
+        "0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12)",
+        "0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12)",
+        "0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12)",
+        "0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12)",
+        "0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)",
+        "0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12)",
+        "0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12)",
+        "0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12)",
+        "0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12)",
+        "0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12)",
+        "0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12)",
+        "0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12)",
+        "0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12)",
+        "0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12)",
+        "0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12)",
+        "0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12)",
+        "0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12)",
+      ],
+      "shape": Object {
+        "borderRadius": 4,
+      },
+      "spacing": [Function],
+      "transitions": Object {
+        "create": [Function],
+        "duration": Object {
+          "complex": 375,
+          "enteringScreen": 225,
+          "leavingScreen": 195,
+          "short": 250,
+          "shorter": 200,
+          "shortest": 150,
+          "standard": 300,
+        },
+        "easing": Object {
+          "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+          "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+          "easeOut": "cubic-bezier(0.0, 0, 0.2, 1)",
+          "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+        },
+        "getAutoHeightDuration": [Function],
+      },
+      "typography": Object {
+        "body1": Object {
+          "color": "#444444",
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.8125rem",
+          "fontWeight": "normal",
+          "letterSpacing": "normal",
+          "lineHeight": 1.38,
+        },
+        "body2": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.625rem",
+          "fontWeight": "normal",
+          "letterSpacing": "normal",
+          "lineHeight": 1.18,
+        },
+        "button": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.8125rem",
+          "fontWeight": "bold",
+          "letterSpacing": "normal",
+          "lineHeight": "1.3125rem",
+          "textTransform": "uppercase",
+        },
+        "caption": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.6875rem",
+          "fontWeight": "normal",
+          "letterSpacing": "0.03333em",
+          "lineHeight": 1.18,
+          "textTransform": "uppercase",
+        },
+        "fontFamily": "\\"Metropolis\\", sans-serif",
+        "fontSize": 13,
+        "fontWeightBold": 700,
+        "fontWeightLight": 300,
+        "fontWeightMedium": 500,
+        "fontWeightRegular": 400,
+        "h1": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "2.125rem",
+          "fontWeight": 600,
+          "letterSpacing": "normal",
+          "lineHeight": 1.21,
+        },
+        "h2": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "1.375rem",
+          "fontWeight": 600,
+          "letterSpacing": "normal",
+          "lineHeight": 1.27,
+        },
+        "h3": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "1.0625rem",
+          "fontWeight": 600,
+          "letterSpacing": "normal",
+          "lineHeight": 1.29,
+        },
+        "h4": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.9375rem",
+          "fontWeight": 500,
+          "letterSpacing": "normal",
+          "lineHeight": 1.33,
+        },
+        "h5": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.9375rem",
+          "fontWeight": 500,
+          "letterSpacing": "normal",
+          "lineHeight": 1.33,
+        },
+        "h6": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.9375rem",
+          "fontWeight": 500,
+          "letterSpacing": "normal",
+          "lineHeight": 1.33,
+        },
+        "htmlFontSize": 16,
+        "overline": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "1rem",
+          "fontWeight": "normal",
+          "letterSpacing": "normal",
+          "lineHeight": 1.38,
+          "textTransform": "uppercase",
+        },
+        "pxToRem": [Function],
+        "round": [Function],
+        "subtitle1": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.6875rem",
+          "fontWeight": "normal",
+          "letterSpacing": "normal",
+          "lineHeight": 1.18,
+        },
+        "subtitle2": Object {
+          "fontFamily": "\\"Metropolis\\", sans-serif",
+          "fontSize": "0.6875rem",
+          "fontWeight": "normal",
+          "letterSpacing": "normal",
+          "lineHeight": 1.18,
+        },
+      },
+      "zIndex": Object {
+        "appBar": 1100,
+        "drawer": 1200,
+        "mobileStepper": 1000,
+        "modal": 1300,
+        "snackbar": 1400,
+        "speedDial": 1050,
+        "tooltip": 1500,
+      },
+      Symbol(mui.nested): false,
+    }
+  }
+>
+  <ForwardRef>
+    <WithStyles(ForwardRef(InputBase))
+      classes={
+        Object {
+          "adornedEnd": "makeStyles-adornedEnd-6",
+          "adornedStart": "makeStyles-adornedStart-5",
+          "disabled": "makeStyles-disabled-4",
+          "error": "makeStyles-error-3",
+          "input": "makeStyles-input-2",
+          "multiline": "makeStyles-multiline-7",
+          "root": "makeStyles-root-1",
+        }
+      }
+    >
+      <ForwardRef(InputBase)
+        classes={
+          Object {
+            "adornedEnd": "MuiInputBase-adornedEnd makeStyles-adornedEnd-6",
+            "adornedStart": "MuiInputBase-adornedStart makeStyles-adornedStart-5",
+            "colorSecondary": "MuiInputBase-colorSecondary",
+            "disabled": "Mui-disabled makeStyles-disabled-4",
+            "error": "Mui-error makeStyles-error-3",
+            "focused": "Mui-focused",
+            "formControl": "MuiInputBase-formControl",
+            "fullWidth": "MuiInputBase-fullWidth",
+            "input": "MuiInputBase-input makeStyles-input-2",
+            "inputAdornedEnd": "MuiInputBase-inputAdornedEnd",
+            "inputAdornedStart": "MuiInputBase-inputAdornedStart",
+            "inputHiddenLabel": "MuiInputBase-inputHiddenLabel",
+            "inputMarginDense": "MuiInputBase-inputMarginDense",
+            "inputMultiline": "MuiInputBase-inputMultiline",
+            "inputTypeSearch": "MuiInputBase-inputTypeSearch",
+            "marginDense": "MuiInputBase-marginDense",
+            "multiline": "MuiInputBase-multiline makeStyles-multiline-7",
+            "root": "MuiInputBase-root makeStyles-root-1",
+          }
+        }
+      >
+        <div
+          className="MuiInputBase-root makeStyles-root-1"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input makeStyles-input-2"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            type="text"
+          />
+        </div>
+      </ForwardRef(InputBase)>
+    </WithStyles(ForwardRef(InputBase))>
+  </ForwardRef>
+</ThemeProvider>
+`;

@@ -1,0 +1,51 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+
+import SEO from './index';
+import Paper from '../Paper';
+
+<Meta
+  component={SEO}
+  id="Components|SEO"
+  title="Components|SEO"
+/>
+
+# SEO
+
+`SEO` component provides a wrapper for several input elements (i.e <LinkTo kind="Components| PriusInput">PriusInput</LinkTo> and <LinkTo kind="Components| PriusMultipleSelect">PriusMultipleSelect</LinkTo>) which data are used for the needs of SEO.
+
+## Usage
+
+Usually, we wrap `SEO` component with <LinkTo kind="Components| Paper">Paper</LinkTo> component.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <Paper padding="large">
+      <SEO
+        data={[
+          {
+            title: 'SEO',
+            description: 'This is SEO stories',
+            keywords: ['SEO', 'Prius'],
+            language: 'ID',
+          },
+        ]}
+        isSlugActive={true}
+        slug="test-slug"
+        placeholder="Masukkan slug"
+      />
+    </Paper>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={SEO} />
+
+## Related
+
+- <LinkTo kind="Components|PriusInput">PriusInput</LinkTo>
+- <LinkTo kind="Components|PriusMultipleSelect">PriusMultipleSelect</LinkTo>
+- <LinkTo kind="Components|Paper">Paper</LinkTo>

@@ -1,0 +1,102 @@
+import {
+  Meta,
+  Source,
+  Story,
+  Preview,
+  Props,
+} from '@storybook/addon-docs/blocks';
+import { Grid, Button } from '@material-ui/core';
+import LinkTo from '@storybook/addon-links/react';
+
+import { MergeOutlinedIcon } from '../../../icons/';
+import Table from '../Table';
+import ShadowTable from './ShadowTable';
+import {
+  FieldImage,
+  FieldItemStatus,
+  FieldNumber,
+  FieldStatus,
+  FieldText,
+} from '../index';
+
+import * as stories from './Stories';
+
+<Meta
+  component={Table}
+  id="Components|Table"
+  title="Components|Table"
+/>
+
+# Table
+
+`Table` can be used to display set of data as rows and columns.
+
+---
+
+---
+
+---
+
+## Usage
+
+Here are some common usage of `Table`
+
+```tsx
+import Table, {
+  FieldImage,
+  FieldItemStatus,
+  FieldNumber,
+  FieldStatus,
+  FieldText,
+} from 'path/to/Table';
+```
+
+### `Field` Mechanism
+
+`Table` uses `Field` component mechanism to set table structure.
+Below are the default `Field` components supported by`Table`:
+
+- **`FieldImage`** to show image thumbnail
+
+  <Props of={FieldImage} />
+
+- **`FieldItemStatus`** to show either `check` icon or `cross` icon. It also cover two kind of coloring (i.e. `"checked"` and `"disabled"`)
+
+  <Props of={FieldItemStatus} />
+
+- **`FieldNumber`** show number as text. If the number is reaching the minimum threshold, the text color changing to value defined in `thresholdColor` props
+
+  <Props of={FieldNumber} />
+
+- **`FieldStatus`** to show icon based on its coresponding status (`success`, `sync`, `failed`, `unpublish`)
+
+  <Props of={FieldStatus} />
+
+- **`FieldText`** provides more comprehensive text elements which consists of `"title"`, `"description"`, and also `"title badge"`
+
+  <Props of={FieldText} />
+
+You can also make your own custom `Field` component. In order to be compatible with the `Table`, those custom `Field` should implements/extends the `FieldProps` type.
+
+```tsx
+import { FieldProps } from "path/to/Table";
+
+type CustomFieldProps = FieldProps & {
+  ...
+}
+
+// `Field` component properties must extending `FieldProps`
+function CustomField(props: CustomFieldProps) {
+  ...
+}
+```
+
+### Basic
+
+<Preview mdxSource={stories.basicCode}>
+  <Story name="basic">{stories.basic()}</Story>
+</Preview>
+
+## Props
+
+<Props of={ShadowTable} exclude="classes" />

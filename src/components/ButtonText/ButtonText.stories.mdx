@@ -1,0 +1,45 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import LinkTo from '@storybook/addon-links/react';
+import Grid from '@material-ui/core/Grid';
+
+import ButtonText from '../ButtonText';
+
+<Meta
+  component={ButtonText}
+  id="Components|ButtonText"
+  title="Components|ButtonText"
+/>
+
+# ButtonText
+
+`ButtonText` The Text Buttons, Contained Buttons, Floating Action Buttons and Icon Buttons are built on top of the same component,
+wraper of [ButtonBase](https://material-ui.com/api/button-base) with custom style.
+
+### Basic
+
+You can take advantage of this lower level component to build custom interactions.
+
+<Preview>
+  <Story name="Basic">
+    <Grid container spacing={5}>
+      <Grid item xs={3}>
+        <ButtonText color="inherit"> Button Inherit </ButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <ButtonText color="default"> Button Default </ButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <ButtonText color="primary"> Button Primary </ButtonText>
+      </Grid>
+      <Grid item xs={3}>
+        <ButtonText color="secondary"> Button Secondary </ButtonText>
+      </Grid>
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+All props are inherited from [ButtonBase](https://material-ui.com/api/button-base) with custom props.
+
+<Props of={ButtonText} />

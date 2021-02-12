@@ -1,0 +1,99 @@
+import { useState } from 'react';
+import {
+  Description,
+  Meta,
+  Preview,
+  Props,
+  Story,
+} from '@storybook/addon-docs/blocks';
+import { Grid } from '@material-ui/core';
+
+import Toggle from './index';
+
+<Meta
+  component={Toggle}
+  id="Components|Toggle"
+  title="Components|Toggle"
+/>
+
+# Toggle
+
+`Toggle` is a [FormControlLabel](https://material-ui.com/api/form-control-label) that wrap [Switch](https://material-ui.com/components/switches/) component.
+It can be used for boolean inputs (true / false, on / off, active / non-active).
+This component have two `type` of apperance: **regular** and **table**.
+
+## Usage
+
+Should provide `checked` and `onChange` props.
+
+### Regular
+
+<Preview>
+  <Story name="regular">
+    {() => {
+      const [checked, setChecked] = useState(false);
+      return (
+        <Grid container style={{ margin: 12 }}>
+          <Toggle
+            type="regular"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
+          />
+          <Toggle
+            type="regular"
+            label="Some Label"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
+          />
+        </Grid>
+      );
+    }}
+  </Story>
+</Preview>
+
+### Regular (disabled)
+
+<Preview>
+  <Story name="regular-disabled">
+    <Grid container style={{ margin: 12 }}>
+      <Toggle disabled type="regular" checked={true} />
+      <Toggle disabled type="regular" checked={false} />
+    </Grid>
+  </Story>
+</Preview>
+
+### Table
+
+<Preview>
+  <Story name="table">
+    {() => {
+      const [checked, setChecked] = useState(false);
+      return (
+        <Grid container style={{ margin: 12 }}>
+          <Toggle
+            type="table"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
+          />
+        </Grid>
+      );
+    }}
+  </Story>
+</Preview>
+
+### Table (disabled)
+
+<Preview>
+  <Story name="table-disabled">
+    <Grid container style={{ margin: 12 }}>
+      <Toggle disabled type="table" checked={false} />
+      <Toggle disabled type="table" checked={true} />
+    </Grid>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Toggle} />
+
+## Related

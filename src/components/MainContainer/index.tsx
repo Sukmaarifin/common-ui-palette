@@ -3,11 +3,11 @@ import { Grid } from "@material-ui/core";
 import Backend from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 
-import PriusNavigationBar from "../PriusNavigationBar";
-import PriusMenu from "../PriusMenu";
-import PriusTitle from "../PriusTitle";
+import NavigationBar from "../NavigationBar";
+import Menu from "../Menu";
+import Title from "../Title";
 
-import { logoutSSSO, TenantContext } from "../PriusSSSO";
+import { logoutSSSO, TenantContext } from "../SSSO";
 
 export type RouteType = {
   url: string;
@@ -42,10 +42,10 @@ export const MainContainer = (props: MainContainerPropType) => {
           top: "0",
         }}
       >
-        <PriusTitle />
-        <PriusMenu />
+        <Title />
+        <Menu />
         <Grid item md={12} style={{ width: "-webkit-fill-available" }}>
-          <PriusNavigationBar
+          <NavigationBar
             routes={route}
             name={`${firstName} ${lastName}`}
             userClick={logoutSSSO}

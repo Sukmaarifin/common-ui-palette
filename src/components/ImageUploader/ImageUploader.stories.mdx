@@ -1,0 +1,35 @@
+import {
+  Description,
+  Meta,
+  Preview,
+  Props,
+  Story,
+} from '@storybook/addon-docs/blocks';
+
+import ImageUploader from './index';
+
+<Meta
+  component={ImageUploader}
+  id="Components|ImageUploader"
+  title="Components|ImageUploader"
+/>
+
+# ImageUploader
+
+`ImageUploader` component provides the functionality to upload an image.
+
+## Usage
+
+You need to use the `UPLOAD_IMAGE` mutation on `src/queries/mutation.ts` in order to upload the image and pass the uploaded image URL into the `source` props.
+
+### Basic
+
+<Preview>
+  <Story name="Basic">
+    <ImageUploader source={''} altText={'Images'} />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={ImageUploader} />

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail test renders correctly 1`] = `
+<ThumbnailComponent
+  altText="Indonesia"
+  imageSource="#some-cool-image.jpg"
+  size="small"
+>
+  <img
+    alt="Indonesia"
+    className="makeStyles-image-2 makeStyles-small-3"
+    onError={[Function]}
+    src="#some-cool-image.jpg"
+  />
+</ThumbnailComponent>
+`;

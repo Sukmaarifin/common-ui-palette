@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prius tooltip test render successfully 1`] = `
+<TooltipComponent
+  placement="top"
+  title="Lorem ipsum"
+>
+  <WithStyles(ForwardRef(Tooltip))
+    PopperProps={
+      Object {
+        "disablePortal": false,
+        "popperOptions": Object {
+          "modifiers": Object {
+            "arrow": Object {
+              "element": null,
+              "enabled": false,
+            },
+          },
+        },
+      }
+    }
+    classes={
+      Object {
+        "popper": "makeStyles-popper-2",
+        "tooltip": "makeStyles-tooltip-3",
+        "tooltipPlacementBottom": "makeStyles-tooltipPlacementBottom-7",
+        "tooltipPlacementLeft": "makeStyles-tooltipPlacementLeft-4",
+        "tooltipPlacementRight": "makeStyles-tooltipPlacementRight-5",
+        "tooltipPlacementTop": "makeStyles-tooltipPlacementTop-6",
+      }
+    }
+    disableHoverListener={false}
+    placement="top"
+    title={
+      <React.Fragment>
+        <div
+          className="prius-tooltip"
+        >
+          Lorem ipsum
+        </div>
+        <span
+          className="makeStyles-arrow-1"
+        />
+      </React.Fragment>
+    }
+  >
+    <ForwardRef(Tooltip)
+      PopperProps={
+        Object {
+          "disablePortal": false,
+          "popperOptions": Object {
+            "modifiers": Object {
+              "arrow": Object {
+                "element": null,
+                "enabled": false,
+              },
+            },
+          },
+        }
+      }
+      classes={
+        Object {
+          "arrow": "MuiTooltip-arrow",
+          "popper": "MuiTooltip-popper makeStyles-popper-2",
+          "popperArrow": "MuiTooltip-popperArrow",
+          "popperInteractive": "MuiTooltip-popperInteractive",
+          "tooltip": "MuiTooltip-tooltip makeStyles-tooltip-3",
+          "tooltipArrow": "MuiTooltip-tooltipArrow",
+          "tooltipPlacementBottom": "MuiTooltip-tooltipPlacementBottom makeStyles-tooltipPlacementBottom-7",
+          "tooltipPlacementLeft": "MuiTooltip-tooltipPlacementLeft makeStyles-tooltipPlacementLeft-4",
+          "tooltipPlacementRight": "MuiTooltip-tooltipPlacementRight makeStyles-tooltipPlacementRight-5",
+          "tooltipPlacementTop": "MuiTooltip-tooltipPlacementTop makeStyles-tooltipPlacementTop-6",
+          "touch": "MuiTooltip-touch",
+        }
+      }
+      disableHoverListener={false}
+      placement="top"
+      title={
+        <React.Fragment>
+          <div
+            className="prius-tooltip"
+          >
+            Lorem ipsum
+          </div>
+          <span
+            className="makeStyles-arrow-1"
+          />
+        </React.Fragment>
+      }
+    >
+      <button
+        aria-describedby={null}
+        className=""
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title={null}
+      >
+        aku
+      </button>
+      <ForwardRef(Popper)
+        anchorEl={
+          <button
+            class=""
+          >
+            aku
+          </button>
+        }
+        className="MuiTooltip-popper makeStyles-popper-2"
+        disablePortal={false}
+        id={null}
+        open={false}
+        placement="top"
+        popperOptions={
+          Object {
+            "modifiers": Object {
+              "arrow": Object {
+                "element": null,
+                "enabled": false,
+              },
+            },
+          }
+        }
+        transition={true}
+      />
+    </ForwardRef(Tooltip)>
+  </WithStyles(ForwardRef(Tooltip))>
+</TooltipComponent>
+`;
